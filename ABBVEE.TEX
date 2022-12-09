@@ -1,0 +1,24 @@
+\newbox\abbveebox
+\newdimen\abbveew
+\font\abbveea=abbveea at 36.135truept
+\font\abbveeb=abbveeb at 36.135truept
+\font\abbveec=abbveec at 36.135truept
+\font\abbveed=abbveed at 36.135truept
+\setbox\abbveebox=\vbox{\hbox{%
+\abbveea !()+,-./01}}
+\abbveew=\wd\abbveebox
+\setbox\abbveebox=\hbox{\vbox{\hsize=\abbveew
+\parskip=0pt\offinterlineskip\parindent0pt
+\hbox{\abbveea !()+,-./01}
+\hbox{\abbveea 23456789:;}
+\hbox{\abbveea <\abbveeb !()+,-./0}
+\hbox{\abbveeb 123456789:}
+\hbox{\abbveeb ;<\abbveec !()+,-./}
+\hbox{\abbveec 0123456789}
+\hbox{\abbveec :;<\abbveed !()+,-.}
+\hbox{\abbveed /012345678}}}
+\ifx\parbox\undefined
+    \def\setabbvee{\box\abbveebox}
+\else
+    \def\setabbvee{\parbox{\wd\abbveebox}{\box\abbveebox}}
+\fi

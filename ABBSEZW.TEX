@@ -1,0 +1,17 @@
+\newbox\abbsezwbox
+\newdimen\abbsezww
+\font\abbsezwa=abbsezwa at 72.27truept
+\setbox\abbsezwbox=\vbox{\hbox{%
+\abbsezwa\char0\char1\char2\char3\char4}}
+\abbsezww=\wd\abbsezwbox
+\setbox\abbsezwbox=\hbox{\vbox{\hsize=\abbsezww
+\parskip=0pt\offinterlineskip\parindent0pt
+\hbox{\abbsezwa\char0\char1\char2\char3\char4}
+\hbox{\abbsezwa\char5\char6\char7\char8\char9}
+\hbox{\abbsezwa\char10\char11\char12\char13\char14}
+\hbox{\abbsezwa\char15\char16\char17\char18\char19}}}
+\ifx\parbox\undefined
+    \def\setabbsezw{\box\abbsezwbox}
+\else
+    \def\setabbsezw{\parbox{\wd\abbsezwbox}{\box\abbsezwbox}}
+\fi

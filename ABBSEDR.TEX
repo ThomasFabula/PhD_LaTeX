@@ -1,0 +1,18 @@
+\newbox\abbsedrbox
+\newdimen\abbsedrw
+\font\abbsedra=abbsedra at 72.27truept
+\font\abbsedrb=abbsedrb at 72.27truept
+\setbox\abbsedrbox=\vbox{\hbox{%
+\abbsedra\char0\char1\char2\char3\char4\char5}}
+\abbsedrw=\wd\abbsedrbox
+\setbox\abbsedrbox=\hbox{\vbox{\hsize=\abbsedrw
+\parskip=0pt\offinterlineskip\parindent0pt
+\hbox{\abbsedra\char0\char1\char2\char3\char4\char5}
+\hbox{\abbsedra\char6\char7\char8\char9\char10\char11}
+\hbox{\abbsedra\char12\char13\char14\char15\abbsedrb\char0\char1}
+\hbox{\abbsedrb\char2\char3\char4\char5\char6\char7}}}
+\ifx\parbox\undefined
+    \def\setabbsedr{\box\abbsedrbox}
+\else
+    \def\setabbsedr{\parbox{\wd\abbsedrbox}{\box\abbsedrbox}}
+\fi

@@ -1,0 +1,15 @@
+\newbox\abbsnbox
+\newdimen\abbsnw
+\font\abbsna=abbsna at 72.27truept
+\setbox\abbsnbox=\vbox{\hbox{%
+\abbsna\char0\char1\char2\char3\char4}}
+\abbsnw=\wd\abbsnbox
+\setbox\abbsnbox=\hbox{\vbox{\hsize=\abbsnw
+\parskip=0pt\offinterlineskip\parindent0pt
+\hbox{\abbsna\char0\char1\char2\char3\char4}
+\hbox{\abbsna\char5\char6\char7\char8\char9}}}
+\ifx\parbox\undefined
+    \def\setabbsn{\box\abbsnbox}
+\else
+    \def\setabbsn{\parbox{\wd\abbsnbox}{\box\abbsnbox}}
+\fi

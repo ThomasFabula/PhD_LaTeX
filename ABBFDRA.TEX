@@ -1,0 +1,18 @@
+\newbox\abbfdrabox
+\newdimen\abbfdraw
+\font\abbfdraa=abbfdraa at 72.27truept
+\setbox\abbfdrabox=\vbox{\hbox{%
+\abbfdraa\char0\char1\char2\char3\char4}}
+\abbfdraw=\wd\abbfdrabox
+\setbox\abbfdrabox=\hbox{\vbox{\hsize=\abbfdraw
+\parskip=0pt\offinterlineskip\parindent0pt
+\hbox{\abbfdraa\char0\char1\char2\char3\char4}
+\hbox{\abbfdraa\char5\char6\char7\char8\char9}
+\hbox{\abbfdraa\char10\char11\char12\char13\char14}
+\hbox{\abbfdraa\char15\char16\char17\char18\char19}
+\hbox{\abbfdraa\char20\char21\char22\char23\char24}}}
+\ifx\parbox\undefined
+    \def\setabbfdra{\box\abbfdrabox}
+\else
+    \def\setabbfdra{\parbox{\wd\abbfdrabox}{\box\abbfdrabox}}
+\fi

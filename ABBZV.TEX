@@ -1,0 +1,17 @@
+\newbox\abbzvbox
+\newdimen\abbzvw
+\font\abbzva=abbzva at 36.135truept
+\setbox\abbzvbox=\vbox{\hbox{%
+\abbzva !()+}}
+\abbzvw=\wd\abbzvbox
+\setbox\abbzvbox=\hbox{\vbox{\hsize=\abbzvw
+\parskip=0pt\offinterlineskip\parindent0pt
+\hbox{\abbzva !()+}
+\hbox{\abbzva ,-./}
+\hbox{\abbzva 0123}
+\hbox{\abbzva 4567}}}
+\ifx\parbox\undefined
+    \def\setabbzv{\box\abbzvbox}
+\else
+    \def\setabbzv{\parbox{\wd\abbzvbox}{\box\abbzvbox}}
+\fi

@@ -1,0 +1,17 @@
+\newbox\abbfeinbox
+\newdimen\abbfeinw
+\font\abbfeina=abbfeina at 72.27truept
+\setbox\abbfeinbox=\vbox{\hbox{%
+\abbfeina\char0\char1\char2\char3\char4}}
+\abbfeinw=\wd\abbfeinbox
+\setbox\abbfeinbox=\hbox{\vbox{\hsize=\abbfeinw
+\parskip=0pt\offinterlineskip\parindent0pt
+\hbox{\abbfeina\char0\char1\char2\char3\char4}
+\hbox{\abbfeina\char5\char6\char7\char8\char9}
+\hbox{\abbfeina\char10\char11\char12\char13\char14}
+\hbox{\abbfeina\char15\char16\char17\char18\char19}}}
+\ifx\parbox\undefined
+    \def\setabbfein{\box\abbfeinbox}
+\else
+    \def\setabbfein{\parbox{\wd\abbfeinbox}{\box\abbfeinbox}}
+\fi

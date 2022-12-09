@@ -1,0 +1,26 @@
+\newbox\abbvzzbox
+\newdimen\abbvzzw
+\font\abbvzza=abbvzza at 36.135truept
+\font\abbvzzb=abbvzzb at 36.135truept
+\font\abbvzzc=abbvzzc at 36.135truept
+\font\abbvzzd=abbvzzd at 36.135truept
+\font\abbvzze=abbvzze at 34.6896truept
+\setbox\abbvzzbox=\vbox{\hbox{%
+\abbvzza !()+,-./01}}
+\abbvzzw=\wd\abbvzzbox
+\setbox\abbvzzbox=\hbox{\vbox{\hsize=\abbvzzw
+\parskip=0pt\offinterlineskip\parindent0pt
+\hbox{\abbvzza !()+,-./01}
+\hbox{\abbvzza 23456789:;}
+\hbox{\abbvzza <\abbvzzb !()+,-./0}
+\hbox{\abbvzzb 123456789:}
+\hbox{\abbvzzb ;<\abbvzzc !()+,-./}
+\hbox{\abbvzzc 0123456789}
+\hbox{\abbvzzc :;<\abbvzzd !()+,-.}
+\hbox{\abbvzzd /012345678}
+\hbox{\abbvzzd 9:;<\abbvzze !()+,-}}}
+\ifx\parbox\undefined
+    \def\setabbvzz{\box\abbvzzbox}
+\else
+    \def\setabbvzz{\parbox{\wd\abbvzzbox}{\box\abbvzzbox}}
+\fi

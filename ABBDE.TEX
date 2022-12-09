@@ -1,0 +1,24 @@
+\newbox\abbdebox
+\newdimen\abbdew
+\font\abbdea=abbdea at 36.135truept
+\font\abbdeb=abbdeb at 36.135truept
+\font\abbdec=abbdec at 36.135truept
+\setbox\abbdebox=\vbox{\hbox{%
+\abbdea !()+,-.}}
+\abbdew=\wd\abbdebox
+\setbox\abbdebox=\hbox{\vbox{\hsize=\abbdew
+\parskip=0pt\offinterlineskip\parindent0pt
+\hbox{\abbdea !()+,-.}
+\hbox{\abbdea /012345}
+\hbox{\abbdea 6789:;<}
+\hbox{\abbdeb !()+,-.}
+\hbox{\abbdeb /012345}
+\hbox{\abbdeb 6789:;<}
+\hbox{\abbdec !()+,-.}
+\hbox{\abbdec /012345}
+\hbox{\abbdec 6789:;<}}}
+\ifx\parbox\undefined
+    \def\setabbde{\box\abbdebox}
+\else
+    \def\setabbde{\parbox{\wd\abbdebox}{\box\abbdebox}}
+\fi

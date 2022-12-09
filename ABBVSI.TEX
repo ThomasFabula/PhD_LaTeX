@@ -1,0 +1,23 @@
+\newbox\abbvsibox
+\newdimen\abbvsiw
+\font\abbvsia=abbvsia at 36.135truept
+\font\abbvsib=abbvsib at 36.135truept
+\font\abbvsic=abbvsic at 36.135truept
+\font\abbvsid=abbvsid at 34.6896truept
+\setbox\abbvsibox=\vbox{\hbox{%
+\abbvsia !()+,-./01}}
+\abbvsiw=\wd\abbvsibox
+\setbox\abbvsibox=\hbox{\vbox{\hsize=\abbvsiw
+\parskip=0pt\offinterlineskip\parindent0pt
+\hbox{\abbvsia !()+,-./01}
+\hbox{\abbvsia 23456789:;}
+\hbox{\abbvsia <\abbvsib !()+,-./0}
+\hbox{\abbvsib 123456789:}
+\hbox{\abbvsib ;<\abbvsic !()+,-./}
+\hbox{\abbvsic 0123456789}
+\hbox{\abbvsic :;<\abbvsid !()+,-.}}}
+\ifx\parbox\undefined
+    \def\setabbvsi{\box\abbvsibox}
+\else
+    \def\setabbvsi{\parbox{\wd\abbvsibox}{\box\abbvsibox}}
+\fi

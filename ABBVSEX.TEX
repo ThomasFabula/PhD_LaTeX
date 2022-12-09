@@ -1,0 +1,18 @@
+\newbox\abbvsexbox
+\newdimen\abbvsexw
+\font\abbvsexa=abbvsexa at 72.27truept
+\setbox\abbvsexbox=\vbox{\hbox{%
+\abbvsexa\char0\char1\char2\char3}}
+\abbvsexw=\wd\abbvsexbox
+\setbox\abbvsexbox=\hbox{\vbox{\hsize=\abbvsexw
+\parskip=0pt\offinterlineskip\parindent0pt
+\hbox{\abbvsexa\char0\char1\char2\char3}
+\hbox{\abbvsexa\char4\char5\char6\char7}
+\hbox{\abbvsexa\char8\char9\char10\char11}
+\hbox{\abbvsexa\char12\char13\char14\char15}
+\hbox{\abbvsexa\char16\char17\char18\char19}}}
+\ifx\parbox\undefined
+    \def\setabbvsex{\box\abbvsexbox}
+\else
+    \def\setabbvsex{\parbox{\wd\abbvsexbox}{\box\abbvsexbox}}
+\fi

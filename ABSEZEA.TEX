@@ -1,0 +1,17 @@
+\newbox\absezeabox
+\newdimen\absezeaw
+\font\absezeaa=absezeaa at 72.27truept
+\font\absezeab=absezeab at 72.27truept
+\setbox\absezeabox=\vbox{\hbox{%
+\absezeaa\char0\char1\char2}}
+\absezeaw=\wd\absezeabox
+\setbox\absezeabox=\hbox{\vbox{\hsize=\absezeaw
+\parskip=0pt\offinterlineskip\parindent0pt
+\hbox{\absezeaa\char0\char1\char2}
+\hbox{\absezeaa\char3\char4\absezeab\char0}
+\hbox{\absezeab\char1\char2\char3}}}
+\ifx\parbox\undefined
+    \def\setabsezea{\box\absezeabox}
+\else
+    \def\setabsezea{\parbox{\wd\absezeabox}{\box\absezeabox}}
+\fi

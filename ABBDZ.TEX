@@ -1,0 +1,20 @@
+\newbox\abbdzbox
+\newdimen\abbdzw
+\font\abbdza=abbdza at 36.135truept
+\font\abbdzb=abbdzb at 36.135truept
+\setbox\abbdzbox=\vbox{\hbox{%
+\abbdza !()+,-}}
+\abbdzw=\wd\abbdzbox
+\setbox\abbdzbox=\hbox{\vbox{\hsize=\abbdzw
+\parskip=0pt\offinterlineskip\parindent0pt
+\hbox{\abbdza !()+,-}
+\hbox{\abbdza ./0123}
+\hbox{\abbdza 456789}
+\hbox{\abbdza :;<\abbdzb !()}
+\hbox{\abbdzb +,-./0}
+\hbox{\abbdzb 123456}}}
+\ifx\parbox\undefined
+    \def\setabbdz{\box\abbdzbox}
+\else
+    \def\setabbdz{\parbox{\wd\abbdzbox}{\box\abbdzbox}}
+\fi

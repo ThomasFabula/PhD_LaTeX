@@ -1,0 +1,17 @@
+\newbox\abbfelfbox
+\newdimen\abbfelfw
+\font\abbfelfa=abbfelfa at 72.27truept
+\setbox\abbfelfbox=\vbox{\hbox{%
+\abbfelfa\char0\char1\char2\char3\char4}}
+\abbfelfw=\wd\abbfelfbox
+\setbox\abbfelfbox=\hbox{\vbox{\hsize=\abbfelfw
+\parskip=0pt\offinterlineskip\parindent0pt
+\hbox{\abbfelfa\char0\char1\char2\char3\char4}
+\hbox{\abbfelfa\char5\char6\char7\char8\char9}
+\hbox{\abbfelfa\char10\char11\char12\char13\char14}
+\hbox{\abbfelfa\char15\char16\char17\char18\char19}}}
+\ifx\parbox\undefined
+    \def\setabbfelf{\box\abbfelfbox}
+\else
+    \def\setabbfelf{\parbox{\wd\abbfelfbox}{\box\abbfelfbox}}
+\fi

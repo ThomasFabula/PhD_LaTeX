@@ -1,0 +1,35 @@
+\newbox\abbzfbox
+\newdimen\abbzfw
+\font\abbzfa=abbzfa at 36.135truept
+\font\abbzfb=abbzfb at 36.135truept
+\font\abbzfc=abbzfc at 36.135truept
+\font\abbzfd=abbzfd at 36.135truept
+\font\abbzfe=abbzfe at 36.135truept
+\font\abbzff=abbzff at 36.135truept
+\font\abbzfg=abbzfg at 36.135truept
+\font\abbzfh=abbzfh at 36.135truept
+\setbox\abbzfbox=\vbox{\hbox{%
+\abbzfa !()+,-./012}}
+\abbzfw=\wd\abbzfbox
+\setbox\abbzfbox=\hbox{\vbox{\hsize=\abbzfw
+\parskip=0pt\offinterlineskip\parindent0pt
+\hbox{\abbzfa !()+,-./012}
+\hbox{\abbzfa 3456789:;<\abbzfb !}
+\hbox{\abbzfb ()+,-./0123}
+\hbox{\abbzfb 456789:;<\abbzfc !(}
+\hbox{\abbzfc )+,-./01234}
+\hbox{\abbzfc 56789:;<\abbzfd !()}
+\hbox{\abbzfd +,-./012345}
+\hbox{\abbzfd 6789:;<\abbzfe !()+}
+\hbox{\abbzfe ,-./0123456}
+\hbox{\abbzfe 789:;<\abbzff !()+,}
+\hbox{\abbzff -./01234567}
+\hbox{\abbzff 89:;<\abbzfg !()+,-}
+\hbox{\abbzfg ./012345678}
+\hbox{\abbzfg 9:;<\abbzfh !()+,-.}
+\hbox{\abbzfh /0123456789}}}
+\ifx\parbox\undefined
+    \def\setabbzf{\box\abbzfbox}
+\else
+    \def\setabbzf{\parbox{\wd\abbzfbox}{\box\abbzfbox}}
+\fi

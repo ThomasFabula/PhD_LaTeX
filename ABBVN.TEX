@@ -1,0 +1,24 @@
+\newbox\abbvnbox
+\newdimen\abbvnw
+\font\abbvna=abbvna at 36.135truept
+\font\abbvnb=abbvnb at 36.135truept
+\font\abbvnc=abbvnc at 36.135truept
+\font\abbvnd=abbvnd at 36.135truept
+\setbox\abbvnbox=\vbox{\hbox{%
+\abbvna !()+,-./01}}
+\abbvnw=\wd\abbvnbox
+\setbox\abbvnbox=\hbox{\vbox{\hsize=\abbvnw
+\parskip=0pt\offinterlineskip\parindent0pt
+\hbox{\abbvna !()+,-./01}
+\hbox{\abbvna 23456789:;}
+\hbox{\abbvna <\abbvnb !()+,-./0}
+\hbox{\abbvnb 123456789:}
+\hbox{\abbvnb ;<\abbvnc !()+,-./}
+\hbox{\abbvnc 0123456789}
+\hbox{\abbvnc :;<\abbvnd !()+,-.}
+\hbox{\abbvnd /012345678}}}
+\ifx\parbox\undefined
+    \def\setabbvn{\box\abbvnbox}
+\else
+    \def\setabbvn{\parbox{\wd\abbvnbox}{\box\abbvnbox}}
+\fi

@@ -1,0 +1,24 @@
+\newbox\abbvzebox
+\newdimen\abbvzew
+\font\abbvzea=abbvzea at 36.135truept
+\font\abbvzeb=abbvzeb at 36.135truept
+\font\abbvzec=abbvzec at 36.135truept
+\font\abbvzed=abbvzed at 36.135truept
+\setbox\abbvzebox=\vbox{\hbox{%
+\abbvzea !()+,-./01}}
+\abbvzew=\wd\abbvzebox
+\setbox\abbvzebox=\hbox{\vbox{\hsize=\abbvzew
+\parskip=0pt\offinterlineskip\parindent0pt
+\hbox{\abbvzea !()+,-./01}
+\hbox{\abbvzea 23456789:;}
+\hbox{\abbvzea <\abbvzeb !()+,-./0}
+\hbox{\abbvzeb 123456789:}
+\hbox{\abbvzeb ;<\abbvzec !()+,-./}
+\hbox{\abbvzec 0123456789}
+\hbox{\abbvzec :;<\abbvzed !()+,-.}
+\hbox{\abbvzed /012345678}}}
+\ifx\parbox\undefined
+    \def\setabbvze{\box\abbvzebox}
+\else
+    \def\setabbvze{\parbox{\wd\abbvzebox}{\box\abbvzebox}}
+\fi

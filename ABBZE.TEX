@@ -1,0 +1,20 @@
+\newbox\abbzebox
+\newdimen\abbzew
+\font\abbzea=abbzea at 36.135truept
+\font\abbzeb=abbzeb at 36.135truept
+\setbox\abbzebox=\vbox{\hbox{%
+\abbzea !()+,-.}}
+\abbzew=\wd\abbzebox
+\setbox\abbzebox=\hbox{\vbox{\hsize=\abbzew
+\parskip=0pt\offinterlineskip\parindent0pt
+\hbox{\abbzea !()+,-.}
+\hbox{\abbzea /012345}
+\hbox{\abbzea 6789:;<}
+\hbox{\abbzeb !()+,-.}
+\hbox{\abbzeb /012345}
+\hbox{\abbzeb 6789:;<}}}
+\ifx\parbox\undefined
+    \def\setabbze{\box\abbzebox}
+\else
+    \def\setabbze{\parbox{\wd\abbzebox}{\box\abbzebox}}
+\fi

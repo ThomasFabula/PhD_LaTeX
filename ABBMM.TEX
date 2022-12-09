@@ -1,0 +1,17 @@
+\newbox\abbmmbox
+\newdimen\abbmmw
+\font\abbmma=abbmma at 72.27truept
+\setbox\abbmmbox=\vbox{\hbox{%
+\abbmma\char0\char1\char2\char3}}
+\abbmmw=\wd\abbmmbox
+\setbox\abbmmbox=\hbox{\vbox{\hsize=\abbmmw
+\parskip=0pt\offinterlineskip\parindent0pt
+\hbox{\abbmma\char0\char1\char2\char3}
+\hbox{\abbmma\char4\char5\char6\char7}
+\hbox{\abbmma\char8\char9\char10\char11}
+\hbox{\abbmma\char12\char13\char14\char15}}}
+\ifx\parbox\undefined
+    \def\setabbmm{\box\abbmmbox}
+\else
+    \def\setabbmm{\parbox{\wd\abbmmbox}{\box\abbmmbox}}
+\fi

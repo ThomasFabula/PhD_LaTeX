@@ -1,0 +1,19 @@
+\newbox\abbzsibox
+\newdimen\abbzsiw
+\font\abbzsia=abbzsia at 36.135truept
+\font\abbzsib=abbzsib at 36.135truept
+\setbox\abbzsibox=\vbox{\hbox{%
+\abbzsia !()+,-}}
+\abbzsiw=\wd\abbzsibox
+\setbox\abbzsibox=\hbox{\vbox{\hsize=\abbzsiw
+\parskip=0pt\offinterlineskip\parindent0pt
+\hbox{\abbzsia !()+,-}
+\hbox{\abbzsia ./0123}
+\hbox{\abbzsia 456789}
+\hbox{\abbzsia :;<\abbzsib !()}
+\hbox{\abbzsib +,-./0}}}
+\ifx\parbox\undefined
+    \def\setabbzsi{\box\abbzsibox}
+\else
+    \def\setabbzsi{\parbox{\wd\abbzsibox}{\box\abbzsibox}}
+\fi

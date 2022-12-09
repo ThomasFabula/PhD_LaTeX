@@ -1,0 +1,25 @@
+\newbox\abbvsebox
+\newdimen\abbvsew
+\font\abbvsea=abbvsea at 36.135truept
+\font\abbvseb=abbvseb at 36.135truept
+\font\abbvsec=abbvsec at 36.135truept
+\font\abbvsed=abbvsed at 36.135truept
+\setbox\abbvsebox=\vbox{\hbox{%
+\abbvsea !()+,-./}}
+\abbvsew=\wd\abbvsebox
+\setbox\abbvsebox=\hbox{\vbox{\hsize=\abbvsew
+\parskip=0pt\offinterlineskip\parindent0pt
+\hbox{\abbvsea !()+,-./}
+\hbox{\abbvsea 01234567}
+\hbox{\abbvsea 89:;<\abbvseb !()}
+\hbox{\abbvseb +,-./012}
+\hbox{\abbvseb 3456789:}
+\hbox{\abbvseb ;<\abbvsec !()+,-}
+\hbox{\abbvsec ./012345}
+\hbox{\abbvsec 6789:;<\abbvsed !}
+\hbox{\abbvsed ()+,-./0}}}
+\ifx\parbox\undefined
+    \def\setabbvse{\box\abbvsebox}
+\else
+    \def\setabbvse{\parbox{\wd\abbvsebox}{\box\abbvsebox}}
+\fi

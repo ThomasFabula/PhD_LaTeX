@@ -1,0 +1,25 @@
+\newbox\abbvfbox
+\newdimen\abbvfw
+\font\abbvfa=abbvfa at 36.135truept
+\font\abbvfb=abbvfb at 36.135truept
+\font\abbvfc=abbvfc at 36.135truept
+\font\abbvfd=abbvfd at 36.135truept
+\setbox\abbvfbox=\vbox{\hbox{%
+\abbvfa !()+,-./0}}
+\abbvfw=\wd\abbvfbox
+\setbox\abbvfbox=\hbox{\vbox{\hsize=\abbvfw
+\parskip=0pt\offinterlineskip\parindent0pt
+\hbox{\abbvfa !()+,-./0}
+\hbox{\abbvfa 123456789}
+\hbox{\abbvfa :;<\abbvfb !()+,-}
+\hbox{\abbvfb ./0123456}
+\hbox{\abbvfb 789:;<\abbvfc !()}
+\hbox{\abbvfc +,-./0123}
+\hbox{\abbvfc 456789:;<}
+\hbox{\abbvfd !()+,-./0}
+\hbox{\abbvfd 123456789}}}
+\ifx\parbox\undefined
+    \def\setabbvf{\box\abbvfbox}
+\else
+    \def\setabbvf{\parbox{\wd\abbvfbox}{\box\abbvfbox}}
+\fi

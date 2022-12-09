@@ -1,0 +1,16 @@
+\newbox\abbssebox
+\newdimen\abbssew
+\font\abbssea=abbssea at 72.27truept
+\setbox\abbssebox=\vbox{\hbox{%
+\abbssea\char0\char1\char2\char3}}
+\abbssew=\wd\abbssebox
+\setbox\abbssebox=\hbox{\vbox{\hsize=\abbssew
+\parskip=0pt\offinterlineskip\parindent0pt
+\hbox{\abbssea\char0\char1\char2\char3}
+\hbox{\abbssea\char4\char5\char6\char7}
+\hbox{\abbssea\char8\char9\char10\char11}}}
+\ifx\parbox\undefined
+    \def\setabbsse{\box\abbssebox}
+\else
+    \def\setabbsse{\parbox{\wd\abbssebox}{\box\abbssebox}}
+\fi

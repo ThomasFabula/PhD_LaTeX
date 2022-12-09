@@ -1,0 +1,24 @@
+\newbox\abbvabox
+\newdimen\abbvaw
+\font\abbvaa=abbvaa at 36.135truept
+\font\abbvab=abbvab at 36.135truept
+\font\abbvac=abbvac at 36.135truept
+\font\abbvad=abbvad at 36.135truept
+\setbox\abbvabox=\vbox{\hbox{%
+\abbvaa !()+,-./01}}
+\abbvaw=\wd\abbvabox
+\setbox\abbvabox=\hbox{\vbox{\hsize=\abbvaw
+\parskip=0pt\offinterlineskip\parindent0pt
+\hbox{\abbvaa !()+,-./01}
+\hbox{\abbvaa 23456789:;}
+\hbox{\abbvaa <\abbvab !()+,-./0}
+\hbox{\abbvab 123456789:}
+\hbox{\abbvab ;<\abbvac !()+,-./}
+\hbox{\abbvac 0123456789}
+\hbox{\abbvac :;<\abbvad !()+,-.}
+\hbox{\abbvad /012345678}}}
+\ifx\parbox\undefined
+    \def\setabbva{\box\abbvabox}
+\else
+    \def\setabbva{\parbox{\wd\abbvabox}{\box\abbvabox}}
+\fi

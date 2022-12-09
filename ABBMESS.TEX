@@ -1,0 +1,22 @@
+\newbox\abbmessbox
+\newdimen\abbmessw
+\font\abbmessa=abbmessa at 72.27truept
+\setbox\abbmessbox=\vbox{\hbox{%
+\abbmessa\char0\char1\char2\char3\char4\char5\char6}}
+\abbmessw=\wd\abbmessbox
+\setbox\abbmessbox=\hbox{\vbox{\hsize=\abbmessw
+\parskip=0pt\offinterlineskip\parindent0pt
+\hbox{\abbmessa\char0\char1\char2\char3\char4\char5\char6}
+\hbox{\abbmessa\char7\char8\char9\char10\char11\char12\char13}
+\hbox{\abbmessa\char14\char15\char16\char17\char18\char19\char20}
+\hbox{\abbmessa\char21\char22\char23\char24\char25\char26\char27}
+\hbox{\abbmessa\char28\char29\char30\char31\char32\char33\char34}
+\hbox{\abbmessa\char35\char36\char37\char38\char39\char40\char41}
+\hbox{\abbmessa\char42\char43\char44\char45\char46\char47\char48}
+\hbox{\abbmessa\char49\char50\char51\char52\char53\char54\char55}
+\hbox{\abbmessa\char56\char57\char58\char59\char60\char61\char62}}}
+\ifx\parbox\undefined
+    \def\setabbmess{\box\abbmessbox}
+\else
+    \def\setabbmess{\parbox{\wd\abbmessbox}{\box\abbmessbox}}
+\fi

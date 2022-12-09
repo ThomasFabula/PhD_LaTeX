@@ -1,0 +1,19 @@
+\newbox\abbfsebox
+\newdimen\abbfsew
+\font\abbfsea=abbfsea at 72.27truept
+\setbox\abbfsebox=\vbox{\hbox{%
+\abbfsea\char0\char1\char2\char3\char4}}
+\abbfsew=\wd\abbfsebox
+\setbox\abbfsebox=\hbox{\vbox{\hsize=\abbfsew
+\parskip=0pt\offinterlineskip\parindent0pt
+\hbox{\abbfsea\char0\char1\char2\char3\char4}
+\hbox{\abbfsea\char5\char6\char7\char8\char9}
+\hbox{\abbfsea\char10\char11\char12\char13\char14}
+\hbox{\abbfsea\char15\char16\char17\char18\char19}
+\hbox{\abbfsea\char20\char21\char22\char23\char24}
+\hbox{\abbfsea\char25\char26\char27\char28\char29}}}
+\ifx\parbox\undefined
+    \def\setabbfse{\box\abbfsebox}
+\else
+    \def\setabbfse{\parbox{\wd\abbfsebox}{\box\abbfsebox}}
+\fi

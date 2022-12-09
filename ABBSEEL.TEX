@@ -1,0 +1,19 @@
+\newbox\abbseelbox
+\newdimen\abbseelw
+\font\abbseela=abbseela at 72.27truept
+\font\abbseelb=abbseelb at 72.27truept
+\setbox\abbseelbox=\vbox{\hbox{%
+\abbseela\char0\char1\char2\char3\char4\char5}}
+\abbseelw=\wd\abbseelbox
+\setbox\abbseelbox=\hbox{\vbox{\hsize=\abbseelw
+\parskip=0pt\offinterlineskip\parindent0pt
+\hbox{\abbseela\char0\char1\char2\char3\char4\char5}
+\hbox{\abbseela\char6\char7\char8\char9\char10\char11}
+\hbox{\abbseela\char12\char13\char14\abbseelb\char0\char1\char2}
+\hbox{\abbseelb\char3\char4\char5\char6\char7\char8}
+\hbox{\abbseelb\char9\char10\char11\char12\char13\char14}}}
+\ifx\parbox\undefined
+    \def\setabbseel{\box\abbseelbox}
+\else
+    \def\setabbseel{\parbox{\wd\abbseelbox}{\box\abbseelbox}}
+\fi

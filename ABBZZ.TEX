@@ -1,0 +1,18 @@
+\newbox\abbzzbox
+\newdimen\abbzzw
+\font\abbzza=abbzza at 72.27truept
+\setbox\abbzzbox=\vbox{\hbox{%
+\abbzza\char0\char1\char2\char3\char4}}
+\abbzzw=\wd\abbzzbox
+\setbox\abbzzbox=\hbox{\vbox{\hsize=\abbzzw
+\parskip=0pt\offinterlineskip\parindent0pt
+\hbox{\abbzza\char0\char1\char2\char3\char4}
+\hbox{\abbzza\char5\char6\char7\char8\char9}
+\hbox{\abbzza\char10\char11\char12\char13\char14}
+\hbox{\abbzza\char15\char16\char17\char18\char19}
+\hbox{\abbzza\char20\char21\char22\char23\char24}}}
+\ifx\parbox\undefined
+    \def\setabbzz{\box\abbzzbox}
+\else
+    \def\setabbzz{\parbox{\wd\abbzzbox}{\box\abbzzbox}}
+\fi

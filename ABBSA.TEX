@@ -1,0 +1,17 @@
+\newbox\abbsabox
+\newdimen\abbsaw
+\font\abbsaa=abbsaa at 72.27truept
+\setbox\abbsabox=\vbox{\hbox{%
+\abbsaa\char0\char1\char2\char3\char4}}
+\abbsaw=\wd\abbsabox
+\setbox\abbsabox=\hbox{\vbox{\hsize=\abbsaw
+\parskip=0pt\offinterlineskip\parindent0pt
+\hbox{\abbsaa\char0\char1\char2\char3\char4}
+\hbox{\abbsaa\char5\char6\char7\char8\char9}
+\hbox{\abbsaa\char10\char11\char12\char13\char14}
+\hbox{\abbsaa\char15\char16\char17\char18\char19}}}
+\ifx\parbox\undefined
+    \def\setabbsa{\box\abbsabox}
+\else
+    \def\setabbsa{\parbox{\wd\abbsabox}{\box\abbsabox}}
+\fi

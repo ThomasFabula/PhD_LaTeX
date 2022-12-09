@@ -1,0 +1,17 @@
+\newbox\abbzsbox
+\newdimen\abbzsw
+\font\abbzsa=abbzsa at 36.135truept
+\font\abbzsb=abbzsb at 36.135truept
+\setbox\abbzsbox=\vbox{\hbox{%
+\abbzsa !()+,-./012}}
+\abbzsw=\wd\abbzsbox
+\setbox\abbzsbox=\hbox{\vbox{\hsize=\abbzsw
+\parskip=0pt\offinterlineskip\parindent0pt
+\hbox{\abbzsa !()+,-./012}
+\hbox{\abbzsa 3456789:;<\abbzsb !}
+\hbox{\abbzsb ()+,-./0123}}}
+\ifx\parbox\undefined
+    \def\setabbzs{\box\abbzsbox}
+\else
+    \def\setabbzs{\parbox{\wd\abbzsbox}{\box\abbzsbox}}
+\fi

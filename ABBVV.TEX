@@ -1,0 +1,19 @@
+\newbox\abbvvbox
+\newdimen\abbvvw
+\font\abbvva=abbvva at 36.135truept
+\font\abbvvb=abbvvb at 36.135truept
+\setbox\abbvvbox=\vbox{\hbox{%
+\abbvva !()+,-./}}
+\abbvvw=\wd\abbvvbox
+\setbox\abbvvbox=\hbox{\vbox{\hsize=\abbvvw
+\parskip=0pt\offinterlineskip\parindent0pt
+\hbox{\abbvva !()+,-./}
+\hbox{\abbvva 01234567}
+\hbox{\abbvva 89:;<\abbvvb !()}
+\hbox{\abbvvb +,-./012}
+\hbox{\abbvvb 3456789:}}}
+\ifx\parbox\undefined
+    \def\setabbvv{\box\abbvvbox}
+\else
+    \def\setabbvv{\parbox{\wd\abbvvbox}{\box\abbvvbox}}
+\fi

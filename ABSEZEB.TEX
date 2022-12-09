@@ -1,0 +1,17 @@
+\newbox\absezebbox
+\newdimen\absezebw
+\font\absezeba=absezeba at 72.27truept
+\font\absezebb=absezebb at 72.27truept
+\setbox\absezebbox=\vbox{\hbox{%
+\absezeba\char0\char1\char2}}
+\absezebw=\wd\absezebbox
+\setbox\absezebbox=\hbox{\vbox{\hsize=\absezebw
+\parskip=0pt\offinterlineskip\parindent0pt
+\hbox{\absezeba\char0\char1\char2}
+\hbox{\absezeba\char3\char4\absezebb\char0}
+\hbox{\absezebb\char1\char2\char3}}}
+\ifx\parbox\undefined
+    \def\setabsezeb{\box\absezebbox}
+\else
+    \def\setabsezeb{\parbox{\wd\absezebbox}{\box\absezebbox}}
+\fi

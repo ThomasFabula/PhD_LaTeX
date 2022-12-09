@@ -1,0 +1,3 @@
+e disstom.tex
+exit
+

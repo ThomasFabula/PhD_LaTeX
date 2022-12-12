@@ -1,0 +1,163 @@
+This is emTeX (tex386), Version 3.141 [3c-beta8] (preloaded format=lplaing 93.1.27)  22 JUL 1994 16:30
+**&lplaing.fmt DISSTOM.TEX
+(disstom.tex
+LaTeX Version 2.09 <25 March 1992>
+(t:\texinput\book.sty
+Standard Document Style `book' <14 Jan 92>.
+(t:\texinput\bk11.sty)
+\descriptionmargin=\dimen99
+\c@part=\count79
+\c@chapter=\count80
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@subparagraph=\count85
+\c@figure=\count86
+\c@table=\count87
+) (t:\texinput\german.sty
+Document Style Option `german' Version 2.4a of 12 Apr 1992
+\U@D=\dimen100
+) (disstom.aux
+(dtf0.aux) (dtf1.aux) (dtf2a.aux) (dtf2b.aux) (dtf2c.aux) (dtf3.aux)
+(dtf4a1.aux) (dtf4a2.aux) (dtf4b.aux) (dtf4c.aux) (dtf5a.aux) (dtf5b1.aux)
+(dtf5b2.aux) (dtf5c.aux) (dtf6a.aux) (dtf6b.aux) (dtf7.aux) (anhang.aux))
+(dtf0.tex [1
+
+
+
+] [2
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 65--66
+
+
+\hbox(0.0+0.0)x426.79134
+.\glue(\rightskip) 0.0
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 67--69
+
+
+\hbox(0.0+0.0)x426.79134
+.\glue(\rightskip) 0.0
+
+
+Underfull \hbox (badness 2221) in paragraph at lines 76--99
+\cmr/m/n/11 der Mi-kro-me-cha-nik zur Her-stel-lung fre-quen-zana-lo-ger Sen-so
+-ren``(F[]order-kenn-zei-chen:
+
+\hbox(8.2125+2.73749)x426.79134, glue set 2.81161
+.\cmr/m/n/11 d
+.\cmr/m/n/11 e
+.\cmr/m/n/11 r
+.\glue 3.65 plus 1.825 minus 1.21666
+.\cmr/m/n/11 M
+.etc.
+
+[3]) [4] (disstom.bbl [1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+] [2] [3]
+Underfull \hbox (badness 2253) in paragraph at lines 348--350
+[] [][]\cmr/m/n/11 H. Gold-stein, Klas-si-sche Me-cha-nik, Aka-de-mi-sche Ver-l
+ags-ge-sell-schaft,
+
+\hbox(8.2125+2.73749)x397.89542, glue set 2.82495
+.\hbox(0.0+0.0)x0.0
+.\glue 0.0
+.\hbox(8.2125+2.73749)x43.02438
+..\glue 0.0
+..\glue -23.42091
+..\glue -5.475
+..\hbox(8.2125+2.73749)x66.4453
+...\glue 0.0 plus 1.0fil
+...\cmr/m/n/11 [
+...\cmr/m/n/11 G
+...\cmr/m/n/11 o
+...\cmr/m/n/11 l
+...etc.
+..\glue 5.475
+.\penalty 0
+.\setlanguage1 (hyphenmin 2,2)
+.etc.
+
+[4] [5] [6] [7] [8]
+Underfull \hbox (badness 10000) in paragraph at lines 797--800
+[] [][]\cmr/m/n/11 A. Schu-ma-cher, Un-ter-su-chung des la-ser-un-terst[]utz-te
+n Na^^Y-
+
+\hbox(8.2125+2.73749)x397.89542, glue set 8.62831
+.\hbox(0.0+0.0)x0.0
+.\glue 0.0
+.\hbox(8.2125+2.73749)x39.57204
+..\glue 0.0
+..\glue -23.42091
+..\glue -5.475
+..\hbox(8.2125+2.73749)x62.99295
+...\glue 0.0 plus 1.0fil
+...\cmr/m/n/11 [
+...\cmr/m/n/11 S
+...\cmr/m/n/11 c
+...\kern-0.30418
+...etc.
+..\glue 5.475
+.\penalty 0
+.\setlanguage1 (hyphenmin 2,2)
+.etc.
+
+[9] [10]
+Underfull \hbox (badness 3088) in paragraph at lines 924--926
+[] [][]\cmr/m/n/11 Bedienungsanleitung: Op-ti-sches Me^^Y-sy-stem Mi-cro-fo-cus
+, UBM-Me^^Ytechnik
+
+\hbox(8.2125+2.73749)x397.89542, glue set 3.1395
+.\hbox(0.0+0.0)x0.0
+.\glue 0.0
+.\hbox(8.2125+2.73749)x19.61874
+..\glue 0.0
+..\glue -23.42091
+..\glue -5.475
+..\hbox(8.2125+2.73749)x43.03966
+...\glue 0.0 plus 1.0fil
+...\cmr/m/n/11 [
+...\cmr/m/n/11 U
+...\cmr/m/n/11 B
+...\cmr/m/n/11 M
+...etc.
+..\glue 5.475
+.\penalty 0
+.\setlanguage1 (hyphenmin 2,2)
+.etc.
+
+[11]) [12] (disstom.aux (dtf0.aux) (dtf1.aux) (dtf2a.aux) (dtf2b.aux)
+(dtf2c.aux) (dtf3.aux) (dtf4a1.aux) (dtf4a2.aux) (dtf4b.aux) (dtf4c.aux)
+(dtf5a.aux) (dtf5b1.aux) (dtf5b2.aux) (dtf5c.aux) (dtf6a.aux) (dtf6b.aux)
+(dtf7.aux) (anhang.aux)) ) 
+Here is how much of TeX's memory you used:
+ 913 strings out of 56795
+ 8428 string characters out of 219320
+ 51267 words of memory out of 262143
+ 2877 multiletter control sequences out of 10000
+ 20015 words of font info for 76 fonts, out of 81920 for 254
+ 14 hyphenation exceptions out of 607
+ 18i,5n,16p,463b,450s stack positions out of 300i,100n,60p,5000b,1000s
+
+Output written on disstom.dvi (16 pages, 46084 bytes).

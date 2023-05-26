@@ -1,0 +1,80 @@
+% -----------------------------------
+% ----   Header-Datei
+% -----------------------------------
+\documentstyle[11pt,german]{book}
+\pagenumbering{Roman}
+\pagestyle{headings}
+\markboth{ \protect \newline}{ \protect \newline}
+\raggedbottom
+\textwidth 15 cm
+\textheight 24 cm
+\setlength{\topmargin}{-0.7 cm}
+\setlength{\oddsidemargin}{0.8cm}
+\setlength{\evensidemargin}{-0.4cm}
+\renewcommand{\baselinestretch}{1.2}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.4cm}
+\sloppy
+% -----------------------------------
+% ----   Kopf-Datei
+% -----------------------------------
+\includeonly{DTF0}
+%\includeonly{DTF1}
+%\includeonly{DTF2a,DTF2b,DTF2c}
+%\includeonly{DTF2b}
+%\includeonly{DTF2c}
+%\includeonly{DTF3}
+%\includeonly{DTF4a1,DTF4a2,DTF4b,DTF4c}
+%\includeonly{DTF4a1}
+%\includeonly{DTF4a2}
+%\includeonly{DTF4b}
+%\includeonly{DTF4c}
+%\includeonly{DTF5a,DTF5b1,DTF5b2,DTF5c}
+%\includeonly{DTF5a}
+%\includeonly{DTF5b1}
+%\includeonly{DTF5b2}
+%\includeonly{DTF5c}
+%\includeonly{DTF6a,DTF6b}
+%\includeonly{DTF6a}
+%\includeonly{DTF6b}
+%\includeonly{DTF7}
+%\includeonly{anhang}
+% -----------------------------------
+% ----   Hauptstyle-Datei
+% -----------------------------------
+\begin{document}
+%\include{Deck}
+ \newfont{\ko}{cmr12 scaled 1000}
+ {\ko\pagenumbering{roman}}
+
+%\tableofcontents
+
+ \setlength{\parskip}{0.25cm}
+ {\ko \pagenumbering{arabic}}
+ \setlength{\parskip}{0.4cm}
+\include{DTF0}
+\include{DTF1}
+\include{DTF2a}
+\include{DTF2b}
+\include{DTF2c}
+\include{DTF3}
+\include{DTF4a1}
+\include{DTF4a2}
+\include{DTF4b}
+\include{DTF4c}
+\include{DTF5a}
+\include{DTF5b1}
+\include{DTF5b2}
+\include{DTF5c}
+\include{DTF6a}
+\include{DTF6b}
+\include{DTF7}
+
+\pagenumbering{roman}
+\include{anhang}
+
+%\listoffigures
+%\listoftables
+
+\bibliography{lit}
+\end{document}

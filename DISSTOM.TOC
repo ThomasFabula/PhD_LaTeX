@@ -1,0 +1,84 @@
+\contentsline {chapter}{Einleitung}{1}
+\contentsline {chapter}{\numberline {1}Grundlagen der Mikromechanik}{5}
+\contentsline {section}{\numberline {1.1}Herstellungstechnologien}{6}
+\contentsline {section}{\numberline {1.2}Entwurf mikromechanischer Systeme}{7}
+\contentsline {subsection}{\numberline {1.2.1}Maskenlayout}{11}
+\contentsline {subsection}{\numberline {1.2.2}Simulation des Herstellungsprozesses}{11}
+\contentsline {subsection}{\numberline {1.2.3}Simulation des Bauelementeverhaltens}{13}
+\contentsline {section}{\numberline {1.3}Funktionsprinzip resonanter Sensoren}{14}
+\contentsline {subsection}{\numberline {1.3.1}Drucksensor}{16}
+\contentsline {subsection}{\numberline {1.3.2}Kraftsensor}{17}
+\contentsline {subsection}{\numberline {1.3.3}Str\newumlaut omungssensor}{17}
+\contentsline {chapter}{\numberline {2}Analytische Beschreibung}{17}
+\contentsline {section}{\numberline {2.1}Physikalische Beschreibungsebenen}{17}
+\contentsline {subsection}{\numberline {2.1.1}Mikroskopische Modelle}{18}
+\contentsline {subsection}{\numberline {2.1.2}Kontinuumsmechanische Beschreibung}{19}
+\contentsline {subsection}{\numberline {2.1.3}Thermodynamische Beschreibungsebene}{21}
+\contentsline {section}{\numberline {2.2}Materialeigenschaften}{26}
+\contentsline {subsection}{\numberline {2.2.1}Substratmaterialien}{29}
+\contentsline {subsection}{\numberline {2.2.2}Piezoelektrische D\newumlaut unnschichten}{30}
+\contentsline {section}{\numberline {2.3}Analytische Beschreibungsweise}{33}
+\contentsline {subsection}{\numberline {2.3.1}Mikromechanische Resonatorstrukturen}{33}
+\contentsline {subsection}{\numberline {2.3.2}Balkenresonatoren}{36}
+\contentsline {subsection}{\numberline {2.3.3}Membranresonatoren}{37}
+\contentsline {section}{\numberline {2.4}Skalierungsverhalten dynamischer Gr\newumlaut o\ss {}en}{39}
+\contentsline {section}{\numberline {2.5}Grenzen der analytischen Beschreibungsweise}{42}
+\contentsline {chapter}{\numberline {3}Methode der Finiten Elemente}{43}
+\contentsline {section}{\numberline {3.1}Mathematische Grundlagen}{44}
+\contentsline {subsection}{\numberline {3.1.1}Klassisches Randwertproblem}{44}
+\contentsline {subsection}{\numberline {3.1.2}Konzept der schwachen L\newumlaut osung}{45}
+\contentsline {subsection}{\numberline {3.1.3}Finite Elemente Diskretisierung}{45}
+\contentsline {section}{\numberline {3.2}Formulierung der Elementsteifigkeitsmatrix}{47}
+\contentsline {section}{\numberline {3.3}Nichtlinearit\newumlaut aten}{49}
+\contentsline {section}{\numberline {3.4}Dynamische Berechnungsverfahren}{52}
+\contentsline {subsection}{\numberline {3.4.1}Das Eigenwertproblem}{52}
+\contentsline {subsection}{\numberline {3.4.2}Modellierung von D\newumlaut ampfungseffekten}{53}
+\contentsline {section}{\numberline {3.5}Gekoppelte Feldberechnungen}{54}
+\contentsline {subsection}{\numberline {3.5.1}Thermoelastische Kopplung}{55}
+\contentsline {subsection}{\numberline {3.5.2}Elektromechanische Kopplung}{56}
+\contentsline {section}{\numberline {3.6}Fehlerabsch\newumlaut atzungen}{58}
+\contentsline {chapter}{\numberline {4}Resonante Mikrostrukturen}{61}
+\contentsline {section}{\numberline {4.1}Finite Elemente Modellbildung}{62}
+\contentsline {subsection}{\numberline {4.1.1}Analytische Absch\newumlaut atzungen}{62}
+\contentsline {subsection}{\numberline {4.1.2}Konvergenzverhalten}{64}
+\contentsline {subsection}{\numberline {4.1.3}Modelleinfl\newumlaut usse}{67}
+\contentsline {subsection}{\numberline {4.1.4}D\newumlaut ampfungseinfl\newumlaut usse}{69}
+\contentsline {section}{\numberline {4.2}Eigenfrequenzen und Schwingungsformen}{72}
+\contentsline {subsection}{\numberline {4.2.1}Balkenresonatoren}{72}
+\contentsline {subsection}{\numberline {4.2.2}Membranresonatoren}{75}
+\contentsline {section}{\numberline {4.3}Charakterisierung der Sensorkennlinien}{79}
+\contentsline {subsection}{\numberline {4.3.1}Kraftabh\newumlaut angige Frequenz\newumlaut anderung}{79}
+\contentsline {subsection}{\numberline {4.3.2}Druckabh\newumlaut angige Frequenz\newumlaut anderung}{81}
+\contentsline {section}{\numberline {4.4}Untersuchung des Temperatureinflusses}{84}
+\contentsline {subsection}{\numberline {4.4.1}Statische Instabilit\newumlaut aten}{85}
+\contentsline {subsection}{\numberline {4.4.2}Resonanzfrequenzverhalten}{87}
+\contentsline {section}{\numberline {4.5}Fehlerbetrachtung}{90}
+\contentsline {section}{\numberline {4.6}Zusammenstellung der Resultate}{94}
+\contentsline {chapter}{\numberline {5}Piezoelektrische D\newumlaut unnschichtstrukturen}{97}
+\contentsline {section}{\numberline {5.1}FE-Modell der Bimorphstruktur}{97}
+\contentsline {section}{\numberline {5.2}Einfl\newumlaut usse der Modellparameter}{101}
+\contentsline {section}{\numberline {5.3}Elektromechanischer Kopplungsfaktor}{103}
+\contentsline {subsection}{\numberline {5.3.1}Piezokeramik-Hybride}{103}
+\contentsline {subsection}{\numberline {5.3.2}Zinkoxid-D\newumlaut unnschichten}{106}
+\contentsline {subsection}{\numberline {5.3.3}Schichtdickenabh\newumlaut angigkeit}{110}
+\contentsline {section}{\numberline {5.4}Modellierung der piezoelektrischen Anregung}{112}
+\contentsline {subsection}{\numberline {5.4.1}Piezokeramik-Bimorphmembran}{112}
+\contentsline {subsection}{\numberline {5.4.2}Bimorphmembran mit ZnO-D\newumlaut unnschicht}{113}
+\contentsline {section}{\numberline {5.5}Laterale Schichtstrukturierung}{116}
+\contentsline {subsection}{\numberline {5.5.1}Erh\newumlaut ohung der Modenselektivit\newumlaut at}{116}
+\contentsline {subsection}{\numberline {5.5.2}Reduktion der Temperaturquerempfindlichkeit}{120}
+\contentsline {section}{\numberline {5.6}Fehlerdiskussion}{124}
+\contentsline {section}{\numberline {5.7}Zusammenstellung der Resultate}{125}
+\contentsline {chapter}{\numberline {6}Entwurfsunterst\newumlaut utzte Sensorentwicklung}{127}
+\contentsline {section}{\numberline {6.1}Dreifachbalken-Kraftsensor}{127}
+\contentsline {subsection}{\numberline {6.1.1}Dynamische Momentenkompensation}{128}
+\contentsline {subsection}{\numberline {6.1.2}Herstellungsverfahren}{129}
+\contentsline {subsection}{\numberline {6.1.3}Schwingungsverhalten und Kraftempfindlichkeit}{130}
+\contentsline {subsection}{\numberline {6.1.4}Verbesserung der Unimodalit\newumlaut at}{132}
+\contentsline {section}{\numberline {6.2}BOD-Drucksensor}{135}
+\contentsline {subsection}{\numberline {6.2.1}Herstellungsverfahren und Funktionsprinzip}{135}
+\contentsline {subsection}{\numberline {6.2.2}Einflu\ss {} des Balkenquerschnitts auf das Schwingungsverhalten}{136}
+\contentsline {subsection}{\numberline {6.2.3}Me\ss {}technische Charakterisierung}{140}
+\contentsline {subsection}{\numberline {6.2.4}Optimierung der Druckempfindlichkeit}{143}
+\contentsline {section}{\numberline {6.3}Zusammenstellung der Resultate}{150}
+\contentsline {chapter}{\numberline {7}Schlu\ss {}betrachtung}{153}

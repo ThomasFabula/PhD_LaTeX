@@ -12,5 +12,7 @@ eingereicht bei der Universität Bonn
 ausgeführt am HSG-IMIT in Villingen-Schwenningen: Institut für Mikro- und Informationstechnik der Hahn-Schickard-Gesellschaft für Angewandte Forschung e.V. 
 - https://www.hahn-schickard.de/  
 
+Vormals FFMU = Forschungsgesellschaft für Feingeräte-, Mikro- und Uhrentechnik e.V.
+
 ## PhD thesis
 - https://tfconsult.com/thesis/

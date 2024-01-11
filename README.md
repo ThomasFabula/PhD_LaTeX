@@ -17,3 +17,4 @@ Vormals FFMU = Forschungsgesellschaft für Feingeräte-, Mikro- und Uhrentechnik
 
 ## PhD thesis
 - https://tfconsult.com/thesis/
+- https://github.com/ThomasFabula/PhD

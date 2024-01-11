@@ -2,14 +2,14 @@
 
 ## Doctor of Physics
 - Promotion in Physik 
-- Dezember 1994 
+- 2. Dezember 1994 
 
 ## University of Bonn
-eingereicht bei der Universität Bonn 
+eingereicht bei der Universität Bonn: 
 - https://www.uni-bonn.de/  
 
 ## HSG-IMIT
-ausgeführt am HSG-IMIT in Villingen-Schwenningen 
+ausgeführt am HSG-IMIT in Villingen-Schwenningen: 
 - Institut für Mikro- und Informationstechnik der Hahn-Schickard-Gesellschaft für Angewandte Forschung e.V. 
 - https://www.hahn-schickard.de/  
 

@@ -2,7 +2,7 @@
 
 ## Doctor of Physics
 - Promotion in Physik 
-- 2nd Dezember 1994 
+- 1994, Dezember 2nd 
 
 ## University of Bonn
 eingereicht bei der Universität Bonn: 

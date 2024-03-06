@@ -1,0 +1,152 @@
+%\pagenumbering{roman}
+
+\chapter*{Anhang: Experimenteller Meßaufbau}
+\label{anhang}
+
+Im Rahmen der vorliegenden Arbeit wurden experimentelle Meßaufbauten zur
+meßtechnischen Charakterisierung des statischen und dynamischen Verhaltens
+mikromechanischer Strukturen konzipiert und realisiert. Um den
+Entwicklungsprozeß mikromechanisch gefertigter Resonanzsensoren im Rahmen
+des BMFT-Verbundprojektes auch meßtechnisch unterstützen zu können, mußten
+insbesondere neben den passiven Eigenschaften (Resonanzfrequenz, Amplituden,
+Schwingungsgüten) der Mikroresonatoren aus Silizium, die Sensoreffekte
+und die Störeinflüsse, wie temperatur- oder technologisch bedingte
+Verspannungen, die bei Multilayerstrukturen auftreten, untersucht werden.
+Die experimentellen Daten dienten hierbei einerseits dazu um Rückschlüsse auf
+technologische Prozeßschritte ziehen zu können, andererseits der
+Entwicklung geeigneter FE-Modelle und der meßtechnischen Verifikation der
+numerischen Berechnungsergebnisse.\\
+In {\bf Abbildung~A} ist der gesamte experimentelle Meßaufbau zur
+Charakterisierung mikromechanischer Strukturen schematisch skizziert.
+Der gesamte Meáplatz ist modular aufgebaut und im Rahmen verschiedener
+Praktikums- und Diplomarbeiten den Meßaufgaben angepaßt und erweitert
+worden. Der Meßplatz besteht aus dem optischen Nachweisverfahren mittels
+eines Laservibrometers, der mechanischen Druck- bzw.\ hier nicht
+dargestellten Kraftbeaufschlagung, einem ansteuerbaren
+Temperaturtisch und einem PC-Meßwerterfassungssystem, das eine
+rechnergestützte Datenaufnahme und -speicherung über standardisierte
+{\sf HP-IB}-Schnittstellen ({\em IEEE488}) ermöglicht.
+
+
+{\bf Fremdanregung:}
+
+Es muáten experimentelle Möglichkeiten geschaffen werden, die
+Mikrostrukturen ohne Dünnschichtsystem mit Hilfe von externen
+Energiequellen zum Schwingen anzuregen. Für den niederen Frequenzbereich
+bis etwa 20~kHz können kommerzielle elektromagnetische Schwingungserzeuger,
+wie beispielsweise der Miniatur-Schwingtisch von Brüel \& Kj\ae r
+(Typ B\&K-4809) verwendet werden. Mit Hilfe eines elektrischen
+Leistungsverst„rkers (Typ B\&K-2706) war es möglich bei
+Membranstrukturen auch relativ große dynamische Schwingungsamplituden
+von einigen Mikrometern zu erzeugen. Zur Anregung hochfrequenter
+Schwingungsmoden, insbesonderer auch Resonatoren geringer Abmessungen
+($l$ = 2--3~mm), wurden Piezokeramiken (PZT) extern angebracht, um die
+Mikrostrukturen über
+Körperschall akustisch zum Schwingen anzuregen. Hierbei war zu beachten,
+daá sowohl die Art der Sensorhalterung, als auch das Schwingungsverhalten
+der Piezokeramik selbst das Amplitudenspektrum der mikromechanischen
+Resonatoren stark beeinflussen können. Es wurden  schwingungsfähige Balken-
+und Membranstrukturen untersucht, die sowohl im Gesamtwafer als auch einzeln
+eingespannt waren. Hierbei zeigte sich, daß Messungen
+auf dem Gesamtwafer ungeeignet sind mikromechanische Strukturen quantitativ
+zu charakterisieren, da Schwingunsganteile der Piezokeramik, benachbarter
+Resonatoren und niederfrequente Waferresonanzen sich im Spektrum überlagern
+und über nichtlineare Effekte Modenkopplungen hervorrufen. Im Rahmen der
+durchgeführten Vorversuche wurde festgestellt, daá mit Hilfe von
+handelsüblichen PZT-Keramiken eine breitbandige akustische Anregung der
+Mikrostrukturen bis einige hundert Kilohertz gewährleistet ist. Auf diese
+Weise konnten Resonanzfrequenzen und Schwingungsamplituden, sowie
+Oberwellenspektren mikromechanischer Strukturen vermessen werden.\\
+%
+Im Rahmen einer Diplomarbeit \cite{Bra92a} wurden die Auswirkungen der
+Anregung und der Resonatorhalterung auf das dynamische Verhalten
+von mikromechanischen Membranresonatoren weiter untersucht.
+Die Siliziumsensoren wurden hierzu direkt auf die Piezokeramik geklebt,
+so daß eine ideal starre Kopplung realisiert wurde und damit eine optimale
+Energieüber\-tragung gegeben war. Diese Methode wies allerdings den
+Nachteil auf, daá die Siliziumsensoren
+anschließend nicht mehr zerstörungsfrei von der Keramik gelöst werden
+konnten. Durch Konstruktion einer universellen Einspannhalterung für
+Balkenresonatoren \cite{Bra92b} konnten verschiedene Kraftsensoren
+vermessen und der Einfluß der Einspannbedingung auf die Resonanzfrequenz
+und die Schwingungsgüte getestet werden. Allerdings ist bei dieser Art der
+Resonatorfixierung darauf zu achten, daß die Massen- und
+Steifigkeitsverhältnisse der mechanischen Halterung und des
+Siliziumbalkens entsprechend groß gewählt wird, damit eine Überlagerung
+der Schwingungsmoden im Amplitudenspektrum nicht auftritt und eine genügend
+große Separation der Modenbeiträge erreicht wird.\\
+
+
+{\bf Optisches Abtastsystem:}
+
+Die Abtastung der Eigenfrequenzen und Schwingungsformen erfolgte
+interferometrisch mit einem kommerziellen Laservibrometer
+({\em POLYTEC OFV1102HR}) unter Verwendung der Laser-Doppler-Technik
+\cite{Pol91}. Das Laservibrometer besteht aus einem
+{\em Mach-Zehnder}-Interferometer und einer elektronischen
+Signalverarbeitung, wie in Abbildung~A schematisch dargestellt.
+Mit diesem Gerät ist es möglich, Biegeschwingungen aus der Strukturebene
+heraus zu detektieren und unter Ausnutzung des Dopplereffektes die
+Geschwindigkeitsschnelle $v(t)$ oder interferometrisch die
+Schwingungsamplitude $A(t)$ zu vermessen.
+Der Arbeitsfrequenzbereich des eingesetzten Laservibrometers erstreckt
+sich von 0,1~Hz bis maximal 1~MHz. Die Meßbereiche betragen bei der
+Vermessung von Geschwindigkeiten 10$^{-6}$--10~m/s bei einer Auflösung
+von 0,5~$\mu$m/s und bei Amplituden 10$^{-9}$--10$^{-2}$~m. Die Auflösung
+bei der Amplitudenmessung beträgt minimal 8~nm bedingt durch den Einsatz
+eines hochaufl”senden Interferenzstreifenzählers. Eine genaue
+Funktionsbeschreibung des Laservibrometers und seiner Betriebsmodi ist in
+\cite{Sel88} und \cite{Lew90} zu finden.\\
+Das Ausgangssignal der Signalverarbeitung des Laservibrometers wird
+wahlweise in ein Speicheroszilloskop oder in einen Spektrumanalysator
+({\em HP3588A}) eingespeist. Zur Ermittlung der Absolutamplituden wird
+das Zeitsignal
+$A(t)$ auf dem Oszilloskop herangezogen, während das in den Frequenzbereich
+transformierte Signal $A(\omega)$ direkt vom Spektrumanalysator
+ausgelesen und weiter verarbeitet werden kann. Hierzu wurde ein
+Meß- und Steuerprogramm ({\sf HPMESS.EXE}) unter {\sf Turbo-Pascal 6.0}
+geschrieben \cite{Mue92} und ein Konvertier- ({\sf TRANS.EXE}), sowie
+ein Batchprogramm ({\sf HPLO.BAT}) zur Dokumentation der aufgenommenen
+Spektren erstellt.\\
+Die Justierung der Mikrostrukturen unter dem Laserstrahl kann mit Hilfe
+einer xy-Schrittmotorsteuerung erfolgen. Desweiteren wird der LWL-Meßkopf
+mit Hilfe mechanischer Mikrometerschrauben justiert. Zusätzlich besteht die
+Möglichkeit, über mehrere Probernadeln die zu vermessenden Strukturen
+elektrisch zu kontaktieren \cite{Sch93a}.
+Der Gesamtaufbau des optischen Meßplatzes erfolgte auf einem
+schwingungsgedämpften Tisch, um äußere Störeinflsse, wie
+Lüftervibrationen, Trittschall und sonstige Geräusche möglichst zu
+eliminieren.
+
+
+{\bf Meßgrößeneinleitung:}
+
+Zur Druckbeaufschlagung von Membranen ist ein spezieller Druckchuck
+konstruiert worden, der sowohl Überdrücke (bis etwa 5~bar) mit Hilfe einer
+$N_{2}$-Druckflasche, als auch Unterdrücke durch eine Vorvakuumpumpe
+(wenige mbar) ermöglicht. Die Druckmessung erfolgt mit einem
+kommerziellen Digitaldruckmanometer ({\em RUSKA, Serie 6200}) mit einer
+Auflösung besser als $\pm1$ mbar. Der Druckchuck ist aus Messing gefertigt,
+um eine möglichst hohe Wärmekapazität aufzuweisen und somit bei thermischen
+Messungen ein zeitliches Driften zu vermeiden. \\
+Unterhalb des Druckchucks befindet sich ein heizbarer Temperaturtisch, der
+in einem Temperaturbereich von 0--150~$^\circ$C extern geregelt werden kann.
+Die Halterungen für die Drucksensormebranen
+(DUT = \underline{D}evice-\underline{U}nder-\underline{T}est)
+wurden aus Aluminium, Messing und Edelstahl gefertigt, um auch
+unterschiedliche Temperaturausdehnungen untersuchen zu können. Die
+Abdichtung der Membranträger erfolgte mit Hilfe eines O-Rings.\\
+%
+Fr die Kraftbeaufschlagung von Siliziumstrukturen stand neben der
+im Rahmen der Diplomarbeit von {\sl Müller} erstellten Konstruktion
+\cite{Mue92} zum Abschluß des BMFT-Verbundprojektes ein kommerzieller
+Kraftmeástand der Fa. {\em MICOS} \, zur Verfügung. Dieser ist mit einer
+Präzisionsreferenzkraftmeßdose (Typ Q11, Fa. {\em Hottinger Baldwin
+Meátechnik}) ausgestattet und ermöglichte durch eine Motorsteuerung die
+automatisierte Aufnahme von Frequenz-Kraft-Kennlinien \cite{Wag94}.
+
+\newpage
+
+Abbildung A: Meßplatz zur experimentellen Charakterisierung
+mikromechanischer Strukturen\\
+

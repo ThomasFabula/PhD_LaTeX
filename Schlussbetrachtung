@@ -1,0 +1,147 @@
+\chapter{Schlußbetrachtung}
+\label{schluss}
+
+Die Anforderungen an den Entwurf bei der Entwicklung von mikromechanischen
+Bauelementen bedingen den Einsatz rechnergestützter, numerischer
+Berechnungsmethoden, um sich überlagernde nichtlineare Effekte, anisotrope
+Materialeigenschaften und die elektro-thermo-mechanischen Wechselwirkungen
+bei Mehrschichtsystemen beschreiben zu können. So kann beispielsweise die
+Optimierung mikromechanischer Resonanzsensoren nur unter gleichzeitiger
+Betrachtung der statischen {\em und} dynamischen Eigenschaften unter
+Bercksichtigung des physikalischen Anregungsprinzips erfolgen.
+Mit den im Rahmen dieser Arbeit entwickelten FE-Modellen in Verbindung mit
+den Möglichkeiten des kommerziellen Programmsystems {\sf ANSYS} wurden
+gekoppelte Feldberechnungen durchgefhrt und das Verhalten piezoelektrisch
+betriebener Sensoren untersucht. Damit ließen sich bereits
+in der Entwurfsphase wichtige Vorgaben, wie z.B.\ die günstigste
+Elektrodenanordnung und das optimale Schichtdickenverhältnis, für die
+nachfolgenden technologischen Prozeáschritte ableiten.\\
+%
+Die durchgeführten Untersuchungen haben gezeigt, daß die {\em Methode der
+Finiten Elemente} geeignet ist, das dynamische Verhalten mikromechanischer
+Strukturen zu beschreiben. Weiterhin wurde gezeigt, daß bei der
+Berechnung der Resonanzfrequenzen und Schwingungsmoden, sowie der
+lastabhängigen Resonanzfrequenzänderungen eine gute Übereinstimmung mit den
+Meßergebnissen erzielt werden konnte. Insbesondere haben sich die Stärken
+der FE-Methode bei der Behandlung folgender Problemstellungen herausgestellt:
+%
+\begin{itemize}
+\item
+Berücksichtigung nichtlinearer geometrischer Effekte, insbesondere der
+Spannungsversteifung bei großen Auslenkungen und Deformationen der
+Mikrostrukturen.
+\item
+Strukturierung der Elektroden zur selektiven Anregung von Schwingungsmoden
+und Unterdrückung von unerwünschten Oberwellen. Desweiteren erlauben
+Siliziumsensoren in Bimorph- und Mehrschichtaufbau durch eine geeignete
+laterale Schichtstrukturierung eine Temperaturkompensation der
+Sensorkennlinien.
+\item
+Modellierung des elektro-mechanischen Sensorverhaltens unter
+Bercksichtigung des piezoelektrischen Antriebsprinzips, mit dessen
+Hilfe die Ableitung elektrischer Kenngrößen (Impedanz- und Phasenverhalten)
+in Abhängigkeit geometrischer Randbedingungen möglich ist. Eine Variation
+der Schichtdickenverhältnisse erlaubt eine Optimierung der erzielbaren
+effektiven elektromechanischen Kopplungsfaktoren.
+\item
+Untersuchung des Einflusses der Resonatorquerschnitte und Einspannbereiche
+auf das Schwingungsverhalten mikromechanischer Resonatoren. Durch Einführung
+von Entkopplungsbereichen lassen sich Modenkopplungen erheblich unterdrücken.
+\item
+Die Einspanneffekte und die Hebelwirkung beim BOD-Drucksensor lassen sich
+bei dem vorgestellten komplexen Sensorentwurf nur noch numerisch
+optimieren.
+\end{itemize}
+%
+Die Vorteile der FE-Methode bestehen darin, komplexe Geometrien unter
+vielfältigen Randbedingungen zu modellieren,
+Parameterstudien durchzuführen und Geometrie- und Materialeinflüsse
+separat betrachten zu können. Hierbei ist die Stärke der FE-Methode
+weniger die Berechnung von absoluten Größen und quantitativen Ergebnissen,
+die zwar bei {\em korrekten} Eingangsdaten\footnote{Dieses sind im
+wesentlichen die Strukturgeometrie, das Materialverhalten und die
+zugrundeliegenden Randbedingungen.} prinzipiell möglich sind, aber oft
+einen erheblichen Modellieraufwand und entsprechende Rechnerressourcen
+erfordern, sondern vielmehr die Berechnung der relativen Abhängigkeiten
+von den Modellparametern. Auf diese Weise können Parametervariationen und
+Sensitivitätsanalysen durchgeführt und mikromechanische Strukturen am
+Rechner analysiert und bereits im Vorfeld optimiert werden. Die FE-Methode
+hat sich dabei als ein effizientes Werkzeug bei der Entwicklung von
+mikromechanischen Strukturen erwiesen.\\
+%
+Einschränkend bleibt jedoch festzuhalten, daß beim mikromechanischen
+Entwurf der Einsatz der FE-Methode an einigen Stellen auch an ihre Grenzen
+stößt. So gehen die zugrundeliegenden Differentialgleichung, auf die in
+Kapitel~3 eingegangen wurde, beispielsweise von
+geschwindigkeitsproportionalen Dämpfungseffekten
+aus und erlauben nur die Behandlung kleiner Schwingungsamplituden.
+Dynamische Nichtlinearitäten, wie sie beim anharmonischen Oszillator oder
+bei chaotischem Systemverhalten auftreten können, lassen sich nicht
+erfassen. Um sie zu beschreiben muß auf vereinfachte analytische
+Ersatzmodelle zurückgegriffen werden, die in der Regel von Schwingern mit
+einem Freiheitsgrad ausgehen \cite{Pra93, Til93}. Weiterhin sind die
+kopplungsbeschreibenden Konstanten bei
+gekoppelten Feldberechnungen weitgehend unbekannt. Erschwerend kommt hinzu,
+daß die Materialeigenschaften in der Regel anisotrop sind und in erster
+Näherung daher isotrope Ersatzdaten ermittelt werden müssen. Außerdem sind
+die zugrundeliegenden physikalischen Effekte nichtlinear, so daß bei den
+beschreibenden Zustandsgleichungen Tensorbeiträge höherer Ordnung zu
+berücksichtigen sind. Diese sind in den kommerziellen und auch in den
+meisten an Hochschulen entwickelten FE-Programmen nicht implementiert.
+Weitere Beispiele fr nichterfaßte gekoppelte Effekte ist die
+Elektrostriktion oder die Pyroelektrizität, sowie die Magnetostriktion, bei
+der die Kopplung zwischen einem äußeren Magnetfeld
+und der Strukturmechanik in mikromechanischen Aktoranwendungen ausgenutzt
+wird. Eine Möglichkeit zur Modellierung solcher Effekte besteht in der
+Ausnutzung von Analogien, aufgrund der gleichen mathematischen
+Beschreibungsweise. Unter
+gewissen Vernachlässigung und in einigen Sonderfällen kann mit den
+FE-implementierten thermodynamischen Zustandsgleichungen und den
+nichtlinearen numerischen Lösungsalgorithmen gerechnet werden \cite{Goetz}.
+Ein weiteres Problem stellen die Materialeigenschaften dar, die zusätzlich von
+den thermodynamischen Randbedingungen abhängig sind, d.h.\ ob isotherme oder
+adiabatische Bedingungen vorliegen. Zukünftig sind hier weitere Anstrengungen
+notwendig, um die technologischen und meßtechnischen Arbeiten zu
+koordinieren und die nötigen Informationen in den Entwurfsprozeß 
+einfließen zu lassen.\\
+%
+Als Ausblick sollen an dieser Stelle einige mögliche Anwendungen
+dynamisch betriebener mikromechanischer Strukturen abschließend
+aufgezeigt werden:
+%
+\begin{itemize}
+\item
+{\bf Resonante Multimode-Drucksensoren} können in verschiedenen
+Schwingungsmoden betrieben werden, deren Resonanzfrequenzen sich
+durch unterschiedliche Druck- und Temperaturempfindlichkeiten auszeichnen.
+Auf diese Art ist eine Temperaturkompensation {\em on-line} möglich, da
+zwischen den verschiedenen Schwingungsmoden während des Meßbetriebes
+umgeschaltet werden kann.
+\item
+{\bf Mikromechanische Schwinger} lassen sich als Teststrukturen zur
+Bestimmung von Dnnschichteigenschaften einsetzen, falls die
+Materialeigenschaften des Substrates bekannt sind und
+Biegeschwingungsmoden gezielt angeregt werden. šber die Messung der
+Resonanzfrequenzverschiebung läßt sich die innere Spannung der Dünnschichten
+bestimmen. Weiterhin können mit Hilfe des effektiven elektromechanischen
+Kopplungsfaktors die piezoelektrischen Eigenschaften von
+Dnnschicht-Piezoelektrika charakterisiert werden.
+\item
+{\bf Multimode-Aktoren} lassen sich resonant ansteuern und weisen durch
+die verschiedenen Schwingungsmoden unterschiedliche Bewegungsmöglichkeiten
+auf. Ein zusätzlicher Vorteil stellt die um die mechanische Schwingungsgüte
+erhöhte Amplitudenvergrößerung im Resonanzfall dar (siehe
+Gleichung~\ref{qmess}). Auf diese Weise lassen sich Aktoranwendungen
+realisieren, die bei statischer Ansteuerung nicht durchführbar wären.
+\end{itemize}
+%
+Die zukünftige Entwicklung wird zeigen ob die Anwendungen mikromechanischer
+Strukturen und die Integration in komplexen Mikrosystemen
+die heute in sie gesteckten Erwartungen bezüglich Zuverlässigkeit,
+Wirtschaftlichkeit und Funktionalität erfüllen können.
+Hierzu müssen neben den technologischen Herstellungsprozessen für eine
+wirtschaftliche Produktion von Mikrostrukturen und -systemen die
+Leistungsfähigkeit der bestehenden Entwicklungswerkzeuge erweitert und
+insbesondere im Bereich der Prozeßsimulation zum Teil neue
+Simulationsverfahren und -modelle entwickelt werden.
+

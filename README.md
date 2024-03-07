@@ -20,4 +20,6 @@ Vormals FFMU = Forschungsgesellschaft für Feingeräte-, Mikro- und Uhrentechnik
 - https://github.com/ThomasFabula/PhD
 - https://tfconsult.com/dissertation-einleitung/
 - https://tfconsult.com/promotion-schlussbetrachtung/
+- https://tfconsult.com/dissertation-messplatz/
+- to be continued
   

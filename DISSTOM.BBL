@@ -8,15 +8,15 @@
 \begin{thebibliography}{xxx}
 
 \bibitem [ABV 93] {ABV93}
- Abschlu·bericht zum BMFT-Verbundprojekt: Einsatz der Mikromechanik
+ Abschlu√übericht zum BMFT-Verbundprojekt: Einsatz der Mikromechanik
  zur Herstellung frequenzanaloger Sensoren, VDI--VDE~IT GmbH, Berlin (1993)
 
-%\bibitem [Adler 89] {Adl89}
-% E.L. Adler, Electromechanical coupling to Lamb and shear-horizontal modes
-% in piezoelectric plates, IEEE Trans. on UFFC, Vol.~36, No.~2 (1989) 223--230
+\bibitem [Adler 89] {Adl89}
+ E.L. Adler, Electromechanical coupling to Lamb and shear-horizontal modes
+ in piezoelectric plates, IEEE Trans. on UFFC, Vol.~36, No.~2 (1989) 223--230
 
 \bibitem [Alavi 92a] {Ala92a}
- M. Alavi, S. BÅttgenbach, A. Schumacher, H.-J. Wagner,
+ M. Alavi, S. B¬Åttgenbach, A. Schumacher, H.-J. Wagner,
  Fabrication of microchannels by laser machining and anisotropic etching of
  silicon, Sensors and Actuators A, 32 (1992) 299--302
 
@@ -32,9 +32,9 @@
  Verfahren zur Herstellung eines solchen Halbleiterelementes,
  Deutsche Patentanmeldung, Nr.: 4332653 (1993)
 
-%\bibitem [Albert 84] {Alb84}
-% W.C. Albert, Force sensing using quartz crystal flexure resonator,
-% Proc. 38th. Annual Frequency Control Symposium (1984) 233--239
+\bibitem [Albert 84] {Alb84}
+ W.C. Albert, Force sensing using quartz crystal flexure resonator,
+ Proc. 38th. Annual Frequency Control Symposium (1984) 233--239
 
 \bibitem [Albert 88] {Alb88}
  W.C. Albert, A low cost force sensing crystal resonator applied to weighing,
@@ -49,22 +49,22 @@
  Sensitivity and mode spectrum of a frequency-output silicon pressure sensor,
  Sensors and Actuators, 5 (1988) 417--426
 
-%\bibitem  [Andrews 93a] {And93a}
-% M. Andrews, I. Harris, G. Turner, A comparison of squeeze-film theory with
-% measurements on a microstructure, Sensors and Actuators A, 36 (1993) 79--87
+\bibitem  [Andrews 93a] {And93a}
+ M. Andrews, I. Harris, G. Turner, A comparison of squeeze-film theory with
+ measurements on a microstructure, Sensors and Actuators A, 36 (1993) 79--87
 
-%\bibitem  [Andrews 93b] {And93b}
-% M.K. Andrews, G.C. Turner, P.D. Harris, I.M. Harris, A resonant pressure
-% sensor based on a squeezed film of gas, Sensors and Actuators A, 36 (1993)
-% 219--226
+\bibitem  [Andrews 93b] {And93b}
+ M.K. Andrews, G.C. Turner, P.D. Harris, I.M. Harris, A resonant pressure
+ sensor based on a squeezed film of gas, Sensors and Actuators A, 36 (1993)
+ 219--226
 
 \bibitem [Bach] {Bach}
- W.H. Bach, persînliche Mitteilung
+ W.H. Bach, pers√∂nliche Mitteilung
 
 \bibitem [Bartuch 93] {Bar93}
- H. Bartuch, S. BÅttgenbach, Th. Fabula, H. Weiss,
+ H. Bartuch, S. B√ºttgenbach, Th. Fabula, H. Weiss,
  Resonante Silizium-Sensoren mit elektrothermischer Anregung und DMS in
- MetalldÅnnfilmtechnologie, SENSOR 93, NÅrnberg, 11.--14.~Oktober (1993)
+ Metalld√ºnnfilmtechnologie, SENSOR 93, N√ºrnberg, 11.--14.~Oktober (1993)
  17--24
 
 \bibitem [Bathe 82] {Bat82}
@@ -73,7 +73,7 @@
  Finite-Elemente-Methoden, Springer-Verlag, Berlin (1990)
 
 \bibitem [Becker 86] {Bec86}
- E.W. Becker, W. Ehrfeld, P. Hagmann, A. Maner, D. MÅnchmeyer, Fabrication of
+ E.W. Becker, W. Ehrfeld, P. Hagmann, A. Maner, D. M¬Ånchmeyer, Fabrication of
  microstructures with high aspect ratios and great structural heigths by
  synchrotron radiation lithography, galvanoforming, and plastic moulding
  (LIGA process), Microelectronic Eng. 4 (1986) 35
@@ -88,7 +88,7 @@
 
 \bibitem  [Blom 90] {Blo90}
  F.R. Blom, Resonant silicon beam force sensor, Dissertation,
- UniversitÑt Twente, Enschede, Niederlande (1990) erschienen in:
+ Universit‚Äût Twente, Enschede, Niederlande (1990) erschienen in:
  Sensors and Actuators A21--23 (1990) 226
 
 \bibitem  [Blom 92] {Blo92}
@@ -108,7 +108,7 @@
 
 \bibitem  [Bouwstra 90] {Bou90}
  S. Bouwstra, Resonating microbridges mass flow sensor, Dissertation,
- UniversitÑt Twente, Enschede, Niederlande (1990)
+ Universit‚Äût Twente, Enschede, Niederlande (1990)
 
 \bibitem  [Bouwstra 91] {Bou91}
  S. Bouwstra, B. Geijselaers, On the resonance frequencies of microbridges,
@@ -119,10 +119,10 @@
  D. Braess, Finite Elemente, Springer-Verlag, Berlin (1991)
 
 \bibitem  [Braxmaier 92a] {Bra92a}
- C. Braxmaier, Aufbau und Erprobung eines Me·platzes zur Untersuchung des
+ C. Braxmaier, Aufbau und Erprobung eines Me√°platzes zur Untersuchung des
  dynamischen Verhaltens von mikromechanischen Grundstrukturen,
  Diplomarbeit, FH-Furtwangen / HSG--IMIT, Villingen-Schwenningen (1992)
- unverîffentlicht
+ unver√∂ffentlicht
 
 \bibitem  [Braxmaier 92b] {Bra92b}
  C. Braxmaier, Fremdanregung von Balken durch Dickenschwinger zur
@@ -132,31 +132,31 @@
  J.C. Brice, Crystals for quartz resonators, Rev. Modern Physics,
  Vol.~57, No.~1 (1985) 105--146
 
-%\bibitem  [Brissaud 91] {Bri91}
-% M. Brissaud, Characterization of piezoceramics, IEEE Trans. on UFFC,
-% Vol.~38, No.~6 (1991) 603--617
+\bibitem  [Brissaud 91] {Bri91}
+ M. Brissaud, Characterization of piezoceramics, IEEE Trans. on UFFC,
+ Vol.~38, No.~6 (1991) 603--617
 
-%\bibitem  [Brombley 83] {Bro83}
-% E.I. Brombley, et al., A technique for the determination of stress in thin
-% films, J. Vac. Sci. Technol., Vol. B1(4) (1983) 1369
+\bibitem  [Brombley 83] {Bro83}
+ E.I. Brombley, et al., A technique for the determination of stress in thin
+ films, J. Vac. Sci. Technol., Vol. B1(4) (1983) 1369
 
-\bibitem  [BÅttgenbach 91a] {Bue91a}
- S. BÅttgenbach, Mikromechanik, B. G. Teubner, Stuttgart (1991)
+\bibitem  [B√ºttgenbach 91a] {Bue91a}
+ S. B√ºttgenbach, Mikromechanik, B. G. Teubner, Stuttgart (1991)
 
-\bibitem  [BÅttgenbach 91b] {Bue91b}
- S. BÅttgenbach, Frequenzanaloge Sensoren, in: Technologietrends in der
- Sensorik, VDI Bildungswerk, DÅsseldorf (1991)
+\bibitem  [B√ºttgenbach 91b] {Bue91b}
+ S. B√ºttgenbach, Frequenzanaloge Sensoren, in: Technologietrends in der
+ Sensorik, VDI Bildungswerk, D√ºsseldorf (1991)
 
-%\bibitem  [Burrer] {Burrer}
-% Ch. Burrer, persînliche Mitteilung
+\bibitem  [Burrer] {Burrer}
+ Ch. Burrer, pers√∂nliche Mitteilung
 
 \bibitem  [Burrer 93] {Bur93}
  Ch. Burrer, J. Esteve, Thermally driven micromechanical bridge resonators,
  EUROSENSORS~VII, Budapest (1993)
 
-%\bibitem  [Buser 89] {Bus89}
-% R.A. Buser, Theoretical and experimental investigations on silicon single
-% crystal resonant structures, Dissertation, UniversitÑt Neuchatel (1989)
+\bibitem  [Buser 89] {Bus89}
+ R.A. Buser, Theoretical and experimental investigations on silicon single
+ crystal resonant structures, Dissertation, Universit√§t Neuchatel (1989)
 
 \bibitem  [Buser 91a] {Bus91a}
  R.A. Buser, L. Schultheis, N.F. de Rooij, Silicon pressure sensor based on a
@@ -181,10 +181,10 @@
  Sensors, IEEE Transactions on Electronic Devices, Vol.~ED-34, No.~4
  (1987) 850--858
 
-%\bibitem  [Challande 90] {Cha90}
-% P. Challande, Optimizing ultrasonic transducers based on piezoelectric
-% composites using a finite-element method, IEEE Trans. on UFFC, Vol.~37,
-% No.~2 (1990) 135--140
+\bibitem  [Challande 90] {Cha90}
+ P. Challande, Optimizing ultrasonic transducers based on piezoelectric
+ composites using a finite-element method, IEEE Trans. on UFFC, Vol.~37,
+ No.~2 (1990) 135--140
 
 \bibitem  [Char 91] {Cha91}
  B.W. Char, K.O. Geddes, G.H. Gonnet, B.L. Leong, M.B. Monagan, S.M. Watt,
@@ -198,15 +198,15 @@
  P.G. Ciarlet, The finite elemente methode for elliptical problems,
  North-Holland, Amsterdam -- New York -- Oxford (1978)
 
-%\bibitem  [Ciarlet 91] {Cia91}
-% P.G. Ciarlet, J.L. Lions, (Eds.), Handbook of numerical analysis,
-% Vol. II: Finite Element Methods (Part 1), North-Holland, Amsterdam (1991)
+\bibitem  [Ciarlet 91] {Cia91}
+ P.G. Ciarlet, J.L. Lions, (Eds.), Handbook of numerical analysis,
+ Vol. II: Finite Element Methods (Part 1), North-Holland, Amsterdam (1991)
 
-%\bibitem  [Clayton 87] {Cla87}
-% L.D. Clayton, S.R. Swanson and E.P. Eer Nisse, Modifications of the
-% double-ended tuning fork geometry for reduced coupling to its surroundings:
-% finite element analysis and experiment, IEEE Trans. on UFFC~34
-% (1987) 243--252
+\bibitem  [Clayton 87] {Cla87}
+ L.D. Clayton, S.R. Swanson and E.P. Eer Nisse, Modifications of the
+ double-ended tuning fork geometry for reduced coupling to its surroundings:
+ finite element analysis and experiment, IEEE Trans. on UFFC~34
+ (1987) 243--252
 
 \bibitem  [COMP] {COMP}
  {\sf COMPOSITE}, User Manual, Version~1.5, FhG--AIS, Erlangen
@@ -216,39 +216,39 @@
  actuator CAE Systems, Proc. TRANSDUCERS~'91, Digest of technical papers,
  San Francisco (1991) 498--501
 
-% \bibitem  [Crary 91b] {Cra91b}
-% S.B. Crary, R.A. Buser, F. Pourahmadi, Short course: modeling of
-% micromechanical devices, Proc. TRANSDUCERS~'91, Digest of technical papers,
-% San Francisco (1991)
+\bibitem  [Crary 91b] {Cra91b}
+ S.B. Crary, R.A. Buser, F. Pourahmadi, Short course: modeling of
+ micromechanical devices, Proc. TRANSDUCERS~'91, Digest of technical papers,
+ San Francisco (1991)
 
-% \bibitem  [CRC89] {CRC89}
-% CRC Handbook of Chemistry and Physics, CRC Press, Inc., Boca Raton,
-% Florida, USA 70th~edn. (1989)
+\bibitem  [CRC89] {CRC89}
+ CRC Handbook of Chemistry and Physics, CRC Press, Inc., Boca Raton,
+ Florida, USA 70th~edn. (1989)
 
-% \bibitem  [D'Amico 89] {D'Am89}
-%  A. D'Amico, E. Verona, SAW sensors, Sensors and Actuators, 17 (1989) 55--56
+\bibitem  [D'Amico 89] {D'Am89}
+ A. D'Amico, E. Verona, SAW sensors, Sensors and Actuators, 17 (1989) 55--56
 
 \bibitem  [Danel 91] {Dan91}
  J.S. Danel, G. Delapierre, Anisotropic crystal etching: a simulation
  program, EUROSENSORS~VI, Rome (1991) 267--282
 
-%\bibitem  [Deschanvres 92] {Des92}
-% J.L. Deschanvres, P. Rey, G. Delabouglise, M. Labeau, J.C. Joubert,
-% J.C. Peuzin, Characterization of piezoelectric properties of zinc oxide
-% thin films deposited on silicon for sensors applications, Sensors and
-% Actuators A, 33 (1992) 43--45
+\bibitem  [Deschanvres 92] {Des92}
+ J.L. Deschanvres, P. Rey, G. Delabouglise, M. Labeau, J.C. Joubert,
+ J.C. Peuzin, Characterization of piezoelectric properties of zinc oxide
+ thin films deposited on silicon for sensors applications, Sensors and
+ Actuators A, 33 (1992) 43--45
 
-%\bibitem  [Dufour 92] {Duf92}
-% M. Dufour, M.T. Delaye, F. Michel, J.S. Danel, B. Diem, G. Delapierre,
-% A comparsion between micromachined pressure sensors using quartz or silicon
-% vibrating beams, Sensors and Actuators A, 34 (1992) 201--209
+\bibitem  [Dufour 92] {Duf92}
+ M. Dufour, M.T. Delaye, F. Michel, J.S. Danel, B. Diem, G. Delapierre,
+ A comparsion between micromachined pressure sensors using quartz or silicon
+ vibrating beams, Sensors and Actuators A, 34 (1992) 201--209
 
 \bibitem  [DRUCK 91] {DRUCK}
- {\em DRUCK Ltd.}, Firetree Lane, Groby, Leicester/GB, DatenblÑtter:
+ {\em DRUCK Ltd.}, Firetree Lane, Groby, Leicester/GB, Datenbl‚Äûtter:
  {\sf RPT 100} ~-~Resonant pressure sensor (1991)
 
 \bibitem  [Eccardt 92] {Ecc92}
- P.C.Eccardt, {\sf ANSYS}\--Seminar Piezo\-elek\-tri\-zi\-tÑt,
+ P.C.Eccardt, {\sf ANSYS}\--Seminar Piezo\-elek\-tri\-zi\-t√§t,
  CAD\-FEM GmbH, Ebers\-berg (1992)
 
 \bibitem  [Eer Nisse 88] {Eer88}
@@ -256,15 +256,15 @@
  sensor technologies, IEEE Transactions on UFFC, Vol.~35, No.~3
  (1988) 323--330
 
-%\bibitem  [Engelhardt 89] {Eng89}
-% W. Engelhardt, Messung der inneren Spannung von Silizium-Membranen,
-% Diplomarbeit, UniversitÑt Stuttgart (1989) unverîffentlicht
+\bibitem  [Engelhardt 89] {Eng89}
+ W. Engelhardt, Messung der inneren Spannung von Silizium-Membranen,
+ Diplomarbeit, Universit√§t Stuttgart (1989) unver√∂ffentlicht
 
 \bibitem  [Fabula 92a] {Fab92a}
  Th. Fabula, A. Schroth, Simulation des dynamischen Verhaltens
- mikromechanischer Membranen, VDI-Fachtagung fÅr GerÑte- und
+ mikromechanischer Membranen, VDI-Fachtagung f√ºr Ger√§te- und
  Mikrosystemtechnik, TU Chemnitz (1992), VDI-Bericht 960, VDI-Verlag
- DÅsseldorf (1992)
+ D√ºsseldorf (1992)
 
 \bibitem  [Fabula 92b] {Fab92b}
  Th. Fabula, Dynamische Berechnungen in der Mikromechanik - Simulation /
@@ -272,14 +272,14 @@
  CADFEM~GmbH, Grafing
 
 \bibitem  [Fabula 93a] {Fab93a}
- Th. Fabula, H.-J. Wagner, B. Schmidt, S. BÅttgenbach, Triple beam resonant
+ Th. Fabula, H.-J. Wagner, B. Schmidt, S. B¬Åttgenbach, Triple beam resonant
  silicon force sensor based on piezoelectric thin films, EUROSENSORS~VII,
  Budapest (1993), erschienen in: Sensors and Actuators A. Physical,
  Vol.~42, No.~1--3 (1994) 375--380
 
 \bibitem  [Fabula 93b] {Fab93b}
  Th. Fabula, N. Hey, S. Messner, Gekoppelte Feldberechnung eines
- mikromechanischen Strîmungssensors, 11.~CADFEM Users' Meeting, Bamberg,
+ mikromechanischen Str√∂mungssensors, 11.~CADFEM Users' Meeting, Bamberg,
  27.--29.10.1993, CADFEM~GmbH, Grafing
 
 \bibitem  [Fan 87] {Fan87}
@@ -287,8 +287,8 @@
  other novel micromechanical structures, Proc. TRANSDUCERS~'87, Digest of
  technical papers, Tokio, Japan (1987) 849--852
 
-% \bibitem  [FDI] {FDI}
-%  Fluid Dynamics International, Inc., Evanston, Illinois, USA
+\bibitem  [FDI] {FDI}
+ Fluid Dynamics International, Inc., Evanston, Illinois, USA
 
 \bibitem  [Feynman 59] {Fey59}
  R. Feynman, There's plenty of room at the bottom, Annual meeting of the
@@ -302,70 +302,70 @@
  J. Microelectromechanical Systems, Vol.~2, No.~1 (1993) 4--14
 
 \bibitem  [Flik] {Flik}
- G. Flik, persînliche Mitteilung
+ G. Flik, pers√∂nliche Mitteilung
 
 \bibitem  [Franz 88] {Fra88}
- J. Franz, Piezoelektrische Sensoren auf Siliziumbasis fÅr akustische
+ J. Franz, Piezoelektrische Sensoren auf Siliziumbasis f√ºr akustische
  Anwendungen, VDI--Berichte, Reihe 10: Informatik/Kommunikationstechnik,
- Nr.~87, VDI-Verlag DÅsseldorf (1988)
+ Nr.~87, VDI-Verlag D¬Åsseldorf (1988)
 
-% \bibitem  [Friedrich 90] {Fri90}
-% W. Friedrich, R. Lerch, K. Prestele, R. Soldner, Simulation of
-% piezoelectric Lamb wave delay lines using a finite element method,
-% IEEE Trans. on UFFC, Vol.~37, No.~2 (1990) 248--254
+\bibitem  [Friedrich 90] {Fri90}
+ W. Friedrich, R. Lerch, K. Prestele, R. Soldner, Simulation of
+ piezoelectric Lamb wave delay lines using a finite element method,
+ IEEE Trans. on UFFC, Vol.~37, No.~2 (1990) 248--254
 
-\bibitem  [FrÅhauf 90] {Fru90}
- J. FrÅhauf, Simulation of orientation dependent etching of masked silicon
+\bibitem  [Fr√ºhauf 90] {Fru90}
+ J. Fr√ºhauf, Simulation of orientation dependent etching of masked silicon
  structures ({\sf SIMODE}), MME~'90, 2nd Workshop on Micromachining
  Micromechanics and Microsystems, Berlin (1990)
 
 \bibitem  [Funk 93] {Fun93}
- K. Funk, Entwurf und monolithische Integration einer Schaltung fÅr
+ K. Funk, Entwurf und monolithische Integration einer Schaltung f√ºr
  mikromechanische Sensoren mit piezoelektrischem Antrieb, Diplomarbeit,
- TU~Chemnitz (1993) unverîffentlicht
+ TU~Chemnitz (1993) unver√∂ffentlicht
 
-% \bibitem  [Gagnepain 90] {Gag90}
-%  J.-J. Gagnepain, Resonators, detectors, and piezoelectrics, Academic Press,
-% Inc. (1990), ISBN~0-12-014677-0
+\bibitem  [Gagnepain 90] {Gag90}
+ J.-J. Gagnepain, Resonators, detectors, and piezoelectrics, Academic Press,
+ Inc. (1990), ISBN~0-12-014677-0
 
 \bibitem  [Geijselaers 91] {Gei91}
  H.J.M. Geijselaers, H. Tijdeman, The dynamic mechanical characteristics of
  a resonating microbridge mass-flow sensor, Sensors and Actuators A, 29
  (1991) 37--41
 
-%\bibitem  [Gerova 81] {Ger81}
-% E.V. Gerova, N.A. Ivanov, K.I. Kirov, Deposition of AlN thin films by
-% magnetron reactive sputtering, Thin Solid Films, 81 (1981) 201--206
+\bibitem  [Gerova 81] {Ger81}
+ E.V. Gerova, N.A. Ivanov, K.I. Kirov, Deposition of AlN thin films by
+ magnetron reactive sputtering, Thin Solid Films, 81 (1981) 201--206
 
-%\bibitem  [Gerdau] {Gerdau}
-% R.W. Gerdau, persînliche Mitteilung
+\bibitem  [Gerdau] {Gerdau}
+ R.W. Gerdau, pers√∂nliche Mitteilung
 
 \bibitem [Gieseler 92] {Gie92}
- T. Gieseler, J.-U. Meyer, Plattenwellen fÅr Biosensoren, Mikroelektronik 6,
+ T. Gieseler, J.-U. Meyer, Plattenwellen f¬År Biosensoren, Mikroelektronik 6,
  Nr.~2, Beilage Mikroperipherik (1992) S.~XLV
 
 \bibitem  [Goldstein 78] {Gol78}
  H. Goldstein, Klassische Mechanik, Akademische Verlagsgesellschaft,
  5.~Auflage, Wiesbaden (1978)
 
-\bibitem  [Gîtz] {Goetz}
- S. Gîtz, persînliche Mitteilung
+\bibitem  [G√∂tz] {Goetz}
+ S. G√∂tz, pers√∂nliche Mitteilung
 
-% \bibitem  [Gîhner 93] {Goe93}
-%  U. Gîhner, {\sf ANSYS}-Seminarunterlagen: Fehleranalyse in der FEM,
-%  CADFEM~GmbH, Ebersberg (1993)
+\bibitem  [G√∂hner 93] {Goe93}
+ U. G√∂hner, {\sf ANSYS}-Seminarunterlagen: Fehleranalyse in der FEM,
+ CADFEM~GmbH, Ebersberg (1993)
 
 \bibitem  [Grabowski 91] {Gra91}
- R. Grabowski, DÅnnschichtkurs, FhG--IPM, Freiburg (1991)
+ R. Grabowski, D√ºnnschichtkurs, FhG--IPM, Freiburg (1991)
 
 \bibitem  [Greenwood 88] {Gre88}
  J.C. Greenwood, D.W. Satchell, Miniature silicon resonant pressure sensor,
  IEE Proceedings, Vol.~135, No.~5 (1988) 369--372
 
-%\bibitem  [Guckel 90] {Guc90}
-% H. Guckel, J.J. Sniegowski, T.R. Christenson, F. Raissi, The application of
-% finegrained, tensile polysilicon to mechanically resonant transducers,
-% Sensors and Actuators, A21--A23 (1990) 346--351
+\bibitem  [Guckel 90] {Guc90}
+ H. Guckel, J.J. Sniegowski, T.R. Christenson, F. Raissi, The application of
+ finegrained, tensile polysilicon to mechanically resonant transducers,
+ Sensors and Actuators, A21--A23 (1990) 346--351
 
 \bibitem  [Hackbusch 86] {Hac86}
  W. Hackbusch, Theorie und Numerik elliptischer Differentialgleichungen,
@@ -373,31 +373,31 @@
 
 \bibitem  [Haffner 92] {Haf92}
  H. Haffner, Untersuchung zu Toleranzen und Fehlern in Lithographie- und
- étzprozessen, Diplomarbeit, TU~Chemnitz / HSG--IMIT, Villingen-Schwenningen
- (1992) unverîffentlicht
+ √Ñtzprozessen, Diplomarbeit, TU~Chemnitz / HSG--IMIT, Villingen-Schwenningen
+ (1992) unver√∂ffentlicht
 
 \bibitem  [Heiland 66] {Hei66}
  Heiland, Ibach, Pyroelectric properties of zinc oxid, Solid State Comm.
  4 (1966) 353
 
-% \bibitem  [Hauden 92] {Hau92}
-%  D. Hauden, M. Hoummady, A. Chonjan, F. Bastien, Elastic wave sensors -
-%  quartz technological channel and silicon technology, Sensors and Actuators
-%  A, 32 (1992) 99--102
+\bibitem  [Hauden 92] {Hau92}
+  D. Hauden, M. Hoummady, A. Chonjan, F. Bastien, Elastic wave sensors -
+  quartz technological channel and silicon technology, Sensors and Actuators
+  A, 32 (1992) 99--102
 
-% \bibitem  [Heckmann 25] {Hec25}
-%  G. Heckmann, Ergeb. exakt Naturwiss.~4 (1952) 100
+\bibitem  [Heckmann 25] {Hec25}
+  G. Heckmann, Ergeb. exakt Naturwiss.~4 (1952) 100
 
 \bibitem  [Heuberger 89] {Heu89}
  A. Heuberger (Hrsg.), Mikromechanik, Springer Verlag, Berlin (1989)
 
 \bibitem  [Hellwege 88] {Hel88}
- K.-H. Hellwege, EinfÅhrung in die Festkîrperphysik, 3.~Auflage,
+ K.-H. Hellwege, Einf√ºhrung in die Festk√∂rperphysik, 3.~Auflage,
  Springer-Verlag, Berlin (1988)
 
-% \bibitem  [Hossack 91] {Hos91}
-%  J.A. Hossack, G. Hayward, Finite-element analysis of 1--3 composite
-%  transducers, IEEE Trans. on UFFC, Vol.~38, No.~6 (1991) 618--629
+\bibitem  [Hossack 91] {Hos91}
+  J.A. Hossack, G. Hayward, Finite-element analysis of 1--3 composite
+  transducers, IEEE Trans. on UFFC, Vol.~38, No.~6 (1991) 618--629
 
 \bibitem  [Howe 87] {How87}
  R.T. Howe, Resonant microsensors, Proc. TRANSDUCERS~'87, Digest of
@@ -407,10 +407,10 @@
  An American National Standard: IEEE Standard on Piezoelectricity,
  ANSI/IEEE Std. 176-1978, American National Standards Institute (1978)
 
-%\bibitem  [Ikeda 88] {Ike88}
-% K. Ikeda, H. Kuwayama, T. Kobayashi, T. Watanabe, T. Nishikawa, T. Yoshida,
-% K. Harada, Silicon pressure sensor with resonant strain gauge built into
-% diaphragm, Proc. of the 7th Sensor Symposion, Tokyo, Japan (1988) 55--58
+\bibitem  [Ikeda 88] {Ike88}
+ K. Ikeda, H. Kuwayama, T. Kobayashi, T. Watanabe, T. Nishikawa, T. Yoshida,
+ K. Harada, Silicon pressure sensor with resonant strain gauge built into
+ diaphragm, Proc. of the 7th Sensor Symposion, Tokyo, Japan (1988) 55--58
 
 \bibitem  [Ikeda 90a] {Ike90a}
  T. Ikeda, Fundamentals of Piezoelectricity, Oxford University Press,
@@ -421,10 +421,10 @@
  K. Harada, Silicon pressure sensor integrates resonant strain gauge on
  diaphragm, Sensors and Actuators, A21--A23 (1990) 146--150
 
-%\bibitem  [Jagfeld 91] {Jag91}
-% M. Jagfeld, G. MÅller, K. Schweizerhof, U. Stelzmann, E.K. Wang,
-% {\sf ANSYS}-Seminarunterlagen: Dynamische Berechnungen, CADFEM~GmbH,
-% Ebersberg (1991)
+\bibitem  [Jagfeld 91] {Jag91}
+ M. Jagfeld, G. M√ºller, K. Schweizerhof, U. Stelzmann, E.K. Wang,
+ {\sf ANSYS}-Seminarunterlagen: Dynamische Berechnungen, CADFEM~GmbH,
+ Ebersberg (1991)
 
 \bibitem [Jauch] {Jauch}
  A. Jauch, Spannungsarmes Kleben mikromechanischer Bauteile, Diplomarbeit,
@@ -436,29 +436,29 @@
  beam microstructures, Proc. TRANSDUCERS~'91, Digest of technical papers,
  San Francisco (1991) 494--497
 
-%\bibitem  [Kagawa 74] {Kag74}
-% Y. Kagawa, T. Yamabuchi, Finite element simulation of two-dimensional
-% electromechanical resonators, IEEE Trans. on Sonics and Ultrasonics,
-% Vol.~SU--21, No.~4 (1974) 275--283
+\bibitem  [Kagawa 74] {Kag74}
+ Y. Kagawa, T. Yamabuchi, Finite element simulation of two-dimensional
+ electromechanical resonators, IEEE Trans. on Sonics and Ultrasonics,
+ Vol.~SU--21, No.~4 (1974) 275--283
 
-%\bibitem  [Kagawa76a] {Kag76a}
-% Y. Kagawa, T. Yamabuchi, A finite element approach to electromechanical
-% problems with an application to energy-trapped and surface-wave devices,
-% IEEE Trans. on Sonics and Ultrasonics, Vol.~SU--23, No.~4 (1976) 263--272
+\bibitem  [Kagawa76a] {Kag76a}
+ Y. Kagawa, T. Yamabuchi, A finite element approach to electromechanical
+ problems with an application to energy-trapped and surface-wave devices,
+ IEEE Trans. on Sonics and Ultrasonics, Vol.~SU--23, No.~4 (1976) 263--272
 
-%\bibitem  [Kagawa 76b] {Kag76b}
-% Y. Kagawa, T. Yamabuchi, Finite element approach for a piezoelectric
-% circular rod, IEEE Trans. on Sonics and Ultrasonics, Vol.~SU--23, No.~6
-%  (1976) 379--385
+\bibitem  [Kagawa 76b] {Kag76b}
+ Y. Kagawa, T. Yamabuchi, Finite element approach for a piezoelectric
+ circular rod, IEEE Trans. on Sonics and Ultrasonics, Vol.~SU--23, No.~6
+  (1976) 379--385
 
 \bibitem  [Kamins 90] {Kam90}
  T.I. Kamins, Design properties of polysilicon crystalline silicon,
  Sensors and Actuators, A21--A23 (1990) 817--824
 
-% \bibitem  [Kawamura 87] {Kaw87}
-%  Y. Kawamura, K. Sato, T. Terasawa, S. Tanaka, Si cantilever-oscillator as
-%  a vacuum sensor, Proc. TRANSDUCERS~'87, Digest of technical papers, Tokio,
-%  Japan (1987)
+\bibitem  [Kawamura 87] {Kaw87}
+  Y. Kawamura, K. Sato, T. Terasawa, S. Tanaka, Si cantilever-oscillator as
+  a vacuum sensor, Proc. TRANSDUCERS~'87, Digest of technical papers, Tokio,
+  Japan (1987)
 
 \bibitem  [Kim 86] {Kim86}
  C.S. Kim, S.M. Dickinson, The flexural vibration of slightly curved slender
@@ -474,8 +474,8 @@
  TEMPCON Conference Papers, London, 14--16~June (1983) 97--121
 
 \bibitem  [Kittel 88] {Kit88}
- C. Kittel, EinfÅhrung in die Festkîrperphysik, 7.~Auflage, R.~Oldenburg
- Verlag~GmbH, MÅnchen (1988)
+ C. Kittel, Einf√ºhrung in die Festk√∂rperphysik, 7.~Auflage, R.~Oldenburg
+ Verlag~GmbH, M√ºnchen (1988)
 
 \bibitem  [Kohnke 92] {Koh92}
  P. Kohnke, ed., {\sf ANSYS} User's Manual for Revision 5.0, Volume IV,
@@ -491,26 +491,26 @@
  composite bulk wave resonators, 36th Annual Frequency Control Symposium
  (1982) 517--524
 
-%\bibitem  [Koide 91] {Koi91}
-% A. Koide, K. Sato, S. Tanaka, Simulation of twodimensional etch profile
-% of silicon during orientation-dependent anisotropic etching, MEMS~'91,
-% Nara, Japan (1991)
+\bibitem  [Koide 91] {Koi91}
+ A. Koide, K. Sato, S. Tanaka, Simulation of twodimensional etch profile
+ of silicon during orientation-dependent anisotropic etching, MEMS~'91,
+ Nara, Japan (1991)
 
-%\bibitem  [Lanceleur 92] {Lan92}
-% P. Lanceleur, J.F. de Belleval, N. Mercier, Modeling of transient
-% deformation of piezoelectric ceramics, IEEE Trans. on UFFC, Vol.~39, No.~2
-% (1992) 293--301
+\bibitem  [Lanceleur 92] {Lan92}
+ P. Lanceleur, J.F. de Belleval, N. Mercier, Modeling of transient
+ deformation of piezoelectric ceramics, IEEE Trans. on UFFC, Vol.~39, No.~2
+ (1992) 293--301
 
 \bibitem  [Landau 74] {Lan74}
- L.D. Landau, E.M. Lifsic, Theoretische Physik, ElastizitÑtstheorie,
- Band VII, ungarische Ausgabe: Tankînyvkiado, Budapest (1974)
+ L.D. Landau, E.M. Lifsic, Theoretische Physik, Elastizit√§tstheorie,
+ Band VII, ungarische Ausgabe: Tank√∂nyvkiado, Budapest (1974)
 
-%\bibitem  [Langdon 85] {Lan85}
-% R.M. Langdon, Resonator sensors - a review, J.Phys.E: \, Sci.Instrum.,
-% Vol.~18 (1985) 103
+\bibitem  [Langdon 85] {Lan85}
+ R.M. Langdon, Resonator sensors - a review, J.Phys.E: \, Sci.Instrum.,
+ Vol.~18 (1985) 103
 
-\bibitem  [Landolt-Bîrnstein 82] {LB82}
- Landolt-Bîrnstein, Zahlenwerte und Funktionen aus Naturwissenschaft und
+\bibitem  [Landolt-B√∂rnstein 82] {LB82}
+ Landolt-B√∂rnstein, Zahlenwerte und Funktionen aus Naturwissenschaft und
  Technik, Gruppe III, Band~17a, Springer Verlag, Berlin (1982)
 
 \bibitem  [Lee 82] {Lee82}
@@ -518,9 +518,9 @@
  pressure sensors, IEEE Trans. on Electron Devices, Vol.~ED--29, No.~1 (1982)
  34--41
 
-%\bibitem  [Lerch 88] {Ler88}
-% R. Lerch, Finite element analysis of piezoelectric transducers, Proc. IEEE
-% Ultrasonics Symposium (1988) 643--654
+\bibitem  [Lerch 88] {Ler88}
+ R. Lerch, Finite element analysis of piezoelectric transducers, Proc. IEEE
+ Ultrasonics Symposium (1988) 643--654
 
 \bibitem  [Lerch 90] {Ler90}
  R. Lerch, Simulation of piezoelectric devices by two- and three-dimensional
@@ -531,7 +531,7 @@
  Vibrationsanalyse, Technisches Messen 57, Heft 9 (1990) 335--345
 
 \bibitem  [Lindberg 93] {Lin93}
- U. Lindberg, J. Sîderkvist, T. Lammerink, M. Elwenspoek, Quasi-buckling of
+ U. Lindberg, J. S√∂derkvist, T. Lammerink, M. Elwenspoek, Quasi-buckling of
  micromachined beams, MME~'93 Micro Mechanics Europe (1993) 115--118
 
 \bibitem  [Lorenz 85] {Lor85}
@@ -539,56 +539,56 @@
  {\sf COMPOSITE} -- A complete modeling program of silicon technology,
  IEEE Trans. on CAD, Vol.~CAD-4, No.~4 (1985) 1977
 
-%\bibitem  [Maibach 92] {Mai92}
-% J. Maibach, D. Maier-Schneider, E. Obermeier, Charakterisierung elastischer
-% Eigenschaften dÅnner Filme durch Messung der Membrandurchbiegung,
-% VDI-Berichte, Nr.~939 (1992) 369--374
+\bibitem  [Maibach 92] {Mai92}
+ J. Maibach, D. Maier-Schneider, E. Obermeier, Charakterisierung elastischer
+ Eigenschaften d√ºnner Filme durch Messung der Membrandurchbiegung,
+ VDI-Berichte, Nr.~939 (1992) 369--374
 
 \bibitem  [Marsal 89] {Mar89}
  D. Marsal, Finite Differenzen und Elemente, Springer Verlag, Berlin (1989)
 
-%\bibitem  [Marhîfer 90] {Mar90}
-% Marhîfer, Design tools for the development of MEMS, Micro System
-% Technologies, Berlin (1990)
+\bibitem  [Marh√∂fer 90] {Mar90}
+ Marh√∂fer, Design tools for the development of MEMS, Micro System
+ Technologies, Berlin (1990)
 
-%\bibitem  [Martin 90] {Mar90}
-% B.A. Martin, S.W. Wenzel, R.M. White, Viscosity and density sensing with
-% ultrasonic plate waves, Sensors and Actuators, A21--A23 (1990) 704--708
+\bibitem  [Martin 90] {Mar90}
+ B.A. Martin, S.W. Wenzel, R.M. White, Viscosity and density sensing with
+ ultrasonic plate waves, Sensors and Actuators, A21--A23 (1990) 704--708
 
 \bibitem  [Matzenmiller 93] {Mat93}
- A. Matzenmiller, W. Rust, {\sf ANSYS}-Seminarunterlagen: NichtlinearitÑten,
+ A. Matzenmiller, W. Rust, {\sf ANSYS}-Seminarunterlagen: Nichtlinearit√§ten,
  CADFEM~GmbH, Grafing (1993)
 
-%\bibitem  [Meirovitch 67] {Mei67}
-% L. Meirovitch, Analytical methods in vibrations, Macmillan Publishing Co.,
-% Inc., New York (1967)
+\bibitem  [Meirovitch 67] {Mei67}
+ L. Meirovitch, Analytical methods in vibrations, Macmillan Publishing Co.,
+ Inc., New York (1967)
 
-%\bibitem  [Meirovitch 86] {Mei67}
-% L. Meirovitch, Elements of vibration analysis, 2nd Edition, McGraw-Hill
-% Book Co., New~York (1986)
+\bibitem  [Meirovitch 86] {Mei67}
+ L. Meirovitch, Elements of vibration analysis, 2nd Edition, McGraw-Hill
+ Book Co., New~York (1986)
 
-%\bibitem  [Merker 87] {Mer87}
-% G.P. Merker, Konvektive WÑrmeÅbertragung, Springer-Verlag, Berlin (1987)
+\bibitem  [Merker 87] {Mer87}
+ G.P. Merker, Konvektive W√§rme√ºbertragung, Springer-Verlag, Berlin (1987)
 
 \bibitem  [Messner 93] {Mes93}
  S. Messner, Finite-Elemente Berechnung der Fluid-\-Struktur-\-Wechselwirkung
- bei einem mikromechanischen Strîmungssensor, Diplomarbeit,
- UniversitÑt Stuttgart / HSG--IMIT, Villingen-Schwenningen (1993)
- unverîffentlicht
+ bei einem mikromechanischen Str√∂mungssensor, Diplomarbeit,
+ Universit√§t Stuttgart / HSG--IMIT, Villingen-Schwenningen (1993)
+ unver√∂ffentlicht
 
 \bibitem  [Middelhoek 89] {Mid89}
  S. Middelhoek, S.A. Audet, Silicon sensors, Academic Press Limited,
  London (1989)
 
-%\bibitem  [Morten 92] {Mor92}
-% B. Morten, G. De Cicco, M. Prudenziati, Resonant pressure sensor based on
-% piezoelectric properties of ferroelectric thick films, Sensors and
-% Actuators A, 31 (1992) 153--158
+\bibitem  [Morten 92] {Mor92}
+ B. Morten, G. De Cicco, M. Prudenziati, Resonant pressure sensor based on
+ piezoelectric properties of ferroelectric thick films, Sensors and
+ Actuators A, 31 (1992) 153--158
 
-%\bibitem  [Morton 87] {Mor87}
-% K.W. Morton, Basic course in finite element methods, in: R. Gruber (ed.):
-% Finite elements in physics, Proc. of the 1st european graduate summer
-% course on computational physics, Lausanne, Switzerland, 1--10~September,
+\bibitem  [Morton 87] {Mor87}
+ K.W. Morton, Basic course in finite element methods, in: R. Gruber (ed.):
+ Finite elements in physics, Proc. of the 1st european graduate summer
+ course on computational physics, Lausanne, Switzerland, 1--10~September,
 % North--Holland, Amsterdam (1987)
 
 \bibitem  [Mullem 91] {Mul91}
@@ -601,11 +601,11 @@
  Electrical cross-talk in two-port resonators - the resonant silicon beam
  force sensor, Sensors and Actuators, A31 (1992) 168--173
 
-\bibitem  [MÅller 92] {Mue92}
- M. MÅller, Aufbau und Inbetriebnahme eines optischen Me·platzes zur
+\bibitem  [M√ºller 92] {Mue92}
+ M. M√ºller, Aufbau und Inbetriebnahme eines optischen Me√üplatzes zur
  Charakterisierung von resonanten mikromechanischen Strukturen,
  Diplomarbeit, FH-Furtwangen / HSG--IMIT, Villingen-Schwenningen (1992)
- unverîffentlicht
+ unver√∂ffentlicht
 
 \bibitem  [Muro 92] {Mur92}
  H. Muro, H. Kaneko, S. Kiyota, P.J. French, Stress analysis of
@@ -616,24 +616,24 @@
  M. Naillon, R.H. Coursant, F. Besnier, Analysis of piezoelectric structures
  by a finite element method, Acta electronica, 25, 4 (1983) 341--362
 
-%\bibitem  [Naillon 83b] {Nai83b}
-% M. Naillon, F. Besnier, R.H. Coursant, Finite element analysis of narrow
-% piezoelectric parallelepiped vibrations energetical coupling modeling,
-% Proc. of the Ultrasonics Symposium, Oct.~31 - Nov.~2, Atlanta, Georgia,
-% USA (1983) 773--777
+\bibitem  [Naillon 83b] {Nai83b}
+ M. Naillon, F. Besnier, R.H. Coursant, Finite element analysis of narrow
+ piezoelectric parallelepiped vibrations energetical coupling modeling,
+ Proc. of the Ultrasonics Symposium, Oct.~31 - Nov.~2, Atlanta, Georgia,
+ USA (1983) 773--777
 
-%\bibitem  [Naillon 89] {Nai89}
-% M. Naillon, F. Besnier, Finite element analysis of piezoelectric structure
-% electro-mechanical response, INTES GmbH, Stuttgart (1989)
+\bibitem  [Naillon 89] {Nai89}
+ M. Naillon, F. Besnier, Finite element analysis of piezoelectric structure
+ electro-mechanical response, INTES GmbH, Stuttgart (1989)
 
-%\bibitem  [Nassar 83] {Nas83}
-% A.A. Nassar, E.L. Adler, Propagation and electromechanical coupling to
-% plate modes in piezoelectric composite membranes, Proc. IEEE Ultrasonics
-% symposium (1983) 369--372
+\bibitem  [Nassar 83] {Nas83}
+ A.A. Nassar, E.L. Adler, Propagation and electromechanical coupling to
+ plate modes in piezoelectric composite membranes, Proc. IEEE Ultrasonics
+ symposium (1983) 369--372
 
-%\bibitem  [Nix 89] {Nix89}
-% W.D. Nix, Mechanical properties of thin films, Met. Trans A, Vol.~20A
-% (1989) 2217
+\bibitem  [Nix 89] {Nix89}
+ W.D. Nix, Mechanical properties of thin films, Met. Trans A, Vol.~20A
+ (1989) 2217
 
 \bibitem  [Nye 57] {Nye57}
  J.F. Nye, Physical properties of crystals, Oxford science publ.,
@@ -645,11 +645,11 @@
 
 \bibitem  [Olaf 92] {Ola92}
  J.M. Olaf, Ein Verfahren zur Bewertung des mechanischen Verhaltens von
- Randschichten, Dissertation, UniversitÑt Freiburg (1992)
+ Randschichten, Dissertation, Universit√§t Freiburg (1992)
 
 \bibitem  [Over 77] {Ove77}
  H.-H. Over, Elastische und plastische Eigenschaften von einkristallinem
- Silicium in AbhÑngigkeit von der Temperatur und der Versetzungsdichte,
+ Silicium in Abh√§ngigkeit von der Temperatur und der Versetzungsdichte,
  Dissertation, RWTH~Aachen (1977)
 
 \bibitem  [Parsons 92] {Par92}
@@ -658,22 +658,22 @@
  July (1992) 45--48
 
 \bibitem  [Paul 75] {Pau75}
- R. Paul, Halbleiterphysik, Alfred HÅthig Verlag, Heidelberg (1975)
+ R. Paul, Halbleiterphysik, Alfred H¬Åthig Verlag, Heidelberg (1975)
 
-% \bibitem  [Pfeiffer 89] {Pfe89}
-%  F. Pfeiffer, EinfÅhrung in die Dynamik, B.G. Teubner StudienbÅcher,
-%  Stuttgart (1989)
+\bibitem  [Pfeiffer 89] {Pfe89}
+ F. Pfeiffer, Einf¬Åhrung in die Dynamik, B.G. Teubner Studienb¬Åcher,
+ Stuttgart (1989)
 
 \bibitem  [Petersen 79] {Pet79}
  K.E. Petersen, C.R. Guarnieri, Young's modulus measurements of thin films
  using micromechanics, J. Appl. Phys., Vol.~50, No.~11 (1979) 6761--6766
 
 \bibitem  [Pfeifer 89] {Pfe89}
- G. Pfeifer, R. WerthschÅtzky, Drucksensoren, VEB Verlag Technik, Berlin,
+ G. Pfeifer, R. Werthsch¬Åtzky, Drucksensoren, VEB Verlag Technik, Berlin,
  1.~Auflage (1989)
 
 \bibitem  [Pichler 90] {Pic90}
- P. Pichler, R. DÅrr, {\sf ICECREAM} 4.2, User's Guide, FhG--AIS,
+ P. Pichler, R. D¬Årr, {\sf ICECREAM} 4.2, User's Guide, FhG--AIS,
  Erlangen (1990)
 
 \bibitem  [Polla 84] {Pol84}
@@ -694,14 +694,14 @@
  Proc. TRANSDUCERS~'91, Digest of technical papers, San Francisco
  (1991) 543--546
 
-% \bibitem  [P†czelt 87] {Pac87}
-%  I. P†czelt, P. Scharle, A vÇgeselem-m¢dszer a kontinuummechanik†ban,
-% MÅszaki Kînyvkiado, Budapest (1987)
+\bibitem  [P¬†czelt 87] {Pac87}
+ I. P¬†czelt, P. Scharle, A v√©geselem-m√≥dszer a kontinuummechanik¬†ban,
+ M√ºszaki K√∂nyvkiado, Budapest (1987)
 
-%\bibitem  [Pratt 91] {Pra91}
-% R.I. Pratt, G.C. Johnson, R.T. Howe, J.C. Chang, Micromechanical structures
-% for thin film characterization, Proc. TRANSDUCERS~'91, Digest of technical
-% papers, San Francisco (1991) 205--208
+\bibitem  [Pratt 91] {Pra91}
+ R.I. Pratt, G.C. Johnson, R.T. Howe, J.C. Chang, Micromechanical structures
+ for thin film characterization, Proc. TRANSDUCERS~'91, Digest of technical
+ papers, San Francisco (1991) 205--208
 
 \bibitem  [Prak 91] {Pra91}
  A. Prak, F.R. Blom, M. Elwenspoek, T.S.J. Lammerink, Q-factor and frequency
@@ -710,20 +710,20 @@
 
 \bibitem  [Prak 93] {Pra93}
  A. Prak, Silicon resonant sensors: operation and response, Dissertation,
- UniversitÑt Twente, Enschede, Niederlande (1990)
+ Universit√§t Twente, Enschede, Niederlande (1990)
 
-% \bibitem  [Preez 90] {Pre90}
-%  R.J. du Preez, Solution of coupled piezoelectric-solid-structure problems
-%  with PERMAS, Finite elements in engineering applications, INTES~GmbH,
-%  Stuttgart (1990) 283--300
+\bibitem  [Preez 90] {Pre90}
+ R.J. du Preez, Solution of coupled piezoelectric-solid-structure problems
+ with PERMAS, Finite elements in engineering applications, INTES~GmbH,
+ Stuttgart (1990) 283--300
 
 \bibitem  [Quickert 93] {Qui93}
- M. Quickert, Ableitung netzwerktheoretischer Ersatzschaltbilder fÅr
+ M. Quickert, Ableitung netzwerktheoretischer Ersatzschaltbilder f√ºr
  piezoelektrische Resonatoren, Diplomarbeit, TU~Dresden (1993)
- unverîffentlicht
+ unver√∂ffentlicht
 
 \bibitem  [Ramm 90] {Ram90}
- E. Ramm, G. MÅller, J. MÅller, K. Schweizerhof,
+ E. Ramm, G. M√ºller, J. M√ºller, K. Schweizerhof,
  Dynamische Berechnungen mit der Methode der finiten Elemente,
  {\sf ANSYS}-Seminarunterlagen, CADFEM~GmbH, Ebersberg (1990)
 
@@ -736,9 +736,9 @@
  A.J. Ricco, S.J. Martin, R.M. White, Short course: fundamentals of
  ultrasonic sensors, TRANSDUCERS~'91, San Francisco (1991)
 
-%\bibitem  [RiethmÅller 88] {Rie88}
-% W. RiethmÅller, W. Benecke, Thermally excited silicon microactuators,
-% IEEE Transactions on Electron Devices, Vol.~35, No.~6 (1988)
+\bibitem  [Riethm¬Åller 88] {Rie88}
+ W. Riethm√ºller, W. Benecke, Thermally excited silicon microactuators,
+ IEEE Transactions on Electron Devices, Vol.~35, No.~6 (1988)
 
 \bibitem  [Reichl 89] {Rei89}
  H. Reichl, Ed., Halbleitersensoren, Expert-Verlag, Ehningen (1989)
@@ -749,7 +749,7 @@
  Hilton Head Island, South Carolina (1990)
 
 \bibitem  [Sandmaier 90] {San90}
- H. Sandmaier, Simulationswerkzeuge zum Design systemfÑhiger Mikrosensoren
+ H. Sandmaier, Simulationswerkzeuge zum Design systemf√§higer Mikrosensoren
  ({\sf SENSOR}), Digest of Anwenderforum of Micro System Technologies~90,
  Berlin (1990) 170--175
 
@@ -765,23 +765,22 @@
  films, 7th International conference on solid-state sensors and actuators,
  ... (1993) 158--161
 
-
 \bibitem  [Sauerbrey 59] {Sau59}
- G. Sauerbrey, Verwendung von Schwingquarzen zur WÑgung dÅnner Schichten und
- zur MikrowÑgung, Z.~Phys.~155 (1959) 206
+ G. Sauerbrey, Verwendung von Schwingquarzen zur W√§gung d¬Ånner Schichten und
+ zur Mikrow√§gung, Z.~Phys.~155 (1959) 206
 
-% \bibitem  [Schwarz 84] {Sch84}
-%  H.R. Schwarz, Methode der finiten Elemente, B.G. Teubner, 2.~Auflage,
-%  Stuttgart (1984)
+\bibitem  [Schwarz 84] {Sch84}
+ H.R. Schwarz, Methode der finiten Elemente, B.G. Teubner, 2.~Auflage,
+ Stuttgart (1984)
 
 \bibitem  [Schroth 92] {Sch92}
  A. Schroth, Modellierung mikromechanischer Membranen, Diplomarbeit,
- TU Chemnitz / HSG--IMIT, Villingen-Schwenningen (1992) unverîffentlicht
+ TU Chemnitz / HSG--IMIT, Villingen-Schwenningen (1992) unver√∂ffentlicht
 
 \bibitem  [Schorer 93] {Sch93a}
- A. Schorer, Aufbau und Erprobung eines universellen Me·platzes fÅr
+ A. Schorer, Aufbau und Erprobung eines universellen Me√°platzes f¬År
  Messungen an mikromechanischen Bauelementen, Diplomarbeit,
- FH-Furtwangen / HSG--IMIT, Villingen-Schwenningen (1993) unverîffentlicht
+ FH-Furtwangen / HSG--IMIT, Villingen-Schwenningen (1993) unver‚Äùffentlicht
 
 \bibitem  [Schumacher 93] {Sch93b}
  A. Schumacher, Th. Fabula, H.-J. Wagner and M. Alavi,
@@ -794,9 +793,9 @@
  Proc. Micro System Technologies 94, Berlin, 19.--21. Okt. (1994)
 
 \bibitem  [Schumacher] {Dissaxel}
- A. Schumacher, Untersuchung des laserunterstÅtzten Na·- und TrockenÑtzens
+ A. Schumacher, Untersuchung des laserunterst¬Åtzten Na√°- und Trocken√§tzens
  von Silizium zur Herstellung dreidimensionaler Mikrostrukturen,
- Dissertation, UniversitÑt Stuttgart / HSG--IMIT (in Vorbereitung)
+ Dissertation, Universit√§t Stuttgart / HSG--IMIT (in Vorbereitung)
 
 \bibitem  [SDRC] {SDRC}
  Structural Dynamics Research Corporation, Milford, Ohio, USA
@@ -811,14 +810,14 @@
  systems ({\sf MEMCAD}), Journal of Microelectromechanical Systems, Vol.~1,
  No.~1 (1992) 3--13
 
-\bibitem  [SÇquin 91] {Seq91}
- C.H. SÇquin, Computer simulation of anisotropic crystal etching, Proc.
+\bibitem  [S‚Äöquin 91] {Seq91}
+ C.H. Sequin, Computer simulation of anisotropic crystal etching, Proc.
  TRANSDUCERS~'91, Digest of technical papers, San Francisco (1991) 801--906
 
-%\bibitem  [Shephard 90] {She90}
-% J.N. Shepherd, Prediction of anisotropic etching in (100) silicon,
-% MME~'90, 2nd Workshop on Micromachining Micromechanics and Microsystems,
-% Berlin (1990)
+\bibitem  [Shephard 90] {She90}
+ J.N. Shepherd, Prediction of anisotropic etching in (100) silicon,
+ MME~'90, 2nd Workshop on Micromachining Micromechanics and Microsystems,
+ Berlin (1990)
 
 \bibitem  [Shulman 91] {Shu91}
  M.A. Shulman, M. Ramaswamy, M.L. Heytens, S.D. Senturia, An object oriented
@@ -850,15 +849,15 @@
  Sensors and Actuators A, 35 (1992) 129--135
 
 \bibitem  [Sommerfeld 49] {Som49}
- A. Sommerfeld, Vorlesungen Åber theoretische Physik, Band~II, Mechanik
+ A. Sommerfeld, Vorlesungen ¬Åber theoretische Physik, Band~II, Mechanik
  deformierbarer Medien, Akademische Verlagsgesellschaft, Leipzig (1949)
 
 \bibitem  [Spohr 90] {Spo90}
  R. Spohr, Ion Tracks and Microtechnology, Wiesbaden, Vieweg Verlag (1990)
 
-%\bibitem  [Stemme 90] {Ste90}
-% E. Stemme, G. Stemme, A balanced resonant pressure sensor, Sensors and
-% Actuators, A21--A23 (1990) 336--341
+\bibitem  [Stemme 90] {Ste90}
+ E. Stemme, G. Stemme, A balanced resonant pressure sensor, Sensors and
+ Actuators, A21--A23 (1990) 336--341
 
 \bibitem  [Stemme 91a] {Ste91a}
  G. Stemme, Resonant silicon sensors, J. Micromech. Microeng.~1 (1991)
@@ -879,21 +878,21 @@
  resonator pressure sensor, Sensors and Actuators A, 24 (1990) 15--19
 
 \bibitem  [Tichy 80] {Tic80}
- J. Tichy, G. Gautschi, Piezoelektrische Me·technik, Springer-Verlag,
+ J. Tichy, G. Gautschi, Piezoelektrische Me√°technik, Springer-Verlag,
  Berlin (1980)
 
 \bibitem  [Tijhuis 87] {Tij87}
  G.J. Tijhuis, Onderzoek naar het Druk-Frequentie verband van een resonerende
- membraan druksensor, Diplomarbeit (hollÑndisch), UniversitÑt Twente,
- Niederlande (1987) unverîffentlicht
+ membraan druksensor, Diplomarbeit (holl‚Äûndisch), Universit‚Äût Twente,
+ Niederlande (1987) unver‚Äùffentlicht
 
 \bibitem  [Tijhen 91] {Tij91}
  W. Tijhen, T. Tamagawa, C.P. Ye, C.C. Hsueh, P. Schiller, D.L. Polla,
  Properties of piezoelectric thin films for micromechanical devices and
  systems, Proc. 4th Micro-Electro-Mechanical-Systems, Nara, Japan (1991) 114
 
-%\bibitem  [Tilmans] {Til}
-% H.A.C. Tilmans, persînliche Mitteilung
+\bibitem  [Tilmans] {Til}
+ H.A.C. Tilmans, pers√∂nliche Mitteilung
 
 \bibitem  [Tilmans 92] {Til92}
  H.A.C. Tilmans, M. Elwenspoek, J.H.J. Fluitman, Micro resonant force gauges,
@@ -901,7 +900,7 @@
 
 \bibitem  [Tilmans 93] {Til93}
  H.A.C. Tilmans, Micro-mechanical encapsulated built-in resonant strain
- gauges, Dissertation, UniversitÑt Twente, Enschede, Niederlande (1993)
+ gauges, Dissertation, Universit√§t Twente, Enschede, Niederlande (1993)
 
 \bibitem  [Timoshenko 87] {Tim87}
  S.P. Timoshenko, S. Woinowsky-Krieger, Theory of plates and shells,
@@ -911,17 +910,17 @@
  Programme: SUPREM-III und SUPREM-IV, Technology Modeling Associates, Inc.,
  Palo Alto, CA, USA
 
-%\bibitem  [Trimmer 89] {Tri89}
-% W.S.N. Trimmer, Microrobots and micromechanical systems, Sensors and
-% Actuators, 19 (1989) 267--287
+\bibitem  [Trimmer 89] {Tri89}
+ W.S.N. Trimmer, Microrobots and micromechanical systems, Sensors and
+ Actuators, 19 (1989) 267--287
 
 \bibitem  [Tolksdorf 92] {Tol92}
  T. Tolksdorf, Statische Berechnung eines mikromechanischen Drucksensors
- mit der Methode der finiten Elemente, Diplomarbeit, UniversitÑt Stuttgart
- (1992) unverîffentlicht
+ mit der Methode der finiten Elemente, Diplomarbeit, Universit√§t Stuttgart
+ (1992) unver√∂ffentlicht
 
 \bibitem  [UBM91] {UBM91}
- Bedienungsanleitung: Optisches Me·system Microfocus, UBM-Me·technik GmbH
+ Bedienungsanleitung: Optisches Me√üsystem Microfocus, UBM-Me√ütechnik GmbH
  Ettlingen (1991)
 
 \bibitem  [Uttamachandi 87] {Utt87}
@@ -929,21 +928,21 @@
  resonant diaphragm pressure sensor, Electronics Letters, Vol.~23, No.~4,
  (1987) 152--153
 
-%\bibitem  [Vellekoop 91] {Vel91}
-% M.J. Vellekoop, A.J. van Rhijn, G.W. Lubking, A. Venema, All-silicon plate
-% wave oscillator system for sensors, Sensors and Actuators~A, 25--27 (1991) 699--703
+\bibitem  [Vellekoop 91] {Vel91}
+ M.J. Vellekoop, A.J. van Rhijn, G.W. Lubking, A. Venema, All-silicon plate
+ wave oscillator system for sensors, Sensors and Actuators~A, 25--27 (1991) 699--703
 
 \bibitem  [VIBRIT-Piezokeramiken] {VIB}
  VIBRIT - Piezoceramics from Siemens, Ord.-No.:~N-281/5035-101, Siemens~AG,
- MÅnchen
+ M√ºnchen
 
 \bibitem  [VIBRIT-Datenblatt 81] {Sie81}
  VIBRIT - Piezokeramik von Siemens, Datenblatt, Siemens~AG, Redwitz,
  Stand: Januar~1981,
 
-%\bibitem  [Vinci 91] {Vin91}
-% R.P. Vinci, J.C. Bravman, Mechanical testing of thin films, Proc.
-% TRANSDUCERS~'91, Digest of technical papers, San Francisco (1991) 943--948
+\bibitem  [Vinci 91] {Vin91}
+ R.P. Vinci, J.C. Bravman, Mechanical testing of thin films, Proc.
+ TRANSDUCERS~'91, Digest of technical papers, San Francisco (1991) 943--948
 
 \bibitem  [Wachutka 90] {Wac90}
  G. K. Wachutka, Rigorous thermodynamic treatment of heat generation and
@@ -965,10 +964,10 @@
  G. Wachutka, Problem-oriented modeling of microtransducers: state of the
  art and future challenges, EUROSENSORS~VII, Budapest (1993) preprint
 
-% \bibitem  [Wachutka 93b] {Wac93b}
-%  G. Wachutka, Reliability and judicious interpretation of numerical
-%  simulations, in UETP--MEMS Course: CAD Tools for MEMS, FSRM-Neuchatel,
-%  Schweiz (1993)
+\bibitem  [Wachutka 93b] {Wac93b}
+ G. Wachutka, Reliability and judicious interpretation of numerical
+ simulations, in UETP--MEMS Course: CAD Tools for MEMS, FSRM-Neuchatel,
+ Schweiz (1993)
 
 \bibitem  [Wagner] {Wag94}
  H.-J. Wagner, Charakterisierung und Evaluierung der Technologie zur
@@ -977,7 +976,7 @@
  TU~Braunschweig / HSG--IMIT (in Vorbereitung)
 
 \bibitem  [Wandt] {Wandt}
- M.A.E. Wandt, persînliche Mitteilung
+ M.A.E. Wandt, pers√∂nliche Mitteilung
 
 \bibitem  [Weaver 90] {Wea90}
  W. Weaver, S.P. Timoshenko, D.H. Young, Vibration problems in engineering,
@@ -998,31 +997,31 @@
 \bibitem  [Wiedemann 93] {Wie93}
  M.-C. Wiedemann, Entwicklung eines intelligenten Sensorsytems unter Nutzung
  eines elektrothermisch angeregten mikromechanischen Resonators,
- Diplomarbeit, FH-Kiel (1993) unverîffentlicht
+ Diplomarbeit, FH-Kiel (1993) unver√∂ffentlicht
 
 \bibitem  [Wolfram 91] {Wol91}
  S. Wolfram, {\sf MATHEMATICA} - A system for doing mathematics by computers,
  2nd~Edition, Addison-Wesley Publishing Company, Inc., Redwood City (1991)
 
 \bibitem  [YOKOGAWA 93] {YOKOGAWA}
- {\em YOKOGAWA Electric Corporation}, DatenblÑtter: {\sf DPharp} -
+ {\em YOKOGAWA Electric Corporation}, Datenbl‚Äûtter: {\sf DPharp} -
  Differential pressure and pressure transmitter, Tokyo, Japan (1993)
 
 \bibitem  [Young 50] {You50}
  D. Young, Vibration of rectangular plates by the Ritz method, Journal of
  applied Mechanics, Dec., (1950) 448--453
 
-% \bibitem  [Young 89] {You89}
-%  W.C. Young, Roark's formulas for stress and strain, 6th Edition, McGraw-Hill
-%  Book Co., New York, (1989)
+\bibitem  [Young 89] {You89}
+ W.C. Young, Roark's formulas for stress and strain, 6th Edition, McGraw-Hill
+ Book Co., New York, (1989)
 
-% \bibitem  [Zelenka 86] {Zel86}
-%  J. Zelenka, Piezoelectric resonators and their applications, Elsevier,
-%  Amsterdam (1986)
+\bibitem  [Zelenka 86] {Zel86}
+ J. Zelenka, Piezoelectric resonators and their applications, Elsevier,
+ Amsterdam (1986)
 
 \bibitem  [Zienkiewicz 84] {Zie84}
  O.C. Zienkiewicz, Methode der finiten Elemente, 2.~Auflage, Carl Hanser
- Verlag, MÅnchen-Wien (1984)
+ Verlag, M√ºnchen-Wien (1984)
 
 \bibitem  [Zienkiewicz 87] {Zie87}
  O.C. Zienkiewicz, J.Z. Zhu, A simple error estimator and adaptive procedure
@@ -1035,4 +1034,3 @@
  35 (1992) 51--59
 
 \end{thebibliography}
-

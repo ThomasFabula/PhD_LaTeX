@@ -8,7 +8,7 @@ Materialeigenschaften und die elektro-thermo-mechanischen Wechselwirkungen
 bei Mehrschichtsystemen beschreiben zu können. So kann beispielsweise die
 Optimierung mikromechanischer Resonanzsensoren nur unter gleichzeitiger
 Betrachtung der statischen {\em und} dynamischen Eigenschaften unter
-Bercksichtigung des physikalischen Anregungsprinzips erfolgen.
+Berücksichtigung des physikalischen Anregungsprinzips erfolgen.
 Mit den im Rahmen dieser Arbeit entwickelten FE-Modellen in Verbindung mit
 den Möglichkeiten des kommerziellen Programmsystems {\sf ANSYS} wurden
 gekoppelte Feldberechnungen durchgeführt und das Verhalten piezoelektrisch

@@ -1,0 +1,648 @@
+\chapter{Grundlagen der Mikromechanik}
+\label{grundlagen}
+\pagenumbering{arabic}
+
+Die Mikromechanik ist ein junger interdisziplinärer Forschungsbereich, der
+den Technologievorrat der Mikroelektronik nutzt, um miniaturisierte
+Bauelemente hauptsächlich aus Silizium für verschiedene
+Anwendungsbereiche zu realisieren. Sie befaßt
+sich mit dem Entwurf, der Herstellung und der Anwendung mechanischer
+Strukturen und Systeme, die zumindest in einer Dimension eine Abmessung
+im Mikrometerbereich aufweisen, so daß feinmechanische Formgebungsverfahren
+nicht mehr sinnvoll eingesetzt werden können \cite{Bue91a}. %Heu89}.
+Die wesentlichen Vorteile der Mikromechanik gegenber den konventionellen
+Fertigungstechniken sind:
+%
+\begin{itemize}
+\item
+Ausnutzung der Vorteile des einkristallinen Siliziummaterials
+\item
+hochgenaue Strukturübertragung mittels lithographischer Verfahren und damit
+gute Reproduzierbarkeit der mikro\-mechanischen Bauelemente
+\item
+hoher Integrationsgrad durch minimale Strukturgrößen, verbunden mit
+einer wesentlichen Erhöhung der Zuverlässigkeit der Bauelemente
+\item
+Integration mechanischer, elektronischer und optischer Funktionen
+in komplexen Mikrosystemen
+\item
+kostengünstige Herstellung durch Fertigung im Batch-Betrieb.
+\end{itemize}
+%
+Hauptanwendungen mikromechanischer Strukturen sind derzeit Sensoren und
+Aktoren, sowie spezielle mechanische Funktionselemente beispielsweise in
+der integrierten Optik.
+Zum Einsatz mikromechanischer Systeme werden spezielle Anforderungen
+an die Aufbau- und Verbindungstechnik gestellt, um die mechanische
+Stabilität und gleichzeitig eine einwandfreie Funktion der Bauelemente zu
+gewährleisten.  Bei Sensoren stellt die Art der Meßgrößeneinleitung
+einerseits, die Sensorgehäusung als Schutz vor unerwünschten
+Umwelteinflüssen andererseits oft ein erhebliches Problem dar, das in
+der Regel nur durch anwendungsspezifische Aufbau-, Kontaktierungs-
+und Gehäusungstechniken gelöst werden kann. \\
+%
+Die Funktionsweise
+mikromechanischer Sensoren und Aktoren beruht auf verschiedenen
+physikalischen Wirkprinzipien, bei denen meist eine Energieumwandlung
+vom Mechanischen ins Elektrische stattfindet.  Als
+Detektionsprinzipien finden piezoresistive, piezoelektrische,
+kapazitive, chemische und optische Sensoreffekte Anwendung, während bei
+Aktoren z.B.\ elektrostatische, -magnetische, -thermische und
+piezoelektrische Antriebsprinzipien eingesetzt werden.  Mikromechanische
+Aktoranwendungen sind beispielsweise Mikroventile und Mikropumpen für
+miniaturisierte Dosiersysteme, Mikroschalter, sowie aktive
+Positionierelemente für die integrierte Optik (z.B.\ für die
+Glasfaser-Chip-Kopplung).\\
+Das zur Zeit am weitesten fortgeschrittene Arbeitsgebiet der Mikromechanik
+stellt die Sensorik dar. Insbesondere können die hohen Anforderungen der
+Präzisionsmeßtechnik durch mikromechanische Sensoren, auf der Basis des
+frequenzanalogen Sensorprinzips, gut abgedeckt werden.\\
+Die Weiterentwicklung der Mikromechanik stellt die Mikrosystemtechnik dar,
+die sich mit der Realisierung multifunktionaler Mikrosysteme durch
+Integration verschiedener Bauelementefunktionen besch#ftigt. Mögliche
+industrielle Anwendungsgebiete von Mikrosystemen finden
+sich in der Produktions- und Fertigungsautomatisierung,
+Konsumgüterindustrie, Rechner- und Kommunikationstechnik, Verkehrs-,
+Medizin-, sowie Umweltschutztechnik.
+
+
+\section{Herstellungstechnologien}
+\label{herstellungstechnologien}
+
+Wegen seiner hohen Reinheit, der technischen Verfügbarkeit und der
+hochentwickelten Verfahrenstechnik nimmt Silizium eine Sonderstellung
+bei den in der Mikromechanik verwendeten Werkstoffen ein. Die Existenz
+eines Eigenoxids ermöglicht die Nutzung als Maskierschicht bei
+selektiven Dotier- und Ätzprozessen und zusätzlich den Einsatz als
+Isolations- und Passivierungsschicht. Im Gegensatz zur Mikroelektronik
+werden in der Mikromechanik außer Silizium auch andere
+Werkstoffe\footnote{z.B.\ Quarz, Gläser, Keramiken.} mit
+unterschiedlichen Eigenschaften
+verwendet und neben den elektrischen vor allem die mechanischen,
+thermischen und piezoelektrischen Eigenschaften der
+Materialien ausgenutzt. Bei der technologischen Herstellung handelt es
+sich zum einen um planare Prozesse, bei denen auf einem
+einkristallinen Siliziumsubstrat komplexe Dünnschichtfolgen aufgebracht
+und strukturiert werden. Verschiedene photolithographische Verfahren,
+wie optische oder Elektronenstrahl-Lithographie dienen der Strukturierung
+der Schichten. Mit Hilfe der Dünnschicht-Technologien werden Schichtsysteme
+unter verschiedenen Bedingungen, beispielsweise aus der Gasphase ({\em CVD
+= \underline{C}hemical \underline{V}apor \underline{D}eposition})
+oder unter Verwendung physikalischer Abscheideprozesse
+({\em PVD = \underline{P}hysical \underline{V}apor
+\underline{D}eposition}) abgeschieden. Zur
+gezielten Veränderung der Materialeigenschaften werden Implantation,
+Diffusion und Oxidation eingesetzt.  Neben den additiven Prozessen der
+Schichtabscheidung werden subtraktive Prozesse zur isotropen und
+anisotropen Strukturierung der mikromechanischen Bauelemente verwendet.
+Insbesondere nimmt das anisotrope Naßätzen\footnote{z.B.\ in Alkalilaugen
+({\em KOH-,NaOH-}Lösung).}, bei dem die Ätzraten stark von der
+Kristallrichtung des einkristallinen Siliziums abhängig sind, in der
+dreidimensionalen Strukturierung eine dominierende Stellung ein. Die
+Anisotropie des Ätzverhaltens gestattet eine definierte Strukturierung
+in lateraler
+Richtung, während eine Selektivität durch Einbau von Ätzstoppschichten
+(z.B.\ mittels Dotierung mit Fremdatomen) eine vertikale Strukturierung des
+Siliziums erlaubt. Verschiedene Trockenätzverfahren wie das Plasmaätzen
+({\em PE = \underline{P}lasma \underline{E}tching}) oder reaktive
+Ionenstrahlätzen ({\em RIE = \underline{R}eactive \underline{I}on
+\underline{E}tching}) gewinnen aufgrund der erhöhten Prozeßkompatibilität
+und besseren Möglichkeit der Integration in der
+Batch-Verarbeitung zunehmend an Bedeutung. Andere Prozeßtechnologien,
+wie laserunterstütze Verfahren (\cite{Ala92a} und Referenzen darin), die
+Kernspurtechnik \cite{Spo90} und die {\em LIGA}-Technik
+({\em \underline{Li}thographie-\underline{G}alvanoformung-\underline{A}bformung},
+\cite{Bec86}) sind zur Zeit im
+Forschungsstadium und erweitern zukünftig das technologische Spektrum.
+Die Technologien zur Herstellung von dreidimensionalen Mikrostrukturen in
+Silizium unter Verwendung von anisotropen Ätztechniken mit oder ohne
+Ätzstoppverfahren
+werden unter dem Oberbegriff Bulk-Mikromechanik ({\em BMM}) zusammengefaát,
+da die Siliziumscheibe (Wafer) i.a.\ ber ihre gesamte Dicke strukturiert
+wird. Neue technologische Entwicklungen, wie beispielsweise die
+Oberflächenmikromechanik ({\em OFM}) mit Hilfe von
+Opferschichten\footnote{engl.: {\em Sacrificial-Layer-Method}.},
+sollen der weiteren Miniaturisierung und
+dem Bedarf an beweglichen Teilen in komplexen Mikrosystemen Rechnung
+tragen \cite{How87, Fan87}. Hierbei werden auf der Basis z.B.\
+von Poly-Silizium ({\em poly-Si})
+freitragende Strukturen auf der Waferoberfläche realisiert, bei der
+Mehrlagenstrukturen aus Siliziumoxid (Opferschicht) und {\em poly-Si} mit
+Schichtdicken im Mikrometerbereich verwendet werden. Statt {\em poly-Si}
+kann auch Siliziumnitrid als Material der Mikrostruktur eingesetzt
+werden \cite{Smi92a}.\\
+%
+Die in der vorliegenden Arbeit experimentell untersuchten mikromechanischen
+Bauelemente wurden ausnahmslos in Bulk-Mikromechanik ohne
+Verwendung von Ätzstoppschichten hergestellt und weisen als minimale
+Strukturabmessungen Balken- und Membrandicken von etwa 20~$\mu$m auf.
+
+
+\section{Entwurf mikromechanischer Systeme}
+\label{entwurf}
+
+Der Entwurf von mikromechanischen Systemen muß in das
+Gesamtherstellungskonzept integriert werden und rechnerunterstützt
+erfolgen, da das Gesamtsystemverhalten „äßerst komplex ist und durch das
+unterschiedliche Verhalten der Einzelkomponenten bestimmt wird. Die
+Vorteile des rechneruntersttzten Entwurfs ({\em CAD = \underline{C}omputer
+\underline{A}ided \underline{D}esign}) bestehen im möglichen Einsatz
+verschiedener Entwicklungswerkzeuge\footnote{Layout-Editoren,
+Volumenmodellierer, Simulatoren, Datenbanken, etc.},
+den schnellen Žnderungsmöglichkeiten
+und den damit verbundenen kürzeren Entwicklungszeiten. Die Analyse des
+Funktionsprinzips und der Bauelementeeigenschaften mit Hilfe der Simulation,
+beispielsweise der {\em Finite-Elemente-Methode} ({\em FEM}), fördert das
+Verständnis und erlaubt die Prüfung von Teilfunktionen bereits
+in einer sehr frühen Entwicklungsphase. Ferner sind Parametervariationen
+ein effektives Hilfsmittel zur Optimierung und gleichzeitig zur
+Reduktion der Proto\-typenanzahl, so daß die Gesamtkosten der
+Bauelementeentwicklung niedrig gehalten werden können. Ein weiterer
+wichtiger Punkt ist die Schaffung einer rechnergesttzten
+Dokumentationsgrundlage zur Hinterlegung des Entwurfswissens und zur
+Überprüfung der in der Optimierung vollführten Variationen.\\
+In der Mikroelektronik ist eine
+Durchgängigkeit der Entwicklungswerkzeuge, z.B.\ für {\em ASICs (=
+\underline{A}pplication \underline{S}pecific \underline{I}ntegrated
+\underline{C}ircuits)} gegeben und Stand der kommerziellen
+Technik.  Es existieren hochentwickelte rechnergestützte Werkzeuge für
+Layout, Simulation und Verifikation, so daß die gesamte Fabrikation der
+elektronischen Bauelemente am Rechner simuliert werden kann. Während
+die Mikroelektronik durch eine starke Standardisierung der
+Herstellungsverfahren gekennzeichnet ist, gibt es in der Mikromechanik
+eine Vielzahl von flexiblen Technologien und anwendungsspezifischen
+Anforderungen. Zudem befindet sich der Entwicklungsstand mikromechanischer
+Entwurfswerkzeuge heute noch am Anfang. Daher beschränkt sich der
+Einsatz von rechnergestützten Werkzeugen zur Zeit im
+wesentlichen auf die Maskenerstellung mit Layout-Editoren und die
+Bauelemente\-simulation mit Hilfe der FE-Methode. Zur Verifikation der
+Simulationsmodelle sind daher experimentelle Messungen {\em parallel}
+zu den Berechnungen erforderlich, um die Eckdaten des Modellparameterraumes
+abzustecken.\\
+%
+In {\bf Abbildung~\ref{abbmems}} ist der schematische Ablauf des
+mikromechanischen Entwurfsprozesses für
+{\em Mikro-elektro-mechanische-Systeme (MEMS)}
+dargestellt, wie er sich in einer geschlossenen rechnergesttzten
+Entwurfsumgebung zukünftig darstellen könnte \cite{Wac93}.
+Der Entwurf geht von
+den Anforderungen und Spezifikationen aus, die in einem Pflichtenheft
+definiert werden. Für einen Sensor enthält das Pflichtenheft
+beispielsweise Forderungen bezüglich der Empfindlichkeit gegenüber der
+Meßgröße, der Kennlinienlinearität, der Querempfindlichkeiten und des
+šberlastverhaltens. Im Layout-Design ({\sl Maskenentwurf}) wird unter
+Zugrundelegung der zur Verfügung stehenden Herstellungstechnologien die
+Bauelementegeometrie und das Funktionsprinzip, d.h.\ die nutzbaren
+physikalischen Wirkprinzipien, festgelegt. Hierfür müssen unter Verwendung
+prozeßspezifischer Entwurfsregeln ({\sl Design Rules}) die
+{\em zweidimensionalen}
+Maskensätze für die verschiedenen benötigten technologischen Schritte
+erstellt werden.
+%
+Anschließend wird mit Hilfe der Prozeßsimulation unter Berücksichtigung
+prozeßspezifischer technologischer Parameter und Verwendung geeigneter
+physikalischer Modelle die {\em dreidimensionale} Bauelementestruktur
+abgeleitet. Als wichtiges Beispiel für die Mikromechanik ist hier die
+Simulation des anisotropen Naßätzens zu nennen, auf die in
+Kapitel~\ref{processmodeling} kurz eingegangen wird.
+%
+Die Bauelementesimulation modelliert das Betriebsverhalten
+der mikromechanischen Struktur unter Bercksichtigung der speziellen
+Materialeigenschaften und „äußeren Betriebsbedingungen, unter Zugrundelegung
+der in der Prozeásimulation abgeleiteten Bauelementestruktur. Als Ergebnis
+wird die \glqq Ein-/Ausgabe-Charakteristik\grqq \, (z.B.\ Sensorkennlinie)
+des Bauelementes zur Verfügung gestellt.
+%
+Auf einer nächst höheren Modellebene wird das Systemverhalten ausgehend von
+dem elektrischen Ersatzschaltbild des mikromechanischen Bauelementes auf
+Schaltungsebene mit einem Netzwerksimulator (z.B.\ {\sf SPICE})
+modelliert. Der Entwurfsvorgang wird solange iterativ durchlaufen, bis
+die Anforderungen erfüllt sind und ein optimiertes Design eines
+Prototyps erreicht ist. Anschließend erfolgt die technologische
+Realisation und Vermessung des Prototyps. Wenn eine experimentelle
+Verifikation der Anforderungen nicht erreicht werden kann, ist eine
+Entwurfsverbesserung, ein sogenanntes {\em Redesign}, notwendig. Die
+Wiederaufnahme der Entwurfsschleife kann hierbei durch einen Rücksprung
+auf verschiedene Entwurfsebenen erfolgen.
+%----------------------- Beginn: Figure-Environment ----------------------
+\begin{figure}[htb]
+\begin{center}
+% --- Dateiname des Bildes
+\input{abbee.tex}
+\setabbee
+\end{center}
+\caption{\label{abbmems}
+ Rechnergesttztes Ablaufschema beim mikromechanischen Entwurfsprozeá
+ (nach [Wachutka 93])}
+\end{figure}
+%----------------------- Ende: Figure-Environment ----------------------
+
+\clearpage
+
+%\newpage
+\subsection{Maskenlayout}
+\label{maskenlayout}
+
+Bei mikromechanischen Komponenten erfolgt die Strukturübertragung von
+der Maske auf das Substrat (z.B.\ Siliziumwafer)
+auf photolithographischem Wege. Die
+Erstellung der Masken wird mit kommerziellen Layout-Editoren
+vorgenommen, die in der Mikroelektronik eingesetzt werden.  Für die
+gesamttechnologische Herstellung der Strukturen ist ein Maskensatz
+notwendig, der in der Regel aus fünf bis acht Maskenebenen bestehen
+kann. Für jeden einzelnen Prozeßschritt ist eine entsprechende Maske,
+bei einigen sogar Vorder- und Rückseitenmaske erforderlich.
+Insbesondere sind die prozeßspezifischen Eigenheiten und deren
+Auswirkungen bereits im Entwurf zu berücksichtigen. Beim Maskenentwurf muß
+sichergestellt werden, daß die erlaubten Prozeßtoleranzen nicht
+überschritten werden. Beim anisotropen Naßätzen muß beispielsweise die
+laterale Unterätzung konvexer Ecken berücksichtigt werden, so daß
+entsprechende Kompensationsstrukturen im Maskenlayout vorzusehen sind.
+Unter Verwendung verschiedener Kompensationsmodelle werden
+Entwurfsregeln erarbeitet und Hinweise zur Dimensionierung abgeleitet
+\cite{Haf92}. Zusätzlich spielen die Reproduzierbarkeit und die
+Maßhaltigkeit der technologischen Prozesse bei der Herstellung der
+mikromechanischen Strukturen eine wesentliche Rolle. Hierfür müssen im
+Maskenlayout Teststrukturen vorgesehen werden, die an verschiedenen
+Stellen des Wafers angeordnet sind, um gleichzeitig Informationen
+bezüglich der Prozeßhomogenität über den Gesamtwafer zu erhalten. Die
+Teststrukturen gestatten das Prozeáverhalten quantitativ zu
+charakterisieren, indem Eigenschaften der mikromechanischen Elemente
+meátechnisch bestimmt werden, um so Rückschlüsse auf technologie- oder
+entwurfsbedingte Fehler zu ermöglichen.
+
+
+\subsection{Simulation des Herstellungsprozesses}
+\label{processmodeling}
+
+Eine systematische und gezielte Entwicklung von komplexen Mikrosystemen
+ist ohne ein grundlegendes Verständnis ihrer inneren Funktionsmechanismen
+nicht möglich.
+Die Komplexität des Systemverhaltens nimmt mit der Zahl der technologischen
+Herstellungsschritte und der stark ausgeprägten Wechselwirkungen infolge
+hoher Integrationsdichten ständig zu. Aus diesem Grunde ist die
+Modellierung und numerische Simulation des Herstellungsprozesses und des
+Betriebsverhaltens bei komplexer werdenden Bauelementen unerläßlich.
+Statt des herkömmlichen experimentellen Weges
+{\em \glqq by trial and error\grqq} \/ kann durch Nachbildung
+am Rechner das Design zielgenauer optimiert werden. Ein weiterer Vorteil
+der Modellierung ist die Möglichkeit meßtechnisch nur schwer oder
+überhaupt nicht zugängliche physikalische Parameter zu bestimmen und
+dadurch die Funktionsweise der Mikrosysteme besser verstehen zu können.
+Dies hilft die Zahl der Entwicklungszyklen zu reduzieren und somit Zeit
+und Kosten einzusparen.\\
+Da der Zusammenhang zwischen den zweidimensionalen Maskenebenen und dem
+drei\-dimensionalen mikromechanischen Bauelement nicht eindeutig umkehrbar
+ist,
+müssen Berechnungswerkzeuge fr die Prozeßsimulation ({\sl Process Modeling})
+eingesetzt werden, um die Strukturgeometrie abzuleiten.
+Ferner sind die Materialeigenschaften der mikrotechnisch hergestellten
+Schichtsysteme zu bestimmen, die extrem stark von den technologischen
+Herstellungsprozessen abhängig sind. Für die Technologien der
+Mikroelektronik existieren bereits kommerziell erhältliche
+Simulationswerkzeuge für optische Lithographie, Ionenimplantation,
+Diffusion, Oxidation, Epitaxie, Schichtabscheidung und Trockenätzen.
+Sie gestatten es, technologische Prozeßschritte mittels
+geeigneter physikalischer Modelle zu simulieren, und stellen
+Eingangsdaten beispielsweise in Form von Implantations- und Dotierprofilen
+für die anschließende Bauelementesimulation ({\sl Device Modeling}) zur
+Verfügung, in der die elektrischen Eigenschaften berechnet werden
+\cite{Lor85}. Eindimensionale
+Simulationswerkzeuge wie {\sf ICECREAM} \cite{Pic90} und {\sf SUPREM-III}
+\cite{TMA} erlauben Tiefenprofile für Diffusion, Implantation und Oxidation
+zu bestimmen, während zweidimensionale Simulationsprogramme wie
+{\sf COMPOSITE} \cite{COMP} und {\sf SUPREM-IV} \cite{TMA} die flächenhafte
+Berechnung von Dotier-, Implantations- und  Photolackprofilen
+gestatten.\\
+% Die physikalische Modellbildung für Ätzprozesse und
+% Schichtabscheidung sind heute noch ungenügend und Gegenstand der
+% Forschungsaktivitäten. \\
+Die Anforderungen der Mikromechanik an die Prozeßsimulation
+gehen darüber hinaus, und machen neben der Ableitung der dreidimensionalen
+Bauelementestruktur auch die Vorhersage von Materialeigenschaften in
+Abhängigkeit der technologischen Prozeßführung erforderlich.
+Die Abgrenzungen zur Mikroelektronik bestehen zusätzlich in
+der Berücksichtigung der Tiefenstrukturierung, der beidseitigen
+Photolithographie und Scheibenprozessierung, sowie der speziellen Aufbau-
+und Verbindungstechniken. Zur Zeit befindet sich die mikromechanische
+Prozeásimulation im Forschungsstadium. Für die spezifischen mikromechanischen
+Herstellungstechnologien müssen vorhandene Simulationsmodelle stark
+erweitert oder ganz neu entwickelt werden. Zur Prozeßmodellierung
+werden zum einen atomistische Modelle, %(ab initio),
+zum anderen
+aufwendige empirische Modellansätze, die auf experimentell ermittelte
+Daten zurückgreifen, verwendet. In der Literatur werden verschiedene
+Methoden für die Modellierung des anisotropen Ätzens von Silizium
+% \cite{Seq91} und Quarz \cite{Dan91}
+auf atomistischer Ebene vorgestellt \cite{Cam90, Tha94}, um eine Vorhersage
+der Richtungsabhängigkeit des Ätzvorgangs zu ermöglichen. Auf der anderen
+Seite greifen geometriebasierte Simulationsprogramme wie {\sf SIMODE}
+\cite{Fru90} oder {\sf ASEP} \cite{Bus91b} auf empirisch am Siliziumkristall
+ermittelte Ätzraten zurück und sind in der Lage, die dreidimensionale
+Geometrie an FE-Programme über ein neutrales Datenaustauschformat
+(z.B.\ {\sf DXF}\footnote{{\em
+\underline{D}ata-\underline{E}xchange-\underline{F}ormat} ist ursprünglich
+das neutrale Datenaustauschformat des CAD-Programms {\sf AutoCAD} und
+inzwischen neben {\sf IGES} ein internationales Standardformat zur
+Geometriebergabe.}) zu übergeben. Das ursprünglich für den
+Entwurf von integrierten Schaltkreisen entwickelte Programm
+{\sf OYSTER} \cite{Kop89} erlaubt unter Vorgabe der zweidimensionalen
+Maskensätze und der technologischen Prozeßabfolge dreidimensionale
+mikromechaniche Strukturen abzuleiten, benötigt jedoch weitere manuelle
+Eingaben seitens des Benutzers, so daá nur ein beschränkter praktischer
+Einsatz möglich ist. Das Programmsystem {\sf MEMCAD} \cite{Shu91, Sen92}
+stellt eine neuere Entwicklung dar, aus
+vorgegebenen zweidimensionalen Maskenentwürfen die dreidimensionale
+Strukturgeometrie abzuleiten. Zusätzlich sind in einer
+objekt-orientierten Materialdatenbank für einzelne technologische
+Herstellungsverfahren algebraische Zusammenhänge zwischen den
+Materialeigenschaften und bestimmten Prozeßparametern abgelegt.
+Programmintern wird hierbei auf empirische Datensammlungen zurückgegriffen,
+wobei weiterführende Literaturreferenzen die Angaben
+ergänzen. Verschiedene Forschungsgruppen \cite{Cra91a, Joh91, San90}
+arbeiten an der Schaffung integrierter Entwicklungsumgebungen fr
+komplexe Mikrosysteme. Diese Sensor- und Mikrosystem-Entwurfswerkzeuge
+verwenden eine Kombination von analytischen und numerischen Methoden
+(meist FEM) und stellen erste Ans„tze in Richtung einer geschlossenen
+Entwurfs\-umgebung für Mikrosysteme dar. Diese Systeme sind jedoch in
+der Regel auf bestimmte Sensorklassen, beispielsweise Sensoren für
+mechanische Größen, beschränkt.
+
+
+\subsection{Simulation des Bauelementeverhaltens}
+\label{devicemodeling}
+
+Fr die Modellierung von Bauelementen werden in der Mikromechanik
+verschiedene Methoden eingesetzt. Zur ersten Auslegung der Geometrie und
+zur Festlegung des Arbeitspunktes dienen analytische
+Abschätzungen, in denen die physikalischen Grenzen, wie maximal
+erreichbare Kräfte, Hübe, Empfindlichkeiten und Grenzfrequenzen
+ermittelt werden (siehe Kapitel~\ref{skalierungsverhalten}).
+Analytische Programmwerkzeuge,
+wie {\sf SENSIM} \cite{Lee82} und {\sf CAPSS} \cite{Bin87},
+erlauben die Berechnung
+von idealisierten Membrangeometrien für Drucksensoranwendungen und
+beschränken sich somit auf bestimmte Klassen von Problemfällen. Neben
+den analytischen Berechnungsverfahren werden für aufwendige
+Parameterstudien auch symbolische Manipulationsverfahren, sogenannte
+Computeralgebra-Programme wie {\sf MAPLE} \cite{Cha91} oder {\sf MATHEMATICA}
+\cite{Wol91} eingesetzt. Diese Programmsysteme ermöglichen auch „äußerst
+komplexe algebraische Zusammenhänge schnell zu bearbeiten und
+Parameterabhängigkeiten effizient zu analysieren.\\
+  Die Beschreibung
+mikromechanischer Bauelemente setzt im allgemeinen eine dreidimensionale
+Formulierung voraus, da die geometrischen Abmessungen in allen drei
+Raumrichtungen von gleicher Größenordnung sind, so daß die
+Randbedingungen einen erheblichen Einfluß auf das Bauelementeverhalten
+haben. Daher kommt beim mikromechanischen Entwurf den numerischen Methoden,
+wie der Simulation mit Hilfe der Finite-Elemente-Methode, eine wichtige
+Bedeutung zu. Diese gestatten bereits in der Entwurfsphase, auch komplexe
+Geometrien mit vielfältigen Randbedingungen und die technologisch zu
+realisierenden Funktionsprinzipien unter Berücksichtigung prozeßtechnischer
+Einschränkungen zu modellieren. Zusätzlich ermöglicht die FE-Methode
+unterschiedliche Strukturgeometrien unter Verwendung
+verschiedener Materialien in Mehrlagenaufbau, sogenannte
+Multilayerstrukturen\footnote {Auch Sandwich-, Komposit- oder
+Bimorphstrukturen genannt.}, zu berechnen. Als Ausgangswerte für die
+numerischen Modellrechnungen dienen analytische Abschätzungen, die in
+der Regel nur für einfache, idealisierte Strukturgeome\-trien durchgeführt
+werden können. An komplexen FE-Modellem lassen sich anschließend
+Parametervariationen vornehmen, um Toleranzuntersuchungen und
+Sensitivitätsanalysen durchzuführen. So kann beispielsweise der Einfluß
+der Strukturgeometrie und der Materialeigenschaften der Dünnschichtsysteme
+bereits {\em vor} der Herstellung studiert werden. Die FE-Methode erlaubt
+somit mikromechanische Strukturen geeignet auszulegen und die
+Bauelementeeigenschaften gezielt
+im Vorfeld zu optimieren.\\
+In dieser Arbeit werden mit Hilfe {\em dynamischer FE-Berechnungen}
+die Eigenfrequenzen und Schwingungsformen (rechnerische Modalanalyse)
+mikromechanischer Resonatorstrukturen bestimmt
+und der Einfluß der zu untersuchenden physikalischen Meßgrößen
+ermittelt. Die Berechnung der Meßgrößenempfindlichkeit erfolgt
+durch eine nichtlineare, {\em statische FE-Berechnung}, in welcher die
+durch die Meßgröße hervorgerufene Steifigkeitsänderung des Gesamtsystems
+bestimmt wird. Die geänderte Struktursteifigkeit wird anschließend
+herangezogen, um die Eigenfrequenzen des Sensors unter einer äußeren
+Belastung zu ermitteln. Durch einen Vergleich der berechneten
+Sensorcharakteristiken mit experimentellen Daten mikromechanischer
+Bimorphstrukturen kann auf Materialeigenschaften, insbesondere auf eine
+Vordehnung oder Spannung der Dünnschichten zurckgeschlossen werden.
+{\em  Gekoppelte FE-Berechnungen} unter
+Berücksichtigung der elektromechanischen Wechselwirkung ermöglichen eine
+gezielte Vorhersage des statischen und dynamischen Verhaltens von
+piezoelektrisch betriebenen Sensoren und Aktoren. Das Frequenzgangverhalten
+wird ermittelt, indem das mechanische Amplitudenspektrum und der
+elektrische Impedanz- und Phasenverlauf unter Einschluß der
+piezoelektrischen Anregung modelliert wird. Um die thermische
+Fluid-Struktur-Wechselwirkung zwischen einem mikromechanischen
+Bauelement und dem umströmenden Fluid zu beschreiben, muß die
+Geschwindigkeits- und Temperaturverteilung in der Strömung berechnet
+und die Auswirkungen auf die Struktur infolge der temperaturinduzierten
+Spannungen betrachtet werden. Auf diese Weise ist es möglich das Verhalten
+eines Strömungssensors zu berechnen.\\
+Bei der vorliegenden Arbeit wurde für die numerischen Strukturberechnungen
+das kommerziell verfügbare Programmsystem {\sf ANSYS} von
+{\sl Swanson Analysis Systems, Inc.} \cite{SASI} verwendet.
+% und für die Strömungsberechnungen {\sf FIDAP} \cite{FDI}
+Bei der Erstellung komplexer dreidimensionaler Geometrien
+und zu deren Vernetzung wurde der Volumenmodellierer und Preprozessor
+{\sf I-DEAS} \cite{SDRC} eingesetzt. Die analytischen Abschätzungen
+erfolgten mit {\sf MAPLE}.
+
+
+\section{Funktionsprinzip resonanter Sensoren}
+\label{funktionsprinzip}
+
+In modernen Meß- und Regelsystemen, die in zunehmendem Maße digitale
+elektronische Bauelemente einsetzen, spielt die Klasse der resonanten
+Sensoren auf der Basis mechanischer, schwingungsfähiger Strukturen eine
+wichtige Rolle \cite{Bue91b}. Im Gegensatz zu
+konventionellen Sensoren, die für die Signalaufbereitung einen
+Analog-Digital-Wandler benötigen, zeichnen sich resonante
+Sensoren\footnote{Auch als Resonanzsensoren bezeichnet.} durch
+den Vorteil eines Frequenzausgangs aus, so daß die Meßgröße
+frequenzanalog zur Verfügung steht. Weitere Vorteile frequenzanaloger
+Sensoren sind die erzielbare Empfindlichkeit und die damit
+verbundene hohe Meßgrößnauflösung, sowie die Störsicherheit durch
+den Wegfall der analogen Signalübertragung. Weiterhin besteht
+die Möglichkeit zur ständigen Funktionskontrolle des Sensors in
+sicherheitsrelevanten Anwendungen (z.B.\ Beschleunigungssensor in
+Airbag-Steuersystemen), da die Detektion der Resonanzfrequenz die
+Unversehrtheit des Sensors sicherstellt. Resonante
+Sensoren können für die Messung mechanischer Größen wie Druck, Kraft,
+und Beschleunigung, aber auch für die Messung von
+Massenanlagerung\footnote{Mikrowägung nach \cite{Sau59}.},
+der relativen Feuchte und zur Temperaturmessung verwendet werden.
+Zusätzlich besteht die Möglichkeit der Messung abgeleiteter physikalischer
+Größen (z.B.\ Strömungsmessung).\\
+Das Funktionsprinzip der in dieser Arbeit betrachteten
+resonanten Sensoren beruht auf der Abhängigkeit der Eigenfrequenz
+des Resonators von einer „äußeren physikalischen Größe, indem der
+mechanische Spannungszustand beeinfluát oder die Trägheit des Resonators
+ber eine Massenbelegung verändert wird. Die Änderung der
+Resonanzfrequenz durch Dämpfungseffekte infolge Druckschwankungen des
+umgebenden Gases
+können bei Resonatoren mit hoher Schwingungsgüte in erster Näherung
+vernachlässigt werden (siehe Kapitel~\ref{daempfungseinfluesse}).
+Die Resonanzfrequenz stellt als Meßgröße
+ein quasi-digitales Ausgangssignal dar. Die Umsetzung des Frequenzsignals
+erfolgt gemäß {\bf Abbildung~\ref{abbprinzip}} durch Zähltechnik
+\cite{ABV93}.
+%----------------------- Beginn: Figure-Environment ----------------------
+\begin{figure}[htb]
+\begin{center}
+% --- Dateiname des Bildes
+\input{resosen.tex}
+\setresosen
+\end{center}
+ \caption{\label{abbprinzip}
+ Blockschaltbild eines Resonanzsensors}
+\end{figure}
+%----------------------- Ende: Figure-Environment ----------------------
+Der Sensor wird einerseits
+durch seine passiven Resonatoreigenschaften wie Eigenfrequenz,
+Schwingungsmode, Schwingungsgüte und der Meßgrößenempfindlichkeit,
+andererseits durch die Eigenschaften der Schwingungsanregung und
+-detektion, beispielsweise der Modenselektivität, der Effizienz der
+Energieeinkopplung und der Auflösung des Abfragesystems charakterisiert.
+Infolge der Abhängigkeit der Resonanzfrequenz von verschiedenen
+physikalischen Parametern, sind einerseits die Querempfindlichkeiten
+(z.B.\ gegenber Temperatur) der zu entwickelnden Sensoren genau zu
+untersuchen, andererseits ist die prinzipielle Einsatzmöglichkeit solcher
+Resonatorelemente als Multifunktionssensor gegeben. In der vorliegenden
+Arbeit wird das dynamische
+Verhalten mikromechanischer Strukturen am Beispiel resonanter Sensoren
+untersucht, da diese Sensorklasse durch ihr Funktionsprinzip inhärent die
+statischen {\em und} dynamischen Eigenschaften des Sensors wiederspiegelt.
+
+
+\subsection{Drucksensor}
+\label{drucksensor}
+
+Im folgenden soll das frequenzanaloge Funktionsprinzip stellvertretend
+am Beispiel eines resonanten, mikromechanischen Membrandrucksensors
+aufgezeigt werden, der in {\bf Abbildung~\ref{abbdrucksensor}}
+schematisch dargestellt ist. Die erste technologische Realisierung
+solcher Silizium-Membrandrucksensoren erfolgte von {\em Smits et al.}
+unter Verwendung piezoelektrischer $ZnO$-Dünnschichten \cite{Smi83}.
+Dieses Sensordesign war Ausgangspunkt für die im Rahmen des
+BMFT-Verbundprojektes durchgeführten Arbeiten.
+%----------------------- Beginn: Figure-Environment ----------------------
+\begin{figure}[htb]
+\begin{center}
+% --- Dateiname des Bildes
+\input{druckse.tex}
+\setdruckse
+\end{center}
+ \caption{\label{abbdrucksensor}
+ Schema eines resonanten Silizium-Drucksensors mit piezoelektrischem Antrieb}
+\end{figure}
+%----------------------- Ende: Figure-Environment ----------------------
+Die Anregung des Sensors wird durch eine piezoelektrische Dünnschicht
+(hier: Zinkoxid)
+bewerkstelligt, die substratseitig eine hochdotierte p$^{++}$--Elektrode
+und als obere Deckelektrode eine Aluminiumschicht aufweist.
+Mit Hilfe des transversalen piezoelektrischen
+Effektes werden bei Anlegen einer elektrischen Wechselspannung infolge
+Dehnungen auf der Membranoberfläche Biegemomente erzeugt und perio\-dische
+Membranauslenkungen induziert. Durch eine Druckdifferenz zwischen Unter-
+und Oberseite der Membran wird der Siliziumresonator deformiert. Der Betrag
+der statischen Auslenkung ist hierbei ein vielfaches größer als die
+dynamische Schwingungsamplitude. Bei gengend großer statischer
+Auslenkung\footnote{Die statische Auslenkung kann bis zu zwei
+Größenordnungen größer als die dynamische Schwingungsamplitude sein
+(siehe Kapitel~4).} stellen sich durch Reaktionskräfte
+Membranspannungen ein, die zu einer Versteifung des Resonators führen,
+so daß sich die {\em Frequenz analog} zur Meßgröße ändert. Wird
+umgekehrt der piezoelektrische Effekt auch zur Schwingungsdetektion
+genutzt, so kann mit einer geeigneten Auswerteschaltung der Sensor in
+Eigenresonanz betrieben und die Frequenzänderung über einen Frequenzzähler
+ausgelesen werden \cite{Fun93}.
+
+
+\subsection{Kraftsensor}
+\label{kraftsensor}
+
+Frequenzanaloge Silizium-Kraftsensoren beruhen auf beidseitig
+eingespannten Balkenstrukturen, die als mechanische Resonatoren
+Einfachbalken- \cite{Blo90} oder auch Mehrfachbalken-Strukturen
+\cite{Wag94} einsetzen.
+Das Funktionsprinzip ist dem der Drucksensoren identisch. Unter einer
+äußeren, axialen Zugkraftbeaufschlagung nimmt die Resonanzfrequenz
+infolge der Spannungsänderung im Resonator zu, während sie bei
+Beaufschlagung mit einer Druckkraft abnimmt. Zur Anregung kann neben
+dem piezoelektrischen auch das elektrothermische Antriebsprinzip
+eingesetzt werden \cite{Bou90}. Hierzu wird in einem Zweischichtsystem mit
+unterschiedlichen Wärmeausdehnungskoeffizienten eine lokale Erwärmung
+durch Mikroheizwiderstände erzeugt, das analog zum Bimetalleffekt zu
+einem Biegemoment führt und den Balken auslenkt.  Durch Ansteuerung
+der Mikroheizer mit Impulsen geeigneter Folgefrequenz und ausreichender
+elektrischer Leistung werden die Siliziumbalken in Resonanz versetzt.
+%----------------------- Beginn: Figure-Environment ----------------------
+\begin{figure}[htb]
+\begin{center}
+% --- Dateiname des Bildes
+\input{balkene.tex}
+\setbalkene
+\end{center}
+\caption{\label{abbgmssensor}
+ Geometrie und elektrisches Layout der elektrothermisch angetriebenen
+ Kraft- und Strömungssensoren}
+\end{figure}
+%----------------------- Ende: Figure-Environment ----------------------
+In {\bf Abbildung~\ref{abbgmssensor}} ist die Geometrie und das
+elektrische Layout eines elektrothermisch angetriebenen Siliziumsensors
+dargestellt, der zur Kraft- und Strömungsmessung eingesetzt wird.
+Das elektrothermische Antriebsprinzip stellt eine technologisch einfach zu
+realisierende Möglichkeit dar, da Anregung und Detektion analog zum
+piezoelektrischen Antrieb in der gleichen Technologie realisiert werden
+können, wobei eine gute Kompatibilität mit der Silizium-Ätztechnologie
+zur Herstellung der Balkenstrukturen gegeben ist.  Die Abtastung der
+Schwingung erfolgt resistiv mit Hilfe in Balkenmitte angeordneter
+NiCr-Dehnmeßstreifen ({\em DMS\/}), die zu einer {\em Wheatstone}schen
+Vollbrücke verschaltet sind. Zur Steigerung der Anregungseffizienz
+werden die Mikroheizwiderstände an den Balkenenden plaziert, w„hrend die
+DMS-Widerstände in Balkenmitte und in Nähe der Balkenenden so
+angeordnet sind, daß eine möglichst große Brückenverstimmung erreicht
+wird. Die in dieser Arbeit untersuchten Sensoren setzen sowohl den
+piezo\-elektrischen Antrieb auf der Basis von Dreifachbalkenresonatoren
+\cite{Wag94}, als auch elektrothermisch angetriebene
+Einfachbalkenresonatoren mit NiCr-Widerständen ein, die durchgängig in
+Metalldünnfilmtechnologie realisiert wurden \cite{Bar93}.
+
+
+
+\subsection{Strömungssensor}
+\label{stroemungssensor}
+
+Beim Betrieb der elektrothermisch angeregten Siliziumresonatoren sind
+für die Signalgewinnung mittels Metall-DMS, deren
+Empfindlichkeit\footnote{Der K-Faktor ist bei Metallwiderständen über
+die relative Widerstands„nderung $\Delta R/R \, = \, K \varepsilon$
+infolge der mechanischen Dehnung $\varepsilon$
+definiert und betr„gt bei Metall-DMS rund zwei. Diffundierte
+Siliziumwiderst„nde weisen einen bis zu zwei Größenordnungen höheren
+Wert auf.} sehr gering ist,
+Schwingungsamplituden in der Größenordnung von einigen hundert
+Nanometern erforderlich. Hierfür sind erhöhte Impulsheizleistungen nötig,
+die zu einer Erwärmung des Sensors führen. Bei Anlegen einer
+Brückenspeisespannung stellen die DMS-Widerstände zusätzliche Wärmequellen
+dar, so daß sich eine deutliche Temperaturüberhöhung gegenüber der
+Sensorumgebung einstellt. Aufgrund der thermischen Wechselwirkung zwischen
+Resonator und einem umströmenden Fluid, erfolgt eine
+geschwindigkeitsabhängige Kühlung infolge des thermischen
+Anemometerprinzips. Diese bewirkt eine Änderung der mechanischen
+Spannung im Siliziumbalken und führt somit zu einer Resonanzfrequenzänderung.
+Während bei der Anwendung als Kraftsensor die Temperaturabhängigkeit der
+Resonanzfrequenz unerwünscht ist und durch geeignete Maßnahmen kompensiert
+werden muá, kann sie gezielt zur Strömungsmessung in einem bekannten Medium
+eingesetzt werden. Wird der Sensor in einem Strömungsrohr betrieben, so
+lassen sich
+Gasströmungen erfassen und die Fluidgeschwindigkeit messen. Der Einfluß der
+thermischen Fluid-Struktur-Wechselwirkung wurde numerisch untersucht
+\cite{Mes93} und eine universelle elektrische Ansteuerschaltung für die
+elektrothermische
+Schwingungsanregung entwickelt \cite{Wie93}. Die im Rahmen des
+BMFT-Verbundprojektes entwickelten Balkenresonatoren konnte auf diese Weise
+meátechnisch weiter charakterisiert und die Strömungssensitivität
+nachgewiesen werden \cite{Fab93b}.

@@ -1,0 +1,473 @@
+\chapter[Analytische Beschreibung]
+ {Analytische Beschreibung mikromechanischer Strukturen}
+\label{beschreibungmikromechanischerstrukturen}
+
+
+\section{Physikalische Beschreibungsebenen}
+\label{beschreibungsebenen}
+
+Dieses Kapitel behandelt die grundlegenden physikalischen
+Beschreibungsweisen von mikromechanischen Strukturen. Zur gezielten
+Vorhersage des Verhaltens ist es notwendig, auf eine der
+Problemstellung angepaßte physikalische Beschreibungsweise zu achten.
+Daher müssen entsprechende physikalische Theorien und Näherungsmethoden
+im Entwurfsprozeß von Mikrostrukturen Anwendung finden, um eine
+effiziente Berechnung zu ermöglichen. Die Festkörperphysik beschreibt
+die Phänomene von Festkörpern durch die Untersuchung von mikroskopischen
+Vorgängen auf atomarer Ebene, während die Beschreibung des makroskopischen
+Verhaltens ausgedehnter Materie durch phänomenologische Theorien
+wie Kontinuumsmechanik oder Thermodynamik erfolgt. Bei der Vorhersage des
+mechanischen Verhaltens von Mikrostrukturen, bei der in der Regel von der
+Diskretheit des Kristallgitters abgesehen werden kann, hat die
+Elastizitätstheorie eine wichtige Bedeutung gewonnen.
+Fr ausgewählte Grundgeometrien mikromechanischer Bauelemente wie
+Biegebalken und Membranen werden analytischen Methoden der
+Elastizitätstheorie vorgestellt. Diese ermöglichen das statische und
+dynamische Verhalten mikromechanischer Strukturen näherungsweise zu beschreiben.
+Die Untersuchung grundlegender physikalischer
+Einflußgrößen auf das Schwingungsverhalten mikromechanischer
+Strukturen erlaubt die Bewertung der Eignung für resonante
+Sensoranwendungen. Nichtlineares Bauelementeverhalten, hervorgerufen
+durch spannungsversteifende Effekte bei großnen Deformationen, kann für
+bestimmte Spezialfälle näherungsweise in einer analytischen Form
+dargestellt werden. Die analytischen Berechnungen dienen neben der
+Grobdimensionierung der mikromechanischen Bauelemente als Startwerte
+für die Finite-Elemente-Simulationen zur sinnvollen Einschränkung des
+Parametervariationsraumes.
+
+
+
+\subsection{Mikroskopische Modelle}
+\label{mikroskopischemodelle}
+
+Das Verhalten mikromechanischer Systeme wird durch die mikroskopischen
+Eigenschaften des Festkörpers auf atomarer Ebene, d.h.\ durch den
+kristallinen Aufbau festgelegt. Die Festkörperphysik erlaubt durch die
+quantenmechanische Beschreibung, die atomistischen Phänomene des
+Kristallgitters durch mechanische, elektronische, thermische oder
+sonstige Anregungen und deren Wechselwirkung zu erklären. Die
+Elastizitätseigenschaften werden in der Gitterdynamik auf die Lage der
+Atome und den zwischen ihnen wirkenden Kräften, d.h.\ den
+zugrundeliegenden chemischen Bindungstypen der Kristalle zurückgeführt.
+Die Bindung der Atome ist hierbei abhängig von der elektrischen
+Wechselwirkung der Elektronen und der benachbarten Atomrümpfe, so daß
+die auftretenden elektrostatischen Kräfte für die Bindungsstärke
+der verschiedenen möglichen Bindungstypen\footnote{Ionenbindung,
+kovalente oder metallische Bindung, usw.} verantwortlich sind
+\cite{Hel88}.\\
+%
+Zur Beschreibung der Dynamik eines dreidimensionalen Kristallgitters
+kann der Festkörper als eine unendlich ausgedehnte, periodische
+Anordnung von Atomen angesehen werden. In diesem einfachsten Fall kann
+das diskrete Gitter durch eine eindimensionale, unendlich lange Kette
+von gleichartigen Atomen angenähert werden ({\sl Born}\/sche Näherung).
+Beim Festkörper ist der interatomare Potentialverlauf für die
+Wechselwirkung zwischen den Atomen verantwortlich, wobei das
+resultierende elektrostatische Potential eine Überlagerung aus der
+{\sl Coulomb}\/schen Anziehung und der des Abstoßungspotentials ist.
+Der exakte asymptotische Potentialverlauf kann in der harmonischen
+Näherung durch einen quadratischen Potentialverlauf beschrieben werden.
+Der mittlere Atomabstand entspricht der Gleichgewichtslage und
+zeichnet sich durch das Potentialminimum aus.
+Die Kräfte, die auf die Atome wirken, ergeben sich aus dem Gradienten
+des Wechselwirkungspotentials und werden in linearer Näherung
+({\sl Hooke}\/sches Verhalten) proportional zur Abstandsdifferenz der
+Atome angenommen.\\
+Unter Zugrundelegung der Linearität der Gitterkräfte, wird bei der
+Quantisierung der elastischen Gitterschwingungen von der Annahme
+einzelner harmonischer Oszillatoren ausgegangen. Als Träger der
+diskreten Schwingungsenergie werden die Phononen (Schallquanten)
+eingeführt. Analog zu den quantisierten Energieeigenwerten des
+harmonischen Oszillators besitzt ein Phonon in der
+Schwingungsmode $k$ mit der Frequenz $\omega_{k}$ die Energie
+$E_{k} = \hbar \omega_{k}$.
+Die elastische Energie des Festkörpergitters stellt sich als eine
+šberlagerung aller Schwingungsmoden $k$ dar, die ihrerseits mit
+$n_{k} \, (\, = \, 0,1,2, \ldots , \infty )$ Phononen besetzt
+sind. Die Gesamtenergie läßt sich daher als Summe der einzelnen
+Oszillatorbeiträge schreiben
+$E = \sum_{k} \hbar \omega_{k} \left( n_{k} + \frac{1}{2} \right)$.
+Da $n_{k}$  nur ganzzahlige Werte annehmen kann, entspricht dieses der
+Quantisierung der Energie elastischer Schwingungszustände in linearen
+Festkörpergittern.  Insbesondere bleibt die Nullpunktsenergie
+endlich $E(n_{k} = 0) = \frac{1}{2} \hbar \omega_{0}$.
+Eine Abweichung vom linearen Kraftgesetz zwischen den Gitterteilchen
+tritt bei Amplitudenzunahme der Gitterschwingungen auf
+und es stellen sich anharmonische Effekte ein.  Die Eigenschwingungen
+des Festkörpers sind nicht mehr entkoppelt (orthogonal) und im
+Phonenbild ergeben sich zusätzliche Wechselwirkungen zwischen den
+Phononen (z.B.\  Drei-Phononen-Prozesse).  Es findet ein Energieaustausch
+statt und der Schwingungszustand wird durch Emission oder Absorption von
+Phononen verändert. Als Folge hiervon resultieren die thermische
+Ausdehnung und die endliche Wärmeleitfähigkeit in Kristallen \cite{Kit88}.
+Eine zusätzliche Auswirkung ist, daá die adiabatischen und isothermen
+elastischen Konstanten nicht mehr gleich sind und von Druck oder
+Temperatur abhängig werden (siehe Kapitel~2.1.3).  Durch Einführung
+weiterer \glqq vermittelnder Teilchen\grqq \, werden zusätzliche Wechselwirkungen
+im Festkörper quantenmechanisch beschrieben.
+So führt die Elektronen-Phononen-Wechselwirkung\footnote{Wechselwirkendes
+Teilchen: Polaron.} durch eine lokale Deformation des Kristallgitters
+zum elektrischen Widerstand, während Exzitonen für Polarisationswellen
+und Magnonen fr Magnetisierungswellen verantwortlich
+sind \cite{Pau75}. \\
+Das Elektronenverhalten in periodischen Gitterstrukturen kann durch die
+Halbleiterphysik beschrieben werden, wobei mit Hilfe des Bändermodells
+die elektronischen Eigenschaften des Festkörpers erklärt werden können.
+Aufgrund des periodischen Verlaufs der potentiellen Energie der Atomrümpfe,
+spüren die Elektronen im Festkörper ein periodisches Gitterpotential.
+Die möglichen Energieeigenwerte der Elektronen werden im Rahmen des
+Bändermodells bestimmt und in quantenmechanisch erlaubte und verbotene
+Energiebänder eingeschränkt. Die Bandstruktur, die Besetzung der einzelnen
+Bänder und die Bandlücke ({\sl Bandgap}), die das
+Leitungsband vom Valenzband trennt, ist dafür verantwortlich, ob es sich
+um einen Leiter, Halbleiter oder Isolator handelt.  Die Energiebänder
+und die Bandlücke sind sowohl temperatur- als auch druckabhängig.  Der
+bei mikromechanischen Sensoren wichtige {\em piezoresistive} Effekt,
+d.h.\ die druckabhängige
+Widerstands- bzw.\ Leitfähigkeitsänderung in Halbleitern,
+kann mikroskopisch durch eine Änderung der Bandlücke und der
+Besetzungswahrscheinlichkeit infolge eines
+äußeren mechanischen Druckes auf den Festkörper erklärt werden \cite{Mid89}.
+
+
+\subsection{Kontinuumsmechanische Beschreibung}
+\label{kontinuumsmechanik}
+
+Beim Übergang vom diskreten Kristallaufbau zum Kontinuum kann im
+klassischen Grenzfall die Quantisierung der mikroskopischen Feldgrößen
+vernachlässigt werden. Auf makro\-skopischer Ebene wird als phänomenologische
+Theorie die Kontinuumsmechanik bzw.\ Elastizitätstheorie zur Beschreibung
+elastomechanischer Festigkeitsprobleme eingesetzt.
+Ein schwingender elastischer Festkörper ist ein kontinuierliches System
+mit nahezu unendlich vielen Massenpunkten (Größenordnung: $10^{23} \,
+cm^{-3}$) und besitzt somit unendlich viele Bewegungsfreiheitsgrade. Die
+vollständige Bewegung des Systems kann nur durch die Lagekoordinaten
+{\em aller} Punkte exakt beschrieben werden.  Die in der klassischen Mechanik
+entwickelten {\sl Lagrange}\/schen und {\sl Hamilton}\/schen Formulierungen
+ermöglichen die
+Beschreibung der statischen (Deformationen) und dynamischen Vorgänge
+(z.B.\ Starrkörperbewegungen, elastische Schwingungen) sowohl diskreter
+als auch kontinuierlicher Systeme.  Bei letzteren stellt die
+{\sl Lagrange}\/-Dichte die Differenz zwischen kinetischer und poten\-tieller
+Energiedichte dar und ermöglicht unter Verwendung des {\sl Hamilton}\/schen
+Variationsprinzips die Ableitung der {\sl Lagrange}\/schen
+Bewegungsgleichungen. Durch diesen Formalismus wird die Aufstellung
+allgemeiner Bewegungsgleichungen auch bei nichtmechanischen
+Problemstellungen ermöglicht \cite{Gol78}.
+In Kapitel~3 wird die Formulierung der FE-Methode auf der Grundlage von
+Variationsprinzipien für elastomechanische und elektromechanische
+Kontinua dargestellt.\\
+In der Kontinuumsmechanik ist die Existenz eines eindeutigen und
+stetigen Verschiebungsfeldes eine unabdingbare Voraussetzung. Es handelt
+sich hier um das geometrische Grundgesetz der Elastizitätstheorie.
+Die Bewegungs- bzw.\ Zustandsgleichungen des elastischen Festkörpers lassen
+sich aus einem Variationsprinzip, der Minimierung
+der potentiellen Energie\footnote{{\em Prinzip der virtuellen Arbeit} bzw.\
+{\em virtuellen Verschiebungen}.} ableiten.
+%
+%Satz von {\sl Castigliano}
+%
+Eine hierzu gleichwertige Methode ist es, die Bewegungsgleichungen direkt
+mit Hilfe des {\sl Newton}\/schen Gesetzes aus dem lokalen Gleichgewicht
+der am Festkörperelement wirkenden inneren und äußeren Kräfte aufzustellen.
+Unter Ausnutzung des {\sl d'Alembert}\/schen Prinzips kann unter Einführung
+von zusätzlichen Trägheitskräften das dynamische Problem auf ein statisches
+reduziert werden \cite{Som49}:
+%
+\begin{equation}
+\label{kontmech}
+%\fbox{$
+% \displaystyle
+% \begin{array}{rcl}
+ \rho \displaystyle \frac{ \partial^{2}{u_{i}}}{ \partial t^{2}} = 
+ \sum_{j} \frac{\partial \sigma_{ij}}{\partial x_{j}} % div \, \sigma
+ \, + \, f_{i}
+ % div \, \tau \, +  \, \mbox{externe Volumenkräfte}
+ \qquad \mbox{$i$ = 1, 2, 3}
+% \end{array}
+% $}
+\end{equation}
+wobei:
+\begin{eqnarray*}
+ % {\vec u} & = &  {\vec x'} - {\vec x}
+  u_i{}        & = &  x'_{i} - x_{i}
+  \, : \, \mbox{Verschiebungsvektor}\\
+  \sigma_{ij}  & : & \mbox{allgemeiner Spannungs- bzw. Drucktensor}\\
+  f_{i}        & : & \mbox{externe Volumenkr„fte}\\
+%  \tau    & : & \mbox{generalisierter {\sl Maxwell}\/scher Spannungstensor}\\
+  \rho    & : & \mbox{homogene Materialdichte.}
+\end{eqnarray*}
+Die Gleichung (\ref{kontmech}) wird auch als
+\glqq Spannungs-Divergenz-Theorem\grqq \, bezeichnet und beschreibt das
+Verhalten elastischer Kontinua. Bei rein statischen Problemstellungen
+verschwinden die Trägheitskräfte auf der linken Seite.
+Zur vollständigen Beschreibung des kontinuumsmechanischen Randwertproblems
+mssen zusätzlich die Verschiebungen bzw.\ Kräfte auf
+der Oberfläche des Körpers gewissen Randbedingungen gengen.\\
+%
+Die Festlegung des Spannungszustandes wird durch den Zusammenhang von
+Spannungen und Dehnungen geliefert und ist werkstoffabhängig. Zur
+Darstellung eines beliebigen Deformationszustandes sind drei Normalspannungen
+($ \sigma_{xx}, \sigma_{yy}, \sigma_{zz}$) sowie drei Schubspannungen
+($ \sigma_{xy}, \sigma_{yz}, \sigma_{zx} $)
+erforderlich. Zu diesen Spannungen korrespondieren drei Dehnungen
+(Dilatationen bzw.\ Kontraktionen:
+$ \varepsilon_{xx}, \varepsilon_{yy}, \varepsilon_{zz} $)
+und drei Scherungen (Torsion: $ \gamma_{xy}, \gamma_{yz}, \gamma_{zx} $),
+durch deren Überlagerung ebenfalls jede beliebige Deformation eines Körpers
+erzeugt werden kann. Unter Verwendung des allgemeinen Materialgesetzes,
+auch Werkstoffgesetz genannt, gilt für den Zusammenhang zwischen den
+mechanischen Spannungen  $\sigma$ und den Dehnungen $ \varepsilon $ im
+Festkörper\footnote{Im weitern gilt:
+$x \, = \, 1, y \, = \, 2, z \, = \, 3$.}:
+%
+\begin{eqnarray}
+\label{matgesetz}
+ \sigma_{ij} & = & \sum_{k,l}^{} C_{ijkl} \, \varepsilon_{kl}
+ \qquad \mbox{bzw.} \qquad
+ \varepsilon_{ij} \; = \; \sum_{k,l}^{} S_{ijkl} \, \sigma_{kl}
+\end{eqnarray}
+wobei $i, j, k, l \in \{1,2,3\}$.
+Die elastischen Materialeigenschaften werden hierbei entweder durch den
+Tensor der Elastizitätsmoduln $C_{ijkl}$ oder durch den der
+Elastizitätskoeffizienten $S_{ijkl}$ beschrieben, wobei
+$C_{ijkl} \, = \, S_{ijkl}^{-1}$
+gilt. Die Spannungen und Dehnungen sind Tensoren 2.\ Stufe während die
+Materialeigenschaften durch Tensoren 4.\ Stufe beschrieben werden, was
+sich durch ihr Verhalten bei Koordinatentransformationen zeigt.
+Aufgrund der Gleichheit der Schubspannungen (Momentengleichgewicht)
+ist der Spannungstensor symmetrisch, d.h.\ $\sigma_{ij} \, = \, \sigma_{ji}$.
+Da der Spannungstensor von der Wahl des Koordinatensystems abhängig ist, ist
+es sinnvoll ihn in drei Hauptspannungsanteile $\sigma^{H}_{i}$ (i = 1,2,3)
+zu zerlegen, die invariant unter Koordinatentransformationen sind. Diese
+drei Hauptrichtungen des Spannungstensors sind orthogonal zueinander und
+erlauben Aussagen über die maximal zulässigen Bauelementebelastungen.\\
+%
+Die Definition des Dehnungstensors kann unabhängig von den Verschiebungen
+über die Änderung der \glqq Quadrate des Abstandes\grqq \,
+zweier Massenpunkte bei einer Deformation erfolgen \cite{Lan74}:
+%
+\begin{eqnarray}
+ ds'^{2} - ds^{2} & =: &  2 \sum_{i,j}^{} \varepsilon_{ij} dx_{i}  dx_{j}
+\end{eqnarray}
+%
+wobei:
+\begin{eqnarray*}
+ ds^{2} & = & \sum_{k,l}^{} \delta_{kl} dx_{k} dx_{l}
+\end{eqnarray*}
+%
+Der kinematische Zusammenhang\footnote{Auch Kompatibilitäts-
+bzw.\ Verträglichkeitsbedingung nach {\sl Saint-Venant} genannt.}
+zwischen dem Verschiebungsfeld $u$ und den
+Dehnungen $\varepsilon$ wird durch den {\sl Green-Lagrange}\/schen
+Dehnungstensor bei endlichen Deformationen beschrieben:
+%
+\begin{eqnarray}
+\label{dehn}
+ \varepsilon_{ij} & = & \displaystyle \frac{1}{2} \left (
+ \underbrace{ \frac{\partial u_{i}}{ \partial x_{j}} +
+ \frac{ \partial u_{j}}{ \partial x_{i}} }_{\mbox{linear}} +
+ \sum_{k}^{} \underbrace{ \frac{ \partial u_{k}}{ \partial x_{i}}
+ \cdot \frac{ \partial u_{k}}{ \partial x_{j} }}_{ \mbox{nichtlinear } }
+\right )
+\end{eqnarray}
+Wichtige Eigenschaften dieses Tensors sind seine Symmetrie
+($\varepsilon_{ij} = \varepsilon_{ji}$) und seine Invarianz
+gegenber Starrkörperrotationen. Das technische Dehnungsmaß
+vernachlässigt bei infinitesimalen Deformationen kleine
+Verschiebungsgradienten, so daß in linearer Näherung ({\sl Hooke}\/sches
+Elastizitätsverhalten) das gemischte quadratische Glied entfällt
+und es sich dann um den linearisierten {\sl Cauchy-Green}\/schen
+Dehnungstensor handelt. Bei endlichen Dehnungen korrespondiert zum
+nichtlinearen {\sl Green-Lagrange}\/schen Dehnungstensor~(\ref{dehn})
+der symmetrische 2.\ {\sl Piola-Kirchhoff}\/sche Spannungstensor
+\cite{Bat82}. Auf die numerische
+Berücksichtigung des quadratischen Gliedes des Dehnungstensors wird in
+Kapitel~3 unter geometrischen Nichtlinearitäten eingegangen.
+
+
+\subsection{Thermodynamische Beschreibungsebene}
+\label{thermodynamik}
+
+Ein mikromechanisches System wechselwirkt fortw„hrend mit seiner
+Umgebung und steht im gegenseitigen Energieaustausch.  Dieser Austausch
+von Energie führt zu einer physikalischen Zustandsänderung des Systems.
+Hierbei ist jeder Energieform vom thermodynamischen Standpunkt aus
+eine unabhängige thermodynamische Zustandsgröße (Zustandsvariable)
+zugeordnet.  Die intensiven Variablen können als
+\glqq treibende Kräfte\grqq \, im
+Festkörper angesehen werden, die die extensiven Variablen als
+\glqq Reaktionen\grqq \, zur Folge haben.  In diesem Sinne kann jedes
+mikromechanische Bauelement als ein elektro-thermo-mechanisches System
+aufgefaßt werden. Das Gesamtmikrosystem läßt sich nach {\sl Wachutka}
+hierbei aus seinen Teilsystemen, bestehend aus Kristallgitter und
+Ladungsträgern (Elektronen und Löcher) zusammengesetzt denken \cite{Wac92}.
+In {\bf Abbildung~\ref{abbwachutka}}
+sind die allgemeinen intensiven Zustandsvariablen zur Beschreibung
+eines mikromechanischen Systems abgebildet.
+%----------------------- Beginn: Figure-Environment ----------------------
+\begin{figure}[htb]
+\begin{center}
+% --- Dateiname des Bildes
+\input{abbze.tex}
+\setabbze
+\end{center}
+\caption{\label{abbwachutka}
+ Allgemeine intensive Zustandsvariablen eines mikromechanischen
+ Systems (nach [Wachutka 92])}
+\end{figure}
+%----------------------- Ende: Figure-Environment ----------------------
+Die Zusammenh„nge zwischen intensiven und extensiven Zustandsvariablen
+sind dabei durch die thermodynamischen Zustandsgleichungen gegeben, welche
+die entsprechenden physikalischen Wechselwirkungseffekte beschreiben. Die
+intensiven Zustandsvariablen eines Mikrosystems sind nach
+Abbildung~\ref{abbwachutka} durch den mehrdimensionalen Zustandsvektor:
+%
+\begin{eqnarray}
+ X & = & \left ( \sigma, \vec{E}, \vec{H}, T_{L}, \, T_{1}, \ldots ,
+         T_{N}, \, \phi_{1}, \ldots , \phi_{N} \right )
+\end{eqnarray}
+%
+gegeben.  Hierbei ist $\sigma$ der bereits oben definierte
+Spannungstensor\footnote{Bei fluiden Medien handelt es sich um den
+Drucktensor.},
+$\vec{E}$ und $\vec{H}$ die elektrische und magnetische Feldstärke,
+$T_{L}$ die Temperatur des Substrats (z.B.\ des Kristallgitters),
+$T_{1}, \ldots , T_{N}$  und $ \phi_{1}, \ldots , \phi_{N} $ die
+Temperatur und das elektrochemische Potential der beweglichen Ladungsträger,
+die einen möglichen Massen- oder Ladungstransport im System verursachen
+können. Die entsprechend zugeordneten extensiven Zustandsvariablen sind
+durch den Zustandsvektor:
+%
+\begin{eqnarray}
+Y & = & \left ( \varepsilon , \vec{D}, \vec{B}, s_{L}, \, s_{1}, \ldots
+, s_{N}, \, c_{1}, \ldots , c_{N} \right )
+\end{eqnarray}
+%
+gegeben. Hierbei ist $\varepsilon$ die mechanische Dehnung, $\vec{D}$
+die dielektrische Verschiebung (Flußdichte) und $\vec{B}$ die
+magnetische Induktion, $s_{L}$ die Entropiedichte des Substratmediums,
+$s_{k}$ und $c_{k}$ die Entropiedichte
+und Ladungsträgerkonzentration der $k$-ten Teilchensorte
+($k \, = \, 1 \ldots N$). Die Zustandsvariablen sind im allgemeinen orts-
+und zeitabhängig. Die intensiven und extensiven Zustandsvariablen sind durch
+Materialkonstanten verknüpft, die von den äußeren Randbedingungen des
+thermodynamischen Systems abhängig sind. Insbesondere unterscheiden sie
+sich bei isothermen (Temperatur: $T = const$) und adiabatischen Prozessen
+(Entropie: $S = const$).
+Die nachfolgenden Betrachtungen gehen in erster Näherung von linearen
+Abhängigkeiten, also Wechselwirkungseffekten erster Ordnung aus.
+Zusätzlich sollten für eine angepaáte Modellbildung die Zustandsgleichungen
+und -variablen auf den das Mikrosystem beschreibenden minimalen
+Parametersatz kondensiert werden.\\
+In dieser Arbeit wird das Hauptaugenmerk auf die Interaktion des
+mechanischen Verschiebungsfeldes mit dem umgebenden Temperaturfeld und
+dem elektrischen Feld gelegt (in Abbildung~\ref{abbwachutka}
+gestrichelt hinterlegt). Das Temperaturfeld führt infolge der
+temperaturabhängigen Materialeigenschaften und den unterschiedlichen
+Wärmeausdehnungskoeffizienten mikromechanischer Multilayersysteme zu
+thermisch induzierten Spannungen.  Das elektrische Feld verursacht in
+piezoelektrischen Medien eine bidirektionale elektromechanische
+Kopplung, die zum direkten und reziproken piezoelektrischen Effekt
+fhrt. Auf die Behandlung anderer Wechselwirkungsmechanismen die bei
+Mikrosystemen Anwendung finden, z.B.\ elektronische, elektrothermische
+oder magnetische Effekte, sei auf Arbeiten von {\sl Wachutka}
+\cite{Wac90, Wac91} verwiesen.\\
+In {\bf Abbildung~\ref{abbnye}} sind die Zusammenhänge zwischen den
+intensiven und extensiven Zustandsvariablen bei
+elektro-thermo-mechanischer Wechselwirkung in linearer Näherung
+dargestellt \cite{Nye57}.
+%----------------------- Beginn: Figure-Environment ----------------------
+\begin{figure}[htb]
+\begin{center}
+% --- Dateiname des Bildes
+\input{abbzz.tex}
+\setabbzz
+\end{center}
+\caption{\label{abbnye}
+ Wechselwirkung der intensiven und extensiven thermodynamischen
+ Zustandsvariablen bei elektro-thermo-mechanischer Kopplung (nach
+ [Nye 57])}
+\end{figure}
+%----------------------- Ende: Figure-Environment ----------------------
+Die Größen im äußeren Dreieck entsprechen den intensiven Zustandsvariablen
+($\sigma, \vec{E}, T$), die extensiven Zustandsvariablen
+($\varepsilon, \vec{D}, S$) befinden sich
+im inneren Dreieck. Die direkten Verbindungen zwischen
+intensiven und extensiven Zustandsvariablen, durch einen dicken Balken
+gekennzeichnet, entsprechen Vorg„ngen, die sich auf Wechselwirkungen
+innerhalb der drei Subsysteme beschränken.  Sie beschreiben rein
+mechanische, thermische
+oder elektrische Effekte.  Erst durch die Ankopplung der anderen
+Subsysteme treten Wechselwirkungen wie thermoelastische Effekte,
+die Piezo- und Pyroelektrizität in Erscheinung.
+Werden die intensiven Zustandsgrößen ($\sigma, \vec{E}, T$) als
+unabhängige Variablen\footnote{In den
+Gleichungen~(\ref{piezo1}~--~\ref{piezo3}) sind
+($\varepsilon, \vec{D}, S$) die abhängigen Variablen.}
+verwendet, so lassen sich die elektro-thermo-mechanischen
+Kopplungseffekte durch die folgenden Zustandsgleichungen eindeutig
+beschreiben \cite{Ike90a, Nye57}:
+%
+\begin{eqnarray}
+\label{piezo1}
+ \varepsilon_{ij} & = & \sum_{k,l} S_{ijkl}^{E,T} \sigma_{kl} +
+                        \sum_{k} d_{kij}^{T} E_{k} +
+                        \alpha_{ij}^{E} \delta T \\
+\label{piezo2}
+ D_{n}            & = & \sum_{k,l} d_{nkl}^{T} \sigma_{kl} +
+                        \sum_{k} \epsilon_{nk}^{\sigma, T} E_{k} +
+                        p_{n}^{\sigma} \delta T \\
+\label{piezo3}
+ \delta S         & = & \sum_{i,j} \alpha_{ij}^{E} \sigma_{ij} +
+                        \sum_{k} p_{k}^{\sigma} E_{k} +
+                        (c^{\sigma, E}/T) \delta T
+\end{eqnarray}
+%
+wobei $\delta T$ die Temperaturänderung und $\delta S$ die
+Änderung der Entropiedichte bedeuten. Die Konstanten der jeweiligen
+Systeme sind durch:
+\begin{eqnarray*}
+ S_{ijkl}^{E,T}            & : & \mbox{elastische Steifigkeitskoeffizienten}\\
+ \epsilon_{nk}^{\sigma,T}  & : & \mbox{Permittivitäten (bzw.\
+                                  Dielektrizitätskonstanten)}\\
+ c^{\sigma,E}              & : & \mbox{spezifische Wärmekapazität}
+\end{eqnarray*}
+gegeben und die Materialkonstanten $d, \alpha$ und $p$ beschreiben
+die elektromechanische, thermomechanische und thermoelektrische
+Wechselwirkung:
+\begin{eqnarray*}
+    d_{kij}^{T}     & : &   \mbox{piezoelektrische Moduln}\\
+    \alpha_{ij}^{E} & : &   \mbox{thermische Ausdehnungskoeffizienten}\\
+    p_{k}^{\sigma}  & : &   \mbox{pyroelektrische Koeffizienten.}
+\end{eqnarray*}
+Die Zustandsgleichungen lassen sich auch durch die Verwendung der
+extensiven Zustandsgrößen ($\varepsilon, \vec{D}, S$) auf der
+rechten Seite der Gleichungen~(\ref{piezo1}--\ref{piezo3}) oder
+durch eine Kombination beider Variablentypen ausdrcken.
+Die Beziehungen zwischen den Zustandsgrößen sind eindeutig,
+wenn die äußeren Bedingungen des thermodynamischen Systems festgelegt
+sind. Die Materialkonstanten werden hierzu mit dem jeweiligen konstant
+gehaltenen Parameter als hochgestellte Symbole, d.h.\ $\sigma$~=~$const$
+bzw.\ E~=~$const$ bzw.\ T~=~$const$, gekennzeichnet. Bei kompakter
+Darstellung der Tensoren unter Weglassung der Indizes und der jeweiligen
+thermodynamischen Randbedingung der Materialkonstanten können obige
+Zustandsgleichungen durch das Kopplungsschema gemäß
+{\bf Abbildung~\ref{abbkopplungsschema}}
+übersichtlich dargestellt werden, wenn die vermittelnden
+Materialtensoren zu einer Gesamtmatrix\footnote{Der Superskript t
+kennzeichnet die jeweils transponierte Materialmatrix, so daß die
+Gesamtmatrix wieder symmetrisch ist. T steht für die absolute
+Temperatur.} zusammengefaßt werden \cite{Nye57}:
+%----------------------- Beginn: Figure-Environment ----------------------
+\begin{figure}[htb]
+\begin{center}
+% --- Dateiname des Bildes
+\input{abbzd.tex}
+\setabbzd
+\end{center}
+\caption{\label{abbkopplungsschema}
+ Gesamtmatrix der elektro-thermo-mechanischen
+ Wechselwirkungseffekte in einem Festkörper (nach [Nye 57])}
+\end{figure}
+%----------------------- Ende: Figure-Environment ----------------------

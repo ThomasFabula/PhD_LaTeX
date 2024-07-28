@@ -101,7 +101,7 @@ Lösungen, ist die hinreichende Glattheit des Gebietsrandes.
 \label{schwacheloesung}
 
 Im allgemeinen existiert bei derartigen Problemen keine analytisch
-geschlossen darstellbare Lösung, so daá das Grundgebiet diskretisiert
+geschlossen darstellbare Lösung, so daß das Grundgebiet diskretisiert
 und die {\em klassische} Lösung numerisch approximiert werden muß. Diese
 Approximation macht Gebrauch vom {\em Konzept der schwachen Lösung}.
 Anstatt der pDGL (\ref{PDGL}) wird hierzu ein äquivalentes Variationsproblem
@@ -136,7 +136,7 @@ gesuchten Lösungsfunktion $\phi(x)$ durch die Anwendung des
 eine Stufe erniedrigt wird. Der Vorteil dieser Vorgehensweise besteht
 darin, daß die {\em schwache} Lösung im Gegensatz zur {\em starken} Lösung,
 die durch Gleichung (\ref{PDGL}) gegeben ist, nur {\em einmal} stetig
-differenzierbar sein muá, d.h.\
+differenzierbar sein muß, d.h.\
 $\phi(x) \in C^{1}(\Omega)$ für alle $x \in \Omega$.
 
 
@@ -167,9 +167,9 @@ $S_{h}(\Omega) \subset H_{0}^{1}(\Omega)$, den sogenannten
 {\em Finite-Elemente-Raum}, auf, mit $\dim S_{h}(\Omega) = N_{h}$.
 Der eingeschränkte Funktionenraum $S_{h}$ wird durch den
 Diskretisierungsparameter $h$ charakterisiert, der den größten Durchmesser
-der finiten Elemente darstellt. Man kann zeigen, daá die $\phi_{h}(x)$ eine
+der finiten Elemente darstellt. Man kann zeigen, daß die $\phi_{h}(x)$ eine
 konvergierende {\sl Cauchy}\/-Folge in dem abgeschlossenen und vollständigen
-Unterraum $S_{h}$ bilden und daá $\phi_{h}(x)$ gegen die {\em schwache}
+Unterraum $S_{h}$ bilden und daß $\phi_{h}(x)$ gegen die {\em schwache}
 Lösung $\phi(x)$ strebt, falls die Elementweite genügend klein wird,
 d.h.: $h \rightarrow 0$ \cite{Cia78}.\\
 %
@@ -195,7 +195,7 @@ $S_{i}(x)$ dargestellt.
 \end{figure}
 %----------------------- Ende: Figure-Environment ----------------------
 Ersetzt man nun $\psi(x)$ in Gleichung~(\ref{schwach}) ebenfalls durch
-eine endliche Summe von Funktionen $S_{i}(x)$ gem„á Gleichung~(\ref{Sentw}):
+eine endliche Summe von Funktionen $S_{i}(x)$ gemäß Gleichung~(\ref{Sentw}):
 \begin{eqnarray*}
  \psi_{h}(x) & = & \sum_{i=1}^{N_{h}} \alpha_{i} S_{i}(x)
 \end{eqnarray*}
@@ -325,7 +325,7 @@ Ableitung der Verschiebungen:
  \varepsilon(\vec x) & = & D \cdot u(\vec x) \; - \; \varepsilon_{0}
 \end{eqnarray}
 Hierbei entspricht $\varepsilon_{0}$ einer Vordehnung\footnote{Unter
-Vordehnungen sind spannungsunabh„ngige Verformungen zu verstehen, die als
+Vordehnungen sind spannungsunabhängige Verformungen zu verstehen, die als
 Ursache z.B.\ Kristallwachstum oder Temperaturänderungen (siehe
 Kapitel~\ref{thermoelastischekopplung}) haben.} und $D$ stellt eine Matrix
 von Differentialoperatoren dar:
@@ -372,7 +372,7 @@ für die potentielle Energie $E_{pot}^{e}$ eines finiten Elementes:
   & - & u_{e}^{t} \left( \int_{\Omega} N^{t} F^{\Omega} d\Omega
 	+ \int_{\Gamma} N^{t}_{\Gamma} F^{\Gamma} d\Gamma + F_{i} \right)
 \end{eqnarray}
-Die Bedingung fr das Minimum der potentiellen Energie des Gesamtsystems
+Die Bedingung für das Minimum der potentiellen Energie des Gesamtsystems
 verlangt, daß die Ableitung der Energie nach den Knotenverschiebungen
 verschwindet. Für das einzelne finite Element bedeutet dies
 $\partial E_{pot}^{e} / \partial u_{e} = 0$. Damit folgt aus
@@ -440,7 +440,7 @@ Prinzipiell wird bei der Behandlung mechanischer Probleme
 zwischen drei verschiedenen Typen von
 Nichtlinearitäten unterschieden: der geometrischen Nichtlinearität,
 der Material- und der Struktur-Nichtlinearität. Die
-{\em Material-Nichtlinearit„t}, die den nichtlinearen Zusammenhang zwischen
+{\em Material-Nichtlinearität}, die den nichtlinearen Zusammenhang zwischen
 Spannung und Dehnung (z.B.\ Plastizität, Hyperelastizität) beschreibt,
 kann bei
 einkristallinen Materialien im Niedertemperaturbereich vernachlässigt
@@ -463,7 +463,7 @@ folgt unterteilt \cite{Koh92}:
 {\bf Große Dehnungen} ({\em Large Strains}),
 bei denen der nichtlineare Anteil des {\sl Green-Lagrange}schen
 Dehnungstensors in Gleichung~(\ref{dehn}) berücksichtigt wird und z.B.\
-Formänderungen oder groáe Rotationen unter der Belastung auftreten können.
+Formänderungen oder große Rotationen unter der Belastung auftreten können.
 \item
 {\bf Große Auslenkungen} ({\em Large Deflections}), bei denen große
 Rotationen auftreten, aber die mechanischen Dehnungen klein bleiben.
@@ -526,14 +526,14 @@ nichtlinearen Rechnung das Residuum beliebig klein wird.\\
 \setabbdz
 \end{center}
 \caption{\label{abbnr}
- Iterationsprozeá beim {\sl Newton-Raphson}-Verfahren}
+ Iterationsprozeß beim {\sl Newton-Raphson}-Verfahren}
 \end{figure}
 %----------------------- Ende: Figure-Environment ----------------------
 Bei der Anfangssteifigkeitsmethode wird bei jeder
 Iteration eine konstante Steifigkeitsmatrix benutzt und nur der
 Korrekturlastvektor wird entsprechend dem Belastungszustand geändert.
 Das {\sl Newton-Raphson}-Verfahren, das in {\bf Abbildung~\ref{abbnr}}
-fr ein Problem mit einem Freiheitsgrad dargestellt ist, verwendet im
+für ein Problem mit einem Freiheitsgrad dargestellt ist, verwendet im
 Vergleich dazu eine bei jeder Iteration neu berechnete
 Tangentensteifigkeitsmatrix $[K_{T}]$, für die:
 \begin{eqnarray}
@@ -542,7 +542,7 @@ Tangentensteifigkeitsmatrix $[K_{T}]$, für die:
                        [K_{\sigma}(x,u)]
 \end{eqnarray}
 gilt, wobei mit Hilfe der orthogonalen Transformationsmatrix [T] und durch
-Summation ber die einzelnen Elemente (e) die Einzelmatrizen:
+Summation über die einzelnen Elemente (e) die Einzelmatrizen:
 \begin{eqnarray*}
  [K_{0}] + [K_{u}] & \approx &
    \sum_{e} \; [T(x+u)]^{t} \cdot [K_{0}^{e}(x)] \cdot [T(x+u)]
@@ -556,7 +556,7 @@ der geometrischen Struktursteifigkeitsmatrix (\ref{steif})
 und $[K_{u}]$ ist der verschiebungsabhängige Anteil. Die Matrix
 $[S_{\sigma}]$ beschreibt die zusätzliche Spannungsversteifung, die
 infolge der Überlagerung von Längs- und
-Biegespannungsanteilen bei dnnen Balken- und Membranstrukturen auftritt.
+Biegespannungsanteilen bei dünnen Balken- und Membranstrukturen auftritt.
 Während die Struktursteifigkeitsmatrix von der Geometrie und den
 Elastizitätseigenschaften der Struktur abhängt, wird die
 Spannungsversteifungsmatrix von der lastinduzierten, inneren Längsspannung
@@ -634,8 +634,8 @@ führt auf das bekannte Eigenwertproblem:
  \left ( [K] \, - \, \omega_{k}^{2} \, [M] \right ) \cdot
  \{ \Phi \}_{k} & = & 0
 \end{eqnarray}
-Diese Gleichung ist fr alle nicht verschwindenden Eigenvektoren
-$\{\Phi\}_{k}$ erfllt, wenn die Determinante:
+Diese Gleichung ist für alle nicht verschwindenden Eigenvektoren
+$\{\Phi\}_{k}$ erfüllt, wenn die Determinante:
 \begin{eqnarray}
  \det ( \, [K] \, - \,\omega_{k}^{2} \, [M] \,) & = & 0
 \end{eqnarray}
@@ -970,7 +970,7 @@ Steifigkeitsmatrix\grqq \, gedeutet werden kann, gilt:
  [K_{\phi \phi}] & = & -\int_{\Omega}
      [B_{\phi}]^{t} \, [\epsilon^{\varepsilon}] \, [B_{\phi}] \, d\Omega
 \end{eqnarray}
-Auf der rechten Seite der Gleichung (\ref{piezokopl}) steht $\vec F$ fr
+Auf der rechten Seite der Gleichung (\ref{piezokopl}) steht $\vec F$ für
 die Summe der mechanischen konzentrierten Knoten-, sowie verteilten
 Oberflächen- und
 Volumenkräfte (Gleichung~\ref{fges}). Die Summe der elektrischen
@@ -991,7 +991,7 @@ wobei:
   \right \} \cdot  \{ N_{\phi} \}^{t}
 \end{eqnarray}
 Der Vektor $\{N_{\phi}\} = \{N_{1}, N_{2},..., N_{n}\}$ wird als
-Ansatzfunktion fr das elektrische Potential verwendet, wobei
+Ansatzfunktion für das elektrische Potential verwendet, wobei
 $\{\phi\} = \{\phi_{1}, \phi_{2},..., \phi_{n}\}$ ist und $n$ die Anzahl
 der Knoten im verwendeten Element darstellt. Ein Vorteil bei der
 FE-Formulierung der piezoelektrischen Zustandsgleichungen mit Hilfe der
@@ -1037,7 +1037,7 @@ Mikrostrukturen berechnet.
 \section{Fehlerabsch„tzungen}
 \label{fehlerabschaetzungen}
 
-Als N„herungsverfahren unterliegt die FE-Methode verschiedenen
+Als Näherungsverfahren unterliegt die FE-Methode verschiedenen
 Fehlereinflüssen, so daß der Gültigkeitsbereich des FE-Modells
 bei jeder Problemstellung einzeln untersucht und verifiziert werden muß.
 Die Wahl der Diskretisierung muß dem Problem angepaßt sein. Für

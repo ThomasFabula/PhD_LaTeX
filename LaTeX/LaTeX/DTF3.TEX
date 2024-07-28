@@ -1,0 +1,1135 @@
+\chapter{Methode der finiten Elemente}
+\label{femethode}
+
+Die Finite-Elemente-Methode ({\em FEM}) hat sich in den
+Ingenieurswissenschaften wegen ihrer universellen Anwendbarkeit auf
+beliebig geformte Strukturen insbesondere auf dem Gebiet der Elastomechanik
+gegenüber anderen numerischen Berechnungsverfahren, z.B.\ der
+Finite-Differenzen-Methode ({\em FDM})
+durchgesetzt. Aufgrund der allgemeinen mathematischen Formulierung
+der FE-Methode auf der Grundlage von Variationsprinzipien läß sie sich auch
+zur Lösung von verschiedenen physikalischen Feldproblemen einsetzen. Neben
+Problemstellungen der
+technischen Mechanik werden heute zunehmend auch Wärmefeldprobleme,
+gekoppelte Feldprobleme (elektromagnetische, piezoelektrische Wechselwirkung)
+und Probleme der Strömungsmechanik erfolgreich behandelt. Exakte analytische
+Lösungen partieller Differentialgleichungen, welche die zugrundeliegenden
+physikalischen Probleme beschreiben, existieren in der Regel nur für
+einige einfache Sonderfälle. Als universelles numerisches Werkzeug gestattet
+die FE-Methode, diese Probleme auch bei sehr komplexen Strukturgeometrien in
+Verbindung mit vielfältigen Randbedingungen zu berechnen.
+Das Konzept der FE-Methode ist mathematisch abgesichert und es existieren
+effiziente numerische Lösungsalgorithmen sowie verifizierte finite Elemente
+für verschiedene Problemklassen (Schalen-, Platten- und Volumenelemente).
+Die kommerziell verfügbaren, leistungsfähigen Programmsysteme mit graphisch
+orientierten Pre- und Postprozessoren\footnote{Werkzeuge für die
+Modellaufbereitung und
+Nachbearbeitung der numerischen Ergebnisse.} verhelfen der FE-Methode
+zu einem breiten Einsatz in praktischen Anwendungen. In diesem
+Kapitel werden die mathematischen Grundlagen der FE-Methode und
+die in dieser Arbeit verwendeten numerischen Berechnungsverfahren zur
+Lösung sowohl linearer, als auch nichtlinearer Randwertprobleme der
+Mikromechanik behandelt.
+
+
+\section{Mathematische Grundlagen}
+\label{mathgrundlagen}
+
+Die mathematischen Grundlagen der FE-Methode werden im folgenden an
+partiellen Differentialgleichungen (pDGL) vom elliptischen Typ erläutert,
+insbesondere sollen hierbei ohne Beschränkung der Allgemeinheit
+skalare Gleichungen zweiter Ordnung betrachtet
+werden. Die numerische Behandlung von physikalischen Problemstellungen vom
+elliptischen Typ kann sowohl durch die FD-Methode \cite{Mar89}, als
+auch durch die FE-Methode erfolgen. Ein wesentlicher Nachteil der
+Differenzenmethode, bei der die Differentialoperatoren durch
+Differenzenquotienten ersetzt werden, besteht darin, daß sie bequem und
+unmittelbar nur auf rechtwinkligen, regelmäßigen Gitterdiskretisierungen
+anwendbar ist, so daß nur einfache Strukturgeometrien betrachtet werden
+können. Im Gegensatz dazu kann die FE-Methode auf beliebig komplexe
+Geometrien angewendet werden.
+
+
+\subsection{Klassisches Randwertproblem}
+\label{klassRWP}
+
+Zur Veranschaulichung der mathematischen Vorgehensweise, die der FE-Methode
+zugrundeliegt, soll das kontinuierliche, n-dimensionale (n = 2 bzw.\ 3),
+quasi-lineare Randwertproblem betrachtet werden, welches durch die
+folgende pDGL gegeben ist:
+\begin{equation}
+\label{PDGL}
+\fbox{$
+ \displaystyle
+ \begin{array}{rcl}
+ \nabla \{ a(x,\phi) \nabla \phi(x) \} \; - \; f(x) & = & 0
+ \end{array}
+ $}
+\end{equation}
+wobei:
+\begin{eqnarray*}
+ \phi(x) & : & \mbox{gesuchte Lösungsfunktion im Gebietsinnern}
+	    \; \Omega \subset {\rm R}^{n}\\
+% \phi_{\Gamma}(x) & : & \mbox{Randbedingung auf dem Gebietsrand}
+%	    \; \Gamma := \partial \Omega \\
+ a(x,\phi) & : & \mbox{verallgemeinerter Transportkoeffizient}\\
+ f(x) & : & \mbox{erzeugendes Funktionensystem}
+\end{eqnarray*}
+Diese Gleichung stellt die klassische Form der Erhaltungsgesetze der Physik
+(Kontinuitätsgleichung) auf dem einfach zusammenhängenden Grundgebiet
+$\Omega$ dar und wird erst durch physikalisch sinnvolle Randbedingungen
+spezifiziert. Diese können sowohl vom {\sl Dirichlet}-Typ, als auch vom
+{\sl Neumann}-Typ sein, falls einerseits die gesuchte Funktion $\phi(x)$
+selbst oder die Normalenableitung der Funktion
+($\partial_{\nu} := \partial / \partial \nu$) auf dem Gebietsrand
+$\Gamma := \partial \Omega$
+vorgegeben ist. Es können u.U.\ auch gemischte Randbedingungen gelten, so
+daß sich der Gebietsrand aus $\Gamma_{D}$ := $\Gamma \backslash \Gamma_{N}$
+mit $\phi(x) = g_{1}(x)$ und $\Gamma_{N}$ mit
+$\partial_{\nu} \phi(x)= g_{2}(x)$ zusammensetzt.
+Eine Lösung der Differentialgleichung (\ref{PDGL}) ist im {\em klassischen}
+Sinne gegeben, wenn eine Funktion $\phi(x)$ existiert, die die vorgegebenen
+Randwerte annimmt und zweimal stetig differenzierbar ist, d.h.\
+$\phi(x) \in C^{2}(\Omega)$ für alle $x \in \Omega$. Ein wichtige
+Voraussetzung für die Existenz von klassischen\footnote{Die Lösung des
+klassischen Randwertproblems wird mathematisch auch als
+ {\em starke} Lösung bezeichnet.}
+Lösungen, ist die hinreichende Glattheit des Gebietsrandes.
+
+
+\subsection{Konzept der schwachen Lösung}
+\label{schwacheloesung}
+
+Im allgemeinen existiert bei derartigen Problemen keine analytisch
+geschlossen darstellbare Lösung, so daá das Grundgebiet diskretisiert
+und die {\em klassische} Lösung numerisch approximiert werden muß. Diese
+Approximation macht Gebrauch vom {\em Konzept der schwachen Lösung}.
+Anstatt der pDGL (\ref{PDGL}) wird hierzu ein äquivalentes Variationsproblem
+betrachtet, da die Lösungen $\phi(x)$ gewisse Minimalitätseigenschaften
+aufweisen \cite{Bat82, Zie84}. Nach dem {\sl Lax-Milgram}-Theorem besitzt
+das zu dem elliptischen Randwertproblem zugeordnete Variationsproblem eine
+eindeutige, in diesem Sinne {\em schwache Lösung} \cite{Bra91}.
+Sofern die Lösung
+$\phi(x) \in V$ (V = $H_{0}^{1}$ : {\sl Sobolev}-Raum\footnote{Der
+{\sl Sobolev}-Raum $H^{m}(\Omega)$ ist ein {\sl Hilbert}-Raum der
+{\sl Lebesgue}-meßbaren Funktionen $L_{2}(\Omega)$ mit quadrat-integrablen
+{\em schwachen} Ableitungen bis zur Ordnung $m$, wobei
+$\dim H^{m}(\Omega) = \infty$.} mit Nullrandbedingung)
+zusätzlich gewisse Regularitätsbedingungen
+aufweist, d.h.\ stetig, genügend glatt und zweimal stetig differenzierbar
+ist,    % ($\phi(x) \in C^{2}(\Omega)$),
+läßt sich obige pDGL in das folgende äquivalente Problem umschreiben:
+% \cite{Wac93b}:
+\begin{eqnarray}
+\label{schwach}
+  \forall_{\psi \in V}: \quad \int_{\Omega} \nabla\psi(x) \cdot a(x,\phi)
+  \nabla \phi(x) \, d\Omega & = & \int_{\Omega} \psi(x) f(x) d\Omega
+\end{eqnarray}
+Diese Integralgleichung wird auch die \glqq schwache Formulierung\grqq \,
+von Gleichung (\ref{PDGL}) genannt und $\phi(x)$ ist entsprechend die
+\glqq schwache Lösung\grqq \, der pDGL. Diese Formulierung mittelt die
+Differentialgleichung (\ref{PDGL}) mit einer Gewichtungsfunktion\footnote{Die
+Testfunktionen $\psi(x)$ sind in der Regel aus dem gleichen Raum wie die
+Lösungsfunktion $\phi(x)$.} $\psi(x)$, wobei die zweite Ortsableitung der
+gesuchten Lösungsfunktion $\phi(x)$ durch die Anwendung des
+{\sl Green}schen Integralsatzes mit Hilfe der partiellen Integration um
+eine Stufe erniedrigt wird. Der Vorteil dieser Vorgehensweise besteht
+darin, daß die {\em schwache} Lösung im Gegensatz zur {\em starken} Lösung,
+die durch Gleichung (\ref{PDGL}) gegeben ist, nur {\em einmal} stetig
+differenzierbar sein muá, d.h.\
+$\phi(x) \in C^{1}(\Omega)$ für alle $x \in \Omega$.
+
+
+
+\subsection{Finite Elemente Diskretisierung}
+\label{diskretisierung}
+
+Die Diskretisierung des kontinuierlichen, {\em schwachen} Problems
+(\ref{schwach}) kann
+auf verschiedene Weisen vorgenommen werden, z.B.\ mit der
+Finite-Volumen-Methode ({\em FVM}) oder der FE-Methode\footnote{Im Gegensatz
+zu diesen beiden Methoden approximiert die FD-Methode die {\em starke} Lösung
+des klassischen Randwertproblems (\ref{PDGL}).}, auf die im folgenden
+näher eingegangen werden soll. Bei der FE-Methode wird für die Lösung
+des globalen Variationsproblems das Grundgebiet $\Omega$ in endliche
+({\em finite}) Elemente $\Omega_{e}$ zerlegt und die Lösung des globalen
+Variationsproblems durch die Lösung des Variationsproblems für die
+einzelnen Elemente ersetzt. Die schwache Lösung $\phi(x) \in V$ wird durch
+den diskreten Ansatz $\phi_{h}(x) \in S_{h}$ numerisch stückweise
+approximiert, der über eine endliche Summe von Formfunktionen
+(engl.: {\em Shapefunctions}) $S_{k}(x)$ dargestellt werden kann:
+\begin{eqnarray}
+\label{Sentw}
+ \phi_{h}(x) & = & \sum_{k=1}^{N_{h}} \alpha_{k} S_{k}(x)
+\end{eqnarray}
+Diese Formfunktionen spannen einen endlich dimensionalen Unterraum
+$S_{h}(\Omega) \subset H_{0}^{1}(\Omega)$, den sogenannten
+{\em Finite-Elemente-Raum}, auf, mit $\dim S_{h}(\Omega) = N_{h}$.
+Der eingeschränkte Funktionenraum $S_{h}$ wird durch den
+Diskretisierungsparameter $h$ charakterisiert, der den größten Durchmesser
+der finiten Elemente darstellt. Man kann zeigen, daá die $\phi_{h}(x)$ eine
+konvergierende {\sl Cauchy}\/-Folge in dem abgeschlossenen und vollständigen
+Unterraum $S_{h}$ bilden und daá $\phi_{h}(x)$ gegen die {\em schwache}
+Lösung $\phi(x)$ strebt, falls die Elementweite genügend klein wird,
+d.h.: $h \rightarrow 0$ \cite{Cia78}.\\
+%
+Den einfachsten Ansatz für Formfunktionen stellen Polynome ersten Grades
+dar, die einen stetigen, linearen Funktionsverlauf abbilden können. In diesem
+Fall sind die Formfunktionen durch $S_{j}(x_{k}) \; = \; \delta_{jk}$
+gegeben, so daß die Näherungslösung $\phi_{h}$ eine %stückweise affine
+auf $\Omega$ stetige Funktion wird, die in den Elementknoten $x_{k}$ die
+Werte der Koeffizienten $\alpha_{k}$ annimmt, d.h.\
+$\phi_{h}(x_{k})=\alpha_{k}$.
+In {\bf Abbildung~\ref{abbelemapprox}} ist die Approximation einer
+beliebigen Funktion $\phi(x)$ unter Verwendung linearer Formfunktionen
+$S_{i}(x)$ dargestellt.
+%----------------------- Beginn: Figure-Environment ----------------------
+\begin{figure}[htb]
+\begin{center}
+% --- Dateiname des Bildes
+\input{abbde.tex}
+\setabbde
+\end{center}
+\caption{\label{abbelemapprox}
+  Approximation einer Funktion unter Verwendung linearer Formfunktionen}
+\end{figure}
+%----------------------- Ende: Figure-Environment ----------------------
+Ersetzt man nun $\psi(x)$ in Gleichung~(\ref{schwach}) ebenfalls durch
+eine endliche Summe von Funktionen $S_{i}(x)$ gem„á Gleichung~(\ref{Sentw}):
+\begin{eqnarray*}
+ \psi_{h}(x) & = & \sum_{i=1}^{N_{h}} \alpha_{i} S_{i}(x)
+\end{eqnarray*}
+so erhält man ein System von $N_{h}$, im allgemeinen nichtlinearen
+Gleichungen:
+%
+\begin{eqnarray}
+\label{diskr}
+ \sum_{k=1}^{N_{h}} \;
+ \int_{\Omega} \nabla S_{i}(x) a(x, \phi_{h}) \nabla S_{k}(x) d\Omega
+ \, \alpha_{k}  & = &
+ \int_{\Omega} S_{i}(x) f(x) d\Omega
+ \qquad \mbox{fr} \quad i=1..N_{h}
+\end{eqnarray}
+%
+die in Matrixnotation vereinfacht zu:
+\begin{equation}
+\label{nlingl}
+\fbox{$
+ \displaystyle
+ \begin{array}{rcl}
+ \sum_{k=1}^{N_{h}} \; A_{ik}(\phi_{h}) \, \alpha_{k} & = &
+  f_{i} \qquad \mbox{fr} \quad i=1..N_{h}
+ \end{array}
+ $}
+\end{equation}
+zusammengefaßt werden können. Aufgrund der Elliptizität der pDGL ist die
+Systemmatrix $A_{ik}$ positiv definit und infolge des Zusammenhangs
+$a(x,\phi_{h})$ ferner von der gesuchten Lösung $\phi_{h}$ und damit von den
+erst zu bestimmenden Koeffizienten $\alpha_{k}$ abhängig. Damit liegt ein
+nichtlineares Problem vor. In Kapitel~\ref{nlstatberechnungen} wird
+auf die physikalischen Hintergründe dieser Nichtlinearitäten eingegangen und
+die für die Lösung der daraus resultierenden nichtlinearen Gleichungssysteme
+erforderlichen numerischen Verfahren kurz beschrieben. Die Güte der
+numerischen Approximation der schwachen Lösung wird in
+Kapitel~\ref{fehlerabschaetzungen} diskutiert. \\
+
+
+\section{Formulierung der Elementsteifigkeitsmatrix}
+\label{elementsteifigkeitsmatrix}
+
+Im vorigen Kapitel wurde das der FE-Methode zugrundeliegende mathematische
+Konzept der schwachen Lösung und die Diskretisierung des kontinuierlichen
+Randwertproblems dargestellt.
+Die physikalische Interpretation soll im weiteren am Beispiel
+der Strukturmechanik erfolgen. Als Ausgangspunkt für die FE-Formulierung
+dient daher die Grundgleichung der Kontinuumsmechanik, das sogenannte
+\glqq Spannungs-Divergenz-Theorem\grqq. Unter Anwendung des Konzeptes der
+schwachen Lösung erfolgt die Integration der mit geeigneten Testfunktionen
+$\eta_{i}$ gewichteten lokalen Gleichgewichtsaussage
+(Gleichung~\ref{kontmech}) über das betrachtete Gebiet $\Omega$
+($i,j: 1, 2, 3$):
+\begin{eqnarray}
+\label{ablelmst}
+ \sum _{i} \int_{\Omega} \eta_{i} \left( \sum_{j}
+ \frac{\partial \sigma_{ij}}{\partial x_{j}}  % \nabla_{j}
+ \, + \, F_{i}^{\Omega} \right) \, d\Omega
+ & = &  \sum_{i}
+ \int_{\Omega} \eta_{i} \rho \frac{\partial^{2}u_{i}}{\partial t^{2}}d\Omega
+\end{eqnarray}
+Hierbei stellt $F^{\Omega}$ die Summe der von außen auf den Festkörper
+einwirkenden Volumenkräfte dar. Durch partielle Integration der Divergenz
+des Spannungstensors % ($\nabla_{j}\sigma_{ij}$~:=~$\sigma_{ij,j}$)
+wird der Gradient auf die Testfunktionen $\eta_{i}$ abgewälzt, die mit den
+Veschiebungen $u_{i}$ identifiziert werden können. Unter Ausnutzung des
+Zusammenhangs\footnote{Im weiteren soll nur die lineare Näherung von
+Gleichung~(\ref{dehn}) betrachtet werden.} zwischen den Dehnungen
+$\varepsilon_{ij}$ und den Verschiebungen $u_{i}$ und der Auswertung des
+Integrals über die Randkurve $\Gamma = \Gamma_{D} + \Gamma_{N}$, bei der
+der Anteil über den eingespannten Rand $\Gamma_{D}$ verschwindet
+($u_{i}=0$) und nur die mit Oberflächenkräften
+($F_{i}^{\Gamma} = \sum_{j} \sigma_{ij} n_{j}, n_{j}$ : Normalenvektor)
+belasteten Ränder $\Gamma_{N}$ berücksichtigt werden müssen, folgt
+schließlich \cite{Mat93}:
+\begin{eqnarray}
+\label{grund}
+  \sum_{i,j} \int_{\Omega} \varepsilon_{ij} \sigma_{ij} d\Omega
+  & = &
+  \sum_{i} \left\{
+  \int_{\Gamma} u_{i} F^{\Gamma}_{i} d\Gamma \, + \,
+  \int_{\Omega} u_{i} \left( F^{\Omega}_{i} \, - \,
+  \rho \frac{\partial^{2} u_{i}}{\partial t^{2}} \right) d\Omega
+  \right\}
+\end{eqnarray}
+Die linke Seite der Gleichung~(\ref{grund}) stellt die innere Energie
+des elastischen Festkörpers dar, während auf der rechten Seite die Anteile
+der durch die Oberflächenkräfte $F^{\Gamma}$ und die Volumenkräfte
+$F^{\Omega}$ verrichteten Arbeit stehen. Bei der Beschränkung auf rein
+statische Probleme entfällt die Trägheitskraft auf der rechten Seite der
+Gleichung.\\
+%
+Das zu der schwachen Formulierung (Gleichung~\ref{grund}) korrespondierende
+Variationsprinzip ist das {\em Prinzip der virtuellen
+Arbeit} bzw.\ {\em Verschiebungen} \cite{Zie84}. Aus der Forderung nach der
+Stationarität der potentiellen Energie $E_{pot}$ des elastischen Kontinuums
+kann die Elementsteifigkeitsmatrix direkt abgeleitet werden:
+\begin{eqnarray}
+\label{epot}
+ E_{pot} & = & \frac{1}{2} \int_{\Omega} \varepsilon^{t} \sigma d\Omega
+           - \int_{\Omega} u^{t} F^{\Omega} d\Omega
+           - \int_{\Gamma} u^{t}_{\Gamma} F^{\Gamma} d\Gamma
+           - \sum_{i} u_{i} F_{i} \; \rightarrow \; Min
+\end{eqnarray}
+Im Gleichgewichtszustand entspricht die gesamte innere Energie
+des elastischen Körpers der von auáen verrichteten Arbeit.
+Hierbei sind $\varepsilon$ die Dehnungen und $\sigma$ die Spannungen,
+die äußeren Kräfte sind durch die Volumenkräfte $F^{\Omega}$, die
+Oberflächenkräfte $F^{\Gamma}$ und die diskreten Knotenkräfte $F_{i}$
+gegeben. Entsprechend sind $u$ die Vektoren des Verschiebungsfeldes im Innern,
+$u_{\Gamma}$ die Oberflächenverschiebungen und $u_{i}$ die Knotenverschiebung
+des $i$-ten Knotens. Für die dreidimensionale Verschiebung
+$u(\vec x)^{t}$ = ($u_x(\vec x), u_y(\vec x), u_z(\vec x)$)
+im Innern eines Elementes wird ein Ansatz der Form:
+\begin{eqnarray}
+\label{uansatz}
+ u(\vec x) & = & \sum_{k} N^{k}(\vec x) \cdot u_{e}^{k}
+\end{eqnarray}
+gewählt, wobei $u_{e}^{t} = (u_x^e, u_y^e, u_z^e)$ der Vektor der diskreten
+Knotenverschiebungen des Elementes ist, die Matrix
+$N = [N_x(\vec x), N_y(\vec x), N_z(\vec x)]$ die Form- bzw.\
+Ansatzfunktionen (siehe Gleichung~\ref{Sentw}) enthält und die Summe sich
+über alle Knoten erstreckt.
+Die Dehnungen $\varepsilon$ ergeben sich in linearer Näherung aus der
+Ableitung der Verschiebungen:
+\begin{eqnarray}
+\label{elemdehn}
+ \varepsilon(\vec x) & = & D \cdot u(\vec x) \; - \; \varepsilon_{0}
+\end{eqnarray}
+Hierbei entspricht $\varepsilon_{0}$ einer Vordehnung\footnote{Unter
+Vordehnungen sind spannungsunabh„ngige Verformungen zu verstehen, die als
+Ursache z.B.\ Kristallwachstum oder Temperaturänderungen (siehe
+Kapitel~\ref{thermoelastischekopplung}) haben.} und $D$ stellt eine Matrix
+von Differentialoperatoren dar:
+\begin{eqnarray}
+\label{Doperator}
+ D & = &
+ \left[
+        \begin{array}{lll}
+         \partial_{x} & 0            & 0 \\
+         0            & \partial_{y} & 0 \\
+	 0            & 0            & \partial_{z} \\
+	 \partial_{y} & \partial_{x} & 0          \\
+	 0            & \partial_{z} & \partial_{y} \\
+	 \partial_{z} & 0            & \partial_{x} \\
+	\end{array}
+ \right]
+\end{eqnarray}
+wobei $\partial_{x_{i}} := \frac{\partial}{\partial x_{i}}$ für die
+partiellen Ableitungen steht. Mit den Gleichungen~(\ref{uansatz}) und
+(\ref{elemdehn}) ergibt sich:
+\begin{eqnarray}
+\label{dehnversch}
+ \varepsilon(x) & = & B(x) \cdot u_{e} \; - \; \varepsilon_{0}
+\end{eqnarray}
+mit  $B(x) := D \cdot N(x)$. Über das Materialgesetz
+(Gleichung~\ref{matgesetz})
+wird der Zusammenhang zwischen Dehnungen und Spannungen hergestellt.
+Unter der Annahme linearen Werkstoffverhaltens, d.h.\ C ist unabhängig
+von $\varepsilon$, folgt:
+\begin{eqnarray}
+\label{sigmaelem}
+ \sigma(\vec x) & = & C \varepsilon(\vec x)
+                  = C \left( B(x) \cdot u_{e} \; - \; \varepsilon_{0} \right)
+\end{eqnarray}
+Werden diese Beziehungen in die Gleichung~(\ref{epot}) eingesetzt, so folgt
+für die potentielle Energie $E_{pot}^{e}$ eines finiten Elementes:
+\begin{eqnarray}
+\label{epotfem}
+  E_{pot}^{e} & = &
+  \frac{u_{e}^{t}}{2} \int_{\Omega} B^{t} C B d\Omega u_{e} \, - \,
+  u_{e}^{t} \int_{\Omega} B^{t} C \varepsilon_{0} d\Omega \, + \,
+  \frac{1}{2} \int_{\Omega} \varepsilon_{0} C \varepsilon_{0} d\Omega
+  \nonumber \\
+  & - & u_{e}^{t} \left( \int_{\Omega} N^{t} F^{\Omega} d\Omega
+	+ \int_{\Gamma} N^{t}_{\Gamma} F^{\Gamma} d\Gamma + F_{i} \right)
+\end{eqnarray}
+Die Bedingung fr das Minimum der potentiellen Energie des Gesamtsystems
+verlangt, daß die Ableitung der Energie nach den Knotenverschiebungen
+verschwindet. Für das einzelne finite Element bedeutet dies
+$\partial E_{pot}^{e} / \partial u_{e} = 0$. Damit folgt aus
+Gleichung~(\ref{epotfem}) die Grundgleichung der linearen Statik auf
+der Elementebene:
+\begin{eqnarray}
+\label{intstatik}
+  \int_{\Omega} B^{t} C B d\Omega \cdot u_{e}
+  & = &
+  \int_{\Omega} B^{t} C \varepsilon_{0} d\Omega \, + \,
+  \int_{\Omega} N^{t} F^{\Omega} d\Omega \, + \,
+  \int_{\Gamma} N^{t}_{\Gamma} F^{\Gamma} d\Gamma \, + \, F_{i}
+\end{eqnarray}
+oder in Matrixkurzschreibweise\footnote{In Anlehnung an die bestehende
+FEM-Literatur \cite{Koh92} sollen im folgenden Matrizen durch $[\cdot]$ und
+Vektoren durch $\{ \cdot \}$ gekennzeichnet werden.}:
+\begin{equation}
+\label{linstatik}
+\fbox{$
+ \displaystyle
+ \begin{array}{rcl}
+  [K_{e}] \, \cdot \, \{u_{e}\} & = & \{F_{e}\}
+ \end{array}
+ $}
+\end{equation}
+Hierbei ist die Elementsteifigkeitsmatrix durch:
+\begin{eqnarray}
+\label{steif}
+ [K_{e}] & = & \int_{\Omega} [B]^{t} \, [C] \, [B] \, d\Omega
+\end{eqnarray}
+gegeben und der Gesamtkraftvektor setzt sich aus den Einzelanteilen gemäß:
+\begin{eqnarray}
+\label{fges}
+ \{F_{e}\} & = & \{F_{0} \; + \; F^{\Omega} \; + \; F^{\Gamma} \; + \; F_{i}\}
+\end{eqnarray}
+zusammen. Die Kraft $F_{e}$ entspricht den äquivalenten Knotenersatzkräften,
+die durch die verteilten Lasten $F^{\Omega}$ und $F^{\Gamma}$, sowie die
+diskret einwirkenden Einzelkräfte $F_{i}$ hervorgerufen wird. Die
+Gesamtsteifigkeitsmatrix des Systems berechnet sich über die Summation aller
+einzelnen Elementsteifigkeitsmatrizen und entspricht der Systemmatrix
+$A_{ik}$ der Gleichung~(\ref{nlingl}).
+
+
+\section{Nichtlinearitäten}
+\label{nlstatberechnungen}
+
+Die Aufstellung der Elementsteifigkeitsmatrix, die zur Lösung des linearen
+Strukturproblems (\ref{linstatik}) benötigt wird, erfolgte unter der Annahme
+eines linearen Zusammenhangs zwischen den Knotenverschiebungen $\{u\}$ und
+den angreifenden Knotenkräften $\{F\}$. Infolge der Belastung können jedoch
+nichtlineare Effekte auftreten, die durch eine
+Geometrieänderung hervorgerufen werden, so daß die Steifigkeitsmatrix
+$[K(u)]$ ihrerseits vom Auslenkungs- und damit vom Belastungszustand des
+Systems abhängig wird (siehe Gleichung~\ref{nlingl}):
+\begin{equation}
+\label{nlstatik}
+\fbox{$
+ \displaystyle
+ \begin{array}{rcl}
+ [K(u)] \, \cdot \, \{u\} & = & \{F\}
+ \end{array}
+ $}
+\end{equation}
+Prinzipiell wird bei der Behandlung mechanischer Probleme
+zwischen drei verschiedenen Typen von
+Nichtlinearitäten unterschieden: der geometrischen Nichtlinearität,
+der Material- und der Struktur-Nichtlinearität. Die
+{\em Material-Nichtlinearit„t}, die den nichtlinearen Zusammenhang zwischen
+Spannung und Dehnung (z.B.\ Plastizität, Hyperelastizität) beschreibt,
+kann bei
+einkristallinen Materialien im Niedertemperaturbereich vernachlässigt
+werden, da Silizium bis etwa 600~$^\circ$C ein absolut lineares
+{\sl Hooke}sches Verhalten zeigt \cite{Ove77}.
+Ebenso verhält es sich bei den
+meisten anderen mikromechanischen Werkstoffen. Unter Struktur-Nichtlinearität
+werden beispielsweise Kontaktprobleme zusammengefaßt, die eine
+Verformungsbehinderung infolge eines mechanischen Anschlags aufweisen.
+Bei der Auslegung und Berechnung von mikromechanischen Bauelementen spielen
+{\em geometrische Nichtlinearitäten} die größte Rolle. Neben den
+spannungsversteifenden Effekten handelt es sich hier um das Knicken und
+Beulen von Balken- und Membranstrukturen, die unter äußeren Lasteinwirkungen
+stehen oder technologisch bedingte, innere Spannungen aufweisen. Die
+Problemklasse der geometrischen Nichtlinearitäten werden FE-technisch wie
+folgt unterteilt \cite{Koh92}:
+%
+\begin{itemize}
+\item
+{\bf Große Dehnungen} ({\em Large Strains}),
+bei denen der nichtlineare Anteil des {\sl Green-Lagrange}schen
+Dehnungstensors in Gleichung~(\ref{dehn}) berücksichtigt wird und z.B.\
+Formänderungen oder groáe Rotationen unter der Belastung auftreten können.
+\item
+{\bf Große Auslenkungen} ({\em Large Deflections}), bei denen große
+Rotationen auftreten, aber die mechanischen Dehnungen klein bleiben.
+Die Beschreibung erfolgt durch die sogenannte
+{\em Corotational}-Formulierung \cite{Ran86}, bei der ein lokales
+Elementkoordinatensystem eingeführt wird, das sich unter Belastung mitdreht
+und die Element\-orientierung annimmt, um die Kraftvektoren bei
+Druckbelastungen entsprechend der verformten Oberfläche nachzuführen.
+Es treten keine Formänderungen auf.
+\item
+{\bf Spannungsversteifung} ({\em Stress Stiffening}), bei der die Rotationen
+und Dehnungen klein bleiben, aber eine Kopplung von Längs- und
+Biegebelastung auftritt, so daß sich die Biegesteifigkeit der Struktur
+lastabhängig ändert.
+\end{itemize}
+%
+Das nichtlineare Problem wird lokal linearisiert und das zugrundeliegende
+Gleichungssystem mit einem linearen Gleichungslöser iterativ gelöst. Zur
+Lösung der linearen Gleichungssyteme wird im FE-Programm
+{\sf ANSYS}\footnote{Im
+weiteren sollen anhand des kommerziellen FE-Programmsystems {\sf ANSYS}
+\cite{SASI} die numerischen Berechnungsmöglichkeiten beschrieben werden,
+da {\sf ANSYS} z.Zt.\ eines der universellsten Programmsysteme ist,
+welches die meisten bei mikromechanischen Strukturen auftretenden
+physikalischen Effekte (siehe Abbildung~\ref{abbnye}) in ihrer Gesamtheit
+zu beschreiben erlaubt.} in der Regel
+das {\em Wavefront}-Lösungsverfahren eingesetzt \cite{Koh92}. Da die
+Steifigkeitsmatrix von den Verschiebungen abhängig ist, wird sie
+entsprechend dem Belastungszustand aufgestellt und ein elementinterner
+Korrekturlastvektor gemäß:
+\begin{eqnarray}
+\label{largedefl}
+  [K(u)]_{i-1} \, \cdot \, \{\Delta u\}_{i} & = &
+  \{F^{ext}\} \, - \, \{F^{kor}\}_{i-1}
+\end{eqnarray}
+berechnet. $[K(u)]_{i-1}$ ist hierbei die verschiebungsabhängige
+Steifigkeitsmatrix der ($i-1$)--ten Iteration,
+$\{\Delta u\}_{i} = \{u\}_{i} - \{u\}_{i-1}$ der inkrementelle
+Verschiebungsvektor, $\{F^{ext}\}$ der extern angreifende Lastvektor und
+$\{F^{kor}\}_{i-1}$ der verschiebungsabhängige Korrekturlastvektor, der
+iterativ berechnet wird. Der Ausdruck auf der rechten Seite stellt die
+Differenz der angreifenden äußeren Last und der Rückstellkraft, generiert
+durch die Elementspannungen, dar und wird als Ungleichgewichtskraft
+(Residuum) bezeichnet. Zur Lösung des nichtlinearen Problems können
+prinzi\-piell verschiedene Verfahren eingesetzt werden.
+Je nach Problemstellung sind
+die Verfahren unterschiedlich effektiv, so daß in FE-Programmen meist
+mehrere realisiert sind. Das FE-Programm {\sf ANSYS} erlaubt entweder
+die Anfangssteifigkeitsmethode % (engl.: {\em Initial-Stiffness-Procedure})
+oder das {\sl Newton-Raphson}-Verfahren einzusetzen, die sich durch
+verschiedene Iterationsverfahren unterscheiden.
+Bei beiden Methoden wird das Verschiebungsinkrement $\{\Delta u\}_{i}$
+infolge jedes Iterationsschrittes kleiner, so daß bei Konvergenz der
+nichtlinearen Rechnung das Residuum beliebig klein wird.\\
+%----------------------- Beginn: Figure-Environment ----------------------
+\begin{figure}[htb]
+\begin{center}
+% --- Dateiname des Bildes
+\input{abbdz.tex}
+\setabbdz
+\end{center}
+\caption{\label{abbnr}
+ Iterationsprozeá beim {\sl Newton-Raphson}-Verfahren}
+\end{figure}
+%----------------------- Ende: Figure-Environment ----------------------
+Bei der Anfangssteifigkeitsmethode wird bei jeder
+Iteration eine konstante Steifigkeitsmatrix benutzt und nur der
+Korrekturlastvektor wird entsprechend dem Belastungszustand geändert.
+Das {\sl Newton-Raphson}-Verfahren, das in {\bf Abbildung~\ref{abbnr}}
+fr ein Problem mit einem Freiheitsgrad dargestellt ist, verwendet im
+Vergleich dazu eine bei jeder Iteration neu berechnete
+Tangentensteifigkeitsmatrix $[K_{T}]$, für die:
+\begin{eqnarray}
+\label{tangentenmatrix}
+  [K_{T}(x,u)] & := &  [K_{0}(x)] \, + \, [K_{u}(x,u)] \, + \,
+                       [K_{\sigma}(x,u)]
+\end{eqnarray}
+gilt, wobei mit Hilfe der orthogonalen Transformationsmatrix [T] und durch
+Summation ber die einzelnen Elemente (e) die Einzelmatrizen:
+\begin{eqnarray*}
+ [K_{0}] + [K_{u}] & \approx &
+   \sum_{e} \; [T(x+u)]^{t} \cdot [K_{0}^{e}(x)] \cdot [T(x+u)]
+\end{eqnarray*}
+\begin{eqnarray*}
+ [K_{\sigma}] & \approx &
+     \sum_{e} \; [T(x+u)]^{t} \cdot [S_{\sigma}^{e}(x)] \cdot [T(x+u)]
+\end{eqnarray*}
+gebildet werden \cite{Mat93}. Hierbei entspricht $[K_{0}]$
+der geometrischen Struktursteifigkeitsmatrix (\ref{steif})
+und $[K_{u}]$ ist der verschiebungsabhängige Anteil. Die Matrix
+$[S_{\sigma}]$ beschreibt die zusätzliche Spannungsversteifung, die
+infolge der Überlagerung von Längs- und
+Biegespannungsanteilen bei dnnen Balken- und Membranstrukturen auftritt.
+Während die Struktursteifigkeitsmatrix von der Geometrie und den
+Elastizitätseigenschaften der Struktur abhängt, wird die
+Spannungsversteifungsmatrix von der lastinduzierten, inneren Längsspannung
+$\sigma$ in der Struktur hervorgerufen. Bei axial belasteten
+Balkenstrukturen, wie beispielsweise resonanten Kraftsensoren,
+genügt es nur den Anteil $[S_{\sigma}]$:
+\begin{eqnarray}
+\label{sstif}
+ ([K_{0}] \, + \, [S(\sigma)]) \cdot \{u\} & = & \{F\}
+\end{eqnarray}
+in der nichtlinearen statischen Berechnung zu berücksichtigen
+({\sf ANSYS}-Option: {\em Stress Stiffening}).
+
+
+
+\section{Dynamische Berechnungsverfahren}
+\label{dynamik}
+
+Das dynamische Verhalten mikromechanischer Systeme ist gekennzeichnet durch
+ihr sta\-tionäres Schwingungsverhalten, das Frequenzgangverhalten und das
+instationäre Verhalten unter Einwirkung von transienten Störungen. Die
+rechnerische Modalanalyse löst das dynamische Eigenwertproblem und liefert
+die Eigenfrequenzen und -schwingungsformen. Im Zusammenhang mit resonanten
+Sensoren interessieren insbesondere die Eigenfrequenzänderungen unter der
+Einwirkung von äußeren statischen Belastungen. Frequenzganganalysen
+ermöglichen die Modellierung unter dem Einfluß von Dämpfungseffekten und
+zeitlich periodisch variierenden Lasten. Mit Hilfe der direkten
+Zeitintegration kann zusätzlich das Systemverhalten im Zeitbereich unter
+impulsartigen Lasteinwirkungen ermittelt werden.
+
+
+\subsection{Das Eigenwertproblem}
+\label{eigenwertproblem}
+
+Zur Beschreibung der freien, stationären Schwingungen eines Systems ist die
+dynamische Eigenwertgleichung:
+\begin{equation}
+\label{modal}
+\fbox{$
+ \displaystyle
+ \begin{array}{rcl}
+ [M] \cdot \{\stackrel{\cdot \cdot}{u}\} \: +  \:
+ % [C] \cdot \{\stackrel{\cdot}{u}\} \: + \:
+ [K(u)] \cdot \{u\} & = & 0
+ \end{array}
+ $}
+\end{equation}
+zu lösen. Hierbei ist [K(u)] die verschiebungsabhängige Steifigkeitsmatrix
+des Gesamtsystems, die in einer nichtlinearen statischen Analyse mit den
+{\sf ANSYS}-Optionen {\em Large Deflection} und/oder {\em Stress Stiffening}
+ermittelt wird. Die Massenmatrix:
+\begin{eqnarray}
+\label{massmatrix}
+ [M] & = & \int_{\Omega} [N]^{t} \, \rho \, [N] \, d\Omega
+\end{eqnarray}
+berechnet sich aus der Massendichte $\rho$ bei der {\em konsistenten}
+Formulierung mit Hilfe der Matrix der Ansatzfunktionen $[N(\vec x)]$ im
+finiten Element. Die Masse der Gesamtstruktur kann auch {\em konzentriert}
+in den Elementknoten durch eine Diagonalmatrix
+($\sum_{i,j} M_{ij}\delta_{ij}$)
+angenähert werden. Beide Formulierungen sind in {\sf ANSYS} realisiert
+und zeichen sich durch unterschiedliche numerische Genauigkeiten aus
+\cite{Ram90}.
+Die Vektoren $\{\stackrel{\cdot \cdot}{u}\}$ und $\{u\}$ stellen die
+Knotenbeschleunigungen und -verschiebungen dar.\\
+Unter der Annahme freier,
+ungedämpfter harmonischer Schwingungen verhält sich das System linear und
+der Lösungsansatz:
+\begin{eqnarray}
+ \{u(\vec x,t)\} & = & \{ \Phi(\vec x) \}_{k} \cdot \exp (i \omega_{k}t)
+\end{eqnarray}
+führt auf das bekannte Eigenwertproblem:
+\begin{eqnarray}
+\label{ewp}
+ \left ( [K] \, - \, \omega_{k}^{2} \, [M] \right ) \cdot
+ \{ \Phi \}_{k} & = & 0
+\end{eqnarray}
+Diese Gleichung ist fr alle nicht verschwindenden Eigenvektoren
+$\{\Phi\}_{k}$ erfllt, wenn die Determinante:
+\begin{eqnarray}
+ \det ( \, [K] \, - \,\omega_{k}^{2} \, [M] \,) & = & 0
+\end{eqnarray}
+verschwindet. Die Lösungen sind die Eigenwerte\footnote{Quadrate der
+Eigenfrequenzen $\omega_{k}$.} und die Eigenschwingungsformen
+$\{\Phi\}_{k} $, wobei der Subskript $k$ für die Nummer der Schwingungsmode
+steht. Die Eigenschwingungsformen bilden einen Satz linear unabhängiger
+Basisvektoren und sind bezüglich der Gesamtmassenmatrix (\ref{massmatrix})
+orthonormiert:
+\begin{eqnarray}
+\label{ons}
+ \{ \Phi \}^{t}_{i} \; [M] \; \{ \Phi \}_{j} & = & \delta_{ij}
+\end{eqnarray}
+Für die Modalanalyse können im FE-Programm {\sf ANSYS} verschiedene
+Lösungsalgorithmen verwendet werden \cite{Koh92}.
+Die {\sl Householder}-Methode
+benutzt ein reduziertes System von Freiheitsgraden, bei dem die
+Verschiebungen auf die sogenannten Hauptfreiheitsgrade
+({\em MDOF : \underline{M}aster \underline{D}egrees \underline{o}f
+\underline{F}reedom}) mit Hilfe einer {\sl Guyan}-Reduktion kondensiert
+werden. Im Gegensatz dazu löst das
+{\em Subspace}-Iterationsverfahren die voll besetzten Matrizen
+des Systems bei erhöhter Rechengenauigkeit, benötigt aber entsprechend
+mehr Speicherkapazität und Rechenzeit.
+
+
+\subsection{Modellierung von Dämpfungseffekten}
+\label{daempfungseffekte}
+
+Bei dynamischen Vorgängen führen verschiedene physikalische
+Dämpfungsmechanismen zur Energiedissipation im Mikrosystem. Diese können
+durch Kristallimperfektionen im Kristallinnern oder durch zusätzlich
+aufgebrachte Dünnschichten mit andersartiger Kristallstruktur (amorph oder
+polykristallin) hervorgerufen werden. Diese Energieverluste sind abhängig von
+den Materialeigenschaften, der Absoluttemperatur und den Strukturdimensionen
+und werden unter dem Begriff \glqq thermo-elastische Reibung\grqq \,
+zusammengefaßt \cite{Ros90}.
+Ein weiterer Dämpfungsmechanismus wird bei Resonatoren durch
+die Schwingungen hervorgerufen, bei denen Energieverluste in die
+Resonatoreinspannung verursacht werden. Diese Art der Dämpfung ist
+abhängig von der jeweiligen Schwingungsmode (modale Dämpfung).
+Zusätzlich wird durch akustische Abstrahlung und viskose Dämpfung
+externe Fluiddämpfung verursacht. Um diese
+Dämpfungseffekte in FE-Berechnungen zu berücksichtigen, wird von einem
+viskosen, d.h.\ geschwindigkeitsproportionalen Dämpfungsterm entsprechend
+Gleichung (\ref{balkdgl}) ausgegangen \cite{Koh92}:
+\begin{equation}
+\label{harmfreq}
+\fbox{$
+ \displaystyle
+ \begin{array}{rcl}
+ [M] \cdot \{\stackrel{\cdot \cdot}{u} \} \: +  \:
+ [C_{D}] \cdot \{\stackrel{\cdot}{u}\} \: + \:
+ [K] \cdot \{u\} & = & \{f(x,t)\}
+ \end{array}
+ $}
+\end{equation}
+Hierbei sind [M], [$C_{D}$] und [K] die Massen-, Dämpfungs-\footnote{Der
+Index $D$ bei der Dämpfungsmatrix soll eine Verwechslung mit der Matrix der
+Elastizitätsmoduln [C] ausschließen (siehe
+Kapitel~\ref{elementsteifigkeitsmatrix}).}
+und Steifigkeitsmatrix der Struktur und
+$\{\stackrel{\cdot}{u}\}$ der Vektor der
+Knotengeschwindigkeiten. Bei harmonischen Analysen entspricht die rechte
+Seite einer harmonischen Anregungskraft
+$\{f(x,t)\} = \{f_{0}(x)\} \cdot \exp(i \omega t)$. Bei transienten Analysen
+ist die Anregungskraft im allgemeinen nicht periodisch und zusätzlich können
+Nichtlinearitäten berücksichtigt werden. Zur Lösung nichtlinearer,
+transienter Probleme wird die {\sl Newmark}-Integrationsmethode in
+Verbindung mit dem {\sl Newton-Raphson}-Verfahren eingesetzt.
+Die Dämpfungsmatrix wird im allgemeinsten Fall durch den Ansatz:
+\begin{eqnarray}
+\label{cmatrix}
+ [C_{D}] & = & \alpha \cdot [M] \, + \, ( \beta \, + \, \beta_{c}) \cdot
+           [K] \, + \, \sum_{j} \, \beta_{j} \cdot [K_{j}] \, + \,
+            \sum_{j} \, [C_{j}]
+\end{eqnarray}
+bercksichtigt, wobei $\alpha$ und $\beta$ die sogenannten
+{\sl Rayleigh}schen
+Dämpfungskonstanten sind, die die Dämpfungsmatrix auf die Massen- und
+Steifigkeitsmatrix beziehen. Der Dämpfungskoeffizient
+$\beta_{c} = 2 \xi / \omega_{c}$ ist variabel und nur für die harmonische
+Frequenzganganalyse verfügbar. Hierbei ist der Parameter
+$\xi = c / c_{krit}$  das {\sl Lehr}sche Dämpfungsmaß und
+$c_{krit} = 2 m \omega_{0} $ entspricht der kritischen Dämpfung des
+Systems. Zusätzlich können Materialdämpfungsbeiträge durch $[K_{j}]$ und
+spezielle Dämpferelemente durch $[C_{j}]$ berücksichtigt werden.
+Die Angabe der Dämpfungsbeiträge ist nur empirisch zu ermitteln, wobei
+die beiden {\sl Rayleigh}-Konstanten frequenzabhängig sind. Hierbei ist
+$\alpha$ ($\sim \omega^{-1}$) für niedrige und $\beta$ ($\sim \omega$) für
+hohe Frequenzen maágebend. Beispielsweise betragen für Piezokeramiken,
+die im Bereich um 1~MHz betrieben werden, $\alpha = 7,5$ und
+$\beta = 2 \cdot 10^{-5}$ \cite{Ler90}.
+
+
+
+\section{Gekoppelte Feldberechnungen}
+\label{feldberechnungen}
+
+Durch die Miniaturisierung von mikromechanischen Systemen erhält man
+einerseits eine hohe Integrationsdichte der Bauelemente, andererseits
+aber eine stark ausgeprägte Wechselwirkung der physikalischen Größen
+untereinander, die bei makroskopischen Problemstellungen im allgemeinen
+vernachlässigt
+werden können. Zusätzlich besitzen die mikromechanischen Bauelemente
+sowohl elektrische als auch
+nichtelektrische Funktionen, so daß infolge der verschiedenen
+mikromechanischen Wandlungsprinzipien die Berechnung von gekoppelten
+Feldproblemen beim Entwurfsprozeß unabdingbar werden. Das FE-Programm
+{\sf ANSYS} bietet als eines der wenigen kommerziell verfügbaren
+Programmsysteme
+mit den sogenannten {\em Multi-Field}-Elementen die Möglichkeit,
+Feldkopplungen bereits auf Element\-ebene numerisch durchzuführen.
+Diese Elementklasse besitzt mehrere Freiheitsgrade pro Knoten, die es
+erlauben, strukturmechanische, thermische und piezoelektrische Probleme
+berechnen zu können. Zu den strukturmechanischen
+Knotenverschiebungsfreiheitsgraden $\vec u = (u_{x}, u_{y}, u_{z})$
+kommen die Knotentemperatur $T$ und das elektrische Potential $\phi$ hinzu.
+Dadurch wird direkt auf Elementebene eine Kopplung ermöglicht, die die
+Wechselwirkung bereits in {\em einem} Berechnungsschritt zu erfassen
+erlaubt \cite{Ost89}. Eine alternative
+Möglichkeit besteht über die Methode der Lastvektorkopplung, bei der die
+zusätzlichen Kraftbeiträge infolge der Wechselwirkung iterativ berücksichtigt
+werden. Diese Vorgehensweise wird auch erforderlich, falls verschiedene
+Programmwerkzeuge miteinander gekoppelt werden müssen, wie beispielsweise
+bei der Berechnung der thermischen Fluid-Struktur-Wechselwirkungen
+\cite{Fab93b}.
+
+
+\subsection{Thermoelastische Kopplung}
+\label{thermoelastischekopplung}
+
+Die Zustandsgleichung für rein thermodynamische Problemstellungen
+lautet \cite{Bol85}:
+\begin{equation}
+\label{thermodyn}
+\fbox{$
+ \displaystyle
+ \begin{array}{rcl}
+ C_{th} \frac{\partial T}{\partial t} + K_{th} T  & = & Q_{th}
+ \end{array}
+ $}
+\end{equation}
+wobei $C_{th}$ und $K_{th}$ für die Wärmekapazität und die
+-leitfähigkeit stehen und $Q_{th}$ die Wärmeflüsse bezeichnet.
+Bei reinen Temperaturfeldberechnungen kann eine {\em inhomogene}
+Temperaturverteilung in mikromechanischen Bauelementen unter Vorgabe von
+Wärmequellen und -senken ermittelt werden. Zusätzlich treten durch die
+thermoelastische Kopplung an Bauelementeeinspannungen thermisch
+induzierte mechanische Spannungen infolge verhinderter Wärmeausdehnung auf.
+Diese können im einfachsten Fall unter Vorgabe einer {\em homogenen}
+Temperaturüberhöhung $\Delta T$ gegenüber der Umgebungstemperatur mit Hilfe
+des Wärmeausdehnungskoeffizienten $\alpha$ über die thermischen Dehnungen:
+\begin{eqnarray}
+\label{thermdehn}
+ \varepsilon^{th}_{ij} & = & \sum_{i,j} \Delta T \alpha_{ij} \delta_{ij}
+\end{eqnarray}
+berechnet und damit die thermisch induzierten Spannungen:
+\begin{eqnarray}
+\label{thermspan}
+ \sigma_{ij} & = & \sum_{k,l} C_{ijkl} (\varepsilon_{kl} \, - \, \varepsilon^{th}_{kl})
+\end{eqnarray}
+ermittelt werden\footnote{Das Minuszeichen bei der thermischen Dehnung ist
+Konvention, da bei einer Temperaturzunahme ($\Delta T \geq 0$) und
+positiver Wärmeausdehnungsdifferenz ($\Delta \alpha \geq 0$) Druckspannungen
+auftreten.}. Für das stationäre, thermisch-mechanisch gekoppelte Problem
+ergibt sich unter Verwendung der ungekoppelten Zustandsgleichungen
+(\ref{harmfreq}) und (\ref{thermodyn}) in der FE-Formulierung auf
+Elementebene \cite{Koh92}:
+\begin{small}
+\begin{eqnarray}
+\label{thermkopl}
+ \left[
+ \begin{array}{ll}
+  K  & 0   \\
+  0  & K_{th}
+ \end{array}
+ \right ]
+ \left \{
+ \begin{array}{c}
+  \vec u \\
+  T
+ \end{array} \right \}
+                        & = &
+\left \{
+\begin{array}{c}
+\vec F + \vec F^{th} \\
+Q_{th}
+\end{array} \right \}
+\end{eqnarray}
+\end{small}
+Die Freiheitsgrade an den Knotenpunkten der finiten Elemente sind
+durch den Vektor der Knotenverschiebungen $\vec u$ und die Temperatur
+$T$ gegeben. Die thermisch induzierte Kraftwirkung wird durch den
+zus„tzlichen Lastvektor\footnote{Im Gegensatz zur direkten Kopplung
+auf Elementebene (siehe Kapitel~\ref{elektromechanischekopplung}) erfordert
+die Methode der Lastvektorkopplung eine iterative Lösung mit mindestens zwei
+Berechnungsschritten, um {\em beide} feldbeschreibenden Gleichungen zu
+lösen. Im {\em ersten} Schritt wird dabei das Temperaturfeldproblem
+und im {\em zweiten} das mechanische Problem berechnet.}
+$\vec F^{th}$ beschrieben:
+\begin{eqnarray}
+\label{thermkraft}
+ \{F^{th}\} & = & \int_{\Omega} [B]^{t} [C] \{\varepsilon^{th}\} d\Omega
+\end{eqnarray}
+%
+Bei mikromechanischen Multilayerstrukturen treten ferner durch die
+unterschiedlichen Wärmeausdehnungskoeffizienten thermisch induzierte
+Spannungen auf. Der umgekehrte Effekt, daß sich durch innere Reibung und
+mechanische Deformationen Wärme bildet, ist in kommerziellen FE-Programmen
+nicht implementiert. Jegliche sonstige Energiedissipationen können generell
+nur durch die mechanische Dämpfung (\ref{cmatrix}) berücksichtigt werden.
+Insbesondere gilt dieses auch für dielektrische Verluste bei
+piezoelektrischen Medien \cite{Ecc92}. Daher können mit der FE-Methode nur
+verlustfreie elektromechanische Wandler simuliert werden.
+
+
+\subsection{Elektromechanische Kopplung}
+\label{elektromechanischekopplung}
+
+Die piezoelektrischen Feldgleichungen
+(Gleichungen:~\ref{piezo1}--\ref{piezo3}), welche die elektromechanische
+Kopplung beschreiben, sind in der Regel nur für
+einfache Geometrien geschlossen lösbar. Im Laufe der Zeit wurden unter
+vereinfachenden Annahmen verschiedene eindimensionale Ersatzmodelle zur
+Beschreibung piezoelektrischer Medien entwickelt (\cite{Ler90},
+und Referenzen darin). Um jedoch
+komplexe Geometrien berechnen zu können, ist es notwendig die FE-Formulierung
+auf die Beschreibung der elektromechanischen Wechselwirkung zu erweitern.
+Dieses kann durch die Anwendung eines verallgemeinerten Variationsprinzips
+erfolgen, z.B. durch das Prinzip der virtuellen Verschiebungen angewendet auf
+ein elektroelastisches Kontinuum unter dem Einfluß von mechanischen {\em und}
+elektrischen Kräften. Faßt man die elektrischen Potentiale als generalisierte
+Verschiebungen und die elektrischen Ladungen als generalisierte Kräfte auf,
+so können finite Elemente mit
+\glqq Verschiebung-Potential\grqq-Freiheitsgraden
+konstruiert werden \cite{All70}. \\
+%
+Die im FE-Programm {\sf ANSYS} implementierten
+elektromechanischen Zustandsgleichungen basieren auf einer gemischten
+Formulierung unter Verwendung der extensiven Zustandsgröße $\{\varepsilon\}$
+für die mechanische Dehnung und der intensiven Zustandsgröße $\{E\}$ für das
+elektrische Feld. Bei linearem Materialverhalten und Beschränkung auf
+Effekte erster Ordnung gilt \cite{Koh92}:
+\begin{equation}
+\fbox{$
+ \displaystyle
+ \begin{array}{rcl}
+\label{piezofem1}
+ \{\sigma\} & = & [C^{E}] \cdot \{\varepsilon\} \; - \; [e] \cdot \{E\} \\
+\label{piezofem2}
+ \{D\} & = & [e]^{t} \cdot \{\varepsilon\} \; \: + \;
+  [\epsilon^{\varepsilon}] \cdot \{E \}
+ \end{array}
+ $}
+\end{equation}
+hierbei sind $\{\sigma\}, \{\varepsilon\}$ der Spannungs- und Dehnungsvektor,
+$\{E\}, \{D\}$ das elektrische Feld und die Flußdichte, $[C^{E}]$ die
+Steifigkeitsmatrix (bei konstantem elektrischen Feld), $[e]$ die
+piezoelektrische Kopplungsmatrix und $[\epsilon^{\varepsilon}]$ die
+Permittivitätsmatrix (bei konstanter mechanischer Dehnung). Analog zur
+Finite-Elemente-Diskretisierung beim rein mechanischen Problem können
+unter Verwendung von Methoden der Variationsrechnung die
+gekoppelten elektromechanischen Zustandsgleichungen auf Elementebene
+abgeleitet werden \cite{All70}:
+\begin{small}
+\begin{eqnarray}
+\label{piezokopl}
+ \left[
+  \begin{array}{ll}
+  M & 0 \\
+  0 & 0
+  \end{array}
+ \right ]  \left \{
+ \begin{array}{c}
+   \stackrel{\cdot \cdot}{\vec u}  \\
+   \stackrel{\cdot \cdot}{\phi}
+  \end{array} \right \}           \; + \;
+ \left[
+ \begin{array}{ll}
+  C & 0 \\
+  0 & 0
+ \end{array}
+ \right ]
+ \left \{
+ \begin{array}{c}
+  \stackrel{\cdot}{\vec u}  \\
+  \stackrel{\cdot}{\phi}
+ \end{array} \right \}
+                       \; + \;
+% \nonumber \\
+ \left[
+ \begin{array}{ll}
+  K_{uu}           & K_{u \phi} \\
+  K_{u \phi}^{t}   & K_{\phi \phi}
+ \end{array}
+ \right ]
+ \left \{
+ \begin{array}{c}
+  \vec u \\
+  \phi
+ \end{array} \right \}
+                        & = &
+\left \{
+\begin{array}{c}
+\vec F \\
+Q
+\end{array} \right \}
+\end{eqnarray}
+\end{small}
+Die Freiheitsgrade an den Knotenpunkten der finiten Elemente sind
+durch den Vektor der Knotenverschiebungen $\vec u$ und das elektrische
+Potential $\phi$ gegeben. Die Untermatrizen $[M]$ und $[K_{uu}]$ stellen
+die bereits bekannte Massen- (\ref{massmatrix}) und Steifigkeitsmatrix
+(\ref{steif}) dar, und beziehen sich lediglich auf das mechanische Problem,
+das die Ansatzfunktionen $N_{u}(\vec x)$ für die Verschiebungen im Element
+(Gleichung~\ref{uansatz}) verwendet. Die Strukturdämpfungsmatrix $[C_{D}]$
+enthält nur mechanische Dämpfungsbeiträge
+und wird gemäß Gleichung (\ref{cmatrix}) aufgebaut. Die piezoelektrische
+Kopplung wird durch die Außerdiagonalelemente, dieses sind
+die symmetrischen Untermatrizen $[K_{u\phi}] = [K_{\phi u}]^{t}$, der
+verallgemeinerten elektromechanischen Gesamtsteifigkeitsmatrix
+bewerkstelligt:
+\begin{eqnarray}
+\label{piezomatrix}
+ [K_{u \phi}] & = & \int_{\Omega} [B_{u}]^{t} \, [e] \, [B_{\phi}] \, d\Omega
+\end{eqnarray}
+Für die dielektrische Leitfähigkeitsmatrix, die als \glqq elektrische
+Steifigkeitsmatrix\grqq \, gedeutet werden kann, gilt:
+\begin{eqnarray}
+\label{dielekmatrix}
+ [K_{\phi \phi}] & = & -\int_{\Omega}
+     [B_{\phi}]^{t} \, [\epsilon^{\varepsilon}] \, [B_{\phi}] \, d\Omega
+\end{eqnarray}
+Auf der rechten Seite der Gleichung (\ref{piezokopl}) steht $\vec F$ fr
+die Summe der mechanischen konzentrierten Knoten-, sowie verteilten
+Oberflächen- und
+Volumenkräfte (Gleichung~\ref{fges}). Die Summe der elektrischen
+konzentrierten Punktladungen, Oberflächen- und Volumenladungsdichten wird
+durch $\{Q\}$ dargestellt. Das elektrische Feld ergibt sich aus
+dem Gradienten des elektrischen Potentials im Element:
+\begin{eqnarray}
+\label{egrad}
+ \{E\} & = & - [ B_{\phi} ] \cdot \{ \phi \}
+\end{eqnarray}
+wobei:
+\begin{eqnarray}
+ [B_{\phi}] & = &
+ \left \{
+  \begin{array}{c}
+    \partial_{x} \\ \partial_{y} \\ \partial_{z} \\
+   \end{array}
+  \right \} \cdot  \{ N_{\phi} \}^{t}
+\end{eqnarray}
+Der Vektor $\{N_{\phi}\} = \{N_{1}, N_{2},..., N_{n}\}$ wird als
+Ansatzfunktion fr das elektrische Potential verwendet, wobei
+$\{\phi\} = \{\phi_{1}, \phi_{2},..., \phi_{n}\}$ ist und $n$ die Anzahl
+der Knoten im verwendeten Element darstellt. Ein Vorteil bei der
+FE-Formulierung der piezoelektrischen Zustandsgleichungen mit Hilfe der
+gemischten Zustandsgrößen $\{\varepsilon\}$ und $\{E\}$ ergibt sich aus der
+Tatsache, daß sich die Dehnung und das elektrische Feld unter Verwendung
+der Gleichungen (\ref{dehnversch}) und (\ref{egrad}) direkt aus den
+Knotenfreiheitsgraden $(\vec u$, $\phi)$ bestimmen lassen. Hieraus können
+gemäß den piezoelektrischen Zustandsgleichungen (\ref{piezofem1}) die
+Spannung und die Flußdichte im finiten Element berechnet werden. \\
+Bei der Berechnung von piezoelektrisch betriebenen Mikrostrukturen sind neben
+den lokalen Knotenergebnissen die integralen Größen, wie elektrische
+Impedanz und elektromechanischer Kopplungsfaktor von besonderem
+Interesse. Mit Hilfe der mechanischen, dielektrischen und
+elektromechanischen Energie im finiten Element \cite{Nai83}:
+\begin{eqnarray}
+\label{Emech}
+E_{uu}& = & \displaystyle \frac{1}{2} \{u\}^{t} \, [K_{uu}] \, \{u\}
+\nonumber \\
+E_{\phi\phi}& =& \displaystyle \frac{1}{2} \{\phi\}^{t} \, [K_{\phi\phi}] \, \{\phi\}
+\\
+E_{u\phi}& = & \displaystyle \frac{1}{4} \left( \{u\}^{t} \, [K_{u\phi}] \, \{\phi\}
+	      \; + \; \{\phi\}^{t} \, [K_{u\phi}]^{t} \, \{u\} \right)
+\nonumber
+\end{eqnarray}
+kann der elektromechanische Kopplungsfaktor:
+\begin{eqnarray}
+\label{kfem}
+ k^{2} & := & \frac {E_{u\phi}^{2}} {E_{uu} \cdot E_{\phi\phi}}
+\end{eqnarray}
+ermittelt werden. Bei dieser Gleichung %(\ref{kfem})
+handelt es sich um die {\em exakte} Definition des
+elektromechanischen Kopplungsfaktors, während
+Gleichung (\ref{keff}) eine Näherung darstellt und nur für entkoppelte
+Schwingungsmoden Gültigkeit besitzt \cite{Ler90}.
+In Kapitel~5 wird das elektromechanische Wandlungsprinzips modelliert und
+verschiedene Einflüsse auf das Schwingungsverhalten und den
+elektromechanischen Kopplungsfaktor untersucht, sowie das
+frequenzabhängige Impedanzverhalten von piezoelektrisch angetriebenen
+Mikrostrukturen berechnet.
+
+
+
+\section{Fehlerabsch„tzungen}
+\label{fehlerabschaetzungen}
+
+Als N„herungsverfahren unterliegt die FE-Methode verschiedenen
+Fehlereinflüssen, so daß der Gültigkeitsbereich des FE-Modells
+bei jeder Problemstellung einzeln untersucht und verifiziert werden muß.
+Die Wahl der Diskretisierung muß dem Problem angepaßt sein. Für
+unterschiedliche mathematische Analysen muß die Orts- und
+Zeitdiskretisierung eine Auflösung der Variablenänderung ermöglichen.
+In der Regel erfordern statische, dynamische und thermische Berechnungen
+daher verschiedene Elementvernetzungen, da die Gradienten der
+einzelnen Feldgrößen sich unterschiedlich über das Gebiet
+verteilen.\\
+%
+Die Fehler, die bei der numerischen Behandlung auftreten können,
+lassen sich grob unterteilen in den: % \cite{Bra91, Goe93, Hac86, Zie87}:
+%
+\begin{itemize}
+\item
+{\bf Modellfehler}, der durch die Vereinfachung der Realität bei
+der mathematischen Idealisierung des physikalischen Problems auftritt.
+Neben der ungenügenden Geometrieerfassung können weiterhin die nur ungenau
+bekannten Materialeigenschaften zu erheblichen Fehlereinflüssen beitragen.
+Die Idealisierung der Randbedingungen kann zusätzlich an
+Bauelemen\-terändern zu singulärem Lösungsverhalten führen.
+\item
+{\bf Approximationsfehler} bzw.\ Diskretisierungsfehler, der die
+Abweichung der FE-Näherungslösung von der exakten Lösung des
+physikalischen Problems darstellt und der eine Aussage über die
+Vernetzungsgüte des untersuchten Gebietes erlaubt. Die verwendeten
+Formfunktionen der finiten Elemente haben hierbei einen unmittelbaren
+Einfluß auf den Diskretisierungsfehler. Mit Hilfe verschiedener
+{\em a priori} Fehlerabschätzungen kann das Konvergenzverhalten {\em vor}
+der FE-Berechnung abgeschätzt werden \cite{Goe93}.
+\item
+{\bf Numerischer Fehler}, der durch die
+Rechengenauigkeit der verwendeten numerischen Algorithmen verursacht
+wird, da die numerischen Verfahren, die zur Integration und zur Lösung
+nichtlinearer Gleichungen eingesetzt werden, nicht exakt sind. Zusätzlich
+kommen Rundungsfehler hinzu, die von der Güte der rechnerinternen
+Zahldarstellung (Rechner-$\varepsilon$) abhängen.
+\end{itemize}
+%
+Die Größenordnung der einzelnen Fehler sollte aufeinander abgestimmt sein.
+In der Mikromechanik sind beispielsweise die Materialdaten in der Regel
+nicht genau
+bekannt, so daß es nicht sinnvoll ist, den numerischen Fehler aufwendig
+zu minimieren.\\
+%
+Im weiteren soll der Approximationsfehler $e_{h}$ genauer betrachtet werden,
+der die Differenz zwischen der schwachen Lösung $\phi$ der
+Gleichung~(\ref{schwach}) und der besten numerischen
+Approximation $\phi_{h}$ im FE-Unterraum $S_{h}$, gemessen in einer
+geeignet zu wählenden
+% Für Fehlerabschätzungen in
+% {\em Sobolev}-Räumen $H^{m}_{0}(\Omega)$ wird beispielsweise die
+% euklidische $L_{2}(\Omega)$--Norm
+% $|| \phi ||_{L_{2}}:= (\int_{\Omega}[\phi(x)]^{2}dx)^{\frac{1}{2}}$
+% verwendet.
+Norm\footnote{Zur lokalen Fehlerabschätzung bei statischen FE-Berechnungen
+wird in der Regel die \glqq Energienorm\grqq \, benutzt, die eine
+anschauliche Deutung über die Feldenergie im finiten Element erlaubt
+\cite{Bra91, Hac86}.} darstellt. Dieser kann durch:
+\begin{eqnarray}
+\label{femfehler}
+ e_{h} & = & || \phi - \phi_{h} || \leq c \cdot h^{p}
+ % |\phi|_{2,p}
+\end{eqnarray}
+abgeschätzt werden \cite{Bra91}. Hierbei stellt $c$ eine netzunabhängige
+Konstante dar.
+Mit abnehmender Elementweite $h$ und zunehmender FE-Ordnung $p$ der
+Elementansatzfunktion ($p$ = Polynomgrad+1) nimmt der Approximationsfehler
+$e_{h}$ stetig ab. Jedoch hat die Glattheit (Regularität) der Lösungsfunktion
+$\phi$ einen Einfluß auf das Konvergenzverhalten der verwendeten Elemente.
+Das Approximationsverhalten wird bei Randwertproblemen im allgemeinen
+zum Rand hin schlechter, so daß es wenig Sinn macht den Polynomgrad
+beliebig zu erhöhen, vielmehr sollte
+in diesen Bereichen die Diskretisierung hinreichend fein gewählt werden. \\
+%
+In der Praxis der FE-Berechnungen wird zur Verbesserung der
+Konvergenzeigenschaften sowohl die Elementweite $h$ verkleinert
+({\em h-Methode}), als auch der Polynomgrad der Elementansatzfunktionen
+erhöht ({\em p-Methode}), um den Lösungsfortschritt beim Übergang auf eine
+jeweils feinere Elementvernetzung zu bestimmen.
+Durch Einsatz von {\em a posteriori}
+Fehlerschätzern (siehe \cite{Zie87}) können adaptive Vernetzungstechniken
+eingesetzt werden und die Elementweite und/oder Polynomordnung {\em lokal}
+verändert werden, um die Auflösung von großen Feldgradienten zu ermöglichen.
+Ein großer Vorteil der {\em h-Methode} besteht darin, daß einfache
+Ansatzfunktionen, meist linearer oder quadratischer Ordnung, verwendet
+werden und somit die Anzahl der Freiheitsgrade und der Berechnungsaufwand
+niedrig gehalten wird. Der Hauptnachteil gegenüber der {\em p-Methode}
+ist die erneut erforderliche Vernetzung\footnote{In diesem Zusammenhang
+spricht man auch von der sogenannten {\em hr-Methode}, wobei $r$ für
+{\em remesh} steht.} der Struktur. Neuere FE-Programmentwicklungen gehen
+dazu über, beide Methoden zu kombinieren (sogenannte {\em hp-Methode}), um
+eine optimale Konvergenzbeschleunigung zu erhalten und die Vorteile beider
+Verfahren ausnutzen zu können.
+

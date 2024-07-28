@@ -1,0 +1,550 @@
+\section[Analytische Beschreibungsweise]
+{Analytische Beschreibung von Mikroresonatoren}
+\label{analytischebeschreibungsweise}
+
+Mit Hilfe mikromechanischer Herstellungsverfahren lassen sich
+unterschiedliche Resonatorgeometrien realisieren, die in verschiedenen
+Schwingungsmoden angeregt werden können. Bei der Sensoranwendung
+beruht das Meßprinzip auf der Abhängigkeit der
+Ausbreitungscharakteristika elastischer Wellen im Festkörper von
+der Meßgröße oder auf der Änderung der Resonanzfrequenz des Mikroresonators.
+Fr die in dieser Arbeit betrachteten Resonanzsensoren zur Erfassung der
+physikalischen Meßgrößen Kraft, Druck und Strömungsgeschwindigkeit kommen
+insbesondere Biegeschwinger auf der Basis von Balken- und
+Membranresonatoren in Frage. Bei
+einfachen Strukturen können die Eigenfrequenzen und Schwingungsformen
+exakt bzw.\ in einer ausreichenden Näherung analytisch berechnet
+werden. Unter der
+Annahme idealer Einspannbedingungen und homogener, isotroper
+Materialeigenschaften werden im folgenden die Resonanzfrequenzen und
+lastabhängigen Frequenzänderungen der Resonatoren analytisch abgeleitet.
+Durch eine geeignete Wahl der Sensorabmessungen kann der Arbeitspunkt der
+resonanten Sensoren, das sind die Resonanzfrequenz und die
+Empfindlichkeit gegenüber der Meßgröße, eingestellt werden.
+
+
+\subsection{Mikromechanische Resonatorstrukturen}
+\label{resonatorstrukturen}
+
+Die elastischen Schwingungen, die sich in einem Festkörper ausbilden,
+sind von der Schwingergeometrie und den Randbedingungen abhängig.  In
+{\bf Abbildung~\ref{abbwellentypen}} sind die verschiedenen
+Wellentypen dargestellt, die in
+elastischen Festkörpern auftreten können \cite{Whi70}.  Der Festkörper kann
+longitudinale Kompressionsschwingungen (a), transversale Biege- (b) und
+Torsionsschwingungen, sowie Scherschwingungen (c), diese sind z.B.\
+Dicken- oder Flächenscherschwingungen, ausführen. Die elastischen Raumwellen,
+die sich innerhalb des Festkörpers fortpflanzen, werden bei den sogennanten
+Eigenresonanzschwingern ({\sl BAW = \underline{B}ulk
+\underline{A}coustic \underline{W}aves}) ausgenutzt.  Die Wellenlängen
+sind von der gleichen Größenordnung wie die typischen Abmessungen des
+Schwingers ($\lambda \approx d$), wobei die minimale Wellenlänge
+einer Biegeschwingung $2d$ betr„gt.  Die typischen Resonanzfrequenzen
+liegen zwischen 10~kHz und 20~MHz. Beispiele hierfür sind
+Quarz-Resonatoren auf der Basis von Einfach- und Doppelstimmgabeln
+(Uhren-Quarze, Quarz-Kraftsensoren) und die in dieser Arbeit behandelten
+Resonanzsensoren auf Siliziumbasis.\\
+Oberflächenwellen\footnote{auch {\sl Rayleigh}-Wellen genannt.}
+({\sl SAW = \underline{S}urface \underline{A}coustic \underline{W}aves})
+sind aufgrund ihrer geringen Eindringtiefen in den Festk”rper an die freie
+Oberfläche des Festkörpers gebunden (d). Die Wellenlänge ist gegenüber der
+Resonatordicke $d$ sehr
+klein, d.h.\ $\lambda \ll d$.  Die Resonanzfrequenzen liegen im
+Bereich von 20~MHz bis 2~GHz. Hauptanwendungsgebiete sind Filter und
+Sensoren, die nach verschiedenen Funktionsprinzipien arbeiten. Die Frequenz
+der SAW-Resonatoren ändert sich infolge von
+Massenanlagerung (akusto-gravimetrische Wechselwirkung),
+Leitfähigkeitsänderung (akusto-elektrische Wechselwirkung) und der
+Steifigkeitsänderung, die eine rein elastische Wechselwirkung darstellt.
+Zusätzlich führt die viskoelastische Wechselwirkung zu einer
+Geschwindigkeitsänderung und Abschwächung der Oberflächenwelle \cite{Ric91}.
+Unter Verwendung selektiv sensitiver Grenzschichten können so chemische
+und biochemische Sensoren aufgebaut werden. \\
+Plattenwellen\footnote{auch {\sl Lamb}- bzw.\ {\sl Love}-Wellen genannt.}
+({\sl FPW = \underline{F}lexural \underline{P}late
+\underline{W}aves}) treten bei sehr dünnen Membranstrukturen auf, d.h.
+$\lambda \gg d$, und können sowohl in symmetrischen, als auch
+antisymmetrischen Schwingungsmoden angeregt werden (e). Die
+Resonanzfrequenzen liegen im mittleren Frequenzbereich von etwa
+500~kHz bis 10~MHz \cite{Bue91b}. Diese Biege-Plattenwellen-Wandler werden
+als chemische und biologische Sensoren auf der Grundlage des
+akusto-gravimetrischen Wandlungsprinzips eingesetzt. Außer in
+gasförmigen Medien können sie auch in Flüssigkeiten aufgrund geringer
+Abstrahlungsverluste eingesetzt werden \cite{Gie92}. Die erreichbaren
+hohen Empfindlichkeiten beruhen auf dem großen Verhältnis von
+Membranoberfläche zu Volumen, das die Wechselwirkung von akustischer
+Energie mit den nachzuweisenden biochemischen Komponenten begünstigt.
+Weitere Anwendungen von {\sl Lamb}-Wellen sind Sensoren für die Messung von
+Fluiddichte und -viskosität, Differenzdrücken, Beschleunigungen, Temperatur
+und Wärmestrahlung \cite{Whi87, Wen88}.
+%----------------------- Beginn: Figure-Environment ----------------------
+\begin{figure}[htb]
+\begin{center}
+% --- Dateiname des Bildes
+\input{abbzf.tex}
+\setabbzf
+\end{center}
+\caption{\label{abbwellentypen}
+ Wellentypen in elastischen Festkörpern}
+\end{figure}
+%----------------------- Ende: Figure-Environment ----------------------
+
+\clearpage
+
+\subsection{Balkenresonatoren}
+\label{balkenreson}
+
+Um das dynamische Verhalten eines doppelseitig eingespannten Biegebalkens
+analytisch zu beschreiben, gengt es, den Balken in
+einer eindimensionalen Näherung als konti\-nuierliches System aufzufassen.
+Unter den Voraussetzungen, daá die Balkendicke wesentlich kleiner als die
+Balkenbreite und -länge ist (d.h.\ $l \gg b > h$), der Balken
+homogen und ideal prismatisch\footnote{d.h.\ der Balkenquerschnitt und damit
+auch die Biegesteifigkeit bleiben über die Balkenlänge konstant.} ist und auf
+den Balken eine axiale äußere Kraft einwirkt, können die Biegeschwingungen
+für kleine Amplituden durch die folgende eindimensionale
+partielle Differentialgleichung beschrieben werden \cite{Wea90}:
+%
+\begin{equation}
+\label{balkdgl}
+\fbox{$
+ \displaystyle
+ \begin{array}{rcl}
+  \hat E I \, \displaystyle \frac{\partial^{4} \, u(x,t)}{\partial x^{4}}
+  \: - \:
+  F \displaystyle \frac{ \partial ^{2} \, u(x,t)}{\partial x^{2}}
+  \: + \:
+  \rho A \displaystyle \frac{\partial ^{2} \, u(x,t)}{\partial t^{2}}
+  \: + \:
+  c \displaystyle \frac{\partial \, u(x,t)}{\partial t}
+  = f(x,t)
+ \end{array}
+ $}
+\end{equation}
+%
+mit den Randbedingungen an den Balkenenden:
+%
+\begin{eqnarray*}
+  \displaystyle  u(x,t) \left |_{x=0,l} \right. & = & 0
+  \qquad \mbox{und} \qquad
+  \displaystyle \frac{ \partial u(x,t) }{\partial x} \displaystyle
+  \left |_{x=0,l} \right. \, = \, 0
+\end{eqnarray*}
+%
+Hierbei bezeichnet $u(x,t)$ die zeit- und ortsabhängige transversale
+Auslenkung des Balkens senkrecht zur Balkenausdehnung ($x$--Richtung).
+Die ersten beiden Terme sind Beiträge aus der
+Federsteifigkeit des Balkens, wobei $\hat E I$ die Biegesteifigkeit des
+Balkens und $F$ die äußere axiale Kraft darstellen. Der dritte Term
+entspricht dem Trägheitsbeitrag, hervorgerufen durch die
+homogene Massendichte $\rho$. Die viskosen, d.h.\
+geschwindigkeitsproportionalen Dämpfungseffekte werden
+durch den Dämpfungskoeffizienten $c$ beschrieben. Auf der rechten Seite
+der Gleichung stellt $f(x,t)$ eine zeitlich, eventuell auch örtlich,
+variierende Anregungskraft dar. Das Materialverhalten wird als isotrop
+angenommen, wobei $\hat E = E / (1-\nu^{2})$ für den
+reduzierten E-Modul steht und $\nu$ die {\sl Poisson}-Zahl ist.
+Die Balkenfläche $A = b \cdot h$ wird als rechteckig\footnote{Die in der
+Mikromechanik in (100)-Silizium anisotrop geätzten Biegebalken weisen
+trapezförmige Balkenquerschnitte mit einem Winkel von 54,74$^{\circ}$ auf,
+deren äquatoriales Flächenträgheitsmoment sich nach:
+\begin{eqnarray}
+%\label{Itrapez}
+ I & = & h^{3}(B^2+4Bb+b^2)/36(B+b)
+\end{eqnarray}
+berechnet, wobei $b$ die obere und $B$
+die untere Balkenbreite ist. In der Regel handelt es sich um sehr breite
+Balken, bei denen $B \geq b \gg h$, so daß in erster Näherung die
+Querschnitte als rechteckig angenähert werden können.} angenommen, so daß
+das äquatoriale Flächenträgheitsmoment $I = b \cdot h^{3} / 12$ ist.
+Bei der Beschränkung auf den homogenen Fall ohne Anregung
+(d.h.\ $f(x,t) = 0$) und unter Vernachlässigung von Dämpfungseffekten
+($c = 0$) läßt sich die Lösung obiger Gleichung (\ref{balkdgl}) durch einen
+Separationsansatz in der Form:
+%
+\begin{eqnarray}
+  u(x,t) & = & \sum_{n} \, \Phi_{n}(x) \cdot \left
+  ( A_{n} \cos \omega_{n}t \; + \; B_{n} \sin \omega _{n} t \right )
+\end{eqnarray}
+%
+darstellen, wobei $f_{n} \, = \, \omega_{n}/{2\pi}$ die Eigenfrequenzen
+und $\Phi_{n}(x)$ die ortsabhängigen Eigenschwingungsformen der $n$--ten
+Schwingungsmode sind. Die $\Phi_{n}(x)$ lassen sich durch eine
+šberlagerung von trigonometrischen und hyperbolischen Funktionen
+ausdrücken und führen zu exakten Lösungen der homogenen Gleichung
+%(\ref{balkdgl})
+\cite{Bou91}. Die lastabhängigen Eigenfrequenzen können durch:
+%
+\begin{eqnarray}
+\label{freqF}
+f_{n}(F) & = & f_{n}(0) \: \sqrt{ 1 \, + \, \gamma_{n} \cdot
+               \frac{Fl^{2}}{12 \hat E I}}
+\end{eqnarray}
+%
+angenähert werden, wobei:
+\begin{eqnarray*}
+        f_{n}(0)   & := & f_{n}(F=0) \nonumber \\
+        \gamma_{n} & = & 12(k_{n} - 2) \, / \, k_{n}^{3}
+\end{eqnarray*}
+Auáerdem gilt $k_{n} = (n + \frac{1}{2}) \pi$ fr $n \geq 3$ und
+$k_{1}$ = 4,730 sowie $k_{2}$ = 7,853.
+Der Näherungsfehler beträgt weniger als 0,5~\%, falls der Steifigkeitsbeitrag
+der Axialkraft kleiner als die Biegesteifigkeit des Balkens ist, d.h.\
+$\gamma_{n} Fl^{2} < 12 \hat E I$. Als Annahme geht bei der Lösung
+der homogenen Gleichung            %(\ref{balkdgl})
+ein, daß die Schwingungsamplituden klein
+gegenüber der Balkendicke $h$ sind, d.h.\ $(u_{max}/h)^2 < 1$. Für das
+Verhältnis der Resonanzfrequenzen der Oberschwingungen bezogen auf die
+unbelastete Grundfrequenz $f_{0}$ gilt:
+%
+\begin{eqnarray}
+        \frac {f_{n}}{f_{0}} & = & \left( \frac{k_{n}}{4,73} \right)^2
+\end{eqnarray}
+%
+Die unbelastete Resonanzfrequenz $f_{1}(F = 0)$ der Grundbiegeschwingung
+berechnet sich nach:
+%
+\begin{equation}
+\label{balkfreq}
+\fbox{$
+ \displaystyle
+ \begin{array}{rcl}
+    f_{1}(0) & = & \frac{ {4,73}^{2} }{2 \pi}
+        \sqrt{ \frac{ \hat E I}{\rho A l^{4}}}
+        \approx 1,028 \cdot \frac {h}{l^{2}} \, \sqrt{ \frac{\hat E}{\rho}}
+ \end{array}
+ $}
+\end{equation}
+%
+Das statische und dynamische Verhalten eines beidseitig eingespannten
+Biegebalkens unter dem Einfluß einer Temperaturerhöhung wird in
+Kapitel~\ref{temperaturverhalten} behandelt.
+
+
+\subsection{Membranresonatoren}
+\label{membranreson}
+
+Die in der Literatur fr Membranen angegebenen analytischen Zusammenhänge
+für den Auslenkungs- und Spannungszustand, sowie die Resonanzfrequenzen
+beruhen auf der {\sl Kirchhoff}schen Platten- und Schalentheorie und gehen
+von der Annahme ebener Objekte aus, deren laterale Abmessungen
+wesentlicher größer als deren Dicke ist \cite{Tim87}. Bei der Ermittlung der
+Eigenfrequenzen und Schwingungsformen werden verschiedene
+Näherungsverfahren (z.B.\ \cite{You50}) verwendet. Für die Resonanzfrequenzen
+$f_{ij}$ ebener Membranen gilt \cite{Ble84}:
+%
+\begin{equation}
+\label{memfreq}
+\fbox{$
+ \displaystyle
+ \begin{array}{rcl}
+     f_{ij} & = & \frac{\lambda_{ij}^{2}}{2 \pi \sqrt{12}} \,
+     \frac{h}{a^{2}} \, \sqrt{ \frac {\hat E}{\rho}}
+ \end{array}
+ $}
+\end{equation}
+%
+wobei $a, h$ die Membranseitenl„nge bzw.\ -dicke und
+$i$, $j$ die Anzahl der Halbwellen in $x$-- bzw.\ $y$--Richtung darstellen.
+Die Konstante $\lambda^{2}_{ij}$ ist von den Einspannbedingungen und dem
+Seitenverhältnis der Membran abhängig und wird auch als normierte
+Eigenfrequenz fr die jeweilige Schwingungsmode bezeichnet. In
+{\bf Tabelle~\ref{tabcij}} ist eine Zusammenstellung der $\lambda_{ij}^{2}$
+für eine fest eingespannte, quadratische, homogene Membran gegeben.
+Die Werte für anisotropes Materialverhalten wurden \cite{Pon91} entnommen.
+%----------------------- Beginn: table ---------------------------
+\begin{table}[htb]
+\caption{\label{tabcij}
+ Normierte Eigenfrequenzen $\lambda_{ij}^{2}$ einer ebenen Siliziummembran}
+\begin{center}
+\begin{tabular}{|l||c|c|c|} \hline
+ {\bf Material}: & {\bf isotrop} & {\bf isotrop} & {\bf anisotrop} \\
+\hline
+ Literatur:      & \cite{Ble84}  &  \cite{Pon91} & \cite{Pon91} \\ \hline
+\hline
+{\bf Mode ij}   &               &               & \\
+ 1 $ \quad $ {\bf 11} & 35,99  & 35,99 & 35,16 \\
+ 2 $ \quad $ {\bf 21} & 73,41  & 73,39 & 71,91 \\
+ 3 $ \quad $ {\bf 12} & 73,41  & 73,39 & 71,91 \\
+ 4 $ \quad $ {\bf 22} & 108,30  & 108,22 & 104,35 \\
+ 5 $ \quad $ {\bf 31} & 131,60  & 131,78 & 130,09 \\
+ 6 $ \quad $ {\bf 13} & 132,20  & 132,41 & 130,67 \\
+ 7 $ \quad $ {\bf 32} & 165,15  & 165,16 & 159,73 \\
+ 8 $ \quad $ {\bf 23} & 165,15  & 165,16 & 159,73 \\
+ 9 $ \quad $ {\bf 33} & ---     & 220,32 & 211,34 \\ \hline
+\end{tabular}
+\end{center}
+\end{table}
+%----------------------- Ende: table ---------------------------
+Fr die Ermittlung der Eigenfrequenzverschiebung als Folge einer
+Druckeinwirkung ergibt sich die šberlagerung eines statischen
+und dynamischen Problems. Im
+ersten Schritt wird die Membranmittenauslenkung als Funktion des
+einwirkenden Druckes ermittelt, im zweitem Schritt die
+Frequenzverschiebung als Funktion der Membranauslenkung.  Die
+šberlagerung ergibt die Frequenzverschiebung als Funktion des
+einwirkenden Druckes. In der Literatur wird von verschiedenen Ansätzen
+ausgegangen, bei denen lineare Zusammenhänge für relativ dicke Membranen
+bei kleinen Auslenkungen bzw.\ nichtlineare Zusammenhänge für dünne
+Membranen bei großen Auslenkungen angegeben werden.  Für quadratische,
+fest eingespannte Platten der Dicke $h$ gilt fr den nichtlinearen
+Zusammenhang zwischen einwirkendem Druck $p$ und der
+Membranmittenauslenkung $ d $ nach \cite{Cha87}:
+%
+\begin{eqnarray}
+\label{pvond}
+ p & = & 16 \hat E \left( \frac{h}{a} \right)^{4} \, \left[ 4,19847
+ \frac{d}{h} \, + 1,5816 \left( \frac{d}{h} \right)^{3} \right]
+\end{eqnarray}
+%
+Diese Gleichung kann mit Hilfe der Lösungsformel nach {\sl Kardan} aufgelöst
+und zur Berechnung der Resonanzfrequenz„nderung in Abhängigkeit von der
+Auslenkung herangezogen werden $f_0 = f(d=0)$ \cite{Utt87}:
+%
+\begin{eqnarray}
+\label{fvond}
+     f(d) & = & f_{0} \, \sqrt{ 1 \, + \, c \left( \frac{d}{h} \right)^{2}}
+\end{eqnarray}
+%
+Die Konstante $c$ ist von der Einspannung und der Membranform
+abhängig. Für kreisförmige, fest eingespannte Membranen existiert eine
+analytisch exakte Lösung mit dem Wert $c = 1,464$ \cite{Utt87}.
+
+
+
+\section{Skalierungsverhalten dynamischer Größen}
+\label{skalierungsverhalten}
+
+In der Mikromechanik werden im wesentlichen die in
+{\bf Abbildung~\ref{abbgrundgeometrien}}
+dargestellten drei grundlegenden Strukturgeometrien für Sensor- und
+Aktoranwendungen realisiert.
+%----------------------- Beginn: Figure-Environment ----------------------
+\begin{figure}[htb]
+\begin{center}
+% --- Dateiname des Bildes
+\input{abbzs.tex}
+\setabbzs
+\end{center}
+\caption{\label{abbgrundgeometrien}
+ Mikromechanische Grundstrukturen}
+\end{figure}
+%----------------------- Ende: Figure-Environment ----------------------
+Die Resonanzfrequenzen fr die
+Biegeschwingungen dieser Strukturen sind von den geometrischen
+Abmessungen (d.h.\ Resonatorlänge $l$ und -dicke $h$), der Einspannungsart
+und den Materialparametern (bei isotropem Materialverhalten:
+Elastizitätsmodul $E$, {\sl Poisson}-Zahl $ \nu $, sowie Materialdichte
+$\rho$) abhängig. Für die Resonanzfrequenz der Grundbiegeschwingung
+gilt unabhängig von der Geometrie:
+%
+\begin{eqnarray}
+\label{freqskal}
+      f & \approx & \frac{h}{l^{2}} \sqrt{ \frac{\hat E}{ \rho}}
+         = c_{f} \frac{h}{l^{2}} \sqrt{ \frac{\hat E}{ \rho}}
+         = c_{f} \frac{h}{l^{2}} c_{s}
+\end{eqnarray}
+%
+Die Proportionalitätskonstante $c_{f}$ ist von der Resonatorgeometrie
+und der Schwingungsmode abhängig und $c_{s}$ stellt die Schallgeschwindigkeit
+dar und hängt damit nur von den Materialeigenschaften des Festkörpers ab.
+Für die dargestellten drei
+mikromechanischen Grundstrukturen sind die geometrieabhängigen
+Frequenzkonstanten $c_{f}$ der jeweiligen Grundbiegeschwingung
+in {\bf Tabelle~\ref{tabcf}} zusammengefaßt
+(siehe Gleichungen (\ref{balkfreq})
+und (\ref{memfreq})).
+%----------------------- Beginn: table ---------------------------
+\begin{table}[htb]
+\caption{\label{tabcf}
+ Frequenzkonstanten $c_{f}$ verschiedener Grundgeometrien}
+\begin{center}
+\begin{tabular} {|l|l||c|}
+\hline
+ Geometrie  &  Einspannung      &  $c_{f}$ \\
+\hline \hline
+ a)  &  einseitig     & 0,162 \\
+ b)  &  doppelseitig  & 1,028 \\
+ c)  &  allseitig     & 1,654 \\
+\hline
+\end{tabular}
+\end{center}
+\end{table}
+%----------------------- Ende: table ---------------------------
+Bei der einseitig eingespannten Zungengeometrie kann die Querkontraktion
+vernachl„ssigt werden, so daá in diesem Fall $\hat E = E$ ist \cite{Ste91a}.
+In {\bf Tabelle~\ref{tabresfreqanalyt}} sind die Resonanzfrequenzen
+dieser Grundstrukturen
+bis auf die Konstante $c_{f}$ zusammengestellt. Die jeweilige
+Resonanzfrequenz ist durch Multiplikation mit der entsprechenden Konstante
+zu erhalten. Da die Siliziumsensoren, die aus (100)-orientierten
+Wafern hergestellt werden, bei den Biegeschwingungen Dehnungen in
+$\langle$110$\rangle$-Kristallrichtung erfahren, gengt es in erster N„herung
+die elastischen Eigenschaften isotrop anzusetzen. Fr den Elastizit„tsmodul
+$E$ und die {\sl Poisson}-Zahl $\nu$ gilt nach \cite{Heu89}:
+\begin{eqnarray}
+\label{simat}
+      E_{110}   & = & 168,9 \, \mbox{GPa}  \\
+      \nu_{110} & = & 0,063 \nonumber
+\end{eqnarray}
+Die Dichte $\rho$ von Silizium betr„gt 2329 $kg/m^{3}$. Die
+angegebenen Materialdaten beziehen sich auf Zimmertemperatur.
+Unter Verwendung dieser Materialdaten betr„gt die Schallgeschwindigkeit
+$c_{s}$ fr einkristallines Silizium etwa 8533~$m/s$.
+%----------------------- Beginn: table ---------------------------
+\begin{table}[htb]
+\caption{\label{tabresfreqanalyt}
+ Gr”áenordnung der Resonanzfrequenzen von Grundbiegeschwingungen}
+\begin{center}
+\begin{tabular}{|l||c|c|c|c||c|}
+\hline
+ l/h & $10^{1}$ & $10^{2}$ & $10^{3}$ & $10^{4}$ & Mikromechanik \\
+ Dicke h & & & & & Technologie \\
+\hline \hline
+ 1 $\mu$m & {\bf 85,33 MHz} &  {\bf 853 kHz} & {\bf 8,53 kHz} & {\bf 85 Hz} & OFM \\
+          & (10 $\mu$m)     & (100 $\mu$m)   & (1 mm)         & (10 mm) & \\
+\hline \hline
+ 10 $\mu$m & {\em 8,53 MHz} & {\em 85,3 kHz} & {\em 853 Hz}   & 8,5 Hz &  \\
+           & (100 $\mu$m)   & (1 mm)         & (10 mm)        & (10 cm) & BMM  \\
+\cline{1-5}
+ 100 $\mu$m & {\em 853 kHz} & {\em 8,53 kHz} & 85 Hz          & 0,85 Hz & \\
+            & (1 mm)        & (10 mm)        & (10 cm)        & (1 m) & \\
+\hline
+\end{tabular}
+\end{center}
+\end{table}
+%----------------------- Ende: table ---------------------------
+Die Strukturdimensionen im oberen Teil der Tabelle ({\bf fett}
+geschrieben) lassen
+sich nur durch die Technologien der Oberfl„chenmikromechanik
+{\em (OFM)} realisieren, w„hrend die {\em kursiv}
+gedruckten Werte im Bereich der heute {\em klassischen
+Mikromechanik}\footnote{Auch als Bulk-Mikromechanik ({\em BMM}) bezeichnet.}
+liegen. Um die Kraftempfindlichkeiten
+von Balkenresonatoren abzusch„tzen, gengt es den linearen
+Anteil\footnote{Aus dem ersten Glied der Taylorentwicklung folgt fr
+$c_{\eta}$ der Wert 0,148 $N^{-1}$.} von Gleichung (\ref{freqF})
+zu bercksichtigen. Fr die normierte relative Kraftempfindlichkeit
+$\eta$ der Grundmode, bezogen auf die Grundresonanzfrequenz
+$f_{0} := f(F=0)$, gilt:
+%
+\begin{eqnarray}
+\label{etadef}
+     \eta & := & \frac{1}{f_{0}} \cdot \frac{\partial f}{\partial F}
+          \; \approx \; c_{\eta} \cdot \frac{1}{\hat E} \,
+            \left( \frac{l}{h} \right)^{2} \, \frac{F}{b \cdot h}
+\end{eqnarray}
+%
+wobei $\partial f$ die Frequenz„nderung und $\partial F$ die Kraft„nderung
+bedeuten.
+Die Kraftempfindlichkeit eines Balkenresonators ist demnach vom
+L„ngen-Dicken-Verh„ltnis $ l/h $ abh„ngig.  Die Empfindlichkeit wird
+umso gr”áer, je dnner der Resonatorbalken ist.  Abh„ngig von der Wahl
+der Geometrieparameter $l, b$ und $h$ kann ein ann„hernd linearer
+Verlauf der Kennlinie\footnote{Die Kennliniennichtlinearit„t kann bei
+einer gnstigen Parameterwahl weniger als 1~\% bei Vollast betragen.} in
+einem bestimmten Kraftbereich erreicht werden.  In obiger Gleichung
+(\ref{etadef})
+stellt der letzte Ausdruck auf der rechten Seite die mechanische
+Spannung $\sigma_{mech}$ im Resonator dar.  Diese kann die
+Bruchspannung $\sigma_{Bruch}^{mat}$ des verwendeten Materials nicht
+bersteigen, so daá die theoretisch erreichbare maximale
+Frequenz„nderung abgesch„tzt werden kann:
+%
+\begin{eqnarray}
+     \frac{F}{b \cdot h} & = & \sigma_{mech}
+     \; \ll \; \sigma_{Bruch}^{mat}
+\end{eqnarray}
+%
+Ersetzt man $\sigma_{mech}$ durch $\sigma_{Bruch}^{mat}$ und betrachtet
+das Verh„ltnis der Frequenzverschiebung $\Delta f$ zur Kraft„nderung
+$\Delta F$, so gilt unter Verwendung von Gleichung~(\ref{freqskal}):
+%
+\begin{eqnarray}
+\label{etaf}
+    \frac{\Delta f}{\Delta F} & = & \eta \cdot f_{0} \; = \;
+     \left( \frac{c_{\eta}c_{f}}{\sqrt{\hat E \rho}} \right) \cdot
+     \frac{\sigma_{mech}}{h} \; \ll \; const \cdot
+     \frac{\sigma_{Bruch}^{mat}}{h}
+\end{eqnarray}
+%
+Gleichung (\ref{etaf}) sagt aus, daá das Verh„ltnis nur von der
+Balkendicke, d.h.\ der Abmessung des Balkens in Schwingungsrichtung, abh„ngt.
+Der Verkleinerung dieses Parameters stehen aber sowohl prozeátechnische
+Grenzen (Balkendicke: $h$ $\approx$ einige $\mu$m) als auch
+funktionstechnische Gesichtspunkte entgegen. Falls $h$ zu klein wird, so
+nimmt bei Zugbelastung die Bruchgefahr, bei Druckbelastung die
+Knickgefahr enorm zu. Als Beispiel soll ein Siliziumbalken mit den
+typischen Abmessungen von $l$~=~5,0~mm und $h$~=~20~$\mu$m betrachtet
+und die Materialparameter $\hat E$~$\approx$~170~GPa,
+$\rho$~$\approx$~2330~$kg/m^{3}$ und $\sigma_{Bruch}$~$\approx$~200~MPa
+verwendet werden. Fr die maximal erreichbare Kraftempfindlichkeit
+$\eta_{max}$ folgt:
+%
+\begin{eqnarray}
+     \eta_{max}^{Si} & \leq & \frac{c_{\eta}}{\hat E}
+     \left( \frac{l}{h} \right)^{2} \sigma_{Bruch}^{Si} \,
+      \approx \, 11 \, [N^{-1}]
+\end{eqnarray}
+%
+Dieses entspricht bei einer Grundfrequenz von etwa 7 kHz einer
+theoretisch maximal erreichbaren Frequenz„nderung von ann„hernd 77 kHz
+pro Newton.
+
+
+\newpage
+\section{Grenzen der analytischen Beschreibungsweise}
+\label{grenzenderanalytik}
+
+Exakte analytische L”sungen physikalischer Problemstellungen
+existieren nur fr wenige Spezialf„lle, bei denen in der Regel
+vereinfachende Annahmen getroffen und idealisierte Randbedingungen
+verwendet werden. Bei der analytischen Beschreibungsweise
+werden daher durch die Annahmen gewisse Beschr„nkungen auferlegt:\\
+%
+\begin{itemize}
+\item
+Einspannungseffekte werden nur angen„hert bercksichtigt, so daá
+Randbedingungen bei der L”sung nur unvollst„ndig bercksichtigt werden.
+Bei der Behandlung von
+Randwertproblemen haben aber gerade aus mathematischer Sicht die
+Randbedingungen einen erheblichen Einfluá auf das L”sungsverhalten.
+\item
+Das Materialverhalten wird linear elastisch und isotrop angesetzt, so daá
+die Richtungsabh„ngigkeit der Materialeigenschaften nicht bercksichtigt
+wird. Weiterhin wird von einer homogenen Materialverteilung ausgegangen,
+d.h.\ ortsabh„ngige Inhomogenit„ten werden nicht bercksichtigt. Auch der
+Aufbau aus mehreren Materialien bei Multilayerstrukturen wird nicht genau
+erfaát, sondern meist nur ber eine Gewichtung der Materialeigenschaften
+entsprechend der Schichtdickenverh„ltnisse.
+\item
+Die Geometrie der Balken- und Membranschwinger wird als ideal
+vorausgesetzt, d.h.\ man geht von homogenen, nicht variierenden
+Abmessungen aus und setzt voraus, daá $l~\gg~b~\geq~$~h hinreichend genau
+erfllt ist.
+\item
+Bei Belastungen bleiben die Bauelementequerschnitte eben, so daá
+nur ein linearer Dehnungs- bzw.\ Spannungsverlauf ber die Dicke
+der Bauelemente zugelassen wird. In der linearen Plattentheorie
+k”nnen daher nur \glqq kleine\grqq Verformungen behandelt werden.
+\item
+Inhomogene Lastverteilungen und komplex berlagerte Bauelementebelastungen
+sind nur schwer zu erfassen. Daher werden die behandelten Berechnungsf„lle
+oft auf einen homogenen Belastungsfall reduziert.
+\item
+Bei piezoelektrischer Kopplung werden nur eindimensionale
+Ersatzmodelle behandelt, die rein transversale bzw.\ rein longitudinale
+Effekte (entkoppelte Schwingungsmoden) beschreiben.
+% Zus„tzlich treten bei hohen
+% Feldst„rken nichtlineare Effekte (z.B.\ Elektrostriktion) auf, so daá der
+% Zusammenhang zwischen der elektrischen Feldst„rke und der
+% mechanischen Reaktion des Systems nicht mehr linear ist. Auáerdem ist
+% das Groásignalverhalten durch Hystereseeffekte \cite{Smi92a} und
+% Erh”hung der dielektrischen Verluste gekennzeichnet.
+\end{itemize}
+%
+Die FE-Methode bietet als allgemeines Berechnungsverfahren die
+M”glichkeit, komplexe mikromechanische Strukturen unter Bercksichtigung
+von realen Randbedingungen, Einfluá von Nichtlinearit„ten und gekoppelter
+Effekte zu berechnen, auch wenn keine analytisch geschlossenen L”sungen
+mehr angebbar sind.

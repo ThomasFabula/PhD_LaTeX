@@ -1,44 +1,44 @@
 \chapter{Resonante Mikrostrukturen}
 \label{schwingungsverhalten}
 
-Im diesem Kapitel werden unter Bercksichtigung verschiedener
-Einfluágr”áen die dynamischen Eigenschaften mikromechanischer
+Im diesem Kapitel werden unter Berücksichtigung verschiedener
+Einflußgrößen die dynamischen Eigenschaften mikromechanischer
 Balken- und Membranresonatoren aus Silizium
 theoretisch und experimentell untersucht. Die Modellbildung
-erfolgte gesttzt durch experimentelle Daten, um einerseits die
-Modellannahmen bei den FE-Berechnungen berprfen zu k”nnen,
+erfolgte gestützt durch experimentelle Daten, um einerseits die
+Modellannahmen bei den FE-Berechnungen überprüfen zu können,
 andererseits die FE-Modelle meátechnisch zu verifizieren.
 Um fre\-quenzanaloge Sensoren zum Schwingen anzuregen, werden das
 piezoelektrische und das elektrothermische Wandlungsprinzip eingesetzt.
 Bei beiden Anregungsprinzipien weisen die mikromechanischen
-Resonatoren eine Bimorphstruktur auf, so daá eine Momentenanregung erzielt
-wird, die zu Biegeschwingungen und deren Oberwellen fhrt. Im Gegensatz
-zu Quarzschwingern treten aufgrund des Bimorphaufbaus und der h”heren
+Resonatoren eine Bimorphstruktur auf, so daß eine Momentenanregung erzielt
+wird, die zu Biegeschwingungen und deren Oberwellen führt. Im Gegensatz
+zu Quarzschwingern treten aufgrund des Bimorphaufbaus und der höheren
 Kristallsymmetrie keine komplexen -schwingungsformen
-(z.B.\ Dickenscherschwingungen) auf, so daá neben Volumenelementen,
-die numerisch sehr effizienten Schalenelemente eingesetzt werden k”nnen.
+(z.B.\ Dickenscherschwingungen) auf, so daß neben Volumenelementen,
+die numerisch sehr effizienten Schalenelemente eingesetzt werden können.
 Neben der Berechnung der Eigenfrequenzen\footnote{Im weiteren wird statt
-von Eigenfrequenzen, die die numerische L”sung der
+von Eigenfrequenzen, die die numerische Lösung der
 Eigenwertgleichung~(\ref{modal}) durch Modalanalyse darstellen, allgemein
 von {\em Resonanzfrequenzen} mikromechanischer Bauelemente gesprochen, da
-D„mpfungs- und Anregungseffekte auf die Eigenfrequenzen vernachl„ssigt
+Dämpfungs- und Anregungseffekte auf die Eigenfrequenzen vernachlässigt
 werden. In Kapitel~\ref{daempfungseinfluesse} werden die zugrundeliegenden
 Annahmen diskutiert.}
 und Schwingungsformen, werden die
 Sensorkennlinien, d.h.\ das Resonanzverhalten der Sensoren unter Einwirkung
 mechanischer Lasten simuliert. In Zusammenarbeit mit den
 im BMFT-Verbundprojekt beteiligten Firmen {\em Robert Bosch GmbH},
-Gerlingen, und der {\em Gesellschaft fr Mikrotechnik und Sensorik}
+Gerlingen, und der {\em Gesellschaft für Mikrotechnik und Sensorik}
 (GMS~mbH), Villingen, konnten unterschiedliche
-Sensorprototypen fr die Druck-, Kraft- und Str”mungsmessung
+Sensorprototypen fr die Druck-, Kraft- und Strömungsmessung
 realisiert werden, bei denen die numerischen FE-Berechnungen
-wichtige Hinweise fr die geometrische Auslegung liefern konnten.
+wichtige Hinweise für die geometrische Auslegung liefern konnten.
 Das Schwingungsverhalten von piezoelektrisch angetriebenen Siliziummembranen
 wurde untersucht und die Druckempfindlichkeit charakterisiert.
 Beim elektrothermisch angetriebenen Kraftsensor konnte durch eine
-Žnderung des Widerstandslayouts die Kraftempfindlichkeit erh”ht und
+Änderung des Widerstandslayouts die Kraftempfindlichkeit erhöht und
 gleichzeitig die thermischen Querempfindlichkeiten reduziert werden.
-Im folgenden werden die verschiedenen FE-Modelleinflsse diskutiert
+Im folgenden werden die verschiedenen FE-Modelleinflüsse diskutiert
 und die Ergebnisse der numerischen Berechnungen im Vergleich mit
 Messungen einer Fehlerbetrachtung unterworfen.
 
@@ -46,56 +46,56 @@ Messungen einer Fehlerbetrachtung unterworfen.
 \section{Finite Elemente Modellbildung}
 \label{femodellbildung}
 
-Wie in Kapitel~3.5 beschrieben h„ngt die Genauigkeit der FE-Berechnungen
-von verschiedenen Fehlereinflssen ab, wie dem Diskretisierungsfehler,
+Wie in Kapitel~3.5 beschrieben hängt die Genauigkeit der FE-Berechnungen
+von verschiedenen Fehlereinflüssen ab, wie dem Diskretisierungsfehler,
 den ungenauen Material- und Geometriedaten, sowie den numerischen Fehlern.
-Um die verschiedenen Einflsse bei der Berechnung von konkreten Bauelementen
-zu ermitteln und die Gr”áenordnung der einzelnen Fehlereinflsse
-gegeneinander abw„gen zu k”nnen, wird das statische und dynamische
+Um die verschiedenen Einflüsse bei der Berechnung von konkreten Bauelementen
+zu ermitteln und die Größenordnung der einzelnen Fehlereinflüsse
+gegeneinander abwägen zu können, wird das statische und dynamische
 Verhalten von mikromechanischen Bauelementen untersucht. Hierzu werden die
-Resonanzfrequenz der Grundbiegeschwingung und die druckabh„ngige Auslenkung
-einer Siliziummembran numerisch berechnet und mit den analytischen N„herungen
+Resonanzfrequenz der Grundbiegeschwingung und die druckabhängige Auslenkung
+einer Siliziummembran numerisch berechnet und mit den analytischen Näherungen
 verglichen.
 
 
-\subsection{Analytische Absch„tzungen}
+\subsection{Analytische Abschätzungen}
 \label{abschaetzungen}
 
-Bei den Konvergenzbetrachtungen im folgenden Kapitel sollen fr
-verschiedene Elementtypen die analytischen N„herungsl”sungen
+Bei den Konvergenzbetrachtungen im folgenden Kapitel sollen für
+verschiedene Elementtypen die analytischen Näherungslösungen
 aus Kapitel~2 als Vergleichsbasis herangezogen werden.
-In \cite{Fab92a, Sch92} sind gesttzt durch FE-Berechnungen analytische
-Beziehungen fr die Membranmittenauslenkung und die
-Resonanzfrequenz„nderung in Abh„ngigkeit der Druckbeaufschlagung
-abgeleitet worden. Die Zusammenh„nge lassen sich wie folgt
+In \cite{Fab92a, Sch92} sind gestützt durch FE-Berechnungen analytische
+Beziehungen für die Membranmittenauslenkung und die
+Resonanzfrequenzänderung in Abhängigkeit der Druckbeaufschlagung
+abgeleitet worden. Die Zusammenhänge lassen sich wie folgt
 zusammenfassen:
 %
 \begin{itemize}
 \item Bei sehr kleinen Auslenkungen ($d/h \leq 0,14$) einer quadratischen
-Membran mit der Seitenl„nge $l$ kann von einem {\em linearen} Verhalten
+Membran mit der Seitenlänge $l$ kann von einem {\em linearen} Verhalten
 zwischen
 Membranmittenauslenkung $d$ und Druckbeaufschlagung $p$ ausgegangen werden.
 Bei zunehmender Druckbelastung nehmen die Auslenkungen infolge
-spannungsversteifender Effekte unterproportional zu, so daá ein
+spannungsversteifender Effekte unterproportional zu, so daß ein
 {\em nichtlinearer} Korrekturterm erforderlich wird:
 \begin{equation}
 \label{nonlin1}
  d = 0,00136 \frac{l^{4}p}{D} \left(1 - 0,00024 \frac{p}{p_{0}} \right)
 \end{equation}
-Diese Gleichung gilt fr Auslenkungen $d/h \leq 1,3$ mit einer Abweichung
+Diese Gleichung gilt für Auslenkungen $d/h \leq 1,3$ mit einer Abweichung
 von etwa $\pm 6~\%$. Die Druckbeaufschlagung wird hierbei auf den
 \glqq geometrischen Vergleichsdruck\grqq:
 \begin{eqnarray}
 \label{p0D}
  p_{0}   & := & \frac{Dh}{l^{4}} \nonumber
 \end{eqnarray}
-bezogen, so daá das Aspektverh„ltnis $h/l$ der Membran und die
-Materialeigenschaften, bercksichtigt werden \cite{Pfe89}. Die
+bezogen, so daß das Aspektverhältnis $h/l$ der Membran und die
+Materialeigenschaften, berücksichtigt werden \cite{Pfe89}. Die
 Biegesteifigkeit\footnote{In einigen Literaturstellen, z.B.\ \cite{Pon91},
 ist
-die Biegesteifigkeit durch $\hat D = \hat E/12$ definiert, so daá sie nur
-materialabh„ngig ist. Fr Silizium wurde meátechnisch der Wert
-15,5 $\le \hat D \le 17,5~$GPa ermittelt und f„llt gegenber dem
+die Biegesteifigkeit durch $\hat D = \hat E/12$ definiert, so daß sie nur
+materialabhängig ist. Für Silizium wurde meßtechnisch der Wert
+15,5 $\le \hat D \le 17,5~$GPa ermittelt und fällt gegenüber dem
 Literaturwert von 14,13~GPa unter Verwendung der Materialdaten aus
 (\ref{simat}) etwas h”her aus.} der Platte ist durch
 den Ausdruck:
@@ -106,8 +106,8 @@ den Ausdruck:
 gegeben und besitzt fr eine 50~$\mu$m dicke Siliziummembran
 den Wert $1,77$~$\cdot$~$10^{-3}$~Nm.
 %
-\item Bei groáen Auslenkungen ($d/h \gg 1$) l„át sich aus Gleichung
-(\ref{pvond}) fr die druckabh„ngige Membranmittenauslenkung der
+\item Bei großen Auslenkungen ($d/h \gg 1$) läßt sich aus Gleichung
+(\ref{pvond}) für die druckabhängige Membranmittenauslenkung der
 Zusammenhang:
 \begin{eqnarray}
 \label{memausl}
@@ -124,24 +124,24 @@ ableiten, wobei:
 \nonumber
 \end{eqnarray}
 %
-\item Die Resonanzfrequenz„nderung einer schwingenden Membran, die eine
-Auslenkung $d$ infolge einer homogenen Druckbeaufschlagung $p$ erf„hrt,
-l„át sich unter Verwendung von Gleichung~(\ref{pvond}) ableiten. Fr eine
+\item Die Resonanzfrequenzänderung einer schwingenden Membran, die eine
+Auslenkung $d$ infolge einer homogenen Druckbeaufschlagung $p$ erfährt,
+läßt sich unter Verwendung von Gleichung~(\ref{pvond}) ableiten. Für eine
 quadratische, fest eingespannte Siliziummembran gilt:
 \begin{eqnarray}
 \label{fvondschroth}
   f(d) & = & f_{0} \sqrt{1 + c_{d} {\left( \frac{d}{h} \right)}^{2}}
 \end{eqnarray}
-wobei die Konstante $c_{d}$ von der Schwingungsmode der Membran abh„ngig
-ist und fr die Grundmode etwa 1,25 betr„gt. Der N„herungsfehler liegt bei
-etwa 5~\%. Fr die h”heren Schwingungsmoden\footnote{Siehe
+wobei die Konstante $c_{d}$ von der Schwingungsmode der Membran abhängig
+ist und für die Grundmode etwa 1,25 beträgt. Der Näherungsfehler liegt bei
+etwa 5~\%. Für die höheren Schwingungsmoden\footnote{Siehe
 Kapitel~\ref{membranresonatoren}.} $M_{13}$, $M_{31}$ und $M_{33}$
 betragen die Konstanten $c_{d}(13)$ = $c_{d}(31)$ = 0,17 und
-$c_{d}(33)$ = 0,06, so daá die Druckempfindlichkeit mit zunehmender
+$c_{d}(33)$ = 0,06, so daß die Druckempfindlichkeit mit zunehmender
 Schwingungsmode abnimmt \cite{Fab92a}.
 %
 \item Bei Vorhandensein einer homogenen, planaren Spannung $\sigma$ in der
-Membran gilt fr die Resonanzfrequenz \cite{Bou90}:
+Membran gilt für die Resonanzfrequenz \cite{Bou90}:
 \begin{equation}
 \label{fsigma}
   f(\sigma) = f_{0} \sqrt{1 + c_{\sigma}
@@ -149,14 +149,14 @@ Membran gilt fr die Resonanzfrequenz \cite{Bou90}:
 \end{equation}
 wobei $f_{0} := f(\sigma = 0)$ die Frequenz der unverspannten Membran ist.
 Die Konstante $c_{\sigma}$ ist von den Einspannbedingungen der Membran
-abh„ngig und betr„gt bei ideal starrer Einspannung 0,22 fr die Grundmode.
-Fr Balkenstrukturen gilt der gleiche Zusammenhang mit der Konstante
+abhängig und beträgt bei ideal starrer Einspannung 0,22 für die Grundmode.
+Für Balkenstrukturen gilt der gleiche Zusammenhang mit der Konstante
 $c_{\sigma}~\approx~$0,31 %\cite{Alb84}
 (vgl. Gleichung~\ref{freqF}).
 %
 \item Die Approximation der Materialeigenschaften bei Bimorphstrukturen
-erfolgt dadurch, daá sie in erster N„herung jeweils fr Silizium
-und die Dnnschicht (hier: Zinkoxid) isotrop angenommen
+erfolgt dadurch, daß sie in erster Näherung jeweils für Silizium
+und die Dünnschicht (hier: Zinkoxid) isotrop angenommen
 und mit Hilfe der Schichtdicken gewichtet werden:
 \begin{eqnarray}
 \label{matwich}
@@ -164,7 +164,7 @@ und mit Hilfe der Schichtdicken gewichtet werden:
                     {h_{Si} + h_{ZnO}}
 \end{eqnarray}
 Auf diese Weise lassen sich gemittelte Materialparameter
-$X \, (= \hat E, \nu, \rho)$ in analytischen Absch„tzungen verwenden.
+$X \, (= \hat E, \nu, \rho)$ in analytischen Abschätzungen verwenden.
 \end{itemize}
 
 
@@ -172,28 +172,28 @@ $X \, (= \hat E, \nu, \rho)$ in analytischen Absch„tzungen verwenden.
 \label{konvergenzverhalten}
 
 Als Referenzbauelement soll im weiteren eine ebene Siliziummembran mit einer
-Kantenl„nge von 10~mm und einer homogenen Dicke von 50~$\mu$m betrachtet
-werden. Die Einspannung der Membran durch die „tzbegrenzenden
-(111)-Siliziumebenen werden vernachl„ssigt und eine ideale, d.h.\
-unendlich starre Randeinspannung angenommen. In erster N„herung wird von
+Kantenlänge von 10~mm und einer homogenen Dicke von 50~$\mu$m betrachtet
+werden. Die Einspannung der Membran durch die ätzbegrenzenden
+(111)-Siliziumebenen werden vernachlässigt und eine ideale, d.h.\
+unendlich starre Randeinspannung angenommen. In erster Näherung wird von
 isotropen Materialeigenschaften nach Gleichung (\ref{simat}) ausgegangen.
 Die betrachteten FE-Modelle bilden unter
-diesen Voraussetzungen das Verhalten einer ebenen Platte ab, so daá die
-analytischen N„herungsberechnungen zum Vergleich herangezogen werden k”nnen.
-Aufgrund des hohen Aspektverh„ltnisses
-(Kantenl„nge/Membrandicke: $l/h$~=~200) der mikromechanischen
-Siliziummembran k”nnen in guter N„herung Schalenelemente
+diesen Voraussetzungen das Verhalten einer ebenen Platte ab, so daß die
+analytischen Näherungsberechnungen zum Vergleich herangezogen werden können.
+Aufgrund des hohen Aspektverhältnisses
+(Kantenlänge/Membrandicke: $l/h$~=~200) der mikromechanischen
+Siliziummembran können in guter Näherung Schalenelemente
 (bei {\sf ANSYS}: {\em SHELL43})
 mit linearen Ansatzfunktionen und jeweils sechs Freiheitsgraden pro Knoten,
 drei Verschiebungen und drei Rotationen, verwendet werden.
-Zus„tzlich wird das numerische Verhalten von dreidimensionalen
+Zusätzlich wird das numerische Verhalten von dreidimensionalen
 Volumenelementen mit linearen (bei {\sf ANSYS}: {\em SOLID45})
 und quadratischen Ansatzfunktionen (bei {\sf ANSYS}: {\em SOLID95}),
 die nur Verschiebungsfreiheitsgrade
-aufweisen, untersucht. Bei Membranen mit geringerem Aspektverh„ltnis
+aufweisen, untersucht. Bei Membranen mit geringerem Aspektverhältnis
 ($l/h \leq 50$) wird der Einsatz von Schalenelementen zunehmend kritischer,
-da die Dicke nur formal ber eine dem Element zugrundeliegende interne
-mathematische Formulierung mitbercksichtigt wird, so daá auf
+da die Dicke nur formal über eine dem Element zugrundeliegende interne
+mathematische Formulierung mitberücksichtigt wird, so daß auf
 Volumenelemente ausgewichen werden sollte.\\
 %----------------------- Beginn: Figure-Environment ----------------------
 \begin{figure}[htb]
@@ -206,29 +206,29 @@ Volumenelemente ausgewichen werden sollte.\\
   Konvergenzverhalten der Resonanzfrequenz}
 \end{figure}
 %----------------------- Ende: Figure-Environment ----------------------
-In {\bf Abbildung \ref{abbkonvfreq}} ist die Abh„ngigkeit der
+In {\bf Abbildung \ref{abbkonvfreq}} ist die Abhängigkeit der
 Resonanzfrequenz von der Knotenanzahl\footnote{Beim Vergleich von Schalen-
 mit Volumenelementen und von Elementen mit linearen und quadratischen
 Ansatzfunktionen ist es sinnvoller die Knotenanzahl als die Elementweite
 des FE-Modells als
-Vergleichsbasis zu w„hlen, da bei gleicher lateraler Elementdimension
+Vergleichsbasis zu wählen, da bei gleicher lateraler Elementdimension
 der Rechenaufwand mit der Anzahl der Freiheitsgrade, d.h.\ Knotenanzahl,
-steigt.} der FE-Modelle im logarithmischen Maástab graphisch
+steigt.} der FE-Modelle im logarithmischen Maßstab graphisch
 dargestellt. Zum Vergleich ist der analytische Wert der
 Grundresonanzfrequenz von 7,056~kHz, berechnet nach Gleichung
 (\ref{memfreq}), gestrichelt eingezeichnet. Die Knotenanzahl
-der FE-Modelle wurde jeweils um drei Gr”áenordnungen variiert.
+der FE-Modelle wurde jeweils um drei Größenordnungen variiert.
 Bei Reduktion der Elementabmessungen in lateraler Richtung entlang der
-Membrankante, was einer gleichzeitigen Erh”hung der Anzahl der
+Membrankante, was einer gleichzeitigen Erhöhung der Anzahl der
 Freiheitsgrade entspricht, wird die Steifigkeit ($K$) des FE-Modells
 exakter beschrieben, so daá sich das FE-Modell weniger \glqq steif\grqq
-\, verh„lt \cite{Zie84}. Aufgrund der verminderten Eigenwerte der
+\, verhält \cite{Zie84}. Aufgrund der verminderten Eigenwerte der
 Steifigkeitsmatrix konvergiert die Resonanzfrequenz ($\omega = \sqrt{K/M}$)
 von oben gegen den analytischen Wert.
 Beim Schalenmodell (FE-Modell: S43) reichen bereits 900 Elemente aus,
 so daá die Resonanzfrequenz weniger als 0,1~\% vom analytischen
 Referenzwert abweicht. Bei den Volumenmodellen konvergieren die
-Resonanzfrequenzen mindestens eine Gr”áenordnung schlechter gegen
+Resonanzfrequenzen mindestens eine Größenordnung schlechter gegen
 den analytischen Referenzwert. Im Vergleich zu Elementen mit
 linearen Ansatzfunktionen (FE-Modell: V45) weisen quadratische
 Ansatzfunktionen (FE-Modell: V95) wie erwartet ein verbessertes
@@ -236,12 +236,12 @@ Konvergenzverhalten auf.
 Zur Bestimmung der Frequenzeigenwerte wurde die reduzierte
 {\sl Householder}-Methode eingesetzt \cite{Koh92}.\\
 In {\bf Tabelle \ref{tabdiskfreq}}
-ist der Einfluá der Diskretisierung und der dynamischen Hauptfreiheitsgrade
-(MDOF) auf die Berechnung der Resonanzfrequenz zusammengefaát.
+ist der Einfluß der Diskretisierung und der dynamischen Hauptfreiheitsgrade
+(MDOF) auf die Berechnung der Resonanzfrequenz zusammengefaßt.
 %----------------------- Beginn: table ---------------------------
 \begin{table}[htb]
 \caption{\label{tabdiskfreq}
- Einfluá der Modellparameter auf die Resonanzfrequenz beim Schalenmodell}
+ Einfluß der Modellparameter auf die Resonanzfrequenz beim Schalenmodell}
 \begin{center}
 \begin{tabular} {|c||c|c|c|c||c|c|}
 \hline
@@ -262,41 +262,41 @@ S43 & h [mm] & Elemente & Knoten & MDOF & f [kHz] & Abw. \\
 \end{table}
 %----------------------- Ende: table ---------------------------
 Der Parameter $h$ bezeichnet die Elementabmessung der
-„quidistanten Vernetzung.
+äquidistanten Vernetzung.
 Eine Vergleichsrechnung bei der Modellvariante~5 des Schalenmodells S43
 ergab bei 900 Elementen und 961 Knoten unter Verwendung des
 {\sl Subspace}-Iterationsverfahrens
 eine um 4~Hz verminderte Resonanzfrequenz. Dieses entspricht dem Ergebnis
 der FE-Modellvariante~6, die etwa die dreifache Element- bzw.\ Knotenanzahl
-aufweist. Der Einsatz des iterativen JCG-Gleichungsl”sers
+aufweist. Der Einsatz des iterativen JCG-Gleichungslösers
 ({\em \underline{J}acobian \underline{C}onjugate \underline{G}radient})
 lieferte die
-gleiche Ergebnisgenauigkeit, jedoch auf Kosten einer sechsfach h”heren
-Rechenzeit. Daher ist der Einsatz nur bei sehr groáen Modellen sinnvoll,
-bei denen das direkte {\sl Wavefront}-L”sungsverfahren die Kapazit„t des
-Hauptspeichers berschreiten wrde.\\
-Die druckabh„ngige Membranauslenkung wurde unter Bercksichtigung der
-geometrischen Nichtlinearit„ten\footnote{Bercksichtigung von
+gleiche Ergebnisgenauigkeit, jedoch auf Kosten einer sechsfach höheren
+Rechenzeit. Daher ist der Einsatz nur bei sehr großen Modellen sinnvoll,
+bei denen das direkte {\sl Wavefront}-Lösungsverfahren die Kapazität des
+Hauptspeichers überschreiten würde.\\
+Die druckabhängige Membranauslenkung wurde unter Berücksichtigung der
+geometrischen Nichtlinearitäten\footnote{Berücksichtigung von
 'Large Deflection' und 'Stress Stiffening'.} nach
 Kapitel~\ref{nlstatberechnungen} mit dem {\sl Newton-Raphson}-Verfahren
 berechnet. Als Konvergenzkriterium wurde die Norm des Residuenkraftvektors,
 die rechte Seite der Gleichung (\ref{largedefl}), verwendet.
-Bei ungengender Elementunterteilung fallen die Membranauslenkungen des
+Bei ungenügender Elementunterteilung fallen die Membranauslenkungen des
 FE-Modells aufgrund der zu hohen Modellsteifigkeit zu niedrig aus.
 Im Gegensatz zu Elementen, die nur Verschiebungsfreiheitsgrade
 (Translational DOF) besitzen, beispielsweise Volumenelemente, weisen
-Schalenelemente zus„tzliche Rotationsfreiheitsgrade (Rotational DOF) auf.
-Infolge der erlaubten Knotenrotationen k”nnen sich die Schalenelemente
-bei sehr grober Vernetzung aus ihrer Ebene heraus verw”lben, so daá die
-Membranauslenkung h”her ausf„llt. Dieses fhrt dazu, daá bei zunehmender
-Ele\-mentanzahl sich die Einflsse der Verschiebungs- und
-Rotationsfreiheitsgrade berlagern und ein
+Schalenelemente zusätzliche Rotationsfreiheitsgrade (Rotational DOF) auf.
+Infolge der erlaubten Knotenrotationen können sich die Schalenelemente
+bei sehr grober Vernetzung aus ihrer Ebene heraus verwölben, so daß die
+Membranauslenkung höher ausfällt. Dieses führt dazu, daß bei zunehmender
+Ele\-mentanzahl sich die Einflüsse der Verschiebungs- und
+Rotationsfreiheitsgrade überlagern und ein
 Konvergenzverhalten\footnote{Der
-Einfluá von Schalen- und Volumenelementen auf das
+Einfluß von Schalen- und Volumenelementen auf das
 statische Verhalten von mikromechanischen Drucksensoren in Bezug auf die
 auftretenden Auslenkungen und den Ort der maximalen Spannungen in
-Abh„ngigkeit des L„ngen-/Dickenverh„ltnisses ist in \cite{Tol92} untersucht
-worden. Die Ergebnisse best„tigen das Konvergenzverhalten der durchgefhrten
+Abhängigkeit des Längen-/Dickenverhältnisses ist in \cite{Tol92} untersucht
+worden. Die Ergebnisse bestätigen das Konvergenzverhalten der durchgeführten
 Schalenberechnungen.}
 von oben an den {\em wahren} Wert erfolgt. Die Ergebnisse der Schalenmodelle
 mit den geringen Elementzahlen (3x3 bzw.\ 5x5 Elemente) lassen keine
@@ -314,7 +314,7 @@ geringen Seitenunterteilung nur unzureichend abgebildet wird.
  Konvergenzverhalten der Membranmittenauslenkung}
 \end{figure}
 %----------------------- Ende: Figure-Environment ----------------------
-In {\bf Abbildung \ref{abbkonvausl}} ist die Abh„ngigkeit der
+In {\bf Abbildung \ref{abbkonvausl}} ist die Abhängigkeit der
 Membranmittenauslenkung von der
 Knotenanzahl fr das Schalenmodell S43 und die Volumenmodelle
 V45 und V95 graphisch dargestellt. Das Volumenmodell V45 weist
@@ -324,17 +324,17 @@ nach Gleichung~(\ref{memausl}) analytisch bei einer Druckbeaufschlagung
 von 500~mbar (= 0,5$\cdot 10^{5}$~Pa) zu etwa 116~$\mu$m berechnet und
 gestrichelt eingezeichnet. Auch hier zeichnet sich das Schalenmodell
 durch sehr gute Konvergenzeigenschaften aus. Bei etwa 300 Elementen wird
-bereits ein stabiler Wert fr die Membranmittenauslenkung
-erreicht. Im Gegensatz dazu n„hern sich die Volumenmodelle
+bereits ein stabiler Wert für die Membranmittenauslenkung
+erreicht. Im Gegensatz dazu nähern sich die Volumenmodelle
 aufgrund der generell zu \glqq hohen\grqq \, Steifigkeit von
-unten an. Bei gengend feiner Vernetzung konvergieren alle numerischen
+unten an. Bei genügend feiner Vernetzung konvergieren alle numerischen
 Berechnungen an eine Auslenkung von etwa 107~$\mu$m. Die Abweichung
-zum analytischen Referenzwert betr„gt rund 9~\%, so daá die abgeleitete
-analytische Gleichung nur n„herungsweise zur Beschreibung herangezogen
+zum analytischen Referenzwert beträgt rund 9~\%, so daß die abgeleitete
+analytische Gleichung nur näherungsweise zur Beschreibung herangezogen
 werden kann.\\
 %
 In {\bf Tabelle \ref{tabfreqzus}} sind die Ergebnisse der numerischen
-Resultate abschlieáend zusammengefaát.
+Resultate abschlieáend zusammengefaßt.
 %----------------------- Beginn: table ---------------------------
 \begin{table}[htb]
 \caption{\label{tabfreqzus}
@@ -356,85 +356,85 @@ V64  & 200 &  2500  & 5202  & 6798,4  & 108,0 \\
 %----------------------- Ende: table ---------------------------
 Zum Vergleich ist eine Berechnung (FE-Modell: V64, eine Elementlage)
 mit anisotropen Materialdaten \cite{LB82}
-durchgefhrt worden. Die Abweichungen betragen etwa 4~\% bei der
-Resonanzfrequenz und etwa 1~\% bei der Auslenkung gegenber der
+durchgeführt worden. Die Abweichungen betragen etwa 4~\% bei der
+Resonanzfrequenz und etwa 1~\% bei der Auslenkung gegenüber der
 Beschreibung mit isotropem Materialverhalten.
 Bei den Volumenmodellen wurde
-zus„tzlich der Einfluá der Elementierung ber die Membrandicke
+zusätzlich der Einfluß der Elementierung über die Membrandicke
 untersucht. Bei einer Verdreifachung der Elementlagen resultierte
 eine Frequenzerniedrigung von lediglich 0,1~\%. Dieses ist dadurch zu
-erkl„ren, daá ausschlieálich die laterale Elementierung ausschlaggebend
-ist. Die Unterteilung ber die Membrandicke hat nur einen Einfluá, falls
-sich der Spannungszustand ber die Dicke „ndert. In Kapitel~4.3.2
-werden die FE-Modelleinflsse bei der druckabh„ngigen Membranauslenkung
-und Eigenfrequenz„nderung im Vergleich mit einem vermessenen
+erklären, daß ausschließlich die laterale Elementierung ausschlaggebend
+ist. Die Unterteilung über die Membrandicke hat nur einen Einfluß, falls
+sich der Spannungszustand über die Dicke ändert. In Kapitel~4.3.2
+werden die FE-Modelleinflüsse bei der druckabhängigen Membranauslenkung
+und Eigenfrequenzänderung im Vergleich mit einem vermessenen
 Silizium-Drucksensor diskutiert.
 
 
-\subsection{Modelleinflsse}
+\subsection{Modelleinflüsse}
 \label{modelleinfluesse}
 
 Verschiedene FE-Modelle sind im Rahmen einer Diplomarbeit \cite{Sch92}
 fr die Modellierung von resonanten Silizium-Drucksensoren entwickelt
-und der Einfluá der Geometrie- und der Materialeigenschaften unter
+und der Einfluß der Geometrie- und der Materialeigenschaften unter
 verschiedenen Einspannbedingungen untersucht worden. Es wurden sowohl
 zweidimensionale FE-Modelle mit isotropen Materialeigenschaften, als auch
-dreidimensionale Modelle unter der Bercksichtigung der
-Elastizit„tsanisotropie des Siliziums und der realen
-Membraneinspannverh„ltnisse simuliert. Zus„tzlich wurden Elementtypen
+dreidimensionale Modelle unter der Berücksichtigung der
+Elastizitätsanisotropie des Siliziums und der realen
+Membraneinspannverhältnisse simuliert. Zusätzlich wurden Elementtypen
 und Symmetrieeigenschaften der FE-Modelle variiert und die analytischen
-N„herungsgleichungen (\ref{memausl}) und (\ref{fvondschroth})
+Näherungsgleichungen (\ref{memausl}) und (\ref{fvondschroth})
 von den numerischen Berechnungsergebnissen abgeleitet. Als Referenz
 wurde ein dreidimensionales FE-Modell entwickelt, das die Anisotropie
-der Elastizit„tseigenschaften und die schr„ge Randeinspannung durch
+der Elastizitätseigenschaften und die schräge Randeinspannung durch
 die um $54,74^{\circ}$ geneigten (111)-Siliziumebenen
-bercksichtigt. Die wichtigsten Ergebnisse bei der Berechnung der
+berücksichtigt. Die wichtigsten Ergebnisse bei der Berechnung der
 Grundresonanzfrequenz lassen sich wie folgt zusammenfassen:
 % ------------------------ Beginn : Liste --------------------------------
 \begin{itemize}
 \item
-Aufgrund der schr„gen Randeinspannung der Siliziummembran durch die
+Aufgrund der schrägen Randeinspannung der Siliziummembran durch die
 (111)-Ebenen verringert sich die Resonanzfrequenz infolge verminderter
 Einspannungssteifigkeit.
 %Der Unterschied zwischen einer ideal starren
 %Einspannung bei einem Schalenmodell und der endlich steifen Bulkeinspannung
-%betr„gt etwa 2,3~\%.
+%beträgt etwa 2,3~\%.
 \item
-Die Bercksichtigung der anisotropen Materialeigenschaften hat eine
+Die Berücksichtigung der anisotropen Materialeigenschaften hat eine
 weitere Frequenzerniedrigung %von etwa 3,1~\%
 zur Folge.
 \item
-Die Reihenfolge der Schwingungsmoden und Frequenzeigenwerte ist abh„ngig
+Die Reihenfolge der Schwingungsmoden und Frequenzeigenwerte ist abhängig
 von den Symmetriebedingungen (Viertel-, Halb- oder Vollmembran).
 Insbesondere lassen sich bei symmetrischen Randbedingungen keine
 antisymmetrischen Schwingungsformen ermitteln und umgekehrt.
 \end{itemize}
 % ------------------------ Ende : Liste ----------------------------------
-Im ungnstigsten Fall berlagern sich obige Einflsse und es ergibt sich
-zwischen dem genauen Referenzmodell (3D, anisotrop, schr„ge Einspannung)
-und der analytischen N„herungsberechnung nach Gleichung (\ref{memfreq})
+Im ungünstigsten Fall überlagern sich obige Einflüsse und es ergibt sich
+zwischen dem genauen Referenzmodell (3D, anisotrop, schräge Einspannung)
+und der analytischen Näherungsberechnung nach Gleichung (\ref{memfreq})
 eine maximale Abweichung von bis zu 10~\%, wobei der Restfehler
-auf eine ungengende Vernetzungsdichte zurckgefhrt werden kann. Bei der
-Berechnung der Eigenfrequenzen h”herer Schwingungsmoden
+auf eine ungenügende Vernetzungsdichte zurückgeführt werden kann. Bei der
+Berechnung der Eigenfrequenzen höherer Schwingungsmoden
 nimmt die Abweichung erheblich zu,
-da eine erh”hte Anzahl von Freiheitsgraden (DOF) in Verbindung mit
+da eine erhöhte Anzahl von Freiheitsgraden (DOF) in Verbindung mit
 einer feineren Elementunterteilung erforderlich ist, um Schwingungsmoden
-mit mehreren Schwingungsknoten und -b„uchen \glqq r„umlich\grqq \,
+mit mehreren Schwingungsknoten und -bäuchen \glqq räumlich\grqq \,
 abzutasten\footnote{In Analogie zum {\sl Shannon}schen Abtasttheorem
 der Nachrichtentechnik kann dieses als \glqq geometrisches
 Abtasttheorem\grqq \, bezeichnet werden.}.\\
 %
-Um den Einfluá der anisotropen Materialeigenschaften auf das
+Um den Einfluß der anisotropen Materialeigenschaften auf das
 Schwingungsverhalten weiterer mikromechanischer Strukturen zu
 untersuchen, wurden die Resonanzfrequenzen der Grundbiegeschwingungsmode
 der drei Grundstrukturen aus Abbildung~\ref{abbgrundgeometrien}
-berechnet. {\bf Tabelle~\ref{tabgeomvergleich}} faát die
+berechnet. {\bf Tabelle~\ref{tabgeomvergleich}} faßt die
 numerisch berechneten Resonanzfrequenzen im Vergleich mit den analytischen
 Werten aus Tabelle~\ref{tabcf} zusammen.
 %----------------------- Beginn: table ---------------------------
 \begin{table}[htb]
 \caption{\label{tabgeomvergleich}
- Einfluá der Materialanisotropie auf die Resonanzfrequenz bei
+ Einfluß der Materialanisotropie auf die Resonanzfrequenz bei
  unterschiedlicher Resonatorgeometrie}
 \begin{center}
 \begin{tabular}{|l||c|c|c||l|}
@@ -442,7 +442,7 @@ Werten aus Tabelle~\ref{tabcf} zusammen.
 %Resonanzfrequenz
  & Zunge & Balken & Membran & Bemerkung \\
 \hline \hline
-L„nge [mm]:            & 5     & 10 & 10 & Bauelementdicke:\\
+Länge [mm]:            & 5     & 10 & 10 & Bauelementdicke:\\
 Breite [mm]:           & 1     & 1  & 10 & 50 $\mu$m\\
 \hline
  $f_{analytisch}$ [Hz] &  2765 &  4386  & 7056 & isotrop (\ref{simat}) \\
@@ -467,63 +467,63 @@ Abweichung:
 Aufgrund der Ausrichtung der Siliziumbauelemente parallel
 zum Waferflat, der entlang der (110)-Siliziumebene orientiert ist, war es
 erforderlich, das Elementkoordinatensystem um $45^{\circ}$
-gegenber dem globalen Koordinatensystem des FE-Modells zu verdrehen.
-Bei Bercksichtigung der Anisotropie weichen die Resonanzfrequenzen der
+gegenüber dem globalen Koordinatensystem des FE-Modells zu verdrehen.
+Bei Berücksichtigung der Anisotropie weichen die Resonanzfrequenzen der
 einseitig eingespannten Zunge und beim doppelseitig eingespannten Balken
-gegenber der isotropen Beschreibungsweise lediglich um 1~Hz ab, weil
-die effektiven Materialparameter (\ref{simat}) fr die (110)-Richtung im
-Silizium bereits sehr gute Ersatzwerte fr die anisotrope Formulierung
-darstellen. Fr Membranstrukturen betr„gt die Abweichung zwischen
+gegenüber der isotropen Beschreibungsweise lediglich um 1~Hz ab, weil
+die effektiven Materialparameter (\ref{simat}) für die (110)-Richtung im
+Silizium bereits sehr gute Ersatzwerte für die anisotrope Formulierung
+darstellen. Für Membranstrukturen beträgt die Abweichung zwischen
 isotroper und anisotroper Beschreibungsweise bei (110)-Orientierung
 weniger als 4~\%.\\
 Die Abweichungen bei anderen Kristallrichtungen im Silizium, beispielsweise
 bei (100)-orientierten Bauelementen (siehe Tabelle~\ref{tabgeomvergleich}),
-fallen gr”áer aus. Insbesondere bei den Balken- und Zungenstrukturen hat die
-Orientierung einen erheblichen Einfluá im Vergleich zu Membranstrukturen.
-W„hrend bei Membranen die Frequenzwerte nur um etwa 1~\% differieren,
-betr„gt der Unterschied bei (100)- und (110)-orientierten Balkenstrukturen
-11~\%. Die Ursache hierfr liegt in der starken Variation der
+fallen größer aus. Insbesondere bei den Balken- und Zungenstrukturen hat die
+Orientierung einen erheblichen Einfluß im Vergleich zu Membranstrukturen.
+Während bei Membranen die Frequenzwerte nur um etwa 1~\% differieren,
+beträgt der Unterschied bei (100)- und (110)-orientierten Balkenstrukturen
+11~\%. Die Ursache hierfür liegt in der starken Variation der
 Querkontraktion in der (100)-Kristallebene von 0,064 bis 0,279 \cite{Heu89}
 und dem Umstand, daá die Membranen allseitig eingespannt sind und dadurch
 der Effekt vermindert wird. Bei der Berechnung von Siliziumstrukturen
-in isotroper N„herung sind daher jeweils zuerst geeignete isotrope
+in isotroper Näherung sind daher jeweils zuerst geeignete isotrope
 Ersatzmaterialdaten zu bestimmen.
 
 
 
-\subsection{D„mpfungseinflsse}
+\subsection{Dämpfungseinflsse}
 \label{daempfungseinfluesse}
 
 Bei der Berechnung der Eigenfrequenzen mikromechanischer Strukturen
 mit Hilfe der FE-Methode wird die Eigenwertgleichung~(\ref{modal})
-unter Vernachl„ssigung von D„mpfungseffekten numerisch gel”st. Auf dieser
+unter Vernachlässigung von Dämpfungseffekten numerisch gelöst. Auf dieser
 Grundlage ist in Kapitel~\ref{konvergenzverhalten} das Konvergenzverhalten
 der Eigenfrequenzen untersucht und in Kapitel~\ref{modelleinfluesse} sind
-weitere verschiedene Modelleinflsse betrachtet worden. Bei der
-Charakterisierung realer mikromechanischer Resonatoren haben D„mpfungs- und
-Anregungseffekte einen Einfluá auf die Eigenfrequenzen, so daá diese
-Effekte hier abgesch„tzt werden sollen.\\
+weitere verschiedene Modelleinflüsse betrachtet worden. Bei der
+Charakterisierung realer mikromechanischer Resonatoren haben Dämpfungs- und
+Anregungseffekte einen Einfluß auf die Eigenfrequenzen, so daß diese
+Effekte hier abgeschätzt werden sollen.\\
 %
-Wie in Kapitel~3.4.2 dargelegt berlagern sich verschiedene
-D„mpfungsmechanismen bei dynamischen Vorg„ngen und es lassen sich den
-einzelnen D„mpfungsbeitr„gen wie innere Strukturd„mpfung, „uáere
-Fluidd„mpfung, D„mpfung durch zus„tzliche Schichten jeweils
-Einzelschwingungsgten $Q_{i}$ zuordnen, so daá fr die effektive
+Wie in Kapitel~3.4.2 dargelegt überlagern sich verschiedene
+Dämpfungsmechanismen bei dynamischen Vorgängen und es lassen sich den
+einzelnen Dämpfungsbeiträgen wie innere Strukturdämpfung, äußere
+Fluiddämpfung, Dämpfung durch zusätzliche Schichten jeweils
+Einzelschwingungsgten $Q_{i}$ zuordnen, so daß für die effektive
 Gesamtschwingungsgte $Q_{ges}$ gilt \cite{Til92}:
 \begin{equation}
 \label{qsum}
  \frac{1}{Q_{ges}} = \sum_{i} \frac{1}{Q_{i}}
 \end{equation}
-Aus diesem Zusammenhang ist ersichtlich, daá der dominierende D„mpfungsterm
-die geringste Einzelgte zur Folge hat und dementsprechend die anderen
-D„mpfungseffekte berdeckt.\\
+Aus diesem Zusammenhang ist ersichtlich, daß der dominierende Dämpfungsterm
+die geringste Einzelgüte zur Folge hat und dementsprechend die anderen
+Dämpfungseffekte überdeckt.\\
 %
-Bei der experimentellen Bestimmung der mechanischen Schwingungsgte eines
-Mikroresonators wird immer die Gesamtgte $Q_{ges}$ gemessen, die auf
+Bei der experimentellen Bestimmung der mechanischen Schwingungsgüte eines
+Mikroresonators wird immer die Gesamtgüte $Q_{ges}$ gemessen, die auf
 verschiedene Weisen ermittelt werden kann. Dieses kann einerseits durch die
-Vermessung der Halbwertsbreite (3dB-Amplitudenabfall) der frequenzabh„ngigen
-Amplitudenkurve $A(\omega)$, andererseits durch die Amplitudenberh”hung,
-d.h.\ dem Verh„ltnis der Resonanzamplitude $A_{res} := A(\omega_{res})$
+Vermessung der Halbwertsbreite (3dB-Amplitudenabfall) der frequenzabhängigen
+Amplitudenkurve $A(\omega)$, andererseits durch die Amplitudenüberhöhung,
+d.h.\ dem Verhältnis der Resonanzamplitude $A_{res} := A(\omega_{res})$
 zur statischen Amplitude $A_{stat} := A(\omega=0)$ erfolgen
 \cite{VIB}:
 \begin{equation}
@@ -533,82 +533,82 @@ zur statischen Amplitude $A_{stat} := A(\omega=0)$ erfolgen
 \end{equation}
 %
 In der Literatur werden im wesentlichen drei Bereiche unterschieden, bei
-denen unterschiedliche D„mpfungsmechanismen bei mikromechanischen Strukturen
+denen unterschiedliche Dämpfungsmechanismen bei mikromechanischen Strukturen
 dominieren (z.B.\ \cite{Blo92}). Im Niederdruckbereich ($p \leq 1$ Pa)
-ist die „uáere Fluidd„mpfung vernachl„ssigbar und es sind nur innere
-Strukturd„mpfungseffekte vorhanden, so daá die Schwingungsgte und die
+ist die äußere Fluiddämpfung vernachlässigbar und es sind nur innere
+Strukturdämpfungseffekte vorhanden, so daß die Schwingungsgüte und die
 Resonanzfrequenz ihre maximalen Werte erreichen.
 Im Molekularbereich bzw.\ {\sl Knudsen}bereich ($p=1...10^2$ Pa)
-wird die D„mpfung durch
-Impulsbertrag infolge Moleklkollisionen mit der schwingenden
-Resonatoroberfl„che verursacht. In diesem Bereich erh”ht sich die D„mpfung
-mit steigendem Druck $p$, so daá $Q \sim 1/\sqrt{p}$ fr die Schwigungsgte
-gilt \cite{Blo92}. Mit zunehmendem Druck nimmt die freie Wegl„nge der
-Molekle ab und sie wechselwirken miteinander, so daá zus„tzliche Kr„fte
+wird die Dämpfung durch
+Impulsübertrag infolge Moleklkollisionen mit der schwingenden
+Resonatoroberfläche verursacht. In diesem Bereich erhöht sich die Dämpfung
+mit steigendem Druck $p$, so daá $Q \sim 1/\sqrt{p}$ für die Schwigungsgüte
+gilt \cite{Blo92}. Mit zunehmendem Druck nimmt die freie Weglänge der
+Moleküle ab und sie wechselwirken miteinander, so daß zusätzliche Kräfte
 durch den Luftwiderstand wirksam werden. In diesem sogenannten viskosen
-D„mpfungsbereich ($p=10^3...10^5$ Pa) werden die Str”mungsverh„ltnisse
+Dämpfungsbereich ($p=10^3...10^5$ Pa) werden die Strömungsverhältnisse
 komplexer und durch die {\sl Navier-Stokes}-Gleichungen beschrieben. Bei
-Atmosph„rendruck ($p \approx 10^5$ Pa) bilden sich turbulente
-Grenzschichten an der Resonatoroberfl„che aus, w„hrend fr geringere Drcke
-laminare Str”mung vorliegt. Der šbergang vom turbulent zum laminar
-dominierten D„mpfungsbereich ist von der Resonatorgeometrie anh„ngig.
-Fr Balkenresonatoren aus Quarz und Silizium sind die Abh„ngigkeiten
-der Schwingungsgte und der Resonanzfrequenz vom Druck durch
+Atmosphärendruck ($p \approx 10^5$ Pa) bilden sich turbulente
+Grenzschichten an der Resonatoroberfläche aus, während für geringere Drücke
+laminare Strömung vorliegt. Der Übergang vom turbulent zum laminar
+dominierten Dämpfungsbereich ist von der Resonatorgeometrie anhängig.
+Für Balkenresonatoren aus Quarz und Silizium sind die Abhängigkeiten
+der Schwingungsgüte und der Resonanzfrequenz vom Druck durch
 {\sl Blom et al.} \cite{Blo92} und {\sl Christen} \cite{Chr83}
 theoretisch und experimentell untersucht worden. Die relative
-Frequenz„nderung $\Delta f / f$ von Balkenresonatoren betr„gt infolge
+Frequenzänderung $\Delta f / f$ von Balkenresonatoren beträgt infolge
 Druckschwankungen im viskosen Druckbereich etwa 0,3--1,1~ppm/mbar
-\cite{Bus94, Chr83} und ist abh„ngig vom Dichteverh„ltnis des
+\cite{Bus94, Chr83} und ist abhängig vom Dichteverhältnis des
 Resonatormaterials und des umgebenden Gases.\\
-Infolge der Einspannbedingungen k”nnen die Schwingungsgten ebenfalls
-erheblich beeinfluát werden. Fr Membranresonatoren aus Silizium wurden
-bei Drcken von $p \approx 10$ Pa Gten bei {\em starrer} Einspannung von
+Infolge der Einspannbedingungen können die Schwingungsgüten ebenfalls
+erheblich beeinflußt werden. Für Membranresonatoren aus Silizium wurden
+bei Drücken von $p \approx 10$ Pa Güten bei {\em starrer} Einspannung von
 etwa 900 gemessen, die sich bei {\em flexibler} Einspannung der Membranen
 auf etwa 150 erniedrigten \cite{Pra91}.\\
-Bei den im weiteren betrachteten Resonatoren, die bei Atmosph„rendruck
-betrieben werden, ist die Luftd„mpfung der dominierende D„mpfungsmechanismus.
-Infolge der endlichen Schwingungsgte $Q$ ergibt sich eine geringfgige
-Erniedrigung der Vakuumeigenfrequenz $f_{0}$ infolge D„mpfung \cite{Pet79}:
+Bei den im weiteren betrachteten Resonatoren, die bei Atmosphärendruck
+betrieben werden, ist die Luftdämpfung der dominierende Dämpfungsmechanismus.
+Infolge der endlichen Schwingungsgte $Q$ ergibt sich eine geringfügige
+Erniedrigung der Vakuumeigenfrequenz $f_{0}$ infolge Dämpfung \cite{Pet79}:
 \begin{equation}
 \label{qpetersen}
  f_{res} = f_{0} \sqrt{1 - \frac{1}{4Q^{2}} }
 \end{equation}
-Da die typischen Schwingungsgten der in dieser Arbeit untersuchten
-mikromechanischen Membran- und Balkenresonatoren bei Atmosph„rendruck
-im Bereich von 50--1000 liegen, l„át sich der D„mpfungskorrekturfaktor
-bei der Betrachtung der Resonanzfrequenz vernachl„ssigen, d.h.\
+Da die typischen Schwingungsgüten der in dieser Arbeit untersuchten
+mikromechanischen Membran- und Balkenresonatoren bei Atmosphärendruck
+im Bereich von 50--1000 liegen, läßt sich der Dämpfungskorrekturfaktor
+bei der Betrachtung der Resonanzfrequenz vernachlässigen, d.h.\
 $f_{res} \approx f_{0}$.  Wie in Kapitel~4.5 gezeigt wird,
 sind die herstellungstechnologiebedingten Geometrietoleranzen und die
 inneren Schichtspannungen die wesentlichen Unsicherheitsfaktoren bei der
-meátechnischen Bestimmung der Resonanzfrequenzen.\\
-Die Schwingungsgte eines Resonators hat ebenfalls einen Einfluá auf die
-erzielbare Frequenz- und damit Meágr”áenaufl”sung bei einem resonanten
+meßtechnischen Bestimmung der Resonanzfrequenzen.\\
+Die Schwingungsgte eines Resonators hat ebenfalls einen Einfluß auf die
+erzielbare Frequenz- und damit Meßgrößenauflösung bei einem resonanten
 Sensor und ist durch:
 \begin{eqnarray}
 \label{Qaufl}
  \frac{\Delta f}{f} & \sim & \frac{1}{Q} \left( \frac{\Delta A}{A} \right)
 \end{eqnarray}
 gegeben \cite{Til93}. Hierbei ist $\Delta A$ die minimale
-Amplitudenaufl”sung des eingesetzten Detektionsmechanismus.
-In Kapitel~\ref{dynamischemomentenkompensation} wird auf die Erh”hung der
-Schwingungsgte eines gekoppelten Balkenschwingers eingegangen, der die
+Amplitudenauflösung des eingesetzten Detektionsmechanismus.
+In Kapitel~\ref{dynamischemomentenkompensation} wird auf die Erhöhung der
+Schwingungsgüte eines gekoppelten Balkenschwingers eingegangen, der die
 dynamische Momentenkompensation einer antisymmetrischen Schwingungsmode
 ausnutzt.\\
 Ein weiterer Einfluá auf die Resonanzfrequenz wird durch nichtlineare
-dynamische Effekte hervorgerufen, die infolge einer Erh”hung der
-Anregungsamplitude zu einer Zunahme der Resonanzfrequenz fhren \cite{Eis64}:
+dynamische Effekte hervorgerufen, die infolge einer Erhöhung der
+Anregungsamplitude zu einer Zunahme der Resonanzfrequenz führen \cite{Eis64}:
 \begin{equation}
 \label{nlampli}
  f(A_{max}) = f_{0} \sqrt{1 + \beta \left( \frac{A_{max}}{h} \right)^2 }
 \end{equation}
-Mit zunehmender Anregungsamplitude wird der frequenzabh„ngige
-Amplitudenverlauf $A(\omega)$ asymmetrisch und es k”nnen sogar
-Resonatorinstabilit„ten und eine damit verbundene Hysterese auftreten
+Mit zunehmender Anregungsamplitude wird der frequenzabhängige
+Amplitudenverlauf $A(\omega)$ asymmetrisch und es können sogar
+Resonatorinstabilitäten und eine damit verbundene Hysterese auftreten
 \cite{And87, Zoo92}. Dieser Effekt konnte bei den in dieser Arbeit
-vermessenen Strukturen nur bei sehr groáen Schwingungsamplituden
+vermessenen Strukturen nur bei sehr großen Schwingungsamplituden
 ($A_{max} \approx h$) nachgewiesen werden. Unter normalen
 Betriebsbedingungen bei resonanten Sensoren ist jedoch $A_{max} \ll h$,
-so daá die Frequenzerh”hung zu vernachl„ssigen ist.
+so daß die Frequenzerhöhung zu vernachlässigen ist.
 
 
 \newpage
@@ -616,10 +616,10 @@ so daá die Frequenzerh”hung zu vernachl„ssigen ist.
 \label{eigenfrequenzenundschwingungsformen}
 
 In Zusammenarbeit mit der {\em GMS~mbH} wurden resonante Kraft- und
-Str”mungssenoren auf der Basis von elektrothermisch angetriebenen
-Silizium-Balkenresonatoren realisiert. Die Entwicklung der Prozeátechnologien
-zur Herstellung der Balkenresonatoren wurde von {\em GMS} durchgefhrt,
-w„hrend der Entwurf und die Simulation, sowie die meátechnische
+Strömungssenoren auf der Basis von elektrothermisch angetriebenen
+Silizium-Balkenresonatoren realisiert. Die Entwicklung der Prozeßtechnologien
+zur Herstellung der Balkenresonatoren wurde von {\em GMS} durchgeführt,
+während der Entwurf und die Simulation, sowie die meßtechnische
 Charakterisierung der Sensoren im Rahmen dieser Arbeit erfolgten.
 
 
@@ -627,21 +627,21 @@ Charakterisierung der Sensoren im Rahmen dieser Arbeit erfolgten.
 \label{balkenresonatoren}
 
 Um das dynamische Verhalten von Balken- und Membranresonatoren
-zu untersuchen, wurden reine Siliziumstrukturen ohne Dnnschichtsystem
-mit Hilfe von extern angebrachten Piezokeramiken ber K”rperschall
-akustisch zum Schwingen angeregt. Die hierfr eingesetzten experimentellen
-Meáaufbauten und verwendeten Meámethoden sind im Anhang beschrieben.\\
+zu untersuchen, wurden reine Siliziumstrukturen ohne Dünnschichtsystem
+mit Hilfe von extern angebrachten Piezokeramiken über Körperschall
+akustisch zum Schwingen angeregt. Die hierfür eingesetzten experimentellen
+Meßaufbauten und verwendeten Meßmethoden sind im Anhang beschrieben.\\
 %
-{\bf Tabelle~\ref{tabbalkenfreq}} faát die gemessenen Resonanzfrequenzen
+{\bf Tabelle~\ref{tabbalkenfreq}} faßt die gemessenen Resonanzfrequenzen
 von etwa 50~$\mu$m dicken Silizium-Balkenresonatoren,
 deren Strukturgeometrie in Abbildung~\ref{abbgmssensor} dargestellt ist,
 im Vergleich mit FE-Berechnungen zusammen. Die mit $f_{Z1}$ normierten
 Frequenzen sind in Klammern angegeben. Die Modellierung erfolgte
 dreidimensional unter Verwendung anisotroper Materialkennwerte \cite{LB82}
-und Bercksichtigung der schr„gen Balkeneinspannung durch die
+und Berücksichtigung der schrägen Balkeneinspannung durch die
 (111)-Siliziumebenen. Die ersten beiden Oberschwingungen aus der
 Balkenebene heraus sind mit Z2 und Z3 gekennzeichnet und besitzen zwei
-bzw.\ drei Schwingungsb„uche.
+bzw.\ drei Schwingungsbäuche.
 %----------------------- Beginn: Tabelle ---------------------------
 \begin{table}[htb]
 \caption{\label{tabbalkenfreq}
@@ -650,7 +650,7 @@ bzw.\ drei Schwingungsb„uche.
 \begin{center}
 \begin{tabular} {|c||c|c|c||c|c|c|}
 \cline{1-7}
-   & \multicolumn{3}{c||}{L„nge = 10 mm} & \multicolumn{3}{c|}{L„nge = 8 mm} \\
+   & \multicolumn{3}{c||}{Länge = 10 mm} & \multicolumn{3}{c|}{Länge = 8 mm} \\
 \hline
 Mode  & FEM  & Exp. & Abw. & FEM & Exp. & Abw. \\
 \hline \hline
@@ -668,27 +668,27 @@ Z3 & 23,457 kHz & 24,893 kHz & 5,8~\% & 36,582 kHz & 36,440 kHz & 0,4~\% \\
 \end{table}
 %----------------------- Ende: Tabelle ---------------------------
 Die Bestimmung der Resonanzfrequenzen erfolgte in einem
-schmalen Frequenzbereich, so daá der Meáfehler bei der Frequenzbestimmung
-etwa 5--10~Hz betr„gt. Die gemessenen Frequenzwerte variieren
+schmalen Frequenzbereich, so daá der Meßfehler bei der Frequenzbestimmung
+etwa 5--10~Hz beträgt. Die gemessenen Frequenzwerte variieren
 allerdings aufgrund der Bauelementestreuung um 5--10~\%. Das entspricht
-bei den Grundmoden etwa $\pm200$~Hz, so daá
+bei den Grundmoden etwa $\pm200$~Hz, so daß
 in Tabelle~\ref{tabbalkenfreq} die Mittelwerte der Messungen angegeben sind.
 Die groáe Bauelementestreuung ist im wesentlichen auf den beidseitigen
-Naá„tzprozeá zurckzufhren, der zu nicht genau reproduzierbaren
-Balkendicken fhrt \cite{ABV93}. Die Abweichungen der numerischen
+Naßätzprozeß zurückzuführen, der zu nicht genau reproduzierbaren
+Balkendicken führt \cite{ABV93}. Die Abweichungen der numerischen
 Resultate von den gemessenen Werten betragen bis zu 6~\%. Sie lassen sich
 einerseits durch die Geometrietoleranzen, andererseits durch die innere
-Vorspannung, die durch die Siliziumoxidschicht bewirkt wird und fr
+Vorspannung, die durch die Siliziumoxidschicht bewirkt wird und für
 etwa 1~$\mu$m dnne Schichten einige MPa betragen kann \cite{Mur92},
-erkl„ren. Die Schwingungsgten variierten in Abh„ngigkeit der
-Sensoreinspannung stark und betrugen fr die Grundmoden $400\pm100$, fr die
+erklären. Die Schwingungsgüten variierten in Abhängigkeit der
+Sensoreinspannung stark und betrugen für die Grundmoden $400\pm100$, für die
 beiden Oberschwingungen Z2 und Z3 etwa $900\pm200$ und $1200\pm300$.
 Die analytische Berechnung der Grundresonanzfrequenz $f_{Z1}$
 nach Gleichung~(\ref{balkfreq}) unter Verwendung isotroper
-Materialeigenschaften (Gleichung~\ref{simat}) ergibt fr
-unverspannte Siliziumbalken bei 10 und 8~mm Resonatorl„nge
-Resonanzfrequenzen von 4,386~kHz und 6,853~kHz in guter šbereinstimmung
-mit den numerisch berechneten Ergebnissen, so daá die Abweichungen nur etwa
+Materialeigenschaften (Gleichung~\ref{simat}) ergibt für
+unverspannte Siliziumbalken bei 10 und 8~mm Resonatorlänge
+Resonanzfrequenzen von 4,386~kHz und 6,853~kHz in guter Übereinstimmung
+mit den numerisch berechneten Ergebnissen, so daß die Abweichungen nur etwa
 1~\% betragen (siehe Tabelle~\ref{tabbalkenfreq}).
 %----------------------- Beginn: Figure-Environment ----------------------
 \begin{figure}[htb]
@@ -706,47 +706,47 @@ Eigenschwingungsformen (Meápunkte) eines 10~mm langen Balkens dargestellt,
 der elektrothermisch mit einer niedrigen mittleren Impulsheizleistung
 ($\overline{P_{Heiz}}$~=~50~mW) angeregt und optisch abgetastet
 wurde \cite{Mue92}. Aufgrund der jeweils an beiden Balkenenden symmetrisch
-angeordneten Heizwiderst„nde, wurden nur die symmetrischen Schwingungsmoden
+angeordneten Heizwiderstände, wurden nur die symmetrischen Schwingungsmoden
 Z1 und Z3 elektrothermisch selektiv angeregt. Die unsymmetrischen
 Biegeschwingungsmoden Z2 und Z4,
 sowie die Torsionsmoden konnten im Modenspektrum nicht nachgewiesen
 werden. Die Resonanzfrequenzen\footnote{Auch mit Metallschichtsystem
 stimmen die Resonanzfrequenzen der Biegebalken mit denen der unbeschichteten
-Siliziumbalken hinreichend gut berein, sofern die elektrische
-Verlustleistung klein bleibt und die Temperaturberh”hung auf dem Balken
-wenige Kelvin nicht berschreitet (siehe Kapitel~\ref{temperaturverhalten}).}
+Siliziumbalken hinreichend gut überein, sofern die elektrische
+Verlustleistung klein bleibt und die Temperaturüberhöhung auf dem Balken
+wenige Kelvin nicht überschreitet (siehe Kapitel~\ref{temperaturverhalten}).}
 der beiden vermessenen Moden betrugen etwa $f_{Z1} = 4,23$~kHz und
 $f_{Z3} = 24,1$~kHz.\\
 Weil die rechnerische Modalanalyse
-die Eigenwertgleichung (\ref{modal}) unter Vernachl„ssigung von
-D„mpfungsbeitr„gen und Anregungskraft l”st, k”nnen nur relative
+die Eigenwertgleichung (\ref{modal}) unter Vernachlässigung von
+Dämpfungsbeiträgen und Anregungskraft läst, können nur relative
 Schwingungsamplituden ermittelt werden. Um die berechneten
-Amplitudenverl„ufe (durchgehende Kurvenzge) mit den Meáwerten vergleichen
-zu k”nnen, wurden die gemessenen Maximalwerte auf eins normiert.
+Amplitudenverläufe (durchgehende Kurvenzüge) mit den Meßwerten vergleichen
+zu können, wurden die gemessenen Maximalwerte auf eins normiert.
 Beim optischen Nachweis steht im Gegensatz zur elektrischen Detektion
 die Phaseninformation zwischen
 Anregungsspannung und resultierender Schwingungsamplitude nicht zur
-Verfgung, so daá nur die Absolutbetr„ge der Schwingungsamplituden
-detektierbar sind. Die mittleren Meápunkte der Obermode Z3 muáten daher
+Verfügung, so daá nur die Absolutbeträge der Schwingungsamplituden
+detektierbar sind. Die mittleren Meßpunkte der Obermode Z3 mußten daher
 mit negativen Vorzeichen versehen werden.
 Da die Nullpunktjustierung der Balkenkoordinate des FE-Modells nicht
 eindeutig ist, wurden ferner die gemessenen Amplitudenmaxima der beiden
 Biegeschwingungen Z1 und Z3 in Balkenmitte des FE-Modells gelegt.\\
 %
-Die šbereinstimmung der berechneten mit den gemessenen Werten ist sehr gut
-und l„át auf eine gengende Elementunterteilung und Erfassung der
-richtigen Einspannbedingungen des Balken zurckschlieáen. Aufgrund der
+Die Übereinstimmung der berechneten mit den gemessenen Werten ist sehr gut
+und läßt auf eine genügende Elementunterteilung und Erfassung der
+richtigen Einspannbedingungen des Balken zurückschließen. Aufgrund der
 niedrigen Eigenspannungen (einige MPa) der $SiO_{2}$--Schicht werden die
-Eigenformen in ihrem Verlauf nicht beeinfluát. Im Gegensatz dazu zeigten
+Eigenformen in ihrem Verlauf nicht beeinflußt. Im Gegensatz dazu zeigten
 $ZnO$--beschichtete Siliziummembranen (siehe Kapitel~5.3.2) sehr hohe innere
-Spannungen, so daá eine merkliche Abweichung des lateralen Modenverlaufs
+Spannungen, so daß eine merkliche Abweichung des lateralen Modenverlaufs
 zwischen Messung und Simulation auftrat \cite{Fab92b}. Eine hohe Vorspannung
-im Resonator bewirkt auáer einer
+im Resonator bewirkt außer einer
 Frequenzverschiebung einen steiler ansteigenden lateralen Modenverlauf bei
-den Einspannstellen gegenber unverspannten Resonatoren.
-Quantitative Untersuchungen zum Einfluá von
+den Einspannstellen gegenüber unverspannten Resonatoren.
+Quantitative Untersuchungen zum Einfluß von
 Schichtspannungen auf den Verlauf der lateralen Eigenformen sind von
-{\sl Prak} fr Balkenresonatoren durchgefhrt worden \cite{Pra93}. Die
+{\sl Prak} für Balkenresonatoren durchgeführt worden \cite{Pra93}. Die
 Beeinflussung des Auslenkungsverhaltens ebener Membranen infolge innerer
 Spannungen wurde von {\sl Steinmann et al.} analytisch und numerisch
 untersucht \cite{Ste93}.

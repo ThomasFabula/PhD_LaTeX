@@ -1,0 +1,483 @@
+\subsection{Membranresonatoren}
+\label{membranresonatoren}
+
+Im Vergleich zu Balkenresonatoren, deren Schwingungsverhalten eindimensional
+beschrieben werden kann (Gleichung \ref{balkdgl}), erfordern membranartige
+Resonatorstrukturen eine zwei- oder dreidimensionale Beschreibung.
+Wie in Kapitel~\ref{konvergenzverhalten} gezeigt, sind Schalenelemente
+sehr gut geeignet, Biegeschwingungen ebener mikromechanischer Membranen
+zu modellieren. In erster Näherung können daher Schalenelemente verwendet
+werden, falls sich die Verhältnisse
+über die Membrandicke nicht ändern und der Einfluß der Einspannung
+vernachlässigt werden kann. Bei einer Strukturierung der Membran über
+die Dicke, beispielsweise im Einspannbereich, oder bei Vorhandensein eines
+zusätzlichen Dünnschichtsystems, wird eine dreidimensionale
+Betrachtungsweise erforderlich.\\
+In {\bf Abbildung~\ref{abbmembranmoden}} sind die mit Hilfe eines
+zweidimensionalen FE-Modells berechneten Schwingungsmoden
+$M_{ij}$ und die zugehörigen normierten Frequenzen bzw.\ Frequenzvielfachen
+$c_{ij} = f_{ij} / f_{11}$ abgebildet. Die Indizes $i, j$ entsprechen der
+Anzahl der Schwingungsextrema in der $x$-- und $y$--Richtung.
+Wie erwartet nimmt bei höheren Schwingungsmoden die Zahl der Knotenlinien
+zu, wobei einige Schwingungsmoden entartet sind, d.h.\
+gleiche Frequenzeigenwerte aufweisen. Beispielsweise handelt es sich
+hierbei um die beiden
+Moden $M_{12}$ und $M_{21}$, die jedoch in der Realität infolge der
+Kristallanisotropie, der Membraninhomogenitäten und nicht idealer
+Einspannbedingungen getrennt auftreten können.
+%----------------------- Beginn: Figure-Environment ----------------------
+\begin{figure}[htb]
+\begin{center}
+% --- Dateiname des Bildes
+\input{abbvv.tex}
+\setabbvv
+\end{center}
+\caption{\label{abbmembranmoden}
+ Numerisch ermittelte Schwingungsmoden und normierte Eigenfrequenzen
+ $c_{ij}$ einer ebenen Siliziummembran}
+\end{figure}
+%----------------------- Ende: Figure-Environment ----------------------
+Die experimentelle Ermittlung der Eigenfrequenzen und -schwingungsformen
+erfolgte durch optische Vermessung der Modenspektren von reinen
+Siliziummembranen mit verschiedenen Längen-Dicken-Verhältnissen
+\cite{Sch92, Bra92a} und an fertig prozessierten Drucksensoren mit
+integriertem piezoelektrischen Antrieb.
+%
+In {\bf Abbildung~\ref{abbspek}} ist das frequenz- und ortsabhängige
+Amplitudenspektrum $A(f,x)$ eines $ZnO$-beschichteten piezoelektrisch
+angetriebenen Silizium-Drucksensors dargestellt. Aufgrund der fehlenden
+Phaseninformation sind nur die Absolutbeträge der
+Membranschwingungsamplituden aufgetragen. Die harmonische Anregung
+erfolgte mit einer Spannung von $U = 4~V_{SS}$ im Frequenzbereich bis
+55~kHz. Die Membranseitenlänge betrug
+9,2~mm, die Siliziumdicke etwa 50~$\mu$m und die $ZnO$-Schichtdicke etwa
+11~$\mu$m.
+Die Grundbiegeschwingungsmode $M_{11}$ wies eine Resonanzamplitude von
+etwas über 1~$\mu$m auf. Die Schwingungsgüte betrug unter Normalluftdruck
+bei der Grundmode etwa 100, bei den Moden $M_{13}$ und $M_{33}$ etwa
+310 und 360. Ein Vergleich der experimentell und numerisch ermittelten
+lateralen Modenverläufe entlang der Membranmitte zeigte eine gute
+Übereinstimmung, so daß bei gengend großen Schwingungsamplituden
+(einige hundert Nanometer) alle experimentell ermittelten Moden
+mit Hilfe der FE-Ergebnisse eindeutig zugeordnet werden konnten.
+Um möglichst alle Schwingungsmoden des Drucksensors im Modenspektrum
+nachzuweisen, wurde der Laserstrahl des Laservibrometers entlang der
+Membranmittellinie verfahren.
+%----------------------- Beginn: Figure-Environment ----------------------
+\begin{figure}[htb]
+\begin{center}
+% --- Dateiname des Bildes
+\input{abbvsex.tex}
+\setabbvsex
+\end{center}
+\caption{\label{abbspek}
+  Optische Vermessung des frequenz- und ortsabhängigen Amplitudenspektrums
+  $A(f,x)$ eines piezoelektrisch angetriebenen Silizium-Membrandrucksensors}
+\end{figure}
+%----------------------- Ende: Figure-Environment ----------------------
+Zum Vergleich der Resonanzfrequenzen sollen im folgenden die analytischen
+Werte aus Tabelle~2.4, %\ref{tab...}
+die zwei- und dreidimensionalen FE-Berechnungen und
+die experimentellen Meáwerte herangezogen werden. Aufgrund prozeßbedingter
+innerer Spannungen in der $ZnO$-Dünnschicht weisen die Drucksensoren
+im allgemeinen von den analytischen und numerischen Berechnungen
+abweichende Resonanzfrequenzen auf. Um die Störbeiträge, die durch
+prozeßbedingten Schichtspannungen nach Gleichung (\ref{fsigma})
+hervorgerufen werden können, zu eliminieren, wurden die Resonanzfrequenzen
+$f_{ij}$ auf die jeweiligen Grundfrequenzen $f_{11}$ bezogen. In
+{\bf Tabelle~\ref{tabmembranfreqvgl}} sind daher die normierten
+Resonanzfrequenzen $c_{ij}$ der höheren Schwingungsmoden von
+Membranresonatoren gegenübergestellt.
+%----------------------- Beginn: table ---------------------------
+\begin{table}[htb]
+\caption
+ {\label{tabmembranfreqvgl}
+ Normierte Resonanzfrequenzen $c_{ij}$ eines $ZnO$-beschichteten
+ Silizium-Drucksensors
+ (Vergleich: Analytische Beschreibung -- FE-Berechnungen -- Messungen)}
+\begin{center}
+\begin{tabular}{|c||c|c||c|c|c||c|c|}
+\hline
+ Mode & \multicolumn{2}{c||}{analytisch} & \multicolumn{3}{c||}{FE-Modellierung}
+ & \multicolumn{2}{c|}{Messung} \\
+\hline
+ $ij$ & isotrop & anisotrop & 2D/lin. & 2D/quad. & 3D & $c_{ij}$ & Abw. \\[-1.2ex]
+ & \cite{Pon91} & \cite{Pon91} & isotrop & isotrop & anisotrop &  & \\
+\hline \hline
+ $M_{12}$ & 2,039 & 1,998 & 2,038 & 2,047 & 2,066 & 2,10 & 1,6~\% \\
+\hline
+ $M_{22}$ & 3,007 & 2,899 & 3,004 & 2,996 & 3,031 & 2,86 & 6,0~\%\\
+\hline
+ $M_{31}$ & 3,662 & 3,615 & 3,652 & 3,699 & 3,754 & --- & --- \\
+\hline
+ $M_{13}$ & 3,679 & 3,631 & 3,669 & 3,717 &3,770 & 3,94 & 4,3~\%\\
+\hline
+ $M_{33}$ & 6,122 & 5,872 & 6,105 & 6,051 & 6,021 & 6,35 & 5,2~\%\\
+\hline
+\end{tabular}
+\end{center}
+\end{table}
+%----------------------- Ende: table ---------------------------
+Die analytisch ermittelten Frequenzen für isotropes und anisotropes
+Materialverhalten, bei denen von idealisierten Platten mit unendlich steifer
+Einspannung ausgegangen wurde, sind der Literatur \cite{Pon91} entnommen.
+Die Frequenzwerte bei anisotroper Rechnung fallen systematisch niedriger aus,
+da eine effektiv verminderte Steifigkeit dem analytischen
+Beschreibungsansatz zugrundeliegt.
+% ($\alpha_{aniso} = 0,798 < \alpha_{iso}$)
+Bei den zweidimensionalen FE-Berechnungen wurde isotropes
+Materialverhalten vorausgesetzt und Schalenmodelle mit linearen
+({\em SHELL43}-Elemente: lin.) und quadratischen Ansatzfunktionen
+({\em SHELL93}-Elemente: quad.) verwendet.
+Die Übereinstimmung zwischen den Berechnungsergebnissen mit quadratischen
+Elementen, die ein besseres Approximationsverhalten als lineare Elemente
+aufweisen, und den isotropen analytischen Werten ist
+sehr gut. Die Abweichungen liegen unterhalb 0,3~\%. Der Unterschied
+zwischen den 3D-Volumenmodellen, die die (111)-Einspannung und die
+Materialanisotropie ({\em SOLID64}-Elemente) berücksichtigen, und dem
+linearen 2D-Schalenmodell liegt zwischen 1 und 3~\%.\\
+%
+Die Abweichungen der gemessenen Werte des optisch charakterisierten
+Membrandrucksensors (siehe Abbildung~\ref{abbspek})
+von den FE-Resultaten (3D-Modell, anisotrop) liegen im Bereich von 2--6~\%.
+Im Vergleich zu den analytischen und numerischen Berechnungen fiel die
+gemessene Resonanzfrequenz der Grundmode um etwa 2~kHz geringer aus und
+betrug 7,24~kHz. Hieraus konnte nach Gleichung (\ref{fsigma}) die
+Größenordnung\footnote{Vergleiche hierzu Kapitel~\ref{fehlerbetrachtung}.}
+der technologisch bedingten inneren Druckspannung in der $ZnO$-Dünnschicht
+zu etwa $\sigma \approx - 15$~MPa abgeschätzt werden. Die Schwingungsmode
+$M_{31}$ konnte meßtechnisch an diesem Sensor nicht nachgewiesen werden,
+da das modenselektive Elektrodenlayout zur Anregung dieser Mode ungeeignet
+war (siehe auch Kapitel~5.5.1). Eine Diskussion der einzelnen
+Fehlereinflüsse erfolgt in Kapitel~\ref{fehlerbetrachtung}.
+
+
+\newpage
+
+\section{Charakterisierung der Sensorkennlinien}
+\label{sensorkennlinien}
+
+\subsection{Kraftabhängige Frequenzänderung}
+\label{kraftabh}
+
+Um die Kraftempfindlichkeit der Balkenresonatoren zu ermitteln, wurden
+sie mit einer Axialkraft beaufschlagt. Hierzu stand eine
+Meßeinrichtung zur Verfügung, die es erlaubte, mit Hilfe einer Gewichtskraft
+eine angenähert uniaxiale Krafteinleitung in den Sensor zu erreichen
+\cite{Mue92}.
+Die Kraftsensoren mit elektrothermischem Antrieb wurden bei einer geringen
+Heizleistung von $\overline{P_{Heiz}}$~=~50~mW in Resonanz betrieben und
+ohne resistive Auslesung im \glqq Niedertemperaturbereich\grqq \,
+($P_{DMS}$~=~0) optisch vermessen. Beim Einsatz als Strömungssensor
+betragen die elektrischen Verlustleistungen $P_{DMS}$ bis zu 650~mW und
+fhren zu einer Temperaturüberhöhung in Balkenmitte
+von etwa 60~K gegenüber der Umgebungstemperatur \cite{Bar93},
+so daß sich eine
+hohe thermische Querempfindlichkeit des Resonators einstellt. Diese
+unerwünschte Temperaturquerempfindlichkeit muß bei der Anwendung als
+Kraftsensor kontrolliert werden. Daher wurde der Einfluß der
+Temperaturüberhöhung auf das statische und dynamische Verhalten der
+Balkenresonatoren genauer untersucht. Eine Diskussion der Ergebnisse
+wird in Kapitel~\ref{temperaturverhalten} gegeben.\\
+%
+Die lastabhängige Frequenzverschiebung wurde an Sensoren mit einer
+Balkenlänge von 10~mm und einer Balkendicke von $(50\pm2)~\mu$m im
+Kraftbereich bis etwa 11~N vermessen. Durch die
+optische Abtastung konnten bei symmetrischer Anregung die beiden
+Schwingungsmoden Z1 und Z3 gleichzeitig vermessen werden. In
+{\bf Tabelle~\ref{tabkraftmessung}} sind die Ergebnisse der Messungen
+übersichtlich zusammengefaßt.
+%----------------------- Beginn: table ---------------------------
+\begin{table}[htb]
+\caption{\label{tabkraftmessung}
+ Experimentelle Kenndaten des elektrothermisch angetriebenen Kraftsensors}
+\begin{center}
+\begin{tabular}{|l||c|c|c|c|c|c|}
+\hline
+ Kenngr”áe & $f_{0}$ & $\Delta f$ & $\frac{\Delta f}{\Delta F}$ & $\eta$ & Q & NL \\
+           & [Hz]    & [Hz] & [$\frac{Hz}{N}$] & [$N^{-1}$] & & [\%]\\
+\hline \hline
+ Mode Z1   & 4265    & 1823 & 168  &  0,039 & 426$\pm$40   & 1,9 \\
+\hline
+ Mode Z3   & 24193   & 3021 & 280  &  0,012 & 692$\pm$200  & 0,9 \\
+\hline
+\end{tabular}
+\end{center}
+\end{table}
+%----------------------- Ende: table ---------------------------
+Für die Grundmode betrug die Resonanzfrequenz
+4,265~kHz und wies eine maximale Frequenzverschiebung von 1,82~kHz auf.
+Dies entspricht einer relativen Kraftempfindichkeit $\eta$, definiert
+nach Gleichung~(\ref{etadef}), von etwa 0,039~N$^{-1}$ \cite{Mue92}.
+Die angegebenen Schwingungsgten $Q$ stellen die
+Mittelwerte aus den zwölf Messungen dar und decken sich mit den Werten
+die bei Fremdanregung erreicht wurden.
+Im Gegensatz zur Grundmode schwanken die Werte der Obermode Z3 relativ
+stark, da diese Schwingungsmode mit Hilfe der zur Verfügung stehenden
+Anregungsschaltung\footnote{Aus diesem Grunde wurde im Rahmen
+einer Diplomarbeit \cite{Wie93} eine universelle Anregungsschaltung für den
+elektrothermisch angeregten Resonator entwickelt, die bei der Untersuchung
+des Temperaturverhaltens in Kapitel~\ref{temperaturverhalten} zum Einsatz
+kam.} nicht stabil angeregt werden konnte.
+Wird für die Gesamtquerschnittsfläche (siehe Schnitt B--B' in
+Abbildung~\ref{abbgmssensor})
+der Sensoren, die sich additiv aus den Querschnitten der beiden
+Verstärkungsstege und der Balkenquerschnittsfläche zusammensetzt, der
+Wert von etwa $7,1 \cdot 10^{-7} \; m^{2}$ zugrunde gelegt,
+so entspricht dieses einer mechanischen Verspannung im Resonator von
+rund 15,3~MPa. Dieser Wert führt auf eine
+\glqq Spannungsempfindlichkeit\grqq \, von etwa 119~Hz/MPa.\\
+Zur Überprüfung der FE-Modellannahmen wurde die Eigenfrequenzverschiebung
+unter der Einwirkung einer Axialkraft berechnet. Durch die äußere
+Lasteinwirkung ergibt sich eine Überlagerung eines statischen und eines
+dynamischen Problems. Im ersten Schritt wird in einer nichtlinearen
+statischen Analyse (Gleichung \ref{nlstatik}) die Balkendehnung als Funktion
+der einwirkenden Last ermittelt. Im darauffolgenden zweiten Schritt
+wird die Frequenzverschiebung in Abhängigkeit der Änderung der
+Resonatorsteifigkeit aufgrund spannungsversteifender Effekte nach
+Gleichung~(\ref{modal}) berechnet.
+Unter Verwendung des FE-Modells aus Kapitel~\ref{balkenresonatoren}
+konnte für eine äquivalente Zugspannung von etwa 15,2~MPa im Resonatorbalken
+eine Frequenzänderung von 1,868~kHz berechnet werden, was einer
+Empfindlichkeit von etwa 123~Hz/MPa entspricht.
+%----------------------- Beginn: Figure-Environment ----------------------
+\begin{figure}[htb]
+\begin{center}
+% --- Dateiname des Bildes
+\input{abbvsi.tex}
+\setabbvsi
+\end{center}
+\caption{\label{abbkraftfreq}
+ Lastabhängige Resonanzfrequenzänderung beim
+ elektrothermisch angetriebenen Silizium-Kraftsensor}
+\end{figure}
+%----------------------- Ende: Figure-Environment ----------------------
+In {\bf Abbildung~\ref{abbkraftfreq}} sind die experimentellen und
+numerischen Ergebnisse graphisch dargestellt. Die FE-Ergebnisse sind
+als gestrichelte Linie und die gemessenen Werte als Punkte eingezeichnet.
+Um die Nichtlinearit#t\footnote{Die Nichtlinearität NL gibt die
+maximale Abweichung einer nichtlinearen, stetig gekrümmten Kennlinie
+von einer Verbindungsgeraden
+durch den Anfangs- und Endpunkt der Kennlinie an und ist
+definiert als \cite{Rei89}: NL$ := \pm \frac{1}{2} \left\{
+[f(x_{1})+f(x_{2})]/2-f(x_{2}/2) \right\} / [f(x_{2})-f(x_{1})]$.}
+der Sensorkennlinien zu ermitteln, wurde
+an die Meßwerte eine lineare Ausgleichsgerade mit der Methode
+der kleinsten Quadrate ({\em Least-Square-Approximation}) angepaßt. Die
+so ermittelte Nichtlinearität betrug für die Grundmode rund 1,9~\%.
+
+
+
+\subsection{Druckabhängige Frequenzänderung}
+\label{druckabh}
+
+Das druckabhängige Resonanzverhalten von Membranen wird charakterisiert
+durch den Zusammenhang zwischen der Druckbeaufschlagung und der sich
+einstellenden Membranauslenkung. Wie in Kapitel~\ref{abschaetzungen}
+dargelegt, treten bei genügend \glqq großen\grqq \, Auslenkungen
+nichtlineare Effekte auf, die zu inneren
+Membranspannungen führen. Diese sind infolge der spannungsversteifenden
+Wirkung für die Frequenzänderung der Membran verantwortlich.
+Die Druckempfindlichkeit der Siliziummembranen wurde analog zum Vorgehen
+beim Kraftsensor berechnet.
+Durch eine geometrisch nichtlineare, statische FE-Berechnung wurde
+die durch die Druckdifferenz hervorgerufene Steifigkeitsänderung der
+Membran ermittelt und zur Berechnung der Frequenzverschiebung herangezogen.
+Auf diese Weise konnte die Frequenz-Druck-Kennlinie des Drucksensors
+simuliert werden.\\
+Im Gegensatz zu den Balkenstrukturen wird bei den Membranstrukturen
+die Spannungsversteifung durch große Auslenkungen ($d \geq h$)
+hervorgerufen, so daß die geometrische Steifigkeitsänderung des Resonators
+rechentechnisch durch große Deformationen (Elementrotationen) erfaßt
+werden muß. In {\sf ANSYS} wird
+die auslenkungsabhängige Steifigkeitsänderung $K(u)$ durch
+Gleichung~(\ref{nlstatik}) beschrieben und iterativ nach
+(\ref{largedefl}) gelöst.
+Für die Ermittlung der druckabhängigen Membranauslenkung und
+Frequenzverschiebung wurde der in Kapitel~\ref{membranresonatoren}
+optisch vermessene Silizium-Drucksensor herangezogen.
+Um den Silizium-Drucksensor mit einer Siliziummembrandicke von etwa
+50~$\mu$m und einer $ZnO$-Schichtdicke von etwa 11~$\mu$m sowohl analytisch
+als auch numerisch mit Schalenelementen modellieren zu können, wurden
+unter Annahme isotroper Elastizitätseigenschaften die Materialdaten
+gemäß Gleichung (\ref{matwich}) gewichtet gemittelt. In erster Näherung
+reichen beim Zinkoxid die Materialeigenschaften senkrecht zur $c$--Achse aus,
+um das Biegeverhalten in der Ebene der beiden $a$--Achsen
+zu beschreiben. Für Zinkoxid wurde ein E-Modul von
+126~GPa, eine {\em Poisson}-Zahl von 0,36 und eine Dichte von
+5675~$kg/m^{3}$ verwendet \cite{LB82}. Diese Werte erweisen sich auch
+für Dünnschichten als sinnvoll,
+da an gesputterten $ZnO$-Dnnschichten Indenter-Messungen nach der Methode
+des Last-Eindringverfahrens \cite{Ola92} durchgeführt wurden und einen
+reduzierten E-Modul von $\hat E \approx 145$~GPa bei einer Schichtdicke
+von 2--3~$\mu$m ergaben. Bei obigen Schichtdicken resultieren als
+gemittelten Materialparameter für den E-Modul 161~GPa, für die
+{\sl Poisson}-Zahl 0,1166 und für die Dichte der Wert 2932~kg/m$^{3}$.\\
+%----------------------- Beginn: Figure-Environment ----------------------
+\begin{figure}[htb]
+\begin{center}
+% --- Dateiname des Bildes
+\input{abbva.tex}
+\setabbva
+\end{center}
+\caption{\label{abbmemauslvgl}
+ Druckabhängige Membranmittenauslenkung eines Silizium-Drucksensors
+ (Vergleich: analytische Beschreibung -- FE-Berechnung -- Messung)}
+\end{figure}
+%----------------------- Ende: Figure-Environment ----------------------
+Fr eine erste Abschätzung der druckabhängigen Membranmittenauslenkung
+wurden sie analytisch nach zwei verschiedenen Näherungsansätzen
+(Gleichung \ref{nonlin1} und
+\ref{memausl}) berechnet. In {\bf Abbildung~\ref{abbmemauslvgl}} sind die
+Ergebnisse der analytischen Berechnungen im Vergleich mit den optischen
+Messungen und den Ergebnissen des 2D-Schalenmodells S43 aus
+Tabelle~\ref{tabfreqzus} dargestellt. Die Nichtlinearität des gemessenen
+Kurvenverlaufes beträgt im Maximaldruckbereich etwa $\pm$6,0~\%.
+Während Gleichung (\ref{nonlin1}) zu hohe
+Membranmittenauslenkungen liefert und ab etwa 400~mbar aufgrund des
+negativen quadratischen Korrekturfaktors des Linearitätsfehlers
+einen degressiven Kurvenverlauf annimmt, beschreibt Gleichung
+(\ref{memausl}) die druckabhängige Mittenauslenkung exakter.
+Die Differenz zwischen den beiden analytischen Beschreibungsansätzen
+beträgt etwa  6--11~\%. Während der quadratische Näherungsansatz
+(\ref{nonlin1}) bis zu einer Druckdifferenz von etwa 100~mbar, dieses
+entspricht einer Auslenkung von etwa einer halben Membrandicke, verwendet
+werden kann, erweist sich der kubische Näherungsansatz (\ref{memausl})
+als eine bessere Beschreibung des gemessenen Kurvenverlaufs bis 500~mbar
+mit einer maximalen Abweichung von 12~\%.
+Das 2D-Schalenmodell kommt den gemessenen Werten mit einer Abweichung
+von etwa 5~\% am nächsten. Eine lineare analytische Vergleichsrechnung,
+bei der der nichtlineare Korrekturterm aus Gleichung (\ref{nonlin1})
+nicht berücksichtigt wurde, ergab für den betrachteten maximalen
+Druckbereich eine etwa doppelt so hohe Membranauslenkung und ist daher
+nicht mehr verwendbar.\\
+%
+Um die Einflüsse der realen Einspannung durch die (111)-Siliziumebenen
+und der anisotropen Elastizitätseigenschaften der Siliziummembran und
+der $ZnO$-Dünnschicht zu untersuchen, wurden neben dem Schalenmodell S43 mit
+linearen Ansatzfunktionen auch die dreidimensionalen Modelle V95 und V64
+betrachtet, die aufgrund der erhöhten Anzahl von Freiheitsgraden nur ein
+Viertel der Sensorgeometrie berücksichtigen.
+Das FE-Modell V95 verwendet 20-knotige
+Volumenelemente ({\em SOLID95}) mit quadratischen Ansatzfunktionen bei
+isotropen Materialeigenschaften, das FE-Modell V64 ({\em SOLID64}-Elemente)
+bercksichtigt die Elastizitätsanisotropien von Silizium {\em und} Zinkoxid.
+Die Elastizitätseigenschaften wurden
+fr Bulkmaterial der Literatur \cite{LB82} entnommen. Während das Modell V95
+nur jeweils eine Elementlage über die Membrandicke aufweist, sind bei
+Modell V64 insgesamt vier Elementlagen berücksichtigt worden.
+Die Berechnungsergebnisse der dreidimensionalen FE-Modelle V64 und V95 sind
+in Abbildung~\ref{abbmemauslvgl} zusätzlich gestrichelt eingezeichnet
+und decken sich bis 300~mbar gut mit den Resultaten des 2D-Schalenmodells.
+Ab diesen Druckbereich verhalten sich die 3D-Modelle weniger steif, so daß
+die Auslenkungen höher ausfallen. Dieses läßt sich auf die mit zunehmender
+Druckbeaufschlagung Verdünnung der Volumenelemente zurückführen, die eine
+erhebliche Verminderung der effektiven Biegesteifigkeit $D$
+zur Folge haben kann. Nach
+Gleichung (\ref{biegesteif}) geht die Membrandicke $h$ mit der dritten
+Potenz ein, so daß bei einer Auslenkung von fast 90~$\mu$m beim
+anisotropen FE-Modell V64 eine merkliche Steifigkeitsverminderung
+hervorgerufen werden kann.
+%Dieses liegt zum einen an dem schlechten Aspektverhältnis von etwa 7--10
+%der Volumenelemente, zum anderen verfügen die Volumenlemente gegenüber den
+%Schalenelementen ein verbessertes Tragverhalten gegenber Schubbelastungen,
+%so daß sie bei bestimmten Lastfällen weicher werden können.
+Wie in Kapitel~\ref{modelleinfluesse} untersucht, fallen im Vergleich zur
+anisotropen Beschreibung (FE-Modell: V64) die Auslenkungen bei der
+isotropen Beschreibung (FE-Modell: V95) geringer aus. Das 2D-Schalenmodell
+weist trotz des überlegenen Approximationsverhaltens (siehe
+Abbildung~\ref{abbkonvausl}) und ausreichender Vernetzungsfeinheit
+die höchste Modellsteifigkeit auf. Dieser Sachverhalt läßt sich auf die
+Verwendung der isotropen Ersatzmaterialdaten zurückführen.\\
+%----------------------- Beginn: Figure-Environment ----------------------
+\begin{figure}[htb]
+ \begin{center}
+% --- Dateiname des Bildes
+\input{abbvn.tex}
+\setabbvn
+\end{center}
+\caption{\label{abbmemfreqvgl}
+ Druckabhängige Frequenzänderung eines piezoelektrisch angetriebenen
+ Silizium-Drucksensors (Vergleich: FE-Berechnungen -- Messung)}
+\end{figure}
+%----------------------- Ende: Figure-Environment ----------------------
+In {\bf Abbildung~\ref{abbmemfreqvgl}} sind die Ergebnisse
+der numerisch berechneten und experimentell bestimmten, druckabhängigen
+Frequenzänderung des Silizium-Drucksensors graphisch dargestellt.
+Die Reihenfolge der Kennlinien ist umgekehrt zu der bei den druckabhängigen
+Auslenkungen. Aufgrund der größten Modellsteifigkeit weist das
+2D-Schalenmodell S43 die höchsten Frequenzen und folglich auch die größten
+Abweichungen zu den Meßwerten auf. Die Approximationsgüte nimmt hingegen
+vom isotropen 3D-Modell V95 zum anisotropen 3D-Modell V64 zu. Für die
+unbelastete Membran (p = 0) betragen die Abweichungen zur gemessenen
+Resonanzfrequenz $f_{0}$ lediglich 4,4 bzw.\ 2,4~\%. Die druckabhängige
+Frequenzänderung $\Delta f$/$\Delta p$ beläuft sich bei allen drei
+FE-Modellen auf etwa 14,3--14,5~Hz/mbar und weicht rund 16~\% von der
+gemessenen Druckempfindlichkeit (12,4~Hz/mbar) ab.
+{\bf Tabelle~\ref{tabvglm723}} faát die analytischen und numerisch
+berechneten charakteristischen Sensorkenndaten im Vergleich
+mit den Messungen zusammen. Die analytischen Abschätzungen für die
+unbelastete Resonanzfrequenz $f_{0}$,
+die maximale Membranmittenauslenkung $u_{z}$ und
+die Druckempfindlichkeit $\Delta f / \Delta p$ erfolgten nach den
+Gleichungen (\ref{memfreq}), (\ref{memausl}) und (\ref{pvond}) unter
+Verwendung gewichteter Materialdaten nach Gleichung (\ref{matwich}).
+%----------------------- Beginn: table ---------------------------
+\begin{table}[htb]
+\caption
+ {\label{tabvglm723}
+ Charakteristische Kenndaten des piezoelektrisch angetriebenen
+ Silizium-Drucksensors
+ (Vergleich: analytische Beschreibung -- FE-Berechnung -- Messung)}
+\begin{center}
+\begin{tabular}{|c||c||c|c|c||c|}
+\hline
+Sensor & analytisch & \multicolumn{3}{c||}{FE-Modell: S43--V95--V64}
+       & Messung \\
+\cline{3-5}
+ Kenndaten &     & 2D      & 3D      & 3D        & \\[-1.2ex]
+           &     & isotrop & isotrop & anisotrop & \\
+\hline \hline
+h $[\mu$m] & --- & 184     & 511     & 341       & --- \\
+Aspektverh.: & --- & 3,0 & 10,2 & 6,8 & --- \\
+\hline
+Elemente   & --- & 2500    & 1128    & 3844      & --- \\
+Knoten     & --- & 2601    & 6565    & 5230      & --- \\
+MDOF       & --- & 300     & 500     & 500       & --- \\
+\hline \hline
+$f_{0}$ [Hz]
+           &  8920  &  8890   &  8686   &  8517   &  8317   \\
+           & (7,3~\%) & (6,9 \%) & (4,4 \%) & (2,4 \%) &  $\pm$50 \\
+\hline
+$u_{z}$ $[\mu m]$
+           & 84,26    &  79,06   & 82,21   & 89,00    & 75,0     \\
+           & (12,3~\%) & (5,4 \%) & (9,6~\%) & (18,7~\%) & $\pm$0,5  \\
+\hline
+$\frac{\Delta f}{\Delta p}$ $[\frac{Hz}{mbar}]$
+        & 14,72    & 14,30    & 14,36    & 14,53    & 12,4    \\
+  	& (18,7~\%) & (15,3~\%) & (15,8~\%) & (17,2~\%) & $\pm$1,0 \\
+\hline
+\end{tabular}\\
+\end{center}
+\end{table}
+%----------------------- Ende: table ---------------------------
+Die Approximation der Meákurve durch die Berechnungen hängt neben
+der Kenntnis der exakten Strukturabmessungen entscheidend von der richtigen
+Wahl der Materialparameter sowie der Kenntnis der inneren Spannung der
+Dünnschicht auf der Siliziummembran ab.
+Beim Vergleich der druckabhängigen Membranmittenauslenkung
+(Abbildung~\ref{abbmemauslvgl}) mit der Frequenzänderung
+(Abbildung~\ref{abbmemfreqvgl}) fällt beim Schalenmodell S43 auf, daß mit
+einer geeigneten Wahl der Materialparameter beispielsweise der Kurvenverlauf
+der Membranauslenkung ($u_{z}(p) \sim K^{-1}$) zwar gut approximiert
+werden kann, jedoch auf Kosten der Approximationsgüte bei der
+Resonanzfrequenz ($f(p) \sim \sqrt{K}$).
+Somit ist bei den numerischen Berechnungen sicherzustellen, daß die
+Modellsteifigkeit $K$, einerseits bedingt durch die Elementvernetzung,
+andererseits durch die Wahl der Materialparameter, richtig beschrieben wird.
+Der Einfluß der Modellmassenmatrix $M$ kann bei einer konsistenten
+Massenformulierung vernachlässigt werden, falls die laterale
+Elementunterteilung genügend fein gewählt wurde.
+Die durch die Geometrietoleranzen und nicht genau bekannten
+Materialeigenschaften bedingten Fehlereinflüsse werden in Kapitel~4.5
+diskutiert.

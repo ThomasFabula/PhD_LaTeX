@@ -1,0 +1,311 @@
+\section{Untersuchung des Temperatureinflusses}
+\label{temperaturverhalten}
+
+
+Um das thermische Verhalten mikromechanischer Bauelemente zu untersuchen,
+eignen sich die elektrothermisch angetriebenen Kraft- und Strömungssensoren
+besonders gut, da die Heiz- und DMS-Widerstände variabel ansteuerbare
+Wärmequellen darstellen. Bei einer Temperaturüberhöhung treten im
+eingespannten Balkenresonator thermisch induzierte Spannungen
+auf, die bei Überschreitung der für das Bauelement charakteristischen
+Knickspannung zum Ausknicken bzw.\ Ausbeulen ({\em engl.:} Buckling)
+des Balkens führen. Hierdurch wird das Resonanzverhalten stark
+beeinfluát, so daß die Resonanzfrequenzen unterschiedliche
+Temperaturempfindlichkeiten {\em vor} und {\em nach} dem Ausknicken
+aufweisen. Bei Erhöhung der Temperatur bauen sich infolge verhinderter
+Wärmeausdehnung Druckspannungen im Resonator auf, die zu einer
+Erniedrigung der Resonanzfrequenz der Grundbiegeschwingung führen.
+Bei Erreichen der kritischen Temperatur knickt der ursprünglich gerade
+Balken aus und nimmt eine neue Gleichgewichtslage ein.
+Bei weiterer Temperaturerhöhung können sich danach nur Zugspannungen
+aufbauen, so daß die Resonanzfrequenz infolge der spannungsversteifenden
+Effekte wieder ansteigt.\\
+%
+Ausgangspunkt zur analytischen Beschreibung der temperaturabhängigen
+Effekte beim doppelseitig eingespannten Biegebalken bildet
+Gleichung~(\ref{fsigma}), die die Resonanzfrequenzänderung des Balkens
+infolge einer zusätzlichen axialen Spannung $\sigma$ im Resonator
+beschreibt. Durch Umformung dieser Gleichung kann
+formal die Knickspannung $\sigma_{B}$ eingeführt werden:
+\begin{eqnarray}
+\label{fbuckling}
+ f(\sigma) & = & f_{0} \, \sqrt{1 + \left( \frac{\sigma}{\sigma_{B}} \right)}
+\end{eqnarray}
+Die axiale Spannung $\sigma$ kann hierbei durch eine technologisch bedingte
+innere Vorspannung $\sigma_{0}$, eine äußere axiale Kraftbeaufschlagung
+$F$ oder infolge einer Temperaturüberhöhung $\Delta T$ nach Gleichung
+(\ref{thermdehn}) hervorgerufen werden.
+% \begin{eqnarray}
+% \label{sigmall}
+%  \sigma & = & \sigma_{0} + \frac{F}{A} - {\hat E} \alpha \Delta T
+% \end{eqnarray}
+Das Ausknicken des Balkens findet statt, sobald die Summe der inneren
+Druckspannungen den Wert der Knickspannung erreicht. Unter Verwendung von
+Gleichung
+(\ref{fsigma}) kann die charakteristische Knickspannung, die auch als
+{\sl Euler}sche Knicklast bezeichnet wird, abgeleitet werden \cite{Tim87}:
+\begin{eqnarray}
+\label{sigmab}
+ \sigma_{B} & = & 4 {\pi}^2 \frac{\hat E I}{A{l}^2}
+     \approx 3,39 \hat E {\left( \frac{h}{l} \right) }^2
+\end{eqnarray}
+Die Temperaturabhängigkeit der Resonanzfrequenz nach dem Ausknicken
+läßt sich unter Zugrundelegung des {\sl Rayleigh}--Quotienten beschreiben,
+durch den die Resonanzfrequenz des Balkens über das Verhältnis von
+potentieller zu kinetischer Energie im Resonator dargestellt werden kann
+\cite{Kim86, Gei91}. Durch Betrachtung der veränderten Biegelinie im
+ausgeknickten Zustand ist es möglich, das Temperaturverhalten
+des Balkens auch {\em nach} dem Ausknicken zu berechnen, was durch
+Gleichung (\ref{fbuckling}) nicht möglich ist, da für
+$\sigma < - \sigma_{B}$ der Wurzelausdruck komplex würde und die
+Resonanzfrequenz dann nicht mehr definiert ist.
+Für die Resonanzfrequenz des Balkens in Abhängigkeit der
+Temperaturüberhöhung gegenüber der Umgebung sind in \cite{Bar93} die
+Zusammenhänge:
+\begin{eqnarray}
+\label{fdeltat1}
+ f(\Delta T) & = & \frac{1}{l} \, \sqrt{\frac{ S - \hat E \alpha \Delta T}
+     {3 \rho}} \qquad \mbox{für} \quad 0 \, \leq \, \Delta T \, \leq \, \Delta T_{kr} \\
+\label{fdeltat2}
+ f(\Delta T) & = & \frac{1}{l} \, \sqrt{\frac{\hat E \alpha \Delta T - S}
+     {\rho}} \qquad \mbox{für} \quad \Delta T \, \geq \, \Delta T_{kr}
+\end{eqnarray}
+abgeleitet worden. Hierbei ist $S=\sigma_{0}+\sigma_{B}$ die Summe aus
+axialer Vorspannung und Knickspannung. Bei Erreichen der kritischen
+Temperaturüberhöhung $\Delta T_{kr}$ = $S/{\hat E \alpha}$ kompensiert die
+thermische Druckspannung
+%, hervorgerufen durch den thermischen Ausdehnungskoeffizienten $\alpha$,
+die mechanische Steifigkeit $S$ des Balkens, so daß aufgrund der
+verschwindenden Resonatorsteifigkeit die Resonanzfrequenz im Idealfall
+gegen Null geht. \\
+Für den praktischen Einsatz von resonanten Sensoren ist daher die Kenntnis
+der kritischen Knickspannung
+und der damit verbundenen kritischen Temperaturüberhöhung von
+entscheidender Bedeutung, weil der Resonator statisch instabil wird und
+die temperaturabhängige Sensorkennlinie nicht mehr eindeutig ist.
+Im nachfolgenden wird der Einfluß einer homogenen Temperaturerhöhung auf
+den in Kapitel~\ref{balkenresonatoren} und \ref{kraftabh} behandelten
+Balkenresonator untersucht.
+
+
+\subsection{Statische Instabilitäten}
+
+Die auf ihr thermisches Verhalten hin untersuchten Silizium-Kraftsensoren
+weisen eine Länge von 10~mm und eine mittlere Balkendicke von etwa 50~$\mu$m
+auf. Bei der Herstellung wurden für die Ätzmaskierung der (100)-Siliziumwafer
+thermische Oxidschichten von 1,5~$\mu$m Dicke verwendet, die bei der
+naßchemischen Prozessierung auf etwa 1~$\mu$m abgedünnt wurden. Zusätzliche
+Metallschichtsysteme sind für die Heiz- und DMS-Widerstände
+($NiCr$), die lötbaren ($NiCr-Ti/Pd/Au$) bzw.\ bondbaren Außenkontakte
+($NiCr-Ti/Pd/Au$ galv.) und das Kontaktsystem auf den Siliziumbalken
+mittels $PVD$-Verfahren (Sputtern) abgeschieden worden. Die Schichtdicken
+betrugen bei $NiCr$ 30~nm und bei $Ti/Pd/Au$ etwa 60~nm/400~nm/160~nm.
+Da die Haftfestigkeit des Metallschichtsystems auf dem thermischen Oxid
+kritisch ist, wurde eine 30~nm dünne $NiCr$-Schicht als zusätzlicher
+Haftvermittler eingesetzt \cite{ABV93}.
+Dieses Metallschichtsystem wurde in den FE-Berechnungen vernachlässigt, da
+es einerseits den Balken nicht ganzflächig überdeckt und die Schichtdicken
+im Gegensatz zum Siliziumbalken sehr gering sind
+(50~$\mu$m/1~$\mu$m/0,65~$\mu$m).\\
+%
+Im Rahmen einer Diplomarbeit \cite{Mes93} wurden verschiedene FE-Modelle
+des Balkenresonators erstellt und das Balkenausknicken, sowie das
+temperaturabhängige Resonanzfrequenzverhalten modelliert. Insbesondere
+wurde die Eignung des elektrothermisch angeregten Resonators als
+frequenzanaloger Strömungssensor untersucht.
+In {\bf Abbildung~\ref{abbausvgl}} sind die Balkenmittenauslenkungen
+in Abhängigkeit der Temperaturüberhöhung zwischen der mittleren
+Balkentemperatur und der Umgebung dargestellt. Zur Überprüfung der
+FE-Berechnungen wurden zusätzlich Messungen an vier verschiedenen
+Sensorexemplaren durchgeführt. Die Vermessung der Sensoren erfolgte
+optisch mit Hilfe eines kommerziellen Autofocusmeß\-systems \cite{UBM91}.
+Allen Kurven ist gemeinsam, daß die Balkenmittenauslenkung zwischen 20
+und 30~K deutlich zunimmt und bei einer Temperaturüberhöhung
+von 60~K den Betrag der Balkendicke überschreitet.
+Durch geometrische Imperfektionen des Resonators und nicht ideale
+Einspannbedingungen findet das Ausknicken gegenüber der idealisierten
+Balkengeometrie der FE-Modelle nicht abrupt statt. Infolge der inneren
+Spannungen des Schichtsystems weisen die vermessenen Siliziumsensoren
+Vordehnungen auf, die bereits zu 3--9~$\mu$m Balkenmittenauslenkungen bei
+$\Delta T = 0$ führen. Die Variation der gemessenen Kurvenverläufe
+dokumentiert weiterhin die prozeßtechnisch bedingte Bauelementestreuung,
+die im wesentlichen durch die nur
+ungenau kontrollierbare Balkendicke und zusätzlich durch die
+unterschiedlichen inneren Schichtspannungen hervorgerufen wird.\\
+%----------------------- Beginn: Figure-Environment ----------------------
+\begin{figure}[htb]
+\begin{center}
+% --- Dateiname des Bildes
+\input{abbvzz.tex}
+\setabbvzz
+\end{center}
+\caption{\label{abbausvgl}
+ Statische Auslenkung eines Silizium-Balkenresonators in Abhängigkeit der
+ Temperaturüberhöhung (Vergleich: FE-Berechnungen -- Messungen)}
+\end{figure}
+%----------------------- Ende: Figure-Environment ----------------------
+Die beiden FE-Modelle berücksichtigen die Temperaturabhängigkeit der
+Wärmeausdehnungskoeffizienten und der Elastizitätsmoduln, die
+Siliziumoxidschicht und die durch (111)-Siliziumebenen bedingte schräge
+Sensoreinspannung. Die mechanischen Verstärkungsstege des Sensors wurden
+vernachlässigt, da sie keinen Einfluß auf das Schwingungsverhalten haben.
+Beim dreidimensionalen FE-Modell wurden zusätzlich die anisotropen
+Materialeigenschaften berücksichtigt. Während der Einfluß auf die kritische
+Temperaturdifferenz beim Ausknicken des Balkens sehr gering ist,
+unterscheiden sich die maximalen Mittenauslenkungen des Balkens um etwa
+11~\%. Dieses ist im wesentlichen auf die unterschiedlichen
+Temperaturkoeffizienten der E-Moduln bei der isotropen bzw.\
+anisotropen Beschreibungsweise zurückzuführen, da der Einfluß der
+gewählten isotropen Elastizitätsersatzdaten (\ref{simat}) gemäß
+Tabelle~\ref{tabgeomvergleich} vernachlässigbar ist.
+
+
+
+\subsection{Resonanzfrequenzverhalten}
+
+Die statischen Berechnungen unter Einwirkung der homogenen Temperaturlasten
+wurden herangezogen, um die temperaturbedingte Steifigkeitsänderung des
+Balkenresonators zu ermitteln und anschließend die Resonanzfrequenz
+zu berechnen. Die Resonanzfrequenzcharakteristik wurde analog zum
+Vorgehen bei der Berechnung der Kraftempfindlichkeit des Balkenresonators
+ermittelt. In {\bf Abbildung~\ref{abbfreqvgl}} ist der Frequenzverlauf
+der Grundschwingungsmode des Balkenresonators in Abhängigkeit der
+Temperaturüberhöhung dargestellt. Zum Vergleich sind die experimentellen
+Resultate (Meßpunkte) zweier verschiedener Sensorexemplare mit
+eingezeichnet. Beide Sensoren wiesen eine Länge von 10~mm und eine
+nominelle Balkendicke von 50~$\mu$m auf. Sie wurden sowohl optisch mit
+einem Laservibrometer \cite{Mes93}, als auch in einem
+elektrischen Meßaufbau \cite{Wie93} vermessen. Die optisch vermessene
+Resonanzcharakteristik zeichnet sich gegenüber der elektrisch vermessenen
+Kurve durch geringere Streuungen aus. Die Meßfehler bei der optischen
+Bestimmung der Resonanzfrequenz liegen bei etwa $\pm$(10--50)~Hz, die bei
+der elektrischen Messung bei etwa $\pm$200~Hz (siehe Fehlerbalken).
+Die mittleren Heizleistungen $\overline{P_{Heiz}}$ betrugen etwa 220~mW,
+die Umgebungstemperatur wurde auf etwa $\pm 1~^{\circ}C$ konstant gehalten.
+Die großen Schwankungen bei der elektrischen Messung können durch
+Schwankungen der DMS-Speisespannung und der Schwingungsamplitude, sowie
+der Dauer der Anregungsimpulse erklärt werden.
+Aus diesem Grunde wurde fr die elektrischen Meßwerte eine analytische
+Anpassung nach den Gleichungen (\ref{fdeltat1}) und (\ref{fdeltat2})
+vorgenommen. Eine optimale Anpassung an den gemessenen Kurvenverlauf
+wurde mit den Parametern S = 12,1 MPa und $\Delta T_{kr} = 30,5~K$
+erreicht. Die Zuordnung der Temperaturüberhöhung zur umgesetzten
+elektrischen Leistung erfolgte durch \,
+$\Delta T \approx 0,084 \cdot P_{DMS} + \Delta T(\overline{P_{Heiz}})$
+fr die optischen {\em und} elektrischen Messungen gleichzeitig.
+Der Temperatureinfluß der mittleren Heizleistung $\overline{P_{Heiz}}$
+wurde hierbei vernachlässigt, da bei den optischen Messungen (in
+Kapitel~\ref{balkenresonatoren}) die Resonanzfrequenz ohne DMS-Abtastung
+erfolgte
+und damit $\Delta T(\overline{P_{Heiz}}) \leq 4~K$ abgeschätzt werden konnte.
+Mit Hilfe der optischen Amplitudenmessungen wurden die Schwankungen
+der Schwingungsamplitude und der Schwingungsgüten des Balkenresonators
+ermittelt. Für die Grundmode wurden die Werte
+$\Delta A = \pm5~\%$ und $\overline{Q} = 220\pm30$ gemessen.
+Das schwächer ausgeprägte Frequenzminimum beim optisch vermessenen Sensor
+läßt sich durch die unterschiedlichen Vorspannung beider Balkenresonatoren
+erklären \cite{Lin93}. Dieser Sachverhalt wird durch die unterschiedlichen
+Meßergebnisse der temperaturabhängigen Balkenmittenauslenkung in
+Abbildung~\ref{abbausvgl} untermauert.\\
+%----------------------- Beginn: Figure-Environment ----------------------
+\begin{figure}[htb]
+\begin{center}
+% --- Dateiname des Bildes
+\input{abbvee.tex}
+\setabbvee
+\end{center}
+\caption{\label{abbfreqvgl}
+ Frequenzcharakteristik eines Silizium-Balkenresonators in Abhängigkeit
+ der Temperaturüberhöhung
+ (Vergleich: Analytische Beschreibung -- FE-Berechnungen -- Messungen)}
+\end{figure}
+%----------------------- Ende: Figure-Environment ----------------------
+In {\bf Tabelle~\ref{tabdeltatkr}} sind die rechnerisch und experimentell
+ermittelten charakteristischen Kenngrößen der Silizium-Balkenresonatoren
+in Abhängigkeit der Temperaturüberhöhung abschließend zusammengefaát.
+Es handelt sich hierbei um die Resonanzfrequenz bei Umgebungstemperatur
+$f(\Delta T=0)$, die Resonanzfrequenz $f(\Delta T_{max})$ bei 60~K
+Temperaturdifferenz und der maximalen Balkenmittenauslenkung
+$u_{z}$, sowie der jeweils mit Hilfe verschiedener Methoden ermittelten
+kritischen Temperaturüberhöhungen $\Delta T_{kr}$. Im Rahmen der
+Meßfehler und der technologisch bedingten Toleranzen der Siliziumsensoren
+stimmen die gemessenen Werte mit den Simulationen gut überein.\\
+%----------------------- Beginn: table ---------------------------
+\begin{table}[htb]
+\begin{center}
+\begin{tabular}{|l||c|c|c|c|}
+\hline
+  & $f(\Delta T=0)$ & $f(\Delta T_{max})$ & $u_{z}$  & $\Delta T_{kr}$ \\
+  &      [Hz]       &     [Hz]            & [$\mu$m] &  [K]  \\
+\hline \hline
+  FEM (2D-Modell)          &  4223  &  7415  & 77,3    &  $27,5\pm1,0$  \\
+  FEM (3D-Modell)          &  4304  &  6851  & 69,4    &  $26,0\pm1,0$  \\
+\hline
+  optische Messung  &  ---   &  6970  & 56--70  &  $24,0\pm2,0$  \\
+  elektr. Messung   &  4164  &  7077  & ---     &  $30,5\pm2,0$  \\
+\hline
+\end{tabular}
+\end{center}
+\caption{\label{tabdeltatkr}
+ Temperaturabhängigkeit charakteristischer Kenngrößen von
+ Silizium-Balkenresonatoren (Vergleich: FE-Berechnungen -- Messungen)}
+\end{table}
+%----------------------- Ende: table ---------------------------
+Bei frequenzanalogen Sensoranwendungen, die den elektrothermischen Antrieb
+einsetzen, muß darauf geachtet werden, daß der Balkenresonator
+nicht instabil wird und ausknickt, da ansonsten die Zuordnung zwischen
+Meßgröße und Resonanzfrequenz nicht mehr eindeutig ist. Bei der Anwendung
+als Kraftsensor ist die Temperaturquerempfindlichkeit soweit wie möglich
+zu minimieren, das durch eine geeignete Wahl des Arbeitspunktes
+(DMS-Leistung) erfolgen
+kann. Bei den 10~mm langen und 50~$\mu$m dicken Silizium-Balkenresonatoren
+beträgt die mittlere kritische Temperaturdifferenz etwa ($27\pm3$)~K, die
+einer mittleren elektrischen Leistung von etwa ($320\pm40$)~mW entspricht.
+Für einen stabilen Betrieb als Kraftsensor ist es daher notwendig, den
+Arbeitspunkt weit unterhalb dieser Leistung, bei etwa 200~mW zu wählen.
+Eine untere Grenze für die DMS-Leistung wurde bei 150~mW erreicht,
+unterhalb derer keine stabile Anregung mehr gewährleistet war. Bei der
+Anwendung als frequenzanaloger Strömungssensor muß ein Arbeitspunkt
+weit oberhalb der kritischen Temperaturdifferenz gewählt werden, um den
+Abkühlungseffekt durch die thermische Fluid-Struktur-Wechselwirkung
+möglichst zu erhöhen.\\
+%
+In {\bf Tabelle~\ref{tablayoutredesign}} sind die charakteristischen
+Kenngrößen elektrothermisch angetriebener Silizium-Kraftsensoren in
+Abhängigkeit des Widerstandslayouts zusammengefaßt.
+Beim Startlayout wurde die DMS-Vollbrückenschaltung in Balkenmitte
+angeordnet, um eine maximale Anregungseffizienz zu erreichen, was zu
+einer stark inhomogenen Wärmeverteilung im Balken und einer
+hohen Temperaturquerempfindlichkeit führte. Beim Redesign wurden die
+beiden querliegenden Widerstände nach außen zu den Balkenenden hin verlegt.
+An diesen Stellen hat die axiale Spannung auf der Balkenoberfläche einen
+maximalen Wert, so daá diese Widerstände ebenfalls zur Signalgewinnung
+beitrugen. Bei mittleren Impulsheizleistungen von 600~mW
+($R_{Heiz}=300~\Omega$) konnten Schwingungsamplituden von etwa 1~$\mu$m
+erzielt werden.
+%----------------------- Beginn: table ---------------------------
+\begin{table}[htb]
+\begin{center}
+\begin{tabular}{|l||c|c|c|c|}
+\hline
+ Kenngr”áe  & $\Delta T_{max}$ & $T_{max}$   & $U_{DMS}$ & $\frac{\Delta f}{\Delta T}$ \\
+            & [K]              & [$^\circ$C] & [mV]      & [$\frac{Hz}{K}$] \\
+\hline \hline
+ Startlayout & 60 & 100 & 40 & 19 \\
+\hline
+ Redesign    & 30  & 68 & 200 & 5 \\
+\hline
+\end{tabular}
+\end{center}
+\caption{\label{tablayoutredesign}
+ Charakteristische Kenngrößen des elektrothermisch angetriebenen
+ Kraftsensors in Abhängigkeit des Widerstandslayouts}
+\end{table}
+%----------------------- Ende: table ---------------------------
+Mit der Layoutänderung konnte die DMS-Spannung ($R_{DMS}=250~\Omega$),
+bei gleichzeitiger Reduktion der Temperaturquerempfindlichkeit,
+verfünffacht werden.
+Die maximale Temperaturdifferenz $\Delta T_{max}$ zwischen Balkenmitte
+und Einspannstelle konnte um etwa 30~K gesenkt werden, was zu einer
+etwa vierfach verminderten Temperaturquerempfindlichkeit des Kraftsensors
+führte.

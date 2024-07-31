@@ -1,0 +1,310 @@
+\section{Fehlerbetrachtung}
+\label{fehlerbetrachtung}
+
+Bei der Korrelation der experimentellen und numerischen Ergebnisse
+müssen die verschiedenen Fehlereinflüsse betrachtet werden, die durch
+die idealen Modellannahmen, die technologiebedingten Baulementetoleranzen
+und Meßungenauigkeiten hervorgerufen werden. In diesem Kapitel sollen die
+Fehler, soweit sie nicht weiter quantifizierbar sind, der Größnordnung nach
+abgeschätzt werden. Falls die analytischen Zusammenhänge bekannt sind,
+können mit Hilfe der {\em Gauß}schen Fehlerfortpflanzung die Fehlereinflüsse
+quantitativ berechnet werden. Danach ergibt sich für eine Funktion
+$f(x_{1}, x_{2},...,x_{n})$ aufgrund der mit den Fehlern $\Delta x_{i}$
+behafteten unabhängigen Eingangsgrößen $x_{i}$ ein Fortpflanzungsfehler:
+\begin{eqnarray}
+\label{gaussfehler}
+ {\Delta f} & = & \sqrt{ \sum_{i=1}^{n}
+   {\left( \frac{\partial f}{\partial x_{i}} \Delta x_{i} \right)}^2 }
+\end{eqnarray}
+Beim dynamischen Verhalten mikromechanischer Strukturen interessieren in
+diesem Zusammenhang insbesondere die Fehlergrößn der Resonanzfrequenz
+$f_{0}$ der unbelasteten Mikroresonatoren und die Frequenzänderung
+$\Delta f$ aufgrund der Einwirkung einer äußeren Meß- oder Störgröße.\\
+%
+Infolge von Geometrietoleranzen und der nur ungenau bekannten
+Materialeigenschaften folgt für den Fehler der Resonanzfrequenz
+unter Zugrundelegung der Gleichungen (\ref{balkfreq}) und (\ref{memfreq}):\\
+\begin{eqnarray}
+\label{fehlerfreq}
+ \frac{{\Delta f}}{f} & = & \sqrt{
+       {\left( \frac{\Delta h}{h} \right)}^2  +
+       {\left( \frac{2\Delta l}{l} \right)}^2 +
+       {\left( \frac{\Delta \hat E}{2 \hat E} \right)}^2 +
+       {\left( \frac{\Delta \rho}{2 \rho} \right)}^2 }
+\end{eqnarray}
+Der Einfluß der prozeábedingten Vorspannung einer Bimorphstruktur auf die
+Resonanzfrequenz kann nach Gleichung~(\ref{fsigma}) abgeschätzt werden und
+liefert bei der Auflösung nach $\sigma$ den Zusammenhang:
+\begin{eqnarray}
+\label{sigmageom}
+ \sigma & = & \left[ \left( \frac{f_{\sigma}}{f_{0}} \right) - 1 \right]
+              \cdot \frac{\hat E}{c_{\sigma}}
+              \left( \frac{h}{l} \right)^2
+\end{eqnarray}
+Diese Gleichung gilt einerseits nur fr im Vergleich zur Substratdicke dünne
+Schichten, d.h.\ $h_{Si}\geq$ 5--10~$h_{Piezo}$, da sonst die ideal starre
+Einspannung als Randbedingung nicht mehr erfüllt ist. Andererseits darf der
+Radikand unter dem Wurzelausdruck von Gleichung~(\ref{fsigma}) nicht
+verschwinden. Unter diesen Voraussetzungen ist es möglich ausgehend von der
+Frequenzverschiebung $\Delta f = f_{\sigma} - f_{0}$ auf die Größnordnung
+der inneren Vorspannung zurckzuschließen, sofern andere Einflüsse
+ausgeschlossen werden
+können. Neben dem in Kapitel~4.4 behandelten Temperatureinfluß stellen
+andererseits nach Gleichung~(\ref{fehlerfreq}) Geometrietoleranzen und nur
+ungenau bekannte Materialeigenschaften mögliche Einflußgrößen dar, die zu
+einer {\em scheinbaren} Frequenzverschiebung führen können. Bei einem
+typischen Frequenzfehler von etwa $\Delta f/f_{0}~\approx$~$\pm$20~\% führt
+dieses bereits auf eine {\em scheinbare} innere Spannung von
+$\sigma~\approx~\pm15$~MPa. Innerhalb dieses Spannungsbereiches ist eine
+Abschätzung der Vorspannung, die durch Dünnschichten hervorgerufen werden,
+daher nicht mehr eindeutig möglich.
+
+
+\newpage
+{\bf Modellbedingte Fehlereinflüsse:}
+
+Der Einfluß der Modellfehler ensteht im wesentlichen durch die getroffene
+Idealisierung, sowie die verwendeten Elementtypen und eingesetzten
+numerischen Verfahren. Die systematischen Untersuchungen in Kapitel~4.1
+haben gezeigt, daß durch die Wahl von Schalen- und Volumenelementen das
+Konvergenzverhalten stark beeinflußt werden kann. Die Abweichungen der
+numerisch ermittelten Resonanzfrequenzen vom analytischen Vergleichswert
+betragen bei Membranstrukturen weniger als 0,1~\% für FE-Modelle mit etwa
+7000 Knoten. Im Vergleich dazu erlauben Schalenmodelle eine wesentlich
+genauere Beschreibung, bereits bei weniger als 1000 Knoten.
+Ferner ist der Einfluß anisotroper
+Materialeigenschaften bei Zungen- und Balkenstrukturen vernachlässigbar,
+sofern die Orientierung der Strukturen entlang der (110)-Siliziumebenen
+berücksichtigt wird. Bei einer (100)-Orientierung der Membranen können
+die Abweichungen allerdings bis zu 11~\% betragen. Den weitaus größten
+Einfluß besitzen allerdings Geometrietoleranzen und innere
+Schichtspannungen, die im folgenden daher ausführlicher diskutiert werden.
+
+
+{\bf Technologiebedingte Bauelementtoleranzen:}
+
+Da die erzielbare Genauigkeit der hergestellten Balken- und Membrandicken
+beim anisotropen Naßätzen ohne Ätzstoppschichten ungenügend ist,
+resultieren hieraus hohe Fertigungstoleranzen. Dieser Prozeßschritt ist
+z.Zt.\ nur über die Ätzzeit kontrollierbar, so daß im Gegensatz zum
+elektrochemischen
+Naßätzen {\em kein} objektives Ätzstoppkriterium gegeben ist. Dieses
+hat zur Folge, daá die Strukturdicken eine hohe Streuung von Bauelement
+zu Bauelement aufweisen {\em und} es nicht möglich ist, homogene Balken- und
+Membrandicken über die Bauelementlänge zu erreichen.
+Eine direkte Konsequenz hiervon ist die Balligkeit der von der
+Waferrückseite freigeätzten Siliziummembranen
+zur Mitte hin. Weitere Ursachen für die z.T.\ erheblichen Maßabweichungen
+sind zum einen die schlechte Lackhaftung auf der Waferoberfläche und
+Fehlpositionierungen der Vorder- zur Rückseitenmaske bezüglich der
+Siliziumkristallstruktur. Hinzu kommt, daá die Toleranz der Flatjustierung
+bezüglich der (110)-Ebenen bei Siliziumwafern etwa $\pm1,5^{\circ}$ beträgt.
+Die Dicken der 4''-Siliziumwafer schwanken außerdem etwa um
+$\pm(2$--5)~$\mu$m über den Gesamtwafer. Zusätzlich wirken sich die
+Waferdickenschwankungen, die von den Herstellern zu (525$\pm$25)~$\mu$m
+spezifiziert werden, auf die Bauelementtoleranzen aus. \\
+%
+Die Bestimmung der Bauelementelängen $l$ und -dicken $h$ erfolgte
+an Schliffbildern und Bruchkanten lichtmikroskopisch sowie unter
+dem Rasterelektronenmikroskop (REM).
+So betrug die Balligkeit von 9,2~mm langen Siliziummembranen mit einer
+Solldicke von 50~$\mu$m etwa 14~$\mu$m. Am Membranrand wurde eine
+Dicke von $(40\pm2)~\mu$m und in Membranmitte eine Dicke von
+($54\pm3)~\mu$m gemessen. Die Schichtdicke der $ZnO$-Schicht betrug
+bei einer Solldicke von 15~$\mu$m etwa 11--13~$\mu$m mit einer Schwankung
+von etwa $\pm0,7~\mu$m über die Membrangesamtlänge.
+In {\bf Tabelle~\ref{tabgeomfehler}} sind die Bauelementstreuungen und
+-toleranzen der im Rahmen dieser Arbeit untersuchten mikromechanischen
+Strukturen zusammengestellt.
+%----------------------- Beginn: table ---------------------------
+\begin{table}[htb]
+\caption{\label{tabgeomfehler}
+ Maßabweichungen bei mikromechanischen Strukturen}
+\begin{center}
+\begin{tabular}{|l||c|c|c|c|}
+\hline
+ {\bf Struktur} &  Größe   &  Sollmaß  & Streuung  & Toleranz \\
+\hline \hline
+ Balken   &  Dicke   &  50~$\mu$m  & 30--60~$\mu$m  &  $\pm$(5--10)~\%   \\
+          &  Länge   &  3--10~mm   & ---            &  $\leq \pm0,5$~\%  \\
+\hline
+ Membran  &  Dicke   &  20--200~$\mu$m   & ---  &  $\pm$(5--30)~\%    \\
+          &  Länge   &  10~mm   &  9,2--9,5~mm  &  $\leq \pm$0,5~\%   \\
+\hline
+\end{tabular}
+\end{center}
+\end{table}
+%----------------------- Ende: table ---------------------------
+Die Abweichungen bei den Bauelementlängen fallen kaum ins Gewicht und
+können zusätzlich über Vorhaltemaße
+im Maskenlayout kompensiert werden. Eine kritische Größe ist hingegen die
+Bauelementdicke, deren Streuungen und Toleranzen erheblich eingehen und
+im Extremfall bis zu 30~\% betragen können. Zieht man zusätzlich die
+Schwankungen bei den Materialeigenschaften hinzu, so ergibt sich für die
+Resonanzfrequenz ein maximaler relativer Fehler von etwa:
+\begin{eqnarray}
+\label{relfehlerfreq}
+ \frac{\Delta f}{f} & = & \sqrt{
+       {\left( \frac{\Delta h}{h} \right)}^2 +
+       {\left( \frac{2\Delta l}{l} \right)}^2 +
+       {\left( \frac{\Delta \hat E}{2 \hat E} \right)}^2 +
+       {\left( \frac{\Delta \rho}{2 \rho} \right)}^2 }
+% \nonumber \\
+   \, \approx \, \frac{\Delta h}{h} \, \approx \, 31~\%
+\end{eqnarray}
+Somit wird im wesentlichen der Fehler durch die Dickenschwankung
+$\Delta h/h$ hervorgerufen. Zur Reduktion dieses Fehlers ist es daher
+dringend erforderlich, Ätzstoppschichten bei der vertikalen Strukturierung
+mikromechanischer Strukturen einzusetzen. \\
+%
+Weitere Fehlereinflüsse resultieren aus den unberücksichtigten Klebschichten
+(Epoxidharz: UHU Plus Endfest 300 bzw.\ Cyancrylatkleber) mit denen die
+mikromechanischen Bauelemente auf Metallträger zur Vermessung fixiert werden.
+Typische Klebschichtdicken sind hierbei etwa $(30\pm10)~\mu$m. Zusätzlich
+haben die Klebermaterialeigenschaften, wie Härte und Viskosität, einen
+erheblichen Einfluß auf die Starrheit der Baulementefixierung.
+Inhomogenitäten der Klebschichten führen zusätzlich zu undefinierten
+Einspannbedingungen, so daß die Mikroresonatoren
+nicht ideal starr eingespannt sind und die Resonanzfrequenzen niedriger
+ausfallen. Desweiteren wirken sich die Klebschichten auf das
+Temperaturverhalten der Bauelemente aus, so daß bei Temperaturaushärtung
+($\Delta T \approx 120~^{\circ}$C) thermisch induzierte Spannungen auftreten,
+bei Membranbauelementen beim Abkühlen sogar zur Zerstörung führen können.
+Die Einflsse der Klebschichten können nicht direkt abgeschätzt werden, da
+neben den ungenauen Klebschichtdicken vor allem die Materialeigenschaften
+der Kleber z.T.\ unbekannt sind, so daß hier weitergehende, detaillierte
+Untersuchungen erforderlich sind \cite{Jauch}.
+
+
+{\bf Meßungenauigkeiten:}
+
+Die Meßfehler bei der Bestimmung der Resonanzfrequenzen hängen in erster
+Linie vom eingesetzten Meßverfahren ab. Die Frequenzen wurden in der Regel
+mit einem Laservibrometer optisch vermessen. Ausschlaggebend für die
+Genauigkeit der Frequenzmessungen im untersuchten Meßbereich ist die
+Auflösung des eingesetzten Spektrumanalysators ({\sl HP3588A}).
+Die Auflösungsbandbreite ({\em Resolution-Bandwidth}) betrug bei den
+schmalbandigsten Messungen etwa 5--10~Hz, bei einer
+überdeckten Frequenzspanne von etwa 500 bzw.\ 1000~Hz.
+Die Reproduzierbarkeit der Frequenzmessungen lag im Bereich von
+$\pm$2~\%.
+Die Meßgenauigkeit der statischen Auslenkungen beträgt etwa
+$\pm1$~$\mu$m beim UBM-Autofocusmeásystem.
+In {\bf Tabelle~\ref{tabmessfehler}} sind die
+Größenordnungen der Meßfehler ab\-schließend zusammengefaßt.
+%----------------------- Beginn: table ---------------------------
+\begin{table}[htb]
+\caption{\label{tabmessfehler}
+ Größenordnung der Meßfehler}
+\begin{center}
+\begin{tabular}{|l||c|c|}
+\hline
+  Meßfehler  &  Größe   &  Wert  \\
+\hline \hline
+Frequenz          &  $\Delta f/f$   &  $\pm$(2--5)~\%   \\
+dyn. Amplitude    &  $\Delta A/A$   &  $\pm5$~\%      \\
+stat. Auslenkung  &  $\Delta u$     &  $\pm1~\mu$m    \\
+Schwingungsgüte   &  $\Delta Q/Q$   &  $\pm$(10--30)~\% \\
+\hline
+\end{tabular}
+\end{center}
+\end{table}
+%----------------------- Ende: table ---------------------------
+
+
+
+\newpage
+\section{Zusammenstellung der Resultate}
+\label{resultateschwingungsverhalten}
+
+Die wichtigsten Ergebnisse der Modellierung und experimentellen Untersuchung
+des Schwingungsverhaltens mikromechanischer Strukturen werden im folgenden
+kurz zusammengestellt:
+
+
+{\bf Modellierung resonanter Mikrostrukturen:}
+
+\begin{itemize}
+\item
+Die vereinfachenden, analytischen Näherungsgleichungen können für die
+Membrangrobdimensionierung und als Startwerte für die numerischen
+FE-Berechnungen dienen. Für eine detailiertere Beschreibung des
+lastabhängigen dynamischen Verhaltens mikromechanischer Sensoren,
+insbesondere der spannungsversteifenden Effekte sind geometrischen
+Nichtlinearitäten zu berücksichtigen. Die {\sf ANSYS}-Programmoptionen
+'Large Deflections' und 'Stress Stiffening' erlauben die Simulation
+dieser überlagerten nichtlinearen Effekte.
+\item
+Bei der Verwendung von Volumenelementen ist eine etwa achtfache Erhöhung der
+Knotenanzahl erforderlich, um die gleiche Rechengenauigkeit wie bei
+Schalenelementen zu erreichen. Bei der Modellierung von mikromechanischen
+Membranen mit sehr großen Aspektverhältnissen ($l/h \geq 50$) ist das
+Approximationsverhalten von Schalenelementen um etwa zwei Größenordnungen
+besser und im wesentlichen durch die laterale Elementunterteilung
+entlang der Membranseitenkante bestimmt. Weiterhin wurde nachgewiesen, daß
+die numerischen Fehler bei der Berechnung der Resonanzfrequenzen und
+lastabhängigen Bauelementauslenkungen minimiert wurden und im Vergleich
+zu den Material- und Geometriefehlereinflüsse vernachlässigbar sind.
+\item
+Die Vernetzung bei dynamischen Problemen muß so erfolgen, daß die
+Steifigkeit und {\em gleichzeitig} die Massenverteilung der schwingenden
+Struktur richtig beschrieben wird. Hierzu sind geeignete finite Elemente,
+z.B.\ Schalenelemente oder Volumenelemente mit linearen bzw.\
+quadratischen Ansatzfunktionen zu wählen. Die Anzahl der dynamischen
+Freiheitsgrade sollte etwa ein zehntel der Knotenanzahl des FE-Modells
+betragen.
+Die Wahl der Hauptfreiheitsgrade (MDOF) sollte in Hauptverformungsrichtung
+erfolgen, wo große Massen liegen (d.h.\ $K/M$ klein), an lose befestigten
+Teilen mit geringer Strukursteifigkeit $K$ und nicht im Bereich der
+Einspannung.
+\item
+Bei der Modalanalyse wird die Approximationsgüte der Resonanzfrequenzen
+für höhere Schwingungsmoden schlechter, so daß bei der Abtastung höherer
+Eigenschwingungsformen eine entsprechend hohe laterale
+Elementunterteilung gewählt werden muß.
+\item
+Ein Vergleich von anisotropen und isotropen Berechnungen zeigt, daß in
+guter Näherung für (100)-orientierte, entlang der [100]-Kante (Flatrichtung)
+ausgerichtete Siliziumstrukturen mit den isotropen Materialersatzdaten aus
+Gleichung (\ref{simat}) sowohl statische als auch dynamische FE-Berechnungen
+durchgeführt werden können.
+\end{itemize}
+
+
+{\bf Realisierung mikromechanischer Resonanzsensoren:}
+
+Die für Balken- und Membranresonatoren entwickelten FE-Modelle wurden
+meátechnische verifiziert und beschreiben das statische {\em und}
+dynamische Verhalten im Rahmen der Modell- und Meßfehler. Sie wurden zur
+Dimensionierung frequenzanaloger Siliziumsensoren herangezogen. Die
+wichtigsten Ergebnissen der realisierten Kraft- und Drucksensoren lassen
+sich wie folgt zusammenfassen:
+\begin{itemize}
+\item
+Mit Hilfe von piezoelektrischen $ZnO$-Dünnschichten wurden resonante
+Silizium-Membrandrucksensoren mit Membranseitenlängen von 9,2~mm
+und Gesamtdicken von etwa 61~$\mu$m realisiert. Die Drucksensoren
+zeichnen sich durch eine gemessene Druckempfindlichkeit von 12,4~Hz/mbar
+in einem Druckbereich bis 500~mbar aus. Die maximale Membranmittenauslenkung
+beträgt bei diesem Maximaldruck etwa 75~$\mu$m. Die innere
+Spannung der $ZnO$-Dünnschichten konnte durch Vermessung der unbelasteten
+Resonanzfrequenz der Grundbiegeschwingungsmode abgeschätzt werden.
+\item
+Auf der Basis von 10~mm langen, etwa 50~$\mu$m dünnen Siliziumbiegebalken
+wurden elektrothermisch mit Hilfe von $NiCr$-Dehnmeßstreifen
+angetriebene Kraftsensoren realisiert, die sich durch eine
+Kraftempfindlichkeit von 168 Hz/N auszeichnen. Dieses entspricht einer
+relativen Kraftempfindlichkeit von etwa 0,0039~N$^{-1}$. Die
+Schwingungsgüte der Grundbiegeschwingungsmode beträgt etwa 430,
+die Nichtlinearität der Frequenz-Kraft-Kennlinie 1,9~\%.
+\item
+Durch ein Redesign des Widerstandlayouts konnte die
+Temperaturquerempfindlichkeit des Sensors um das Vierfache auf
+5~Hz/K erniedrigt werden. Die kritische
+Temperaturdifferenz $\Delta T_{kr}$, bei der der Siliziumbalken ausknickt,
+wurde meßtechnisch zu etwa (27$\pm3$)~K bestimmt.
+Für den praktischen Einsatz der elektrothermisch angeregten Resonatoren
+muß der Betrieb unter- {\em oder} oberhalb dieser kritischen
+Temperaturüberhöhung stattfinden, um eine eindeutige
+Zuordnung zwischen Meßgrößáe und Frequenz zu ermöglichen.
+\end{itemize}

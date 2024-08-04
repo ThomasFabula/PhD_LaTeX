@@ -1,0 +1,203 @@
+\section{Laterale Schichtstrukturierung}
+\label{schichtstrukturierung}
+
+Durch eine laterale Strukturierung der piezoelektrischen Dünnschicht
+und der Elektroden kann bei Bimorphstrukturen zum einen die Modenselektion
+erhöht und zum anderen eine Temperaturkompensation des Wandlerverhaltens
+erreicht werden. Während für die Erhöhung der Modenselektivität von
+Balkenresonatoren
+eine eindimensionale Betrachtungsweise ausreicht \cite{Pra93}, erfordern
+Membranresonatoren zweidimensionale Untersuchungen.
+Die prinzipielle Möglichkeit der Temperaturkompensation eines
+Membranschwingers wurde bereits an $AlN$-beschichteten
+Siliziummembranen\footnote{TCCR (= \underline{T}emperature
+\underline{C}ompensated \underline{C}omposite \underline{R}esonator)}
+von {\sl Lakin et al.} gezeigt \cite{Lak82}.
+Im folgenden soll mit Hilfe der FE-Methode am Beispiel
+der $ZnO$-beschichteten Silizium-Bimorphmembranen die Optimierung der
+Resonatorunimodalität und {\em gleichzeitig} die Reduktion der
+Temperaturquerempfindlichkeit unter Berücksichtigung von
+elektro-thermo-mechanischen Wechselwirkungen gezeigt werden.
+
+
+\subsection{Erhöhung der Modenselektivität}
+\label{modenselektivitaet}
+
+Die Anregung resonanter Siliziumstrukturen zu Biegeschwingungen erfolgt durch
+aufgesputterte $ZnO$-Dünnschichten, die infolge des piezoelektrischen Effektes
+Dehnungen und Kontraktionen auf der Bauelementoberfläche erzeugen. Um eine
+möglichst hohe Moden\-selektivität zu erreichen, ist es notwendig, den genauen
+Spannungsverlauf auf der Bauteil\-oberfläche zu kennen und durch eine
+geeignete Elektrodenformgebung sicherzustellen, daß im Bereich von
+Zugspannungen nur Dehnungen und im Bereich von Druckspannungen nur
+Kontraktionen
+erzeugt werden. Als Entwurfsparameter für die Elektrodenauslegung ist der
+Nulldurchgang des lateralen Spannungsverlaufes (d.h. der šbergang von Zug-
+in Druckspannungsbereiche) auf der Oberfläche des Resonators anzusehen.
+Ausgehend von einer Siliziummembran wurden verschiedene FE-Modellen
+untersucht, wobei der Einfluß unterschiedlicher Membrandicken,
+variabler Druckbeaufschlagung, der Einspannung infolge der ätzbegrenzenden
+(111)-Ebenen und nichtlinearer Effekte, infolge Spannungsversteifung der
+Membran, berücksichtigt wurden. Die FE-Berechnungen an Schalen- und
+Volumenmodellen ergaben für den Nulldurchgang des lateralen
+Spannungsverlaufes einen Wert von etwa
+17~\% der Membranseitenlänge. Im Vergleich dazu beträgt für beidseitig
+festeingespannte Biegebalken der Nulldurchgang etwas weniger als 25~\% der
+Balkenlänge. In diesen Bereichen sollten daher {\em keine} Elektroden
+angeordnet werden. \\
+%----------------------- Beginn: Figure-Environment ----------------------
+\begin{figure}[htb]
+%\vspace*{8cm}
+
+\begin{center}
+% --- Dateiname des Bildes
+\input{membran.tex}
+\setmembran
+\end{center}
+
+\caption{\label{abbmembranspan}
+ Simulierte Spannungsverteilung auf der Membranoberfläche bei
+ Druckbeaufschlagung}
+\end{figure}
+%----------------------- Ende: Figure-Environment ----------------------
+In {\bf Abbildung~\ref{abbmembranspan}} ist die symmetrische
+Spannungsverteilung auf einer von unten mit Druck beaufschlagten
+Membranoberfläche zu sehen. Die FE-Berechnungen wurden mit einem
+Schalenmodell (S43) durchgeführt und die Abbildung zeigt die graphisch
+überlagerten Spannungsverläufe $\sigma_{x}$ und $\sigma_{y}$.
+Im Randbereich bilden sich auf der Schalenoberfläche Druckspannungen
+(Isolinien A--B) und in Membranmitte Zugspannungen (Isolinie C) aus.
+Unter der Annahme, daá die statische Membranauslenkung in erster Näherung
+der Grundbiegeschwingungsmode der Membran entspricht, kann aus der
+flächenhaften Spannungsverteilung direkt ein modenselektives Elektrodenlayout
+abgeleitet werden. \\
+In {\bf Abbildung~\ref{abbmembraneleklayout}}
+ist das fr die resonanten Membrandrucksensoren verwirklichte
+Elektrodenlayout für eine selektive Anregung der Grundmode $M_{11}$
+dargestellt.
+%----------------------- Beginn: Figure-Environment ----------------------
+\begin{figure}[htb]
+%\vspace*{8cm}
+
+\begin{center}
+% --- Dateiname des Bildes
+\input{abbfas.tex}
+\setabbfas
+\end{center}
+
+\caption{\label{abbmembraneleklayout}
+ Elektrodenlayout fr die selektive Anregung der
+ Grund\-biege\-schwin\-gungs\-mode von Membranen}
+\end{figure}
+%----------------------- Ende: Figure-Environment ----------------------
+Um Störeffekte durch elektrische Zuleitungen und Streukapazitäten
+möglichst gering zu halten, wurde die Zentralelektrode mit einer
+vierfach symmetrischen Zuleitung versehen. Die vier Randelektroden
+überlappen die Siliziummembran bis ins Bulkmaterial und besitzen kleine
+Anschlußpads, an die die elektrischen Zuleitungen ($Au$-Draht) gebondet
+wurden.
+Im Gegensatz zu den piezoelektrisch betriebenen Balkenresonatoren weisen die
+Membranelektrodenlayouts ein wesentlich günstigeres Verhältnis von aktiver
+Elektrodenfläche zu Anschlußpadfläche auf.
+Die rckseitige Membranätzung ist durch eine gestrichelte Linie angedeutet.
+Um eine gegenphasigen Ansteuerung der Elektrodengebiete zu ermöglichen sind
+die Elektrodenflächen und die ins Substrat diffundierten Masseanschlüsse
+nicht miteinander verbunden. Auf diese Weise war es möglich, den Sensor
+sowohl im Zweipol- als auch im Vierpolbetrieb zu testen und verschiedene
+Anregungs- und Abtastkonfigurationen zu untersuchen.\\
+%
+Durch die Strukturierung der Elektroden und der gegenphasigen Ansteuerung
+zwischen Rand- und Zentralelektrode konnte die Modenselektivität
+der Grundmode deutlich erhöht und der Betrag der Resonanzamplitude bei
+konstanter Ansteuerspannung verdoppelt werden. Hierdurch kann der Sensor im
+Kleinsignalbereich betrieben und dynamische Nichtlinearitäten,
+hervorgerufen durch große Schwingungsamplituden, vermieden
+werden.\\
+%----------------------- Beginn: Figure-Environment ----------------------
+\begin{figure}[htb]
+
+\vspace*{14cm}
+%\begin{center}
+% --- Dateiname des Bildes
+%\input{bild.tex}
+%\setbild
+%\end{center}
+
+\caption{\label{abbmemselekmess}
+ Experimenteller Nachweis der modenselektiven Anregung der Grundmode eines
+ $ZnO$-beschichteten Membrandrucksensors}
+\end{figure}
+%----------------------- Ende: Figure-Environment ----------------------
+In {\bf Abbildung~\ref{abbmemselekmess}} ist der experimentelle Nachweis
+der modenselektiven Anregung der Grundmode einer $ZnO$-beschichteten
+Siliziummembran dargestellt. Vermessen wurde eine Siliziummembran mit einer
+Dicke von 50~$\mu$m und einer $ZnO$-Schichtdicke von etwa 14,4~$\mu$m.
+Bei einer symmetrischen Anregung an den vier Randelektroden
+(oberes Spektrum) sind zwei deutlich ausgeprägte Resonanzen im
+Amplitudenspektrum zu beobachten, die Grundmode $M_{11}$ bei 9,1~kHz
+und die erste Oberschwingung $M_{13}$ bei etwa 33,5~kHz. Bei der Anregung
+mit Hilfe der Zentralelektrode bleibt das Modenspektrum qualitativ gleich,
+jedoch nimmt die Amplitude der Grundmode um etwa 30~\% zu.
+Erst bei der gegenphasigen Anregung von Rand- und Zentralelektrode
+(unteres Spektrum) wird die Oberschwingung stark unterdrückt und die
+Schwingungsamplitude der Grundmode steigt auf etwa das zweieinhalbfache an.
+Durch die vorgestellte Elektrodenstrukturierung kann die Grundmode bei
+gegenphasiger Anregung gut selektiert und gleichzeitig eine
+Amplitudenerhöhung erreicht werden.
+
+
+\subsection{Reduktion der Temperaturquerempfindlichkeit}
+\label{temperaturquerempfindlichkeit}
+
+Neben der Modenselektion hat die laterale Schichtstrukturierung einen
+wesentlichen Einfluß auf das Temperaturverhalten von Resonatoren im
+Bimorphaufbau. Ausgehend vom Elektrodenlayout (Referenzlayout), das in
+Abbildung~\ref{abbmembraneleklayout} dargestellt ist, wurden die äußeren
+und inneren Elektrodenflächen verändert, indem die Geometrieparameter
+$l_{1}$ und $l_{2}$ variiert wurden. \\
+%
+%Temperaturkompensation des Wandlerverhaltens
+%Reduktion der Temperaturquerempfindlichkeit
+%
+In {\bf Abbildung~\ref{abbtempabhfreq}} ist der Einfluß der lateralen
+Strukturierung der $ZnO$-Dünnschicht auf die Temperaturquerempfindlichkeit
+einer Silizium-Bimorphmembran dargestellt. Die Dicke der Siliziummembran
+betrug bei den Berechnungen 50~$\mu$m, die der $ZnO$-Schicht 10~$\mu$m.
+Die untersuchten FE-Modellen besaßen etwa 2300--2600 Elemente mit etwa
+3300--3800 Knoten und es wurde mit 50 MDOFs gerechnet.
+Variiert wurde die Größe der äußeren Randelektrode während die
+Zentralelektrode konstant blieb. Deutlich ist zu sehen, daß infolge
+einer Verkleinerung (Durchmesser $l_{1}$) der Randelektrode die
+Temperaturabhängigkeit der Resonanzfrequenz der Grundmode $M_{11}$ abnimmt.
+%----------------------- Beginn: Figure-Environment ----------------------
+\begin{figure}[htb]
+%\vspace*{8cm}
+
+\begin{center}
+% --- Dateiname des Bildes
+\input{abbfelf.tex}
+\setabbfelf
+\end{center}
+\caption{\label{abbtempabhfreq}
+ Einfluß der lateralen Schichtstrukturierung auf die
+ Temperaturquerempfindlichkeit einer Silizium-Bimorphmembran }
+\end{figure}
+%----------------------- Ende: Figure-Environment ----------------------
+Der effektive elektromechanische Kopplungsfaktor $k_{eff}$ ändert sich nur
+unwesentlich, die Verminderung beträgt lediglich 2~\%, aber die relative
+Temperaturquerempfindlichkeit ($\frac{1}{f}\frac{\Delta f}{\Delta T}$)
+der Resonanzfrequenz der Grundmode $M_{11}$ verringert sich um fast das
+Fünffache. Das Referenzlayout REF mit den Parametern $l_{1}$ = 1,85~mm
+und $l_{2}$ = 0,345~mm weist eine relative Temperaturquerempfindlichkeit
+von etwa 775~ppm/K auf. Die Resonanzfrequenz $f_{0}$ beträgt 8443~Hz.
+Das optimierte Layout R3 mit den Parametern $l_{1}$ = 0,55~mm
+und $l_{2}$ = 1,645~mm weist eine Querempfindlichkeit von nur noch etwa
+176~ppm/K bei einer Frequenz von 7745~Hz auf.
+Bei den thermischen Berechnungen wurden anisotrope, temperaturabhängigen
+Materialdaten sowohl für Silizium, als auch für $ZnO$ benutzt \cite{LB82}.
+Die ermittelten Frequenzwerte $f_{0}$=f($\Delta T$=0) stimmen mit den
+Serienresonanzfrequenzen $f_{s}$ der piezoelektrischen Rechnungen sehr
+gut überein. Durch die laterale Strukturierung der $ZnO$-Schicht konnte
+eine Temperaturkompensation beim resonanten Membrandrucksensor
+erreicht werden.\\
+

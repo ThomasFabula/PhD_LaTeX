@@ -1,4 +1,4 @@
-# PhD_LaTeX
+# PhD_LaTeX files
 
 ## Doctor of Physics
 - Promotion in Physik 

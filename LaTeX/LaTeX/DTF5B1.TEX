@@ -1,0 +1,284 @@
+\subsection{Schichtdickenabhängigkeit}
+\label{schichtdickenabhaengigkeit}
+
+
+Um eine möglichst hohe elektromechanische Kopplung bei der piezoelektrischen
+Anregung von Bimorphwandlern zu erreichen, ist unter anderem die Kenntnis
+des günstigsten Schichtdickenverhältnisses von Bedeutung. Einerseits ist die
+Dicke des passiven Wandlersubstrates ein ausschlaggebender
+Parameter, beispielswiese für die Sensorempfindlichkeit, andererseits
+unterliegen die anvisierten Schichtdicken der aktiven piezoelektrischen
+Dünnschicht starken technologischen Einschränkungen (z.B.\ Sputterrate,
+Schichthomogenität).
+Mit verschiedenen Bimorphmodellen wurde daher der Einfluß des
+Schichtdickenverhältnisses der Siliziummembran $h_{Si}$ zur Piezoschicht
+$h_{Piezo}$ und die Auswirkung verschiedener piezoelektrischer Materialien
+untersucht. Die Dicke der Siliziummembran betrug bei allen Variationen
+20~$\mu$m, die Seitenlänge 9,2~mm. Für die Berechnungen wurde das FE-Modell
+M4 mit ganzflächiger Piezoschicht, das in Kapitel~\ref{bimorphstruktur}
+beschrieben ist, herangezogen.\\
+In {\bf Abbildung~\ref{abbkeffvontt}} ist der effektive elektromechanische
+Kopplungsfaktor in Abhängigkeit des Schichtdickenverhältnisses für
+piezoelektrische $AlN$- und $ZnO$-Schichten, sowie $PZT$-Keramik abgebildet.
+%----------------------- Beginn: Figure-Environment ----------------------
+\begin{figure}[htb]
+%\vspace*{8cm}
+
+\begin{center}
+% --- Dateiname des Bildes
+\input{abbfdra.tex}
+\setabbfdra
+\end{center}
+\caption{\label{abbkeffvontt}
+ Effektiver elektromechanischer Kopplungsfaktor $k_{eff}$ einer
+ Silizium-Bimorphmembran in Abhängigkeit des Schichtdickenverhältnisses
+ für verschiedene Piezoelektrika (Meßwerte für $ZnO$-Dünnschichten)}
+\end{figure}
+%----------------------- Ende: Figure-Environment ----------------------
+Die Kurvenverläufe weisen ein jeweils deutlich ausgeprägtes Maximum auf,
+das bei den verschiedenen piezoelektrischen Materialien auf unterschiedliche
+optimale Schichtdicken führt. Das Anwachsen des elektromechanischen
+Kopplungsfaktors bei zunehmender Schichtdicke ist auf eine effizientere
+Energieumwandlung zurückzuführen. Ab einer bestimmten Piezoschichtdicke
+nimmt die Energiekonversion allerdings nicht mehr weiter zu, da nur die
+oberflächennahen Piezoschichtbereiche zur elektromechanischen Anregung
+beitragen, so daß bei weiter zunehmender Schichtdicke $k_{eff}$ wieder
+abnimmt. Für $AlN$, $ZnO$ und $PZT$ werden maximalen Kopplungsfaktoren
+von etwa
+9~\%, 22~\% und 38~\% bei Schichtdicken von etwa 5--15~$\mu$m erreicht und
+liegen damit noch im realisierbaren Bereich der Dünnschichttechnik.
+Bei der Oberflächenmikromechanik, bei der typische Substratdicken im
+Bereich von 0,5--2~$\mu$m liegen, verbessert sich das
+Schichtdickenverhältnis entscheidend zu gunsten der Dünnschichttechnik.
+Zum Vergleich sind experimentell bestimmte $k_{eff}$-Werte
+von $ZnO$-beschichtenen Silizium-Membrandrucksensoren in
+Abbildung~\ref{abbkeffvontt} mit eingezeichnet.
+Die vermessenen $Si/ZnO$-Membranen besaßen Schichtdickenverhältnisse
+von etwa 3,4--4,5 und wiesen in Abhängigkeit der Prozeßparameter
+verschiedene $k_{eff}$--Werte auf. Wie bei den Zungenstrukturen konnte
+ein erheblicher Einfluß der inneren Schichtspannung festgestellt werden,
+die ihrerseits von der Sputterrate, der Targettemperatur und
+dem Argon-Sauerstoff-Gasgemisch im Rezipienten abhängig ist
+\cite{ABV93}.\\
+Die Zusammenfassung der numerischen Resultate ist in
+{\bf Tabelle~\ref{taboptdicke}} zu finden.
+%----------------------- Beginn: table ---------------------------
+\begin{table}[htb]
+\caption{\label{taboptdicke}
+ Optimierung der Schichtdickenverhältnisse bei Silizium-Bimorphmembranen}
+\begin{center}
+\begin{tabular} {|l||c|c|c|}
+\hline
+ Schicht & $AlN$ & $ZnO$ & $PZT$ \\
+\hline \hline
+ $h_{Piezo}$ [$\mu$m]   &  $5\pm1$   &  $10\pm1$   &  $15\pm1$   \\
+ $h_{Si}/h_{Piezo}$     &  $\sim$4,0 &  $\sim$2,0  &  $\sim$1,3  \\
+\hline
+ $E_{Si}/E_{Piezo}$     &  0,59    &  1,31     &  2,55  \\
+\hline
+ $f_{s}$ [Hz]           & 4520,5    &  3975,4    &  3286,2     \\
+ $f_{p}$ [Hz]           & 4539,3    &  4072,6    &  3551,9     \\
+\hline \hline
+ $k_{eff}$ [\%]         &  9,1      &  21,7      &  38,0       \\
+ $k^{mat}_{p}$ [\%]     &  18       &  40        &  61         \\
+ $k_{eff}/k^{mat}_{p}$  &  0,51     &  0,54      &  0,62       \\
+\hline
+\end{tabular}\\
+\end{center}
+\end{table}
+Bezieht man die effektiven
+Kopplungsfaktoren $k_{eff}$ auf die materialabhängigen Anteile
+$k^{mat}_{p}$ der jeweiligen Piezoelektrika
+(siehe Tabelle~\ref{tabpiezoelektrika}), so ergibt sich für $AlN$-
+und $ZnO$-Dünnschichten ein Wert von $k_{eff}/k^{mat}_{p} \approx 0,5$.
+Bei der $PZT$-Keramik weicht der Wert geringfügig aufgrund des stärker
+abweichenden Schichtdickenverhältnisses ab. Werden alle drei Kurvenverläufe
+auf $k^{mat}_{p}$ bezogen, so gibt es einen gemeinsamen Schnittpunkt
+der drei Kurven bei einem Schichtdickenverhältnis von etwa 4,2 mit dem
+gemeinsamen Wert von $k_{eff}/k^{mat}_{p} \approx 0,5$. Bei diesem
+Schichtdickenverhältnis verschwindet der Geometrieeinfluß der
+Siliziummembran, so daß dieses eine ideale {\em materialunabhängige}
+Wandlerkonfigura\-tion darstellt und sich als mikromechanische Teststruktur
+zur Charakterisierung piezoelektrischer Dünnschichteigenschaften eignet.\\
+%
+%(... evtl. Hinweis auf Formel von Prak für: $k=f(h_{si}/h_{Piezo}$,
+%           $E_{si}/E_{Piezo}$)...)
+
+
+\section{Modellierung der piezoelektrischen Anregung}
+\label{impedanz}
+
+Die experimentelle Bestimmung des effektiven elektromechanischen
+Kopplungsfaktors erfolgte in Kapitel~5.3 durch die Messung des
+frequenzabhängigen Impedanz- und Phasenverlaufes. Bei den piezoelektrischen
+FE-Berechnungen genügt es, mit Hilfe der Modal\-analyse das Eigenwertproblem
+unter den beiden elektrischen Randbedingungen ($\vec E=0$)
+und ($\vec D=0$) zu betrachten, dessen Lösung aus den beiden
+{\em diskreten} Werten der Serien- und Parallelresonanzfrequenz besteht.
+In Meáanwendungen werden die piezoelektrisch angeregten Kraft- und
+Drucksensoren in einer Oszillatorschaltung betrieben, bei der das
+Impedanz- und Phasenverhalten (Zweipolbetrieb) bzw.\ das elektrische
+Übertragungsverhalten (Vierpolbetrieb) der Sensorelemente bekannt sein muß.
+Um den frequenzabhängigen Impedanz- und Phasenverlauf zu simulieren, ist es
+daher notwendig,
+eine gekoppelte Feldberechnung gemäß Gleichung~(\ref{piezokopl})
+durchzuführen. Unter Vorgabe einer harmonischen % elektrischen
+Anregungsspannung $U(\omega)$ und einer mechanischen Dämpfung $[C_{D}]$
+kann das mechanische {\em und} elektrische Verhalten der
+Bimorphwandler modelliert und neben den frequenzabhängigen
+Schwingungsamplituden $A(\omega)$ der Impedanz- $Z(\omega)$ und
+Phasenverlauf $\theta(\omega)$ bestimmt werden.
+Im folgenden soll dieses für Siliziummembranen mit $PZT$-Keramik und
+$ZnO$-Dünnschicht erfolgen und mit Messungen verglichen werden.\\
+
+
+
+\subsection{Piezokeramik-Bimorphmembran}
+\label{pzthybrid}
+
+Zur Überprüfung der gekoppelten Feldberechnungen mit piezoelektrischer
+Anregung wurde erneut die Silizium-Bimorphmembran mit $PZT$-Keramik gewählt,
+um die unbekannten Fehlereinflüsse seitens des Dünnschichtsystems bei der
+Modellverifikation weitgehend zu minimieren.
+Berechnet wurde der frequenzabhängige Impedanz- und Phasenverlauf der
+Silizium-Bimorphmembran für den Frequenzbereich der ersten Biegeschwingung
+mit Hilfe einer harmonischen, linearen
+Frequenzganganalyse\footnote{{\sf ANSYS}-Option:
+{\em Harmonic Response Analysis}.} gemäß der gekoppelten
+Feldgleichung~(\ref{piezokopl}).
+Die eigentliche Berechnung des Impedanz- und Phasenverlaufes wird im
+{\em Postprocessing} (bei {\sf ANSYS}: {\sf POST26}-Modul) vollzogen.
+Hierzu wird die von der dielektrischen Verschiebung $\vec D$ an den
+Elektrodenflächen erzeugte elektrische Ladung mittels Integration
+nach $Q = \int_{\Omega} \vec D d\Omega$
+ermittelt\footnote{{\sf RFORCE}-Befehl zur Berechnung der
+Knotenreaktionskräfte mit der
+Option {\sf AMPS}.}. Anschließend wird hieraus der induzierte
+elektrische Stromfluß $I(\omega) = i \omega Q$ im Frequenzbereich errechnet
+und für eine vorgegebene Anregungsspannung $U = const$ die komplexwertige
+Impedanz $Z(\omega) = U / I(\omega)$ ermittelt \cite{Ecc92}.
+Da dielektrische Dämpfungsbeiträge nicht erfaßt werden
+können, muß ein mechanischer Dämpfungsbeitrag gemäß
+Gleichung~(\ref{cmatrix}) vorgegeben werden. Dieses erfolgte mit Hilfe
+eines mittleren frequenzunabhängigen Dämpfungskoeffizienten.\\
+%
+Bei der verwendeten
+Bimorphstruktur betrug die Membranseitenlänge 9,2~mm, die Dicke der
+Siliziummembran 20~$\mu$m und die der Piezokeramik 200~$\mu$m. Das
+FE-Modell\footnote{Elementanzahl: 1587, Knotenanzahl:
+2382, MDOF: 300.} P2 wurde hierzu herangezogen und das
+Materialverhalten der Piezokeramik ({\sl VIBRIT~420}) anisotrop
+unter Verwendung des {\sf ANSYS} {\em Multi-Field}-Elementes
+{\sl SOLID5} modelliert.
+Für die elektrische Anregungsspannung wurde 1~V angenommen und an den
+ganzflächig die Membran überdeckenden Elektroden eingeprägt.
+Für die mechanische Schwingungsgüte $Q$
+wurde ein mittlerer Wert von 1000 zugrundegelegt, aus dem ein
+relatives Dämpfungsverhältnis von $10^{-3}$ folgt. Mit diesen Vorgaben
+wurde der frequenzabhängige Impedanzverlauf berechnet, aus dem die
+Serienresonanzfrequenz $f_{s} = 11,638$~kHz und die Parallelresonanzfrequenz
+$f_{p} = 11,984$~kHz bestimmt wurden. Daraus folgt ein $k_{eff}$-Wert von
+etwa 23,9~\%. An einer Silizium-PZT-Bimorphmembran wurden die Werte
+$f_{s} = 11,495$~kHz und $f_{p} = 11,715$~kHz gemessen, aus denen sich
+$k_{eff}$ zu 19,3~\% berechnen läßt.
+Ein Vergleich der FE-Resultate mit den Messungen zeigt eine gute
+Übereinstimmung. Die Abweichungen der Resonanzfrequenzen betragen nur
+etwa 1--2~\%.
+
+
+
+\subsection{Bimorphmembran mit ZnO-Dünnschicht}
+\label{znobimorph}
+
+Zur Modellierung des frequenzabhängigen Verhaltens einer $ZnO$-beschichteten
+Siliziummembran, wurde das FE-Modell M3 aus Abbildung~5.1 herangezogen, das
+zusätzlich die Einspannung durch die (111)-Siliziumebenen berücksichtigt.
+Die Abmessungen wurden gemäß des in Kapitel~4 bereits optisch vermessenen
+Drucksensors gewählt. Die Siliziummembrandicke betrug 50~$\mu$m, die Dicke
+der $ZnO$--Schicht 11~$\mu$m. Das Materialverhalten wurde für Silizium und
+Zinkoxid anisotrop angenommen, wobei auf Literaturangaben \cite{LB82}
+zurückgegriffen wurde. Vorab wurden die Serien- und
+Parallelresonanzfrequenzen $f_{s}$ und $f_{p}$ mit dem
+{\sl Householder}-Verfahren (MDOF=50) zu 8,817~kHz und 8,965~kHz
+berechnet, um den interessierenden Frequenzbereich für die
+Frequenzganganalyse festzustellen.
+%----------------------- Beginn: Figure-Environment ----------------------
+\begin{figure}[htb]
+%\vspace*{14cm}
+
+\begin{center}
+% --- Dateiname des Bildes
+\input{abbnfv.tex}
+\setabbnfv
+\end{center}
+
+\caption{\label{abbimpfem}
+ Modellierung des mechanischen und elektrischen Schwingungsverhaltens einer
+ Silizium-Bimorphmembran mit einer $ZnO$-Dünnschicht}
+\end{figure}
+%----------------------- Ende: Figure-Environment ----------------------
+Bei der Berechnung des frequenzabhängigen Amplituden- und Impedanzverlaufes
+wurden für die elektrische Anregungsspannung und die mechanische
+Schwingungsgüte die gleichen Werte, wie bei der $PZT$-Membran verwendet.
+Die Ergebnisse der transienten Berechnung (100 Iterationen) des mechanischen
+und elektrischen Schwingungsverhaltens der Silizium-Bimorphmembran mit
+$ZnO$-Dünnschicht sind in {\bf Abbildung~\ref{abbimpfem}} dargestellt.
+Als mechanische Resonanzfrequenz $f_{res}$ ergibt sich ein Wert von
+8,965~kHz bei einer Schwingungsamplitude von etwa 0,02~$\mu$m.
+Die Serien- und Parallelresonanzfrequenzen sind bei diesen Berechnungen
+sehr stark abhängig von der Anzahl der Elemente und MDOFs. Außerdem haben
+die Dämpfung und die Anregungsspannung einen direkten Einfluß auf die Höhe
+der Resonanzamplitude. Aus diesem Grunde wurde mit einem relativ kleinem
+FE-Modell und den vereinfachten Annahmen gerechnet. Im folgenden soll
+daher auf eine quantitative Auswertung verzichtet und lediglich ein
+qualitativer Vergleich mit der experimentell charakterisierten
+Sili\-zium-Bi\-morph\-mem\-bran mit $ZnO$-Beschichtung durchgeführt
+werden. \\
+In {\bf Abbildung~\ref{abbimpzno}} sind die Ergebnisse der optischen und
+elektrischem Messungen abgebildet. Es handelt sich um den resonanten
+Membrandrucksensor aus Kapitel~4.
+%----------------------- Beginn: Figure-Environment ----------------------
+\begin{figure}[htb]
+%\vspace*{8cm}
+
+\begin{center}
+% --- Dateiname des Bildes
+\input{abbfsea.tex}
+\setabbfsea
+\end{center}
+\caption{\label{abbimpzno}
+ Experimentelle Charakterisierung einer Silizium-Bimorphmembran
+ mit $ZnO$-Beschichtung}
+\end{figure}
+%----------------------- Ende: Figure-Environment ----------------------
+Die frequenzabhängige Schwingungsamplitude
+wurde optisch mit Hilfe eines Laservibrometers schmalbandig in
+einem engen Frequenzbereich um die Grundmode $M_{11}$ vermessen.
+Die mechanische Resonanzfrequenz $f_{res}$ entspricht etwa 7,24~kHz und
+die mechanische Schwingungsgüte $Q$ beträgt etwa 100.
+In der unteren Hälfte der Abbildung~\ref{abbimpzno} ist der mit dem
+{\sl HP4194A}--Impedanzanalysator elektrisch vermessene Impedanz- und
+Phasenverlauf dargestellt. Die Messung wurde an der großflächigen
+Aluminium-Zentralelektrode (siehe Abbildung~5.7) durchgeführt, wobei das
+Siliziumsubstrat den Massekontakt bildet. Deutlich sind die Serien-
+($f_{s} \approx 7,255$~kHz) und Parallelresonanzfrequenz
+($f_{p} \approx 7,295$~kHz) zu sehen, aus denen sich ein effektiver
+Kopplungsfaktor von etwa 10,5~\% ergibt. Die Abweichung gegenüber dem
+theoretischen Wert von etwa 20~\% (siehe Abbildung~\ref{abbkeffvontt})
+ist einerseits auf die Prozeßbedingungen beim $ZnO$-Sputtern, andererseits
+möglicherweise auf Degradationsmechanismen in der $ZnO$-Dünnschicht
+zurückzuführen, die durch Temperaturlastwechseluntersuchungen verursacht
+wurden \cite{Flik}.
+Ein Vergleich der Meßkurven (Abbildung~\ref{abbimpzno}) mit den
+FE-Resultaten (Abbildung~\ref{abbimpfem}) zeigt eine qualitativ gute
+Übereinstimmung. Die Abweichungen bei den Resonanzfrequenzen lassen sich
+einerseits auf die getroffenen Modellvereinfachungen (z.B.\ geringe
+Elementanzahl, MDOF) und der dadurch hervorgerufenen Modellversteifung,
+andererseits durch die inneren Spannungen in der $ZnO$-Schicht erklären.
+Im Gegensatz zu Piezokeramik-Bimorphen entspricht die gemessene mechanische
+Resonanzfrequenz der Parallelresonanzfrequenz: $f_{res} \approx f_{p}$.
+Ferner sind die geringen Phasenhübe von etwa 1--2$^{\circ}$ für die
+$ZnO$-beschichteten Bimorphwandler charakteristisch. Im Vergleich dazu
+zeichnen sich $PZT$-Keramikwandler durch Phasenhübe bis zu 90$^{\circ}$
+aus.
+

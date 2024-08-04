@@ -1,0 +1,119 @@
+\section{Entwurfsmaßnahmen für Bimorphe}
+
+Die in diesem Kapitel durchgeführten Untersuchungen ermöglichen es,
+Entwurfsmaßnahmen für piezoelektrisch betriebene Bimorphwandler abzuleiten.
+Zur Erzielung anwendungsspezifischer Eigenschaften lassen sich bei
+mikromechanischen Sensoren und Aktoren mit piezoelektrischem Antrieb
+folgende Maßnahmen durchführen.
+%----------------------- Beginn: table ---------------------------
+\begin{table}[htb]
+\caption{\label{tabsenakt}
+ Einflußgrößen zur Erzielung anwendungsspezifischer Eigenschaften
+ bei piezoelektrisch betriebenen Bimorph-Bauelementen}
+\begin{center}
+\begin{tabular}{|l||c|c||c|}
+\hline
+ Eigenschaft      &  Sensor  &  Aktor  &  Einflußgröße  \\
+\hline \hline
+ Resonanzfrequenz & mittel & niedrig & Strukturdicke $h$\\
+\hline
+ Schwingungsgüte  &  hoch   & niedrig & Einspannung \\
+\hline
+ Empfindlichkeit  & hoch & --- & ($l/h$)-Verhältnis \\
+\hline
+ Nichtlinearität  & gering   & hoch  & ($h/l$)-Verhältnis \\
+\hline
+ Temperaturkomp.  & \multicolumn{2}{c||}{erwünscht} & Schichtstrukturierung \\
+\hline
+ elektromechan.   &  mittel  & hoch  & Schichtstrukturierung \\
+ Kopplungsfaktor  &          &       & $h_{Si}/h_{Piezo}$--Verhältnis \\
+\hline
+ Modenselektivität & hoch  & --- & Elektrodenstrukt. \\
+\hline
+ Multimodebetrieb  & \multicolumn{2}{c||}{anwendungsabhängig}
+                   &  Elektrodenstrukt. \\
+\hline
+ Auslenkung        & niedrig & hoch & $h_{Si}/h_{Piezo}$--Verhältnis \\
+\hline
+ Stellkräfte       & ---  & hoch  &   ($l/h$)-Verhältnis \\
+\hline
+\end{tabular}
+\end{center}
+\end{table}
+%----------------------- Ende: table ---------------------------
+Insbesondere handelt es sich hierbei um resonante Sensoren, d.h.\ mit
+frequenzanalogem Meßprinzip, und {\em nicht-resonante}
+Aktoren\footnote{In Kapitel~7 wird kurz auf den
+Einsatz von {\em resonant} betriebenen Mikroaktoren eingegangen.}.
+
+
+
+\section{Fehlerdiskussion}
+
+Aufgrund der starken Prozeßabhängigkeit der Dünnschichteigenschaften,
+schwanken die in der Literatur angegebenen Materialdaten erheblich.
+Die Materialangaben weichen beispielsweise für gesputterte
+$ZnO$-Dünnschichten im Vergleich zu den Bulk-Daten bei den
+Elastizitätsmoduln um etwa $\pm$20~\% ab, die Schichtspannungen
+bewegen sich im Bereich bis einige hundert MPa
+(Zug- und Druckspannung), die Abweichung bei den
+Dielektrizitätskonstanten (Permittivitäten) betragen $\pm$10~\%,
+die piezoelektrischen Koeffizienten $d_{31}$ variieren um etwa
+$\pm$(15--20)~\% \cite{Blo90, Hei66, Pol86, Tij91}.\\
+Der Fehler des materialabhängigen Anteils des elektromechanischen
+Kopplungsfaktors $k_{31}$ berechnet sich infolge von Schwankungen der
+Materialeigenschaften nach Gleichung (\ref{kmat}) zu:
+\begin{eqnarray}
+\label{fehlerkopplfac}
+ \frac{{\Delta k_{31}}}{k_{31}} & = & \sqrt{
+       {\left( \frac{\Delta d_{31}}{d_{31}} \right)}^2  +
+       {\left( \frac{\Delta S_{11}^{E}}{2 S_{11}^{E}} \right)}^2 +
+{\left( \frac{\Delta \varepsilon_{33}^{\sigma}}{2 \varepsilon_{33}^{\sigma}}
+ \right)}^2 }
+\end{eqnarray}
+Unter Zugrundelegung der oben angegebenen Abweichungen und den im
+Rahmen dieser Arbeit bestimmten Materialdaten ergibt sich für die
+möglichen Abweichungen des transversalen elektromechanischen
+Kopplungsfaktors $\frac{{\Delta k_{31}}}{k_{31}} \approx \pm23$~\%. \\
+
+
+\section{Zusammenstellung der Resultate}
+
+Die in diesem Kapitel vorgestellten piezoelektrischen FE-Modelle und
+durchgeführten gekoppelten Feldberechnungen erlauben die Simulation des
+Verhaltens piezoelektrisch angetriebener Bimorphstrukturen. Mit Hilfe
+meßtechnisch charakterisierter Piezokeramik- und $ZnO$-Dünnschichtwandlern
+konnten die numerischen Ergebnisse im Rahmen der Fehlereinflüsse verifiziert
+werden. Somit ließen sich bereits in der Entwurfsphase wichtige Vorgaben,
+wie beispielsweise die günstigste Elektrodenanordnung und das optimale
+Schichtdickenverhältnis, für die nachfolgenden technologischen
+Prozeßschritte ableiten. Weiterhin konnte mit Hilfe der numerischen
+Modellierung ein Beitrag zur Optimierung der technologischen
+Abscheideprozesse geleistet werden.
+Die Ergebnisse der experimentellen und numerischen Untersuchungen an
+piezoelektrisch mit $ZnO$-Dünnschichten betriebenen Balken- und
+Membranstrukturen lassen sich wie folgt zusammenfassen:
+%
+\begin{itemize}
+\item
+Für gesputterte $ZnO$-Dünschichten wurden durch Vergleich der
+experimentellen Messungen mit den FE-Resultaten effektive
+Materialeigenschaften, wie elektromechanische Kopplungsfaktoren und
+prozeáspezifische piezoelektrische Kopplungskoeffizienten, bestimmt.
+\item
+An mikromechanischen Bimorphmembranstrukturen wurden für unterschiedliche
+Piezoelektrika ($AlN, ZnO, PZT$) optimale Schichtdickenverhältnisse
+zur Erzielung maximaler effektiver elektromechanischer Kopplungsfaktoren
+numerisch errechnet.
+\item
+Für Membrandrucksensoren wurde ein modenselektives Elektrodenlayout
+entwickelt, bei dem die Unimodalität des passiven Resonators durch
+Elimination der $M_{13}$-Oberschwingung erhöht wurde. Zusätzlich konnte
+experimentell eine Amplitudenverdopplung der Grundbiegeschwingungsmode
+$M_{11}$ bei gleichen Ansteuerbedingungen nachgewiesen werden.
+\item
+Durch laterale Schichtstrukturierung konnte rechnerisch eine
+Reduktion der Temperaturquerempfindlichkeit der Grundresonanzfrequenz
+um das Vierfache nachgewiesen werden.
+\end{itemize}
+%

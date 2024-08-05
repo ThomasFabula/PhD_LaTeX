@@ -1,0 +1,423 @@
+\chapter{FEM-unterstützte Sensorentwicklung}
+\label{alternativesensorstrukturen}
+
+In diesem Kapitel wird die Entwicklung zweier alternativer
+Sensorgeometrien für die Kraft- und Druckmessung vorgestellt.
+Auf der Basis eines Dreifachbalkenschwingers wurde ein
+Kraftsensor realisiert, dessen grundlegendes dynamisches Verhalten
+mit Hilfe der FE-Methode simuliert werden konnte. Durch eine geeignete
+Strukturierung der Resonatorbefestigung wurde eine Modenentkopplung
+erreicht, die sich durch eine verbesserte Modenselektivität des passiven
+Resonators ausdrückt. Zusätzlich konnte bei technologisch realisierten
+Dreifachbalkenresonatoren eine dynamische Momentenkompensation experimentell
+nachgewiesen werden, die zu einer Erhöhung der Schwingungsgüte der
+antisymmetrischen Schwingungsmode führte. \\
+%
+Weiterhin wird der Entwurf und die Entwicklung eines neuartigen
+Drucksensorprinzips unter Verwendung einer
+\glqq Balken-auf-Membran\grqq-Struktur (engl.:
+{\em Beam-on-Diaphragm}\footnote{Im weiteren wird daher die
+Kurzbezeichnung {\em BOD-Struktur} verwendet.} \cite{Tho90}) vorgestellt,
+das die Vorteile von Balkenresonatoren als sensitives Element in
+{\em monolithischer} Kombination mit einer Siliziummembran als
+druckeinleitende Struktur ermöglicht. Da die komplizierte Strukturgeometrie
+der BOD-Sensoren eine analytische Behandlung nicht zuläßt, wurde die
+FE-Methode eingesetzt, um die Auswirkungen von Dimensionsänderungen auf das
+dynamische Sensorverhalten und die Druckempfindlichkeit zu untersuchen.
+
+
+
+\section{Dreifachbalken-Kraftsensor}
+\label{dreifachbalken}
+
+Im Rahmen des BMFT-Verbundprojektes wurde am Institut für Mikro-
+und Informationstechnik ein resonanter Kraftsensor realisiert, der
+als Resonator eine Dreifachbalkenstruktur aus Silizium einsetzt und
+mit Hilfe von piezoelektrischen $ZnO$-Dünnschichten angetrieben wird
+\cite{ABV93}. Um den Einfluß der Einspanngeometrie auf das Modenverhalten
+des Resonators zu untersuchen, wurde die FE-Methode eingesetzt.\\
+In {\bf Abbildung~\ref{abbtriplebeam}} ist die Geometrie des
+Dreifachbalken-Kraftsensors schematisch dargestellt. Parallel zum Resonator,
+der aus drei Balken besteht, weist der Sensor zusätzlich zwei
+Verstärkungsstege in Waferdicke (etwa 525~$\mu$m) auf, die als
+Überlastschutz dienen. Durch die Dimensionierung der Verstärkungsstegbreiten
+läßt sich der Kraftmeßbereich der Sensoren einstellen.
+%----------------------- Beginn: Figure-Environment ----------------------
+\begin{figure}[htb]
+%\vspace*{8cm}
+
+\begin{center}
+% --- Dateiname des Bildes
+\input{abbse.tex}
+\setabbse
+\end{center}
+\caption{\label{abbtriplebeam}
+ Geometrie des Dreifachbalken-Kraftsensors}
+\end{figure}
+
+%\clearpage
+%----------------------- Ende: Figure-Environment ----------------------
+Das erarbeitete Sensordesign ist für einen Kraftmeßbereich
+bis 50~N ausgelegt und weist Verstärkungsstege mit Breiten von jeweils 1~mm
+auf. Die Gesamtabmessungen des Kraftsensors betragen 15~mm x 3,75~mm,
+die Länge der Balken 3~mm und die Dicke etwa 20--25~$\mu$m. Die Breite
+der beiden äußeren Balken beträgt 200~$\mu$m, die des mittleren Balkens
+400~$\mu$m, wobei die Abstände zwischen den Balken 50~$\mu$m betragen.
+Mit Hilfe eines Nd:YAG--Lasers wurden beidseitig kreisrunde Löcher in das
+Siliziumbulkmaterial geschnitten, die über Stahlstifte eine uniaxiale
+Krafteinleitung in den Kraftsensor ermöglichen und dadurch das Auftreten
+von Scherkräften stark reduzieren. Die mit dem Laser geschnittenen Löcher
+besitzen einen Durchmesser von 1~mm und gehen durch den Gesamtsiliziumwafer
+hindurch. Durch ihre ideal kreisrunde Berandung verhindern sie
+Kerbwirkungen \cite{Dissaxel}.
+
+
+
+\subsection{Dynamische Momentenkompensation}
+\label{dynamischemomentenkompensation}
+
+Bei resonanten Sensoren ist die erzielbare Meßgrößenauflösung nach
+Gleichung~(\ref{Qaufl}) einerseits durch die minimale Auflösung des
+Detektionsmechanismus, andererseits durch die mechanische
+Schwingungsgüte des verwendeten Resonators begrenzt. Um eine
+möglichst hohe Schwingungsgüte zu erreichen, kann zum einen die
+Resonatorgehäusung evakuiert werden, um die äußere Dämpfung durch Luft zu
+eliminieren, zum anderen ein spezielles Resonatordesign eingesetzt werden
+\cite{Ste91b}. Einige in der Literatur vorgestellte Sensorkonzepte
+(z.B.\ \cite{Ike90b})
+machen von beiden Maßnahmen Gebrauch. Um die Energieverluste im
+Einspannbereich der Resonatoren zu minimieren, werden bei resonanten
+Quarz-Kraftsensoren sogenannte Doppelstimmgabel-Resonatoren verwendet, die
+in einer antisymmetrischen Schwingungsmode betrieben werden. Dieses wird
+erreicht, indem die beiden Stimmgabelstege gegenphasig zueinander in der
+Balkenebene schwingen \cite{Eer88}. Hierdurch stellt sich eine dynamische
+Momentenkompensation der beiden Stimmgabelstege ein und Schwingungsgten
+von einigen Tausend werden so in Luftatmosphäre erzielt.
+Beim Einsatz von Einfachbalkenschwingern als Kraftsensoren müssen
+zusätzliche mechanische Konstruktionen
+vorgesehen werden, die geeignet zu strukturieren sind, um eine dynamische
+Momentenkompensation zu gewährleisten \cite{Alb88}.\\
+%
+Im Gegensatz zu Quarz ist Silizium nicht piezoelektrisch, so daß bei der
+Realisierung von resonanten, piezoelektrisch betriebenen Siliziumsensoren
+piezoelektrische Dünnschichten vorgesehen werden müssen. Diese können
+aufgrund des Bimorphaufbaus nur Biegeschwingungen aus der Balkenebene
+heraus anregen. Aus diesem Grund ist eine Momentenkompensation in der
+Schwingungsebene wie bei Quarz-Doppelstimmgabeln nicht möglich.
+Diese kann beispielsweise erreicht werden, wenn der verwendete Resonator
+drei \cite{Kir83,Sat89} oder mehrere Balken \cite{Til93} besitzt, die
+gegenphasig aus der Balkenebene herausschwingen. Bei der
+Dreifachbalkenstruktur kann eine Momentenkompensation an den Einspannstellen
+des Resonators erfolgen, falls der Resonator in einer antisymmetrischen
+Schwingungsmode betrieben wird und der mittlere Balken bei gleicher Dicke
+doppelt so breit wie die beiden äußeren ist. Diese Schwingungsmode
+wird gezielt piezoelektrisch angeregt und infolge der Momentenkompensation
+vermindern sich die Schwingungsamplituden in den Einspannbereichen, so daß
+die Energieauskopplung minimiert wird und eine Güteerhöhung gegenüber
+den symmetrischen Biegeschwingungsmoden auftritt.
+Sie ermöglichen einerseits eine {\em mechanische} Entkopplung von der
+Bulkeinspannung. Andererseits wird durch die flexiblen Entkopplungsbereiche
+eine Verbindung der drei Balken untereinander realisiert, so daß die
+Schwingungsenergie im Resonator verbleibt und nur ein minimaler Bruchteil
+in der Einspannung verloren geht. Um dieses zu gewährleisten,
+muá die beidseitige starre Resonatorhalterung, die durch das Bulkmaterial
+gebildet wird, mittels flexibler Entkopplungsbereiche\footnote{In
+Abbildung~\ref{abbtriplebeam} gestrichelt dargestellte Flächen.} ersetzt
+werden. Die beidseitigen Entkopplungsbereiche entstehen bei der rückseitigen
+Membranätzung und weisen die gleiche Dicke wie die drei Resonatorbalken auf.
+
+
+
+
+\subsection{Herstellungsverfahren}
+\label{Herstellungsverfahren}
+
+Der Herstellungsprozeß des Dreifachbalken-Kraftsensors orientiert sich an
+einem beidseitigen Prozeß, der in \cite{Mul91} beschrieben ist.
+Ausgehend von einem doppelseitig polierten \{100\}-Siliziumwafer wurden die
+substratseitigen Elektroden $p^{+}$--dotiert und strukturiert.
+Anschließend erfolgte die Abscheidung einer etwa 2,5~$\mu$m dicken
+$ZnO$-Schicht mit Hilfe eines RF-Magnetron-Sputterprozesses. % \cite{Wag94}.
+Die obere Elektrode wurde durch eine Aluminiumschicht realisiert und
+anschließend mit Hilfe eines $SiO_{2}/Si_{3}N_{4}$--Schichtsystems
+passiviert. Um die erwünschten Balkendicken zu realisieren wurden sie von
+der Rückseite in einem $KOH$--Naßätzprozeß ohne Verwendung einer
+Žtzstoppschicht abgedünnt. Die Separation der drei Balken erfolgte in einem
+Plasma-Trockenätzschritt von der Wafervorderseite, so daß die drei Balken
+im Gegensatz zu dem in Abbildung~\ref{abbgmssensor} gezeigten Kraftsensor
+rechteckige Querschnitte aufweisen. Die technologische
+Charakterisierung der gesputterten $ZnO$-Schichten und eine eingehende
+Beschreibung der Prozeßtechnologien ist in \cite{Wag94} zu finden.
+
+
+
+\subsection{Schwingungsverhalten und Kraftempfindlichkeit}
+\label{schwingungsverhaltenundkraftempfindlichkeit}
+
+Das Biegeschwingungsverhalten des Dreifachbalkenresonators wurde mit einem
+FE-Schalenmodell und isotropen Materialdaten (Gleichung~\ref{simat})
+modelliert. Der
+Einfluß des zusätzlichen $ZnO/Al$--Schichtsystems wurde vernachlässigt, da
+in erster Linie nur das Modenverhalten des passiven Siliziumresonators
+bei Žnderung des Einspannbereiches von Interesse war. Die Elementabmessungen
+betrugen 50~$\mu$m, um die Biegeschwingungen mit einer ausreichenden
+Genauigkeit abbilden zu können.
+%----------------------- Beginn: Figure-Environment ----------------------
+\begin{figure}[htb]
+%\vspace*{8cm}
+\begin{center}
+% --- Dateiname des Bildes
+\input{abbszw.tex}
+\setabbszw
+\end{center}
+\caption{\label{abbtbschwing}
+  FE-Schalenmodell und Biegeschwingungsmoden M1, M2 und M3
+  des Dreifachbalkenresonators}
+\end{figure}
+
+%\clearpage
+
+%----------------------- Ende: Figure-Environment ----------------------
+In {\bf Abbildung~\ref{abbtbschwing}} sind
+das FE-Schalenmodell des Dreifachbalkenresonators und die ersten drei
+Biegeschwingungsmoden M1--M3 dargestellt. Im oberen linken Fenster (1) ist
+in einer Draufsicht auf den Resonator der Einspannbereich mit einer Länge der
+Entkopplungszone von 200~$\mu$m zu sehen. Die mechanische Einspannung
+des Resonators erfolgte an beiden Enden durch Sperrung der Verschiebungs-
+und Rotationsfreiheitsgrade der Schalenelemente ({\em SHELL43}).
+Bei der Grundbiegeschwingungsmode M1 (Fenster 2) schwingen alle drei Balken
+symmetrisch in Phase, während bei der Mode M2 (Fenster 3) der mittlere Balken
+ruht und die beiden äußeren gegenphasig zueinander schwingen. Die dritte
+Mode M3 (Fenster 4) stellt die gewünschte Sensormode dar, die aufgrund der
+antisymmetrischen Schwingung die dynamische Momentenkompensation auszunutzen
+erlaubt. \\
+%
+Zusätzlich zeichnen sich Dreifachbalkenresonatoren gegenüber
+Einfachbalkenresonatoren bei gleicher Gesamtbreite durch eine höhere
+Kraftempfindlichkeit aus, da eine Spannungskonzentration im
+Resonatorbereich auftritt.
+%
+% Diese läßt sich analytisch mit durch:
+% \begin{eqnarray}
+% \label{spanntb}
+%  \sigma & = & \frac{(l_{1}+l_{2})A_{2}}{l_{1}A_{2}+l_{2}A_{1}} E \varepsilon
+% \end{eqnarray}
+% beschreiben , wobei $l_{1}$ die Länge des Balken und $l_{2}$ die
+% Gesamtlänge des Resoantors ist. Die Gesamtquerschnittsfläche des Sensors
+% ist $A_{2}$ und $A_{1}$ ist die effektive Querschnittsfläche der Dreifachbalken.
+% Ein weiterer Vorteil sind die höheren Schwingungsgüten, die bei groáem
+% Längen-/Breiten-Verhältnis der Balken erreicht werden kann.
+%
+%----------------------- Beginn: table ---------------------------
+\begin{table}[htb]
+\caption{\label{tabtriple}
+ Vergleich der berechneten statischen und dynamischen Eigenschaften von
+ Einfachbalken- und Dreifachbalken-Kraftsensoren}
+\begin{center}
+\begin{tabular}{|l||c||c|c|c|}
+\hline
+ Resonatortyp & Einfachbalken & \multicolumn{3}{c|}{Dreifachbalken} \\
+\hline
+ Schwingungsmode & Grundmode & M1 & M2 & M3 \\
+\hline \hline
+ Frequenz [kHz] & 19,48 & 15,51 & 16,62 & 17,61 \\
+\hline
+ Empfindlichkeit [$\frac{kHz}{N}$] & 14,95 & 15,43 & 15,55 & 15,85 \\
+\hline
+ Verlängerung $u_{x}$ [$\mu$m] & 0,98 & \multicolumn{3}{c|}{1,27} \\
+\hline
+ Spannung $\sigma_{x}$ [MPa] & 56  & \multicolumn{3}{c|}{63} \\
+\hline
+\end{tabular}
+\end{center}
+\end{table}
+%----------------------- Ende: table ---------------------------
+In {\bf Tabelle~\ref{tabtriple}} sind die Resultate der FE-Berechnungen für
+Einfach- und Dreifachbalkenresonatoren mit einer Entkopplungslänge
+von 200~$\mu$m zusammengestellt. Die Länge der betrachteten Resonatoren
+betrug 3~mm und die Dicke 20~$\mu$m. Die Breite der Balken betrug
+beim Dreifachbalken-Resonator 200/400/200~$\mu$m und die Balkenabstände
+50~$\mu$m. Um die Ergebnisse mit einem Einfachbalkenresonator vergleichen
+zu können, wies dieser eine äquivalente Gesamtbalkenbreite von 900~$\mu$m
+auf. Die Kraftbeaufschlagung betrug bei der Berechnung der
+Kraftempfindlichkeiten jeweils 1~N.
+Aufgrund der um mehr als 10~\% verminderten Resonatorquerschnittsfläche
+erhöht sich beim Dreifachbalkenresonator die mechanische Längsspannung
+$\sigma_{x}$ im Resonator um den gleichen Betrag. Die Kraftempfindlichkeit
+des Dreifachbalkenresonators nimmt entsprechend zu, so daß gegenüber dem
+Einfachbalkenresonator eine um bis zu 6~\% erhöhte Kraftempfindlichkeit
+erzielt werden kann, wenn er in der antisymmetrischen
+Schwingungsmode M3 betrieben wird. Bei den experimentell untersuchten
+Dreifachbalkenresonatoren konnte die höchste Kraftempfindlichkeit bei der
+Schwingungsmode M3 nachgewiesen werden. Die maximale Kraftempfindlichkeit
+betrug in dem untersuchten Meßbereich (bis 5~N) etwa 8,6~kHz/N
+\cite{Fab93a}.
+Im Vergleich zu dem in Tabelle~\ref{tabtriple} angegebenen Wert
+fällt der gemessene aufgrund von Geometrietoleranzen und den
+getroffenen Idealisierungen durch die Vernachlässigung des
+$ZnO/Al$-Schichtsystems niedriger aus. Zusätzlich wirken sich die hohen
+inneren Spannungen in der $ZnO$-Dünnschicht einschränkend auf das
+Sensorverhalten aus. Sie führen dazu, daß bei einer Zugkraftbeaufschlagung
+die Resonanzfrequenz zunächst abnimmt, da die innere Druckspannung der
+$ZnO$-Schicht durch die am Sensor wirkende Zugkraft erst kompensiert
+werden muß. Bei zunehmender äußerer Kraft wird der Resonator spannungsfrei,
+ähnlich dem temperaturabhängigen Frequenzverhalten des Balkenresonators in
+Kapitel~4.4.2, so daß anschließend die Resonanzfrequenz wieder zunimmt.
+Bei Meßanwendungen ist daher sicherzustellen, daß die inneren Spannungen der
+$ZnO$-Schichten erheblich reduziert oder zumindest kontrolliert werden
+\cite{Sathe}. Eine weitere Möglichkeit besteht darin, den Sensor in einer
+entsprechenden Halterung mechanisch vorzuspannen.
+
+
+
+\subsection{Verbesserung der Unimodalität}
+\label{unimodalitaet}
+
+Um die Auswirkungen der Änderungen des membranartigen Entkopplungsbereiches
+auf das Sensorverhalten zu untersuchen, wurde der Entkopplungsbereich von
+50--400~$\mu$m variiert. In {\bf Abbildung~\ref{abbentkoppl}} ist die
+Abhängigkeit der Modenaufspaltung der drei Schwingungsmoden M1, M2 und
+M3 des Dreifachbalkenresonators von der Länge des Entkopplungsbereiches
+dargestellt.
+%----------------------- Beginn: Figure-Environment ----------------------
+\begin{figure}[htb]
+%\vspace*{8cm}
+
+\begin{center}
+% --- Dateiname des Bildes
+\input{abbsd.tex}
+\setabbsd
+\end{center}
+\caption{\label{abbentkoppl}
+ Abhängigkeit der Modenaufspaltung der Schwingungsmoden M1, M2 und M3
+ von der Länge des Entkopplungsbereiches}
+\end{figure}
+%----------------------- Ende: Figure-Environment ----------------------
+Bei verschwindender
+Entkopplungslänge sind die Dreifachbalken unendlich starr eingespannt
+und somit voneinander mechanisch entkoppelt. Alle drei Balken schwingen dann
+mit der Frequenz des Einfachbalkens (19,48 kHz). Der flexible Membranbereich
+des Entkopplungsbereiches verbindet die drei Balkenschwinger miteinander und
+es können sich die verschiedenen Schwingungsmoden ausbilden.
+Mit zunehmender Entkopplungslänge spalten zusätzlich die Frequenzen weiter
+auf, was zu einer merklichen Erhühung der Unimodalität des Resonators führt.
+Dieses ist dadurch zu
+erklären, daß durch die membranartige Balkenaufhängung die Einspannung
+weicher wird und folglich die Resonanzfrequenzen der verschiedenen Moden
+abnehmen. Dieses macht sich insbesondere für die beiden Moden M1 und M2
+unterschiedlich bemerkbar. Die Frequenz der antisymmetrische Mode M3
+stabilisiert sich ab einer Entkopplungslänge von etwa 200~$\mu$m
+auf einen nahezu konstanten Wert, da die dynamische Momentenkompensation
+verhindert, daß der membranartige Einspannbereich zusätzlich mitschwingt und
+dadurch die {\em dynamische} Länge des Resonators effektiv vergrößert
+wird. Bei weiter zunehmender Entkopplungslänge besteht allerdings die
+Gefahr, daß die Anfälligkeit des Resonators für Torsionsschwingungen und
+überlagerte Biege-/Torsions-Schwingungsmoden zunimmt. Daher wurde eine
+Entkopplungslänge von 200~$\mu$m, das sind etwa 6,7~\% der
+Balkenlänge, ausgewählt, um sicherzustellen, daß an den Balken\-enden die
+Schwingungsknoten der Mode M3 sitzen und eine optimale mechanische
+Entkopplung des Resonators von der Bulkeinspannung gegeben ist. In dem
+ursprünglichen Resonatorentwurf waren keine Entkopplungsbereiche vorgesehen,
+so daß in einem Redesign Entkopplungslängen von 200~$\mu$m verwendet wurden,
+um verbesserte Dreifachbalkenresonatoren mit erhöhter Modenaufspaltung zu
+realisieren.
+Ein weiterer Effekt der erhöhten Unimodalität des Dreifachbalkenresonators
+ist es, daß ein besseres \glqq Einlocken\grqq \, der elektrischen
+Oszillatorschaltung auf der gewünschten Sensormode M3 ermöglicht wird.
+Zusätzlich wirkt die vergrößerte Modenaufspaltung einer durch äußere
+Störeinflüsse (z.B.\ Temperatureinfluß) hervorgerufenen Modenkopplung
+entgegen.\\
+%----------------------- Beginn: Figure-Environment ----------------------
+\begin{figure}[ht]
+\begin{minipage}[t]{7cm}
+%\vspace*{8cm}
+
+\vspace*{0.25cm}
+\begin{center}
+% --- Dateiname des Bildes
+\input{abbsv.tex}
+\setabbsv
+\end{center}
+\caption{\label{abbmodenkoppl1}
+ Amplitudenspektrum eines Dreifachbalkenresonators mit Bulkeinspannung}
+%\end{figure}
+\end{minipage}
+\hfill
+%----------------------- Ende: Figure-Environment ----------------------
+%----------------------- Beginn: Figure-Environment ----------------------
+\begin{minipage}[t]{7cm}
+\vspace*{0.25cm}
+\begin{center}
+% --- Dateiname des Bildes
+\input{abbsf.tex}
+\setabbsf
+\end{center}
+\caption{\label{abbmodenkoppl2}
+ Amplitudenspektrum eines Dreifachbalkenresonators mit einer
+ Entkopplungslänge von 200~$\mu$m}
+\end{minipage}
+\end{figure}
+%clearpage
+%\vspace*{0.5cm}
+%----------------------- Ende: Figure-Environment ----------------------
+Durch Vermessung verschiedener Dreifachbalkenresonatoren konnte die erhöhte
+Modenaufspaltung verifiziert und eine Güteerhöhung der antisymmetrischen
+Schwingungsmode M3 gegenüber der Grundmode M1 experimentell nachgewiesen
+werden. Die Güteerhöhung betrug bei den untersuchten
+Dreifachbalkenresonatoren etwa das Doppelte. Als maximale Schwingungsgüte
+der Mode M3 wurde in Luftatmosphäre ein Wert von etwa 400 gemessen.
+In {\bf Abbildung~\ref{abbmodenkoppl1}} und
+{\bf Abbildung~\ref{abbmodenkoppl2}} sind die optisch vermessenen
+Amplitudenspektren zweier Dreifachbalkenresonatoren mit unterschiedlichen
+Entkopplungslängen dargestellt. Während beim ersten Resonator die
+Balkeneinspannung direkt durch das Bulkmaterial gebildet wird, so daß die
+{\em geometrische} Entkopplungslänge gleich Null ist, weist der
+zweite Resonator einen Entkopplungsbereich der Länge 200~$\mu$m auf.
+Da sich eine Superposition der Schwingungsmoden beim Resonator mit der
+Bulkeinspannung einstellt, ist ein Einsatz als Kraftsensor aufgrund der
+stark ausgeprägten Modenkopplung nicht möglich. Bei einer Entkopplungslänge
+von 200~$\mu$m erhöht sich hingegen die Modenaufspaltung um etwa das
+30-fache (3~kHz). Zusätzlich tritt die oben erwähnte
+Güteerhöhung der Mode M3 gegenüber der Grundmode M1 auf. Die Schwingungsmode
+M2 kann optisch auf dem Mittelbalken nicht detektiert werden, da bei dieser
+Mode der Mittelbalken in Ruhe bleibt, so daß diese Mode nur auf den beiden
+äußeren Balken interferometrisch nachgewiesen werden konnte. Die stark
+unterschiedlichen Resonanzfrequenzen der Biegeschwingungsmoden bei den
+beiden untersuchten Resonatoren lassen sich durch die hohen Schwankungen
+der inneren Spannung der $ZnO$-Schichten erklären. \\
+In {\bf Tabelle~\ref{tabuntkoppl}} sind die Ergebnisse der FE-Berechnungen
+und der Messungen für Resonatoren mit unterschiedlicher Entkopplungslänge
+zusammengefaßt.
+%----------------------- Beginn: table ---------------------------
+\begin{table}[htb]
+\caption{\label{tabuntkoppl}
+ Relative Modenaufspaltung von Dreifachbalkenresonatoren in Abhängigkeit
+ der Entkopplungslänge (Vergleich: FE-Berechnungen -- Messungen)}
+\begin{center}
+\begin{tabular}{|l||c|c||c|c|}
+\hline
+ & \multicolumn{2}{c||}{FE-Berechnung} & \multicolumn{2}{c|}{Messung} \\
+\hline
+Entkopplungslänge & 50 $\mu$m & 200 $\mu$m & Bulkeinsp. & 200 $\mu$m \\
+\hline \hline
+ $c_{2}-1$ & 0,3~\% & 7,2~\% & 0,5~\% & 7,0~\% \\
+\hline
+ $c_{3}-1$ & 0,6~\% & 13,5~\% & 0,7~\% & 13,0~\% \\
+\hline
+\end{tabular}
+\end{center}
+\end{table}
+%----------------------- Ende: table ---------------------------
+Um die Resonanzfrequenzen vergleichen zu können, wurden
+die Frequenzwerte $f_{i}$ auf die jeweilige Frequenz der
+Grundmode $f_{M1}$ normiert, da die hohe Verspannung der
+$ZnO$-Dünnschichten zu großen Frequenzenverschiebungen führte.
+In der Tabelle sind daher die relativen Frequenzaufspaltungen
+$c_{i} = f_{i}/f_{M1}$ gegenübergestellt. Beim
+Vergleich der FE-Resultate mit den Messungen korrespondiert die
+Bulkeinspannung, bei der die {\em geometrische} Entkopplungslänge Null
+beträgt, einer {\em dynamischen} Entkoppplungslänge von etwa 50~$\mu$m.
+Die Abweichungen zwischen den
+berechneten und gemessenen Werten betragen bei einer Entkoppplungslänge
+von 200~$\mu$m jeweils nur 2,9~\% (Mode M2) und 3,8~\% (Mode M3), so daß
+eine sehr gute Korrelation vorhanden ist.\\

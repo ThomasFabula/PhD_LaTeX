@@ -1,0 +1,364 @@
+
+\subsection{Abschätzung der erreichbaren Hübe und Kräfte}
+\label{huebeundkraefte}
+
+Für die Abschätzung der erreichbaren Hübe und Kräfte soll ein einseitig
+eingespannter Biegebalken bzw. Zunge betrachtet werden, der piezoelektrisch
+oder elektrothermisch angesteuert wird.  Um die Leistungsfähigkeit des
+piezoelektrischen Antriebs an Mikrostrukturen zu untersuchen, sollen die
+Materialien Aluminiumnitrid ({\em AlN}), Zinkoxid (ZnO) und PZT-Keramiken
+(PZT) zugrunde gelegt werden, die auch als Dünnschichten hergestellt
+werden können.  Da die Materialdaten stark von der Art des
+Herstellungsprozesses und der Prozeßparameter abhängig sind, fehlen für
+dünne Schichten meist genaue Materialangaben.  Für die folgenden
+Abschätzungen beziehen sich die Materialdaten auf Bulk-Material
+\cite{Fra88, LB82, Sie81}. Hinzu kommt, daß die Materialeigenschaften
+schichtdickenabhängig und die abgeschiedenen Schichten innere
+mechanische Spannungen aufweisen. Auf die unterschiedlichen Literaturangaben
+bezüglich piezoelektrsicher Dünnschichteigenschaften wird in Kapitel~5.6
+weiter eingegangen.\\
+%
+Aus den piezoelektrischen Zustandsgleichungen~\ref{piezo1}--\ref{piezo3}
+ist in \cite{Smi91a, Smi91b} der Zusammenhang zwischen den externen Parametern
+(Drehmoment: $M$, Kraft: $F$, Druck: $p$ und Spannung: $U$, siehe
+{\bf Abbildung~\ref{abbexternparam}}) und den
+internen Parametern (Ablenkungswinkel: $\alpha$,
+Auslenkung: $\delta$, Verschiebungsvolumen: $V$ und Ladung: $Q$, siehe
+{\bf Abbildung~\ref{abbinternparam}}) für einen einseitig
+eingespannten Silizium-Biegebalken, der von einer piezoelektrischen
+Dünnschicht bedeckt ist, abgeleitet.
+%----------------------- Beginn: Figure-Environment ----------------------
+\begin{figure}[ht]
+\begin{minipage}[t]{7cm}
+\vspace*{4cm}
+%\vspace*{0.25cm}
+%\begin{center}
+% --- Dateiname des Bildes
+%\input{abbzsi.tex}
+%\setabbzsi
+%\end{center}
+\caption{\label{abbexternparam}
+ Externe Parameter $M, F, p, U$}
+%\end{figure}
+\end{minipage}
+\hfill
+%----------------------- Ende: Figure-Environment ----------------------
+%----------------------- Beginn: Figure-Environment ----------------------
+\begin{minipage}[t]{7cm}
+\vspace*{4cm}
+%\vspace*{0.25cm}
+%\begin{figure}[ht]
+%\begin{center}
+% --- Dateiname des Bildes
+%\input{abbza.tex}
+%\setabbza
+%\end{center}
+\caption{\label{abbinternparam}
+ Interne Parameter $\alpha, \delta, V, Q$}
+\end{minipage}
+\end{figure}
+
+%clearpage
+
+%\vspace*{0.5cm}
+
+%----------------------- Ende: Figure-Environment ----------------------
+Die symmetrische Übertragungsmatrix [$e$] beschreibt den Biegezustand
+des Balkens bei unterschiedlichen mechanischen und elektrischen
+Belastungen und verknüpft die internen mit den externen Parametern:
+%
+\begin{eqnarray}
+  \left(
+  \begin{array}{c}
+  \alpha \\ \delta \\ V \\ Q
+  \end{array} \right) & = &
+  \left[
+  \begin{array}{llll}
+  e_{11} & e_{12} & e_{13} & e_{14} \\
+  e_{21} & e_{22} & e_{23} & e_{24} \\
+  e_{31} & e_{32} & e_{33} & e_{34} \\
+  e_{41} & e_{42} & e_{43} & e_{44}
+  \end{array}
+ \right]
+ \left(
+ \begin{array}{c}
+ M \\ F \\ p \\ U
+ \end{array}
+\right)
+\end{eqnarray}
+%
+Fr die Matrixkomponenten $e_{ij}$ gilt:
+%
+\begin{eqnarray}
+[ e ] & = & \frac{A}{K} \cdot
+\left [
+\begin{array}{cccc}
+\displaystyle \frac{12L}{b} &   \displaystyle \frac{6L^{2}}{b} &
+\displaystyle 2L^{3}        &   6d_{31}BL \\
+\\
+\displaystyle               &   \displaystyle \frac{4L^{3}}{b} &
+\displaystyle \frac{3L^{4}}{2}            &   3d_{31}BL^{2} \\
+\\
+ &  & \displaystyle \frac{3L^{5}b}{5} & 3d_{31}BL^{3}b \\
+\\
+%\displaystyle \frac{2L^{3}}{K} & \displaystyle \frac{3L^{4}}{2K} &
+%\displaystyle \frac{3L^{5}b}{5K} & \displaystyle
+%\frac{3d_{31}BL^{2}}{K}\\ \\
+ & & & C
+%\displaystyle \frac{Lb}{h_{p}} \cdot
+%\left( \epsilon^{\sigma}_{33}K - d_{31}^{2} h_{Si}
+%(S^{Si}_{11} h_{p}^{3} + S^{p}_{11} h_{Si}^{3} \right)
+%\displaystyle \frac{6d_{31}BL}{K} & \displaystyle
+%\frac{3d_{31}BL^{2}}{K} & \displaystyle \frac{d_{31}BL^{3}b}{K}
+%                   & \quad \displaystyle \frac{Lb}{Ah_{p}}
+%\cdot \left( \epsilon^{\sigma}_{33} \, - \,
+%              \frac{d_{31}^{2} h_{Si} ( \, s^{Si}_{11} hp^{3} \, + \,
+%s^{p}_{11} h_{Si}^{3} }{K} \right)
+\end{array} \right ]
+\end{eqnarray}
+
+mit den Abkürzungen $ A, B, K $:
+%
+\begin{eqnarray*}
+   A & = & S^{Si}_{11} S^{p}_{11} \left( S^{p}_{11} h_{Si}
+           + S^{Si}_{11} h_{p} \right )
+\\ \\
+   B & = & \frac{h_{Si} (h_{Si}  +  h_{p}) }{ S^{p}_{11} h_{Si}
+             +  S^{Si}_{11} h_{p}}
+\\ \\
+   C & = & \frac{Lb}{Ah_{p}} \cdot \left( \epsilon^{\sigma}_{33}K -
+    d_{31}^{2} h_{Si} (S^{Si}_{11} h_{p}^{3} + S^{p}_{11} h_{Si}^{3} \right)
+\\ \\
+   K & = & (S^{Si}_{11})^{2} (h_{p})^{4}  +  4S^{Si}_{11}
+                   S^{p}_{11} h_{Si}(h_{p})^{3} \nonumber \\
+     &   & + \, 6S^{Si}_{11} S^{p}_{11} (h_{Si})^{2} (h_{p})^{2}  +
+                4S^{Si}_{11} S^{p}_{11} h_{p} (h_{Si})^{3} \nonumber \\
+     &   & + \, (S^{p}_{11})^{2}(h_{Si})^{4}
+ \end{eqnarray*}
+wobei:
+\begin{eqnarray*}
+ L, b                      & : &
+  \mbox{L„nge, Breite des Biegebalkens [m]} \\
+ h_{Si},h_{p}              & : &
+  \mbox{Substratdicke (hier: Silizium), Piezoschichtdicke [m]}   \\
+ S^{Si}_{11}, S^{p}_{11}   & : &
+  \mbox{Steifigkeitskoeffizient Substrat, Piezoschicht} \, [Pa^{-1}] \\
+ d_{31} & : & \mbox{transversaler piezoelektrischer Koeffizient} \, [C/N] \\
+%  \left [ \frac{C}{N} \right ] \\
+ \epsilon^{\sigma}_{33}    & : &
+  \mbox{Dielektrizitätskonstante in E-Feldrichtung} \, [C/Vm]
+%  \left [ \frac{C}{Vm} \right ]
+\end{eqnarray*}
+%
+Die maximale Auslenkung $ \delta $ beträgt am Balkenende bei Anlegen
+einer Spannung $ U $ an die piezoelektrische Schicht:
+\begin{eqnarray}
+\label{deltaU}
+  \delta & = & e_{24} \cdot U \; = \;
+  \left( 3 AB \frac{{L}^2}{K} \right) \cdot d_{31} U
+\end{eqnarray}
+Die maximal erreichbare Kraft (Klemmkraft, bei  $ \delta \, = \, 0) $,
+die der Bimorphbalken ausüben kann, läßt sich durch die
+Federsteifigkeit $e_{22}^{-1}$ und unter Verwendung von Gleichung
+(\ref{deltaU}) ausdrücken:
+\begin{eqnarray}
+      F & = & (e_{22})^{-1} \cdot \delta \;
+          = \; (e_{22})^{-1} \cdot (e_{24} \, U)
+\end{eqnarray}
+Der vollständige Zusammenhang zwischen Kraft und elektrischer Spannung
+ergibt sich zu:
+\begin{eqnarray}
+\label{kraftU}
+      F & = & \left( \frac{3}{4} \frac{bB}{L} \right) d_{31} \cdot U
+\end{eqnarray}
+%
+In den obigen Ausdrücken gewichten die Konstanten $A$
+[$m/Pa^{3}$], B [$m \cdot Pa$] und $K$ [$m^{4}/Pa^{2}$] die
+Steifigkeiten mit den entsprechenden Schichtdicken.  Der Zusammenhang
+zwischen der Auslenkung $\delta$ bzw. der ausübbaren Kraft $F$ und der
+angelegten elektrischen Spannung $U$ ist linear, aufgrund der
+zugrundeliegenden Linearität der piezoelektrischen Zustandsgleichungen.
+Die Abhängigkeit von
+der Balkenlänge $L$ ist bei der Auslenkung quadratisch, bei der Kraft
+umgekehrt proportional. \\
+Nachfolgend soll der Einfluß der Wandlergeometrie detaillierter
+untersucht werden.
+Variiert wurden die Balkenlänge $L$, die Substratdicke $h_{Si}$ und die
+Piezoschichtdicke $h_{p}$.
+Die Steifigkeitskoeffizienten vom Siliziumsubstrat $ S_{11}^{Si} $ und
+der Piezoschicht $S_{11}^{p}$, sowie der transversale piezoelektrische
+Koeffizient $d_{31}$ wurden für ZnO der Tabelle~\ref{tabpiezoelektrika}
+entnommen. In {\bf Tabelle~\ref{tabauslkraftkonst}} sind die
+Proportionalitätskonstanten $e_{24}$~[m/V]
+zwischen der Auslenkung und der angelegten Spannung sowie
+die Proportionalitätskonstanten $e_{24}/e_{22}$~[N/V] zwischen der Kraft
+und der angelegten Spannung zusammengefaßt. Die Balkenbreite $b$ beträgt
+bei den Abschätzungen 50~$\mu$m.
+%----------------------- Beginn: table ---------------------------
+\begin{table}[htb]
+\caption{\label{tabauslkraftkonst}
+ Auslenkungs-\ und Kraft-Konstanten $e_{24}$ bzw.\ $ e_{24}/e_{22} $ fr
+ einen Silizium-Balken mit einer ZnO-Schicht}
+\begin{center}
+\begin{tabular}{|l|l||c|c|c|c|} \hline
+$h_{Si}$ & $h_{ZnO}$ & L = 0,1 mm  & 1 mm  & 10 mm & Technologie \\
+\hline \hline
+$ 1 \, \mu m $  &  $ 1 \, \mu m $  &  19,2 nm/V  & $ 1,92 \mu m/V $ &
+$ {\bf 192 \mu  m/V} $ & OFM \\  \cline{3-5}
+   &  & $ 0,25  \mu N/V $ & $ 0,02  \mu N/V $ & $ 2,46 nN/V $ & \\
+\hline \hline
+$  10 \, \mu m $  & $ 5 \, \mu m $  & $ 0,45 nm/V $  & $ 45,3 nm/V $
+& $ 4,53  \mu m/V $ &  \\  \cline{3-5}
+   &  & $ 2,45  \mu N/V $  &  $ 0,25  \mu N/V $  &  $ 0,03  \mu N/V $
+   & \\
+\cline{1-5}
+$ 100 \, \mu m $  &  $ 10 \, \mu m $  & $ 0,01 nm/V  $ & $ 1,13 nm/V $
+& $ 0,11 \mu m/V $ & BMM \\  \cline{3-5}
+   & & ${\bf 24,3 \mu N/V}$  &  $2,43 \mu N/V$ & $0,24 \mu N/V $ & \\
+\hline
+\end{tabular}
+\end{center}
+\end{table}
+%----------------------- Ende: table ---------------------------
+Legt man eine typische Feldstärke\footnote{Dieser Wert konnte durch die
+Messungen (siehe Kapitel~\ref{zno}) bestätigt werden.} von $E$~=~10~V/$\mu$m
+bei ZnO zugrunde \cite{Smi92b}, so ergibt sich eine maximal erreichbare
+Auslenkung von 1,92~mm bei den Balkenabmessungen $L$~=~10~mm und
+$h_{Si}$~=~$h_{ZnO}$~=~1~$\mu$m (Variante 1). Die maximal ausübbare
+Klemmkraft
+beträgt 10~V/$\mu m \cdot$10~$\mu m \cdot$24,3~$\mu$N~$\approx$~2,4~mN
+für einen Balken mit den
+Abmessungen $L$~=~0,1~mm, $h_{Si}$~= 100~$\mu$m und $h_{ZnO}$~=10~$\mu$m
+(Variante~2).
+Je länger der Balken ist, desto größer werden die Auslenkungen, während
+die ausübbaren Kräfte abnehmen. Die Piezoschichtdicke $h_{p}$
+hat keinen Einfluß auf die Kräfte, lediglich die Balkendicke $h_{Si}$.
+Die Kraftwirkung läßt sich weiter steigern, wenn die Balkenbreite $b$
+vergrößert wird:
+\begin{eqnarray}
+\label{Fskal}
+   F & \sim & \left( \frac{b \cdot h_{Si}}{L} \right)
+\end{eqnarray}
+Im Gegensatz zu den Kräften geht bei den Auslenkungen die effektive
+Gesamtdicke des Balkens $ h_{eff} = f(h_{Si}, h_{p}) $ quadratisch
+im Nenner ein:
+\begin{eqnarray}
+\label{dskal}
+   \delta & \sim & \left( \frac{L}{h_{eff}} \right)^{2}
+\end{eqnarray}
+In der {\bf Tabelle~\ref{tabvglalnznopzt}}
+sind die beiden Extremfälle (Variante~1: langer
+dünner Balken und Variante~2: kurzer dicker Balken) analytisch mit den
+Materialien AlN und PZT (siehe Materialdaten aus Tabelle~2.3) berechnet
+und verglichen worden. Während die Steifigkeitskoeffizienten $S_{11}$
+von AlN, ZnO und PZT kaum differieren (Verhältnis: 1,0 / 2,24 / 4,36),
+unterscheiden sich die piezoelektrischen Koeffizienten $d_{31}$
+sehr stark (Verhältnis: 1,0 / 2,6 / 80).
+Die maximalen elektrischen Feldstärken betragen bei AlN etwa 500~V/$\mu$m
+\cite{Fra88, Ger81} und bei Piezokeramiken ist nur der Wert für gesintertes
+Bulk-Material bekannt, das eine Feldstärke von $E_{PZT}$~=~0,5~V/$\mu$m
+im linearen Bereich (Kleinsignalverhalten) und maximal etwa 2--3~V/$\mu$m
+im Sättigungsbereich (Großsignalverhalten) zuläßt \cite{VIB}. Außerdem ist zu
+beachten, daß, im Gegensatz zu Dünnschichten, gesinterte Piezokeramiken eine
+Depolarisationsspannung aufweisen, die ihrerseits weit unterhalb der
+eigentlichen Durchbruchspannung liegen kann. Die nachfolgenden Angaben
+beziehen sich daher auf eine Vergleichsfeldstärke von 1~V/$\mu$m.
+%----------------------- Beginn: table ---------------------------
+\begin{table}[htb]
+\caption{\label{tabvglalnznopzt}
+ Einfluß des Schichtsystems auf die Auslenkungen und Kräfte}
+\begin{center}
+\begin{tabular}{|l||c|c|c|c||l|} \hline
+Größe: & AlN & ZnO & PZT & Verhältnis & Dimension \\
+\hline \hline
+$ \delta_{max} \; [\mu m] $  & 72,1 & 192 & 5813 & 1/2,7/81 & Variante 1 \\
+\cline{1-5}
+$ F_{max} \; [nN] $  & 1,34 & 2,46 & 51,8 & 1/1,8/39 & U = 1 V
+\\ \hline \hline
+$ \delta_{max} \; [nm] $  & 0,007 & 0,01 & 0,21 & 1/1,4/30 & Variante 2 \\
+\cline{1-5}
+$ F_{max} \; [\mu N] $  & 19,2 & 24,3 & 406 & 1/1,3/21 & U = 1 V \\
+\hline
+\end{tabular}
+\end{center}
+\end{table}
+%----------------------- Ende: table ---------------------------
+Unter Zugrundelegung der gleichen Ansteuerspannung ermöglicht PZT die
+größte Auslenkung (ca. 5,8~mm) und Stellkraft (ca. 19,2~$\mu$N). In der
+5.~Spalte der Tabelle sind die Verhältnisse der bei gleicher Geometrie
+und Spannung erreichbaren Werte dargestellt. Beachtet man jedoch die
+unterschiedlichen maximalen Feldstärken, so differieren sie um mehrere
+Größenordnungen ($E_{AlN} / E_{ZnO} / E_{PZT}) = (1000 / 20 / 1$),
+so daß im Dünnschichtbereich die Verwendung von AlN neben ZnO sehr
+interessant erscheint. Bei einer theoretischen Ansteuerspannung von
+500~V/$\mu$m würden sich für AlN ein maximale Auslenkung von etwa 36~mm
+und eine maximale Stellkraft von etwa 96~$\mu$N ergeben.
+
+
+{\em Bemerkungen zum piezoelektrischen Antrieb:}
+\begin{itemize}
+\item Optimierung der ZnO-Eigenschaften, z.B.\ durch geeignete Wahl der
+Piezoschichtdicke und eine gezielte Einstellung der Schichtspannung,
+zwecks Erhöhung des elektromechanischen Kopplungsfaktors
+(siehe Kapitel~\ref{schichtdickenabhaengigkeit}).
+\item Flächenselektive Anregung der Bauelemente ist durch eine bipolare
+Ansteuerung gegeben, so daß Kontraktionen {\em und} Dilatationen
+gleichzeitig auf der Bauelement\-oberfläche erzeugt werden können.
+Hieraus resultiert eine Verbesserung der Modenselektivität bei resonanten
+Sensoren und eine Erhöhung der Bauteilhübe bei Aktoranwendungen
+(siehe Kapitel~\ref{modenselektivitaet}).
+\item Eine Prozeßintegration des ZnO ist schwierig, da eine Passivierung
+gegenüber technologischen Nachfolgeprozessen und äußeren Umwelteinflüssen
+notwendig ist.
+\item Bei hohen Ansteuerspannungen stellen sich Degradationsmechanismen ein,
+die zu irreversiblen Änderungen der Schichteigenschaften bzw.\ sogar zur
+Zerstörung des Schichtsystems führen können.
+\end{itemize}
+
+\vspace*{0.5cm}
+
+Bei der elektrothermischen Anregung handelt es sich prinzipiell um
+den gleichen Antriebsmechanismus wie bei piezoelektrischen Dünnschichten,
+indem in der Bimorphstruktur ein Biegemoment induziert wird.
+Während beim piezoelektrischen Effekt gemäß Abbildung~\ref{abbnye} die
+intensive Variable die elektrische Feldstärke $\vec E$
+($|\vec E|$ = elektrische Spannung $U$ / Piezoschichtdicke $h_{p}$) und der
+Kopplungskoeffizient der piezoelektrische Modul (hier: $d_{31}$) ist,
+handelt es sich bei der elektrothermischen Anregung um die
+Temperaturdifferenz $\Delta T$ und die Differenz der
+Wärmeausdehnungskoeffizienten $\Delta \alpha$ zwischen
+dem Siliziumsubstrat und der metallischen Dünnschicht.
+Unter Ausnutzung dieser Analogie und dem Umstand, daß
+$U \, \approx \, E \cdot h_{p}$, läßt sich das Skalierungsverhalten
+gemäß den Gleichungen (\ref{Fskal}) und (\ref{dskal}) auf die
+elektrothermische Anregung direkt übertragen:
+\begin{eqnarray}
+\label{dvont}
+  \delta & \sim &
+%\frac{L^{2}}{r(\Delta T)} \; \sim \;
+  \left( \frac{L^{2}}{h} \right) \cdot \Delta \alpha \Delta T  \\
+\label{fvont}
+   F  & \sim & \left( \frac{b \cdot h^{2}}{L} \right)
+               \cdot \Delta \alpha \Delta T
+\end{eqnarray}
+
+%Im Folgenden sind die Vor- und Nachteile des piezoelektrischen und
+%elektrothermischen Antriebskonzeptes mittels Dünnschichten zusammengefaßt:
+
+{\em Bemerkungen zum elektrothermischen Antrieb:}
+\begin{itemize}
+\item Neben Aluminium kann Gold verwendet werden, das zwar einen
+geringeren Wärmeausdehnungskoeffizienten aufweist, aber aufgrund des
+Edelmetallcharakters keine Passivierung erfordert.
+\item Die technologische Kompatibilität mit der Siliziumtechnologie ist
+sehr gut. Zusätzlich ist eine flexible technologische Realisierbarkeit
+durch diffundierte Widerstände in Silizium bzw.\ NiCr-Dünnschichtwiderstände
+in Metallfilmtechnologie gegeben \cite{Bar93}.
+\item Im Gegensatz zum piezoelektrischen Antriebsprinzip ist keine bipolare
+Ansteuerbarkeit gegeben, da nur Temperaturerhöhungen möglich sind, die zu
+Wärmedehnungen führen.
+\item Bei hohen Temperaturen kann es zur Ablösung oder zur Zerstörung
+des Schichtsystems kommen.
+\item Die Gesamtwärmebilanz beim thermischen Antrieb ist schwer zu
+kontrollieren, da Wärmesenken einen sehr starken Einfluß ausüben.
+\end{itemize}

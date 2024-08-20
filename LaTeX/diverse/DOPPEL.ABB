@@ -1,0 +1,36 @@
+%----------------------- Beginn: Figure-Environment ----------------------
+\begin{figure}[ht]
+\begin{minipage}[t]{7cm}
+\vspace*{4cm}
+%\vspace*{0.25cm}
+%\begin{center}
+% --- Dateiname des Bildes
+%\input{abbzsi.tex}
+%\setabbzsi
+%\end{center}
+\caption{\label{abbexternparam}
+ Externe Parameter $M, F, p, U$}
+%\end{figure}
+\end{minipage}
+\hfill
+%----------------------- Ende: Figure-Environment ----------------------
+%----------------------- Beginn: Figure-Environment ----------------------
+\begin{minipage}[t]{7cm}
+\vspace*{4cm}
+%\vspace*{0.25cm}
+%\begin{figure}[ht]
+%\begin{center}
+% --- Dateiname des Bildes
+%\input{abbza.tex}
+%\setabbza
+%\end{center}
+\caption{\label{abbinternparam}
+ Interne Parameter $\alpha, \delta, V, Q$}
+\end{minipage}
+\end{figure}
+
+%clearpage
+
+%\vspace*{0.5cm}
+
+%----------------------- Ende: Figure-Environment ----------------------

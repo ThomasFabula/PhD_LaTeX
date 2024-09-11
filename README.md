@@ -23,4 +23,5 @@ Vormals FFMU = Forschungsgesellschaft für Feingeräte-, Mikro- und Uhrentechnik
 - https://tfconsult.com/promotion-schlussbetrachtung/
 - https://tfconsult.com/dissertation-messplatz/
 - to be continued
+- https://tfconsult.com/tag/dissertation/
   

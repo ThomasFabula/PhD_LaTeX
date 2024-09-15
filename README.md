@@ -11,7 +11,8 @@ eingereicht bei der Universität Bonn:
 ## HSG-IMIT
 ausgeführt am HSG-IMIT in Villingen-Schwenningen: 
 - Institut für Mikro- und Informationstechnik der Hahn-Schickard-Gesellschaft für Angewandte Forschung e.V. 
-- https://www.hahn-schickard.de/  
+- https://www.hahn-schickard.de/
+- https://github.com/ThomasFabula/HSG-IMIT
 
 Vormals 
 

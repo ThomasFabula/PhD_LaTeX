@@ -1,7 +1,7 @@
 # PhD_LaTeX files
 
 ## Doctor of Physics
-- Promotion in Physik 
+- Promotion / Dissertation in Physik 
 - 1994, Dezember 2nd 
 
 ## University of Bonn

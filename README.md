@@ -5,7 +5,7 @@
 - 1994, Dezember 2nd 
 
 ## University of Bonn
-eingereicht bei der Universität Bonn: 
+eingereicht bei der Universität Bonn, Institut für Angewandte Physik: 
 - https://www.uni-bonn.de/
 - https://www.iap.uni-bonn.de/en
 

@@ -6,7 +6,8 @@
 
 ## University of Bonn
 eingereicht bei der Universität Bonn: 
-- https://www.uni-bonn.de/  
+- https://www.uni-bonn.de/
+- https://www.iap.uni-bonn.de/en
 
 ## HSG-IMIT
 ausgeführt am HSG-IMIT in Villingen-Schwenningen: 

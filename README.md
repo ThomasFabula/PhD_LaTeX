@@ -2,10 +2,10 @@
 
 ## Doctor of Physics
 - Promotion / Dissertation in Physik 
-- 1994, Dezember 2nd 
+- 1994, December 2nd 
 
 ## University of Bonn
-eingereicht bei der Universität Bonn, Institut für Angewandte Physik: 
+eingereicht bei der Universität Bonn, Institut für Angewandte Physik (IAP): 
 - https://www.uni-bonn.de/
 - https://www.iap.uni-bonn.de/en
 

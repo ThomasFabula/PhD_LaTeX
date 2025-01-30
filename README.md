@@ -2,7 +2,7 @@
 
 ## Doctor of Physics
 - Promotion / Dissertation in Physik 
-- 1994, December 2nd 
+- Date: 1994, December 2nd 
 
 ## University of Bonn
 eingereicht bei der Universität Bonn, Institut für Angewandte Physik (IAP): 
@@ -18,7 +18,8 @@ ausgeführt am HSG-IMIT in Villingen-Schwenningen:
 Vormals 
 
 ## FFMU 
-- Forschungsgesellschaft für Feingeräte-, Mikro- und Uhrentechnik e.V.
+- Forschungsgesellschaft für Feingeräte-, Mikro- und Uhrentechnik e.V., Stuttgart
+- https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=nid%3D5131026-0
 
 ## PhD thesis
 - https://tfconsult.com/thesis/
@@ -27,6 +28,5 @@ Vormals
 - https://tfconsult.com/grundlagen-der-mikromechanik/
 - https://tfconsult.com/promotion-schlussbetrachtung/
 - https://tfconsult.com/dissertation-messplatz/
-- to be continued
 - https://tfconsult.com/tag/dissertation/
-  
+- to be continued  
